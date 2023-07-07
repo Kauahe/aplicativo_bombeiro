@@ -1,0 +1,137 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    background-color: #d9d9d9;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+.menu
+{
+    height: 55px;
+    width: 360px;
+    background-color: #302F2F;
+}
+.sombraeletras
+{
+    margin-top: 80px;
+    height: 35px;
+    width: 360px;
+    font-family: fantasy;
+    font-size: 30px;
+    text-align: center;
+}
+.opcoes
+{
+    height: 579px;
+    width: 338px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+.opc1
+{
+    width: 340px;
+    height: 148px;
+    margin-left:-1px;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    display: flex;
+
+}
+.B1
+{
+    width: 144px;
+    height: 134px;
+    background-color: #163166;
+    border-style:solid;
+    border-color: white;
+    border-radius: 25px;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.leg
+{
+    width: 140px;
+    height: 28px;
+    border-style:solid;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-color: transparent;
+    margin-top: 20px;
+    background-color: rgba(170, 170, 170, 0.85); 
+}
+.B2
+{
+    width: 144px;
+    height: 134px;
+    background-color: #163166;
+    border-style:solid;
+    border-color: #ffffff;
+    border-radius: 25px;
+}
+.opc2
+{
+    width: 340px;
+    height: 148px;
+    margin-left:-1px;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    display: flex;
+}
+.B3
+{
+    width: 144px;
+    height: 134px;
+    background-color: #163166;
+    border-style:solid;
+    border-color: #ffffff;
+    border-radius: 25px;
+}
+.B4
+{
+    width: 144px;
+    height: 134px;
+    background-color: #163166;
+    border-style:solid;
+    border-color: #ffffff;
+    border-radius: 25px;
+}
+.opc3
+{
+    width: 340px;
+    height: 148px;
+    margin-left:-1px;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    display: flex;
+}
+.B5
+{
+    width: 144px;
+    height: 134px;
+    background-color: #163166;
+    border-style:solid;
+    border-color: #ffffff;
+    border-radius: 25px;
+}
+.B6
+{
+    width: 144px;
+    height: 134px;
+    background-color: #163166;
+    border-style:solid;
+    border-color: #ffffff;
+    border-radius: 25px;
+}
