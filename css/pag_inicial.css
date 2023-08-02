@@ -8,133 +8,6 @@ body
     align-items: center;
     align-content: center;
 }
-.menu
-{
-    height: 55px;
-    width: 360px;
-    background-color: #302F2F;
-}
-.sombraeletras
-{
-    margin-top: 80px;
-    height: 35px;
-    width: 360px;
-    font-family: fantasy;
-    font-size: 30px;
-    text-align: center;
-}
-.opcoes
-{
-    height: 579px;
-    width: 338px;
-    margin-top: 5px;
-    margin-left: 10px;
-}
-.opc1
-{
-    width: 340px;
-    height: 148px;
-    margin-left:-1px;
-    justify-content: space-evenly;
-    justify-items: center;
-    align-items: center;
-    align-content: center;
-    display: flex;
-
-}
-.B1
-{
-    width: 144px;
-    height: 134px;
-    background-color: #163166;
-    border-style:solid;
-    border-color: white;
-    border-radius: 25px;
-    justify-content: space-around;
-    justify-items: center;
-    align-items: center;
-    align-content: center;
-    display: flex;
-    flex-direction: column;
-}
-.leg
-{
-    width: 140px;
-    height: 28px;
-    border-style:solid;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
-    border-color: transparent;
-    margin-top: 20px;
-    background-color: rgba(170, 170, 170, 0.85); 
-}
-.B2
-{
-    width: 144px;
-    height: 134px;
-    background-color: #163166;
-    border-style:solid;
-    border-color: #ffffff;
-    border-radius: 25px;
-}
-.opc2
-{
-    width: 340px;
-    height: 148px;
-    margin-left:-1px;
-    justify-content: space-evenly;
-    justify-items: center;
-    align-items: center;
-    align-content: center;
-    display: flex;
-}
-.B3
-{
-    width: 144px;
-    height: 134px;
-    background-color: #163166;
-    border-style:solid;
-    border-color: #ffffff;
-    border-radius: 25px;
-}
-.B4
-{
-    width: 144px;
-    height: 134px;
-    background-color: #163166;
-    border-style:solid;
-    border-color: #ffffff;
-    border-radius: 25px;
-}
-.opc3
-{
-    width: 340px;
-    height: 148px;
-    margin-left:-1px;
-    justify-content: space-evenly;
-    justify-items: center;
-    align-items: center;
-    align-content: center;
-    display: flex;
-}
-.B5
-{
-    width: 144px;
-    height: 134px;
-    background-color: #163166;
-    border-style:solid;
-    border-color: #ffffff;
-    border-radius: 25px;
-}
-.B6
-{
-    width: 144px;
-    height: 134px;
-    background-color: #163166;
-    border-style:solid;
-    border-color: #ffffff;
-    border-radius: 25px;
-}
 header,footer
 {
     background: #242424;
@@ -142,10 +15,104 @@ header,footer
     height: 62px;
     filter: drop-shadow(0px 14px 3px rgba(0, 0, 0, 0.25));
 }
-
-.imagem
+.tit 
 {
-    position: absolute;
-      left: 124px;
-      top:20px;
+    height: 39px;
+    width: 341;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #000;
+    text-align: center;
+    text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    font-family: "Audiowide", sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+.subtit 
+{
+    height: 16px;
+    width: 219;
+    color: #162673;
+    text-align: center;
+    font-family: Genos;
+    font-size: 13px;
+    font-style: italic;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: uppercase;
+}
+.dupla1
+{
+    height: 141px;
+    width: 288;
+    background-color: azure;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+.op1
+{
+    width: 126px;
+    height: 141px;
+    background: linear-gradient(rgb(58, 71, 182), rgba(11, 22, 84, 1));
+}
+.op2
+{
+    width: 126px;
+    height: 141px;
+    background: linear-gradient(rgb(58, 71, 182), rgba(11, 22, 84, 1));
+}
+.dupla2
+{
+    height: 141px;
+    width: 288;
+    background-color: azure;
+    display: flex;
+    flex-direction: row;
+}
+.op3
+{
+    width: 126px;
+    height: 141px;
+    background: linear-gradient(rgb(58, 71, 182), rgba(11, 22, 84, 1));
+}
+.op4
+{
+    width: 126px;
+    height: 141px;
+    background: linear-gradient(rgb(58, 71, 182), rgba(11, 22, 84, 1));
+}
+.dupla3
+{
+    height: 141px;
+    width: 288;
+    background-color: azure;
+    display: flex;
+    flex-direction: row;
+}
+.op5
+{
+    width: 126px;
+    height: 141px;
+    background: linear-gradient(rgb(58, 71, 182), rgba(11, 22, 84, 1));
+}
+.op6
+{
+    width: 126px;
+    height: 141px;
+    background: linear-gradient(rgb(58, 71, 182), rgba(11, 22, 84, 1));
+}
+.sozinha
+{
+    width: 498px;
+    height: 78px;
+    flex-shrink: 0;
+    background: linear-gradient(rgb(58, 71, 182), rgba(11, 22, 84, 1));
 }
