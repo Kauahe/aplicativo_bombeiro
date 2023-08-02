@@ -3,4 +3,71 @@ body
     width: 100%;
     height: 100vh;
     background-color:beige;
+    margin: 0;
+    padding: 0;
+    justify-content:center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    display: flex;
+
+    
+
+}
+
+header,footer
+{
+    width: 100%;
+    height: 61px;
+    background-color:#1A1B1C;
+
+}
+
+.texto
+{
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    background-color:#648cb4;
+    color: black;
+    font-size: 25px;
+    font-family: Genos;
+    justify-content:center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    display: flex;
+}
+
+.box
+{
+  width: 310px;
+  height: 580px;
+  flex-shrink: 0;
+  margin-top: 15px;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #102986 29.78%, rgba(42, 78, 212, 0.87) 100%);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+fieldset
+{
+    height: 96%;
+    border-style: solid;
+    border-radius: 10px;
+    color: white;
+    font-size: 13px;
+}
+
+.text
+{
+ width: 270px;
+ height: 23px;
+ flex-shrink: 0;
+ gap: 5px;
+ margin-left: 2px;
+ border-radius: 5px;
+ border: 1px solid #FFFCFC;
+ background: #FFF;
 }
