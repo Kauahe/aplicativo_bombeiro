@@ -2,7 +2,7 @@ body
 {
     width: 100%;
     height: 100vh;
-    background-color:beige;
+    background-color:#CFCDCD;
     margin: 0;
     padding: 0;
     justify-content:center;
@@ -29,10 +29,9 @@ header,footer
     width: 100%;
     height: 50px;
     margin-top: 20px;
-    background-color:#648cb4;
     color: black;
     font-size: 25px;
-    font-family: Genos;
+    font-family: "Audiowide", sans-serif;
     justify-content:center;
     justify-items: center;
     align-items: center;
@@ -58,6 +57,7 @@ fieldset
     border-radius: 10px;
     color: white;
     font-size: 13px;
+    border-style: none;
 }
 
 .text
@@ -70,4 +70,16 @@ fieldset
  border-radius: 5px;
  border: 1px solid #FFFCFC;
  background: #FFF;
+}
+
+.enviar
+{
+    width: 150px;
+    height: 30px;
+    margin-left: 60px;
+    border-radius: 5px;
+    color: white;
+    border-style: none;
+    background: linear-gradient(292deg, #000 0%, rgba(0, 0, 0, 0.00) 100%);
+
 }
