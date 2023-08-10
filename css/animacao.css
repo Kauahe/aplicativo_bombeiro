@@ -1,0 +1,45 @@
+body
+ {
+  background: #131313;
+  color: #E3E3E3;
+  font-family: sans-serif;
+  margin: 0; 
+  padding: 0;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh; 
+  box-sizing: border-box;
+}
+
+.loading 
+{
+  width: 100%;
+  max-width: 360px; 
+  margin: 0 auto; 
+  padding: 0;
+  position: relative;
+}
+
+.loading svg
+ {
+  width: 100%;
+  height: auto; 
+}
+
+.loading #pulsar 
+{
+  stroke-dasharray: 281;
+  animation: dash 4.0s infinite linear forwards;
+}
+
+/* Animation */
+@keyframes dash 
+{
+  from {
+    stroke-dashoffset: 814;
+  }
+  to {
+    stroke-dashoffset: -814;
+  }
+}
