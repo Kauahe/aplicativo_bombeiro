@@ -8,8 +8,7 @@
     <title>login</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
 </head>
-<body>
-    
+<body> 
     <header>
       
         <div class="imagem">
@@ -23,23 +22,26 @@
     
     <div class="fundo">   
 
-        <div class="box"><h3>PSIQUIÁTRICO</h3> 
+        <button class="box"><h3>PSIQUIÁTRICO</h3> 
+        </button>
+
+        <div class="box" id="abrir1" onclick="Abra1();"><h3>RESPIRATÓRIO</h3>
+            <div class="seta"> <img src="img/seta.png" width="30px"></div>
+
+            <div class="dados1" id="dados1">
+                eee
+            </div>
+        </div>
+
+        <div class="box"  id="abrir2" onclick="Abra2();"><h3>DIABETES</h3>
             <div class="seta"> <img src="img/seta.png" width="30px"></div>
         </div>
 
-        <div class="box"><h3>RESPIRATÓRIO</h3>
+        <div class="box" id="abrir3" onclick="Abra3();"><h3>OBSTERICO</h3>
             <div class="seta"> <img src="img/seta.png" width="30px"></div>
         </div>
 
-        <div class="box"><h3>DIABETES</h3>
-            <div class="seta"> <img src="img/seta.png" width="30px"></div>
-        </div>
-
-        <div class="box"><h3>OBSTERICO</h3>
-            <div class="seta"> <img src="img/seta.png" width="30px"></div>
-        </div>
-
-        <div class="box"><h3>TRANSPORTE</h3>
+        <div class="box" id="abrir4" onclick="Abra4();"><h3>TRANSPORTE</h3>
             <div class="seta"> <img src="img/seta.png" width="30px"></div>
         </div>
 
@@ -50,5 +52,13 @@
         </div>
 
     </div>
-
-    
+</body>
+<script>
+    function Abra1()
+    {
+        $("#abrir1").animate({height:"55px"}, 1000);
+        $("#abrir2").animate({height:"10px"}, 1000);
+        $("#abrir3").animate({height:"10px"}, 1000);
+        $("#abrir4").animate({height:"10px"}, 1000);
+    }
+</script>

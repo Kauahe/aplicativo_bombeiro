@@ -7,7 +7,7 @@ body
     justify-items: center;
     align-items: center;
     align-content: center;
-    font-family: "Audiowide", sans-serif;
+    font-family: OCR A Std, monospace;
     
 }
 header,footer
@@ -29,9 +29,14 @@ h1{
   }
    .row{
       position: absolute;
-      left:114px;
-      top:-9px
-  
+      left:104px;
+      margin-top:-1px
+   }
+   .row2
+   {
+        position: absolute;
+      left:104px;
+      margin-top:30px
    }
  h2{
     color: #FFF;
@@ -44,7 +49,7 @@ font-weight: 200;
 .tit 
 {
     height: 39px;
-    width: 341;
+    width: 320px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -54,10 +59,9 @@ font-weight: 200;
     text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     font-size: 37px;
     font-weight: 600;
-    line-height: normal;
-    text-transform: uppercase;
     font-family: "Audiowide", sans-serif;
     margin-top: 15px;
+    margin-left: 20px;
 }
 .subtit 
 {
@@ -68,7 +72,7 @@ font-weight: 200;
     font-family: 'Courier New', Courier, monospace;
     font-size: 15px;
     font-style: italic;
-    font-weight: 800;
+    font-weight: 1000;
     line-height: normal;
     text-transform: uppercase;
     font-weight: 200;
@@ -126,6 +130,26 @@ font-weight: 200;
 p
 {
     margin-top: -10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+.p1
+{
+    margin-top: -10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+.p2
+{
+    margin-top: -100px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
