@@ -128,7 +128,45 @@ header,footer{
    margin-top: 20px;
    margin-left: 5px;
    width: 180px;
+ }
 
+ .dados1
+ {
+  width: 84%;
+  height: 60px;
+  margin-top: 60px;
+  background-color: rgb(190, 82, 105);
+  position: absolute;
+  display: none;
+ }
  
+ .dados2
+ {
+  width: 84%;
+  height: 60px;
+  margin-top: 60px;
+  background-color: rgb(190, 82, 105);
+  position: absolute;
+  display: none;
+ }
+ 
+ .dados3
+ {
+  width: 84%;
+  height: 60px;
+  margin-top: 60px;
+  background-color: rgb(190, 82, 105);
+  position: absolute;
+  display: none;
+ }
+ 
+ .dados4
+ {
+  width: 84%;
+  height: 60px;
+  margin-top: 60px;
+  background-color: rgb(190, 82, 105);
+  position: absolute;
+  display: none;
  }
  
