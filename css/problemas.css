@@ -138,6 +138,7 @@ header,footer{
   background-color: rgb(190, 82, 105);
   position: absolute;
   display: none;
+  opacity:0;
  }
  
  .dados2
@@ -148,6 +149,7 @@ header,footer{
   background-color: rgb(190, 82, 105);
   position: absolute;
   display: none;
+  opacity:0;
  }
  
  .dados3
@@ -158,6 +160,7 @@ header,footer{
   background-color: rgb(190, 82, 105);
   position: absolute;
   display: none;
+  opacity:0;
  }
  
  .dados4
@@ -168,5 +171,6 @@ header,footer{
   background-color: rgb(190, 82, 105);
   position: absolute;
   display: none;
+  opacity:0;
  }
  
