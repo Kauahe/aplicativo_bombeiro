@@ -9,7 +9,7 @@
   
   include("conecta.php");
   
-  $query = "SELECT * FROM Bombeiros_cad.cadastro WHERE codigo = :codigo OR codigo2 = :codigo OR codigo3 = :codigo OR codigo4 = :codigo";
+  $query = "SELECT * FROM cadastro WHERE codigo = :codigo and codigo2 = :codigo2 and codigo3 = :codigo3 and codigo4 = :codigo4";
   $statement = $pdo->prepare($query);
   $statement->bindParam(":codigo", $codigo);
   $statement->bindParam(":codigo2", $codigo2);
@@ -19,9 +19,9 @@
   
   $matchingCodes = $statement->fetchAll(PDO::FETCH_ASSOC);
   
-  if (count($matchingCodes) == 4) {
+  if (count($matchingCodes) > 0) {
       // Redirecionar para a página desejada
-      header("Location: localhost/aplicativo_bombeiro/pag_inicial.html");
+      header("Location:../animacao.html");
       exit();
   } else {
       // Exibir mensagem de erro
