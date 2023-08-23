@@ -32,7 +32,7 @@
             <div class="dados1" id="dados1">
                 <fieldset>
                   
-                    <input type="checkbox" >&nbsp; DPOC <br> <br>
+                    <input type="checkbox" class="fild1" > DPOC <br> <br>
                     <input type="checkbox" >&nbsp; INALAÇÃO FUMAÇA
 
 
@@ -61,8 +61,8 @@
             <div class="dados1" id="dados3">
                 <fieldset>
                   
-                    <input type="checkbox" >&nbsp; PARTO EMERGENCIAL <br> 
-                    <input type="checkbox" >&nbsp; GESTANTE <br> 
+                    <input type="checkbox" >&nbsp; PARTO EMERGENCIAL <br>
+                    <input type="checkbox" >&nbsp; GESTANTE <br>
                     <input type="checkbox" >&nbsp; HEMOR.EXCESSIVA 
 
                 </fieldset>
@@ -100,12 +100,17 @@
             $("#abrir2").animate({height:"50px"}, 500);
             $("#abrir3").animate({height:"50px"}, 500);
             $("#abrir4").animate({height:"50px"}, 500);
-            $("#dados1").animate({height:"64px", opacity:1}, 700);
+            $("#dados1").animate({height:"64px", opacity:1}, 900);
             document.getElementById("dados1").style.display="flex"; 
             document.getElementById("dados2").style.display="none"; 
             document.getElementById("dados3").style.display="none"; 
             document.getElementById("dados4").style.display="none"; 
+            document.getElementById("dados1").style.opacity=0;
+            document.getElementById("dados2").style.opacity=0; 
+            document.getElementById("dados3").style.opacity=0; 
+            document.getElementById("dados4").style.opacity=0; 
         }
+        
 
         function Abra2()
         {
@@ -113,11 +118,15 @@
             $("#abrir2").animate({height:"130px"}, 500);
             $("#abrir3").animate({height:"50px"}, 500);
             $("#abrir4").animate({height:"50px"}, 500);
-            $("#dados2").animate({height:"64px", opacity:1}, 700);
+            $("#dados2").animate({height:"64px", opacity:1}, 900);
             document.getElementById("dados1").style.display="none"; 
             document.getElementById("dados2").style.display="flex"; 
             document.getElementById("dados3").style.display="none"; 
             document.getElementById("dados4").style.display="none"; 
+            document.getElementById("dados1").style.opacity=0;
+            document.getElementById("dados2").style.opacity=0; 
+            document.getElementById("dados3").style.opacity=0; 
+            document.getElementById("dados4").style.opacity=0; 
         }
 
         function Abra3()
@@ -126,11 +135,15 @@
             $("#abrir2").animate({height:"50px"}, 500);
             $("#abrir3").animate({height:"130px"}, 500);
             $("#abrir4").animate({height:"50px"}, 500);  
-            $("#dados3").animate({height:"64px", opacity:1}, 700);     
+            $("#dados3").animate({height:"64px", opacity:1}, 900);     
             document.getElementById("dados1").style.display="none"; 
             document.getElementById("dados2").style.display="none"; 
             document.getElementById("dados3").style.display="flex"; 
-            document.getElementById("dados4").style.display="none"; 
+            document.getElementById("dados4").style.display="none";
+            document.getElementById("dados1").style.opacity=0;
+            document.getElementById("dados2").style.opacity=0; 
+            document.getElementById("dados3").style.opacity=0; 
+            document.getElementById("dados4").style.opacity=0;  
         }
 
         function Abra4()
@@ -139,11 +152,15 @@
             $("#abrir2").animate({height:"50px"}, 500);
             $("#abrir3").animate({height:"50px"}, 500);
             $("#abrir4").animate({height:"130px"}, 500);
-            $("#dados4").animate({height:"64px", opacity:1}, 700);
+            $("#dados4").animate({height:"64px", opacity:1}, 900);
             document.getElementById("dados1").style.display="none"; 
             document.getElementById("dados2").style.display="none"; 
             document.getElementById("dados3").style.display="none"; 
             document.getElementById("dados4").style.display="flex"; 
+            document.getElementById("dados1").style.opacity=0;
+            document.getElementById("dados2").style.opacity=0; 
+            document.getElementById("dados3").style.opacity=0; 
+            document.getElementById("dados4").style.opacity=0; 
         }
     </script>
 </body>
