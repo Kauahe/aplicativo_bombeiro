@@ -16,8 +16,8 @@ body{
 {
     background: #1A1B1C;
     width: 100%;
-    height: 100vh;
-    margin-top: -150px;
+    height: 8vh;
+    
 }
 .footer
 {
@@ -48,8 +48,11 @@ font-size: 10px;
 font-style: italic;
 font-weight: 200;
  }
- .fild
+ .tit
  {
-    margin-top: 200px;
+   margin-top: 30px;
  }
- 
+ .subtit
+ {
+   margin-top: 5px;
+ }
