@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="css/index.css">
     <title>login</title>
 </head>
 <body>
@@ -19,14 +19,14 @@
     <section>
         <div class="container">
         <h2>DIGITE SEU CÓDIGO:</h2>
-        <form action="verificar.php" method="post">
-            <div class="imput-field">
-                <input type="number"/>
-                <input type="number"/>
-                <input type="number"/>
-                <input type="number"/>
+        <form action="php/verifica.php" method="post">
+            <div class="espace">
+                <input class="cod" type="number" name="codigo"/>
+                <input class="cod" type="number"name="codigo2"/>
+                <input class="cod"type="number"name="codigo3"/>
+                <input class="cod"type="number"name="codigo4"/>
             </div>
-            <button type="submit">verificar</button>
+            <button type="submit" name="Entrar">verificar</button>
         </form>
     </div>
 
