@@ -10,6 +10,7 @@ body{
     align-items: center;
     align-content:center ;
     flex-direction: column;
+    overflow-y: scroll;
 
 }
 .cabecalho
@@ -25,16 +26,7 @@ body{
    width: 100%;
    height: 50px;
 }
-.imagem{
-  position: absolute;
-    left: 12px;
-    top:7px;
-}
- .row{
-    position: absolute;
-    left:84px;
-    top:9px
- }
+
  h1{
     color: white;
     font-family: "Audiowide", sans-serif;
