@@ -84,8 +84,8 @@ header,footer{
    margin-top: 15px;
    flex-direction: row;
    justify-content:space-between;
-    display: flex;
-  
+  display: flex;
+    
  }
 
  .box6
