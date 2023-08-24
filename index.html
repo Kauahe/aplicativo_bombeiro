@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
     <link rel="stylesheet" href="css/index.css">
     <title>login</title>
 </head>
@@ -11,30 +12,30 @@
     
     <header>
         <div class="imagem">
-            <img src="img/logo.png" width="133px"
-            height="118px">
+            <img src="img/logo.png" width="133px" height="110px"> 
         </div>
     </header>
-    <br>   <br>   <br>   <br>   <br>   <br>
+    <br>   <br>   <br>   <br>   <br><br>
+    <h1>SOS BOMBEIROS</h1>
+    <h2>NÚCLEO DE OPERAÇÕES AÉREAS E RESGATE</h2>
     <section>
         <div class="container">
             <div class="cdg">
-                <h2>DIGITE SEU CÓDIGO:</h2>
+                <h3><b>INSIRA SEU CÓDIGO:</b></h3>
             </div>
-            
             <form action="php/verifica.php" method="post">
                 <div class="espace">
                     <input class="cod" type="text" name="codigo" maxlength="1" oninput="moveToNextInput(this, 'codigo2')" onkeydown="handleBackspace(this, 'codigo2')"/>
                     <input class="cod" type="text" name="codigo2" maxlength="1" oninput="moveToNextInput(this, 'codigo3')" onkeydown="handleBackspace(this, 'codigo')"/>
                     <input class="cod" type="text" name="codigo3" maxlength="1" oninput="moveToNextInput(this, 'codigo4')" onkeydown="handleBackspace(this, 'codigo2')"/>
                     <input class="cod" type="text" name="codigo4" maxlength="1" onkeydown="handleBackspace(this, 'codigo3')"/>
-                </div>
+                </div><br>
                 <div class="verefica">
-                    <button type="submit" name="Entrar">verificar</button>
+                    <button class="verii" type="submit" name="Entrar">VERIFICAR</button>
                 </div>
             </form>
-           
-    </div>
+           </div>
+        <div class="rodape"> APLICATIVO SOS BOMBEIROS</div>
     
     </section>
 </body>

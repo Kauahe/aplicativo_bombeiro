@@ -14,13 +14,13 @@ body{
 header,footer{
     background: #242424;
     width: 359px;
-    height: 92px;
+    height: 72px;
     filter: drop-shadow(0px 14px 3px rgba(0, 0, 0, 0.25));
     
     
 }
 .imagem{
-  position: absolute;
+    position: absolute;
     left: 114px;
     top:30px
 }
@@ -34,14 +34,18 @@ section{
     justify-items: center;
     align-content: center;
     justify-content: center;
+    margin-top: -40px;
     
 }
-H2{color: #000;
-font-family: Material Icons;
-font-size: 20px;
+h3
+{color: #000;
+font-family: "Audiowide", sans-serif;
+font-size: 18px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
+text-align: center;
+margin-top: -60px;
 
 
 }
@@ -51,7 +55,7 @@ line-height: normal;
     height: 246px;
     border-radius: 34px;
     background: #FFF;
-    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.25), 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 6px 6px rgba(0, 0, 0, 0.25), 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
     flex-direction: column;
     display: flex; 
     align-items: center;
@@ -59,7 +63,8 @@ line-height: normal;
      align-content: center;
     justify-content: center;
     padding: 10px;
-flex-shrink: 0;
+    flex-shrink: 0;
+    margin-top: -75px;
 
 }
 
@@ -73,14 +78,43 @@ flex-shrink: 0;
     justify-content: center;
     
 }
-
+h1
+{
+    color: #000;
+    text-align: center;
+    font-family: "Audiowide", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+h2
+{
+    color: #000;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Genos;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 200;
+    line-height: normal;
+    text-transform: uppercase;
+}
+.espace
+{
+    margin-top: -35px;
+    margin-left: -10px;
+}
 .espace input::-webkit-inner-spin-button,
 .espace input::-webkit-outer-spin-button{
     display: none;
 }
 
-.espace input:focus{
-    outline: 3px solid #00b991;
+.espace input:focus
+{
+    outline: 3px solid #146e5a;
     outline-offset: 2px;}
 
     .cod{
@@ -133,3 +167,12 @@ flex-shrink: 0;
      align-content: center;
     justify-content: center;
  }
+ .rodape
+ {
+    position: absolute;
+    top:720px;
+    font-size: 12px;
+    font-family: Genos;
+
+ }
+ 
