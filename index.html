@@ -18,18 +18,44 @@
     <br>   <br>   <br>   <br>   <br>   <br>
     <section>
         <div class="container">
-        <h2>DIGITE SEU CÓDIGO:</h2>
-        <form action="php/verifica.php" method="post">
-            <div class="espace">
-                <input class="cod" type="number" name="codigo"/>
-                <input class="cod" type="number"name="codigo2"/>
-                <input class="cod"type="number" name="codigo3"/>
-                <input class="cod"type="number" name="codigo4"/>
+            <div class="cdg">
+                <h2>DIGITE SEU CÓDIGO:</h2>
             </div>
-            <button type="submit" name="Entrar">verificar</button>
-        </form>
+            
+            <form action="php/verifica.php" method="post">
+                <div class="espace">
+                    <input class="cod" type="text" name="codigo" maxlength="1" oninput="moveToNextInput(this, 'codigo2')" onkeydown="handleBackspace(this, 'codigo2')"/>
+                    <input class="cod" type="text" name="codigo2" maxlength="1" oninput="moveToNextInput(this, 'codigo3')" onkeydown="handleBackspace(this, 'codigo')"/>
+                    <input class="cod" type="text" name="codigo3" maxlength="1" oninput="moveToNextInput(this, 'codigo4')" onkeydown="handleBackspace(this, 'codigo2')"/>
+                    <input class="cod" type="text" name="codigo4" maxlength="1" onkeydown="handleBackspace(this, 'codigo3')"/>
+                </div>
+                <div class="verefica">
+                    <button type="submit" name="Entrar">verificar</button>
+                </div>
+            </form>
+           
     </div>
-
+    
     </section>
 </body>
+<script>
+    function moveToNextInput(currentInput, nextInputName) {
+        const maxLength = parseInt(currentInput.getAttribute('maxlength'));
+        if (currentInput.value.length === maxLength) {
+            const nextInput = document.getElementsByName(nextInputName)[0];
+            if (nextInput) {
+                nextInput.focus();
+            }
+        }
+    }
+
+    function handleBackspace(currentInput, prevInputName) {
+        if (event.key === 'Backspace' && currentInput.value.length === 0) {
+            const prevInput = document.getElementsByName(prevInputName)[0];
+            if (prevInput) {
+                prevInput.focus();
+            }
+        }
+    }
+</script>
 </html>
