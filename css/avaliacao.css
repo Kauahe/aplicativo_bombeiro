@@ -37,9 +37,85 @@ header,footer{
  h2{
     color: #FFF;
 text-align: center;
-
 font-family: Genos;
 font-size: 10px;
 font-style: italic;
 font-weight: 200;
  }
+.alerta
+{
+    width: 49px;
+    height: 48px;
+    flex-shrink: 0;
+    margin-top: 102px;
+    margin-left: 152px;
+}
+p
+{
+    display: flex;
+    width: 254px;
+    height: 30px;
+    margin-top: 5px;
+    margin-left: 50px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #000;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: "Audiowide", sans-serif;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+p2
+{
+    margin-left: 10px;
+    margin-top: 5px;
+    display: flex;
+    width: 338px;
+    height: 23px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #000;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    font-style: italic;
+    font-weight: 200;
+}
+.DIV
+{
+    background-color: transparent;
+    width: 100%;
+    height: 30vh;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.opcao
+{
+    width: 275px;
+    height: 70px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: linear-gradient(180deg, #102986 33.78%, rgba(42, 78, 212, 0.87) 101.93%);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);    
+    border-radius:10px;
+}
+.opcao2
+{
+    width: 275px;
+    height: 70px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: linear-gradient(180deg, #102986 33.78%, rgba(42, 78, 212, 0.87) 101.93%);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);    
+    border-radius:10px;
+}
