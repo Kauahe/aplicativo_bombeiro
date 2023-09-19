@@ -1,43 +1,48 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/menor5.css">
-    <title>login</title>
+    <title>INÍCIO</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
-
 <body>
-
+    
     <header>
-
         <div class="imagem">
-            <img src="img/logosembrilho.png" width="50px" height="49px">
-        </div>
-        <div class="row">
-            <h1>SOS BOMBEIROS</h1>
-            <h2>NÚCLEO DE OPERAÇÕES AÉREAS E RESGATE</h2>
-        </div>
+            <img src="img/logosembrilho.png" width="50px" height="49px"></div>
+            <div class="row">
+                <h1>SOS BOMBEIROS</h1>
+            </div>
+            <div class="row2">
+                <h2>NÚCLEO DE OPERAÇÕES AÉREAS E RESGATE</h2>
+            </div>     
+    </div>
     </header>
 
     <H3> SEU PACIENTE É:</H3>
     <H4> MENOR DE 5 ANOS</H4>
-    <div class="total">
-        <div class="azul1">
-           <a>ABERTURA OCULAR</a>
-           <img src="img/seta.png" height="20px">
+    <div class="TOTAL">
+        <div class="T1">
+            <button class="azul1"  onclick="Abra1();">
+                <a>ABERTURA OCULAR</a>
+            </button>
+            <button class="azul2"  onclick="Abra2();">
+                <a>RESPOSTA VERBAL</a>
+            </button>
+            <button class="azul3"  onclick="Abra3();">
+                <a>RESPOSTA MOTORA</a>
+            </button>
         </div>
-        <div class="azul2">
-            <a>RESPOSTA VERBAL</a>
-            <img src="img/seta.png" height="20px">
+        <div class="T2">
+            <div id="abrir1" class="branco1"></div>
+            <div id="abrir2" class="branco2"></div>
+            <div id="abrir3" class="branco3"></div>
         </div>
-        <div class="azul3">
-            <a>RESPOSTA MOTORA</a>
-            <img src="img/seta.png" height="20px">
-        </div>
+       
     </div>
     <div class="borda">
         <P><b>TOTAL (GCS) (3-15)</b></P>
@@ -45,5 +50,13 @@
     </div>
 
 </body>
+<script>
+    function Abra3() {
+        abrir3.style.visibility="visible"
+        abrir2.style.visibility="hidden"
+        abrir1.style.visibility="hidden"
+        $("#abrir3").animate({},1000);
+    }
+</script>
 
 </html>
