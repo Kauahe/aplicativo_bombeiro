@@ -95,6 +95,33 @@ header,footer
 
  }
 
+ .fild2
+ {
+    height: 50px;
+    flex-direction: row ;
+    display: flex;
+
+ }
+
+ .fild3
+ {
+    height: 50px;
+    flex-direction: row ;
+    display: flex;
+   border-style: none;
+ }
+  
+ .bcp{
+   margin-top: 6px;
+   margin-left: 4px;
+ }
+ .bpm
+ {
+    width: 40px;
+    height: 25px;
+    border-radius: 10px;
+ }
+
  .input1
  {
     width: 35px;
