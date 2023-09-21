@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,46 +8,49 @@
     <title>Cadastro</title>
     <link rel="stylesheet" href="css/cadastro.css">
 </head>
+
 <body>
     <header>
         <div class="espaco">
             <div class="imagem">
                 <img src="../img/logosembrilho.png" width="60px" height="60px">
-            </div> 
+            </div>
             <div class="row">
                 <h1>SOS BOMBEIROS</h1>
                 <h2>NÚCLEO DE OPERAÇÕES AÉREAS E RESGATE</h2>
             </div>
-        </div> 
+        </div>
     </header>
-        <div class="titulo"><b>CADASTRO</b></div>
+    <div class="titulo"><b>CADASTRO</b></div>
     <main>
         <div class="box">
-        <form action="cadastro.php">
-            
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required><br><br>
+            <form action="cadastro.php">
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br><br>
+                <label for="nome"><b>NOME:</b></label>
+                <input type="text" id="nome" name="nome" class="inp" required><br><br>
 
-            <label for="telefone">cpf:</label>
-            <input type="tel" id="telefone" name="cpf" required><br><br>   
-       
-            <label for="codigo">Código de 4 Dígitos:</label>
-            <div class="códigos">
-            <input class="cod" type="text" id="codigo" name="codigo" maxlength="1" required>
-            <input class="cod" type="text" id="codigo2" name="codigo2" maxlength="1" required>
-            <input class="cod" type="text" id="codigo3" name="codigo3" maxlength="1" required>
-            <input class="cod" type="text" id="codigo4" name="codigo4" maxlength="1" required>
-        </div><br><br>
-            <label for="foto">Foto:</label>
-            <input type="file" id="foto" name="foto" accept="image/*" required><br><br>
+                <label for="email"><b>EMAIL:</b></label>
+                <input type="email" id="email" name="email" class="inp" required><br><br>
 
-            <input class="botao" type="submit" value="Cadastrar">
-        
-        </form>
-    </div>
+                <label for="telefone"><b>CPF:</b></label>
+                <input type="tel" id="telefone" name="cpf" class="inp" required><br><br>
+
+                <div class="centralizar">
+                    <div class="cdg"><b>CÓDIGO</b></div>
+                    <div class="códigos">
+                        <input class="cod" type="text" id="codigo" name="codigo" maxlength="1" required>
+                        <input class="cod" type="text" id="codigo2" name="codigo2" maxlength="1" required>
+                        <input class="cod" type="text" id="codigo3" name="codigo3" maxlength="1" required>
+                        <input class="cod" type="text" id="codigo4" name="codigo4" maxlength="1" required>
+                    </div>
+
+                </div><br><br>
+                <div class="foto"><b>ADICIONAR FOTO</b></div>
+                <input class="botao" type="submit" value="Cadastrar">
+
+            </form>
+        </div>
     </main>
 </body>
+
 </html>
