@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="css/cadastro.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="espaco">
+            <div class="imagem">
+                <img src="../img/logosembrilho.png" width="60px" height="60px">
+            </div>
+            <div class="row">
+                <h1>SOS BOMBEIROS</h1>
+                <h2>NÚCLEO DE OPERAÇÕES AÉREAS E RESGATE</h2>
+            </div>
+        </div>
+    </header>
+    <div class="titulo"><b>CADASTRO</b></div>
+    <main>
+        <div class="box">
+            <form id="cadastroForm" action="php/cadastro.php" method="post" onsubmit="juntarCodigos()">
+
+                <label for="nome"><b>NOME:</b></label>
+                <input type="text" id="nome" name="nome" class="inp" required><br><br>
+
+                <label for="email"><b>EMAIL:</b></label>
+                <input type="email" id="email" name="email" class="inp" required><br><br>
+
+                <label for="cpf"><b>CPF:</b></label>
+                <input type="tel" id="cpf" name="cpf" class="inp" required><br><br>
+
+                <div class="centralizar">
+                    <div class="cdg"><b>CÓDIGO</b></div>
+                    <div class="códigos">
+                        <input class="cod" type="password" id="codigo" name="codigo" maxlength="1" required oninput="moveToNextInput(this, 'codigo2')" >
+                        <input class="cod" type="password" id="codigo2" name="codigo2" maxlength="1" required oninput="moveToNextInput(this, 'codigo3')" onkeydown="handleBackspace(this, 'codigo')">
+                        <input class="cod" type="password" id="codigo3" name="codigo3" maxlength="1" required oninput="moveToNextInput(this, 'codigo4')" onkeydown="handleBackspace(this, 'codigo2')">
+                        <input class="cod" type="password" id="codigo4" name="codigo4" maxlength="1" required onkeydown="handleBackspace(this, 'codigo3')">
+                    </div>
+                    <input type="hidden" id="senha" name="senha">
+                </div><br><br>
+                <div class="foto"><b>ADICIONAR FOTO</b>
+                </div>
+                <input class="botao" type="submit" value="Cadastrar">
+
+            </form>
+            <div style="color: rgb(143, 255, 109); font-size: 25px;" id="mensagem" ></div>
+        </div>
+    </main>
+</body>
+<script>
+    function juntarCodigos() {
+        // Obtenha os valores dos quatro campos de código
+        var codigo1 = document.getElementById("codigo").value;
+        var codigo2 = document.getElementById("codigo2").value;
+        var codigo3 = document.getElementById("codigo3").value;
+        var codigo4 = document.getElementById("codigo4").value;
+
+        // Junte os quatro códigos em uma única senha
+        var senha = codigo1 + codigo2 + codigo3 + codigo4;
+
+        // Atribua a senha ao campo de senha
+        document.getElementById("senha").value = senha;
+    }
+</script>
+<script>
+    $(document).ready(function() {
+        $("#cadastroForm").submit(function(e) {
+            e.preventDefault(); // Evita o comportamento padrão do formulário
+
+            // Use AJAX para enviar os dados do formulário
+            $.ajax({
+                type: "POST",
+                url: "php/cadastro.php", // URL para o arquivo de processamento PHP
+                data: $(this).serialize(), // Serialize os dados do formulário
+                success: function(response) {
+                    // Exibe a mensagem de sucesso na div "mensagem"
+                    $("#mensagem").html("Cadastro realizado com sucesso!");
+                },
+                error: function(xhr, status, error) {
+                    // Exibe uma mensagem de erro se houver algum problema
+                    $("#mensagem").html("Erro ao cadastrar: " + error);
+                }
+            });
+        });
+    });
+</script>
+<script>
+    function moveToNextInput(currentInput, nextInputName) {
+        const maxLength = parseInt(currentInput.getAttribute('maxlength'));
+        if (currentInput.value.length === maxLength) {
+            const nextInput = document.getElementsByName(nextInputName)[0];
+            if (nextInput) {
+                nextInput.focus();
+            }
+        }
+    }
+
+    function handleBackspace(currentInput, prevInputName) {
+        if (event.key === 'Backspace' && currentInput.value.length === 0) {
+            const prevInput = document.getElementsByName(prevInputName)[0];
+            if (prevInput) {
+                prevInput.focus();
+            }
+        }
+    }
+</script>
+</html>
