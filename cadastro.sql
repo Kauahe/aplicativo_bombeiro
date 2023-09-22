@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 23/08/2023 às 19:35
+-- Tempo de geração: 22/09/2023 às 04:10
 -- Versão do servidor: 10.4.28-MariaDB
 -- Versão do PHP: 8.2.4
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Banco de dados: `bombeiro`
+-- Banco de dados: `bombeiros`
 --
 
 -- --------------------------------------------------------
@@ -28,22 +28,12 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `cadastro` (
-  `Nome` varchar(45) NOT NULL,
+  `nome` varchar(45) NOT NULL,
   `email` varchar(45) NOT NULL,
-  `CPF` varchar(11) NOT NULL,
-  `codigo` int(1) NOT NULL,
-  `codigo2` int(11) NOT NULL,
-  `codigo3` int(11) NOT NULL,
-  `codigo4` int(11) NOT NULL,
-  `id` int(11) NOT NULL
+  `cpf` varchar(11) NOT NULL,
+  `id` int(11) NOT NULL,
+  `senha` varchar(4) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Despejando dados para a tabela `cadastro`
---
-
-INSERT INTO `cadastro` (`Nome`, `email`, `CPF`, `codigo`, `codigo2`, `codigo3`, `codigo4`, `id`) VALUES
-('Gabriel ', 'gabrielbrach9555@gmail.com', '78945612387', 1, 2, 3, 4, 1);
 
 --
 -- Índices para tabelas despejadas
@@ -63,7 +53,7 @@ ALTER TABLE `cadastro`
 -- AUTO_INCREMENT de tabela `cadastro`
 --
 ALTER TABLE `cadastro`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
