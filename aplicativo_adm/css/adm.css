@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: #D9D9D9;
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
+
+}
+
+header,
+footer {
+    background: #1A1B1C;
+    width: 100%;
+    height: 10%;
+    filter: drop-shadow(0px 14px 3px rgba(0, 0, 0, 0.25));
+
+
+}
+
+.imagem {
+    position: absolute;
+    left: 12px;
+    top: 7px
+}
+
+.espaco {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+}
+
+.row {
+    position: absolute;
+    left: 84px;
+    top: 9px
+}
+
+h1 {
+    color: white;
+    font-family: "Audiowide", sans-serif;
+    font-size: 31px;
+}
+
+h2 {
+    color: #FFF;
+    text-align: center;
+    font-family: Genos;
+    font-size: 10px;
+    font-style: italic;
+    font-weight: 200;
+}
+
+H3 {
+    color: #000000;
+    text-align: center;
+    font-family: Genos;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 200;
+    text-align: center;
+    margin-top: 55PX;
+}
+
+H4 {
+    color: rgb(0, 0, 0);
+    font-family: "Audiowide", sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
+
+.titulo {
+    width: 100%;
+    height: 50px;
+    margin-top: 30px;
+    color: black;
+    font-size: 40px;
+    font-family: "Audiowide", sans-serif;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    display: flex;
+
+}
+
+.caixa {
+    width: 1166px;
+    height: 586px;
+    flex-shrink: 0;
+    margin-left: 220px;
+    margin-top: 15px;
+    border-radius: 34px;
+    background: #FFF;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    display: flex;
+}
+
+.cdt {
+    width: 100%;
+    height: 17%;
+    margin-top: -20px;
+   
+    border-top-right-radius: 34px;
+    border-top-left-radius: 34px;
+    flex-direction: column;
+    display: flex;
+}
+
+.add {
+    width: 60%;
+    height: 50%;
+    margin-top: 35px;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    flex-direction: column;
+    display: flex;
+
+}
+
+.linha {
+    width: 100%;
+    height: 2%;
+    margin-top: 15px;
+    background-color: black;
+}
+
+.btn {
+    width: 60%;
+    height: 40px;
+    font-size: 25px;
+    background-color: transparent;
+    border-style: none;
+}
+
+.cadastros {
+    width: 90%;
+    height: 75%;
+    margin-top: 30px;
+    background-color: aquamarine;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+}
+
+.barra {
+    width: 90%;
+    height: 20%;
+    background-color: #D9D9D9;
+}
