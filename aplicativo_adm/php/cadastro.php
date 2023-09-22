@@ -1,7 +1,7 @@
 
 
 <?php
-include("conecta.php");
+include("../../php/conecta.php");
 
 $response = array(); // Inicializa um array para armazenar a resposta
 
