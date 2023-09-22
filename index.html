@@ -23,13 +23,14 @@
             <div class="cdg">
                 <h3><b>INSIRA SEU CÓDIGO:</b></h3>
             </div>
-            <form action="php/verifica.php" method="post">
+            <form action="php/verifica.php" method="post" onsubmit="juntarCodigos()">
                 <div class="espace">
-                    <input class="cod" type="text" name="codigo" maxlength="1" oninput="moveToNextInput(this, 'codigo2')" onkeydown="handleBackspace(this, 'codigo2')"/>
-                    <input class="cod" type="text" name="codigo2" maxlength="1" oninput="moveToNextInput(this, 'codigo3')" onkeydown="handleBackspace(this, 'codigo')"/>
-                    <input class="cod" type="text" name="codigo3" maxlength="1" oninput="moveToNextInput(this, 'codigo4')" onkeydown="handleBackspace(this, 'codigo2')"/>
-                    <input class="cod" type="text" name="codigo4" maxlength="1" onkeydown="handleBackspace(this, 'codigo3')"/>
+                    <input class="cod" type="text" id="codigo" name="codigo" maxlength="1" oninput="moveToNextInput(this, 'codigo2')"/>
+                    <input class="cod" type="text" id="codigo2" name="codigo2" maxlength="1" oninput="moveToNextInput(this, 'codigo3')" onkeydown="handleBackspace(this, 'codigo')"/>
+                    <input class="cod" type="text" id="codigo3" name="codigo3" maxlength="1" oninput="moveToNextInput(this, 'codigo4')" onkeydown="handleBackspace(this, 'codigo2')"/>
+                    <input class="cod" type="text" id="codigo4" name="codigo4" maxlength="1" onkeydown="handleBackspace(this, 'codigo3')"/>
                 </div><br>
+                <input type="hidden" id="senha" name="senha">
                 <div class="verefica">
                     <button class="verii" type="submit" name="Entrar">VERIFICAR</button>
                 </div>
@@ -39,6 +40,21 @@
     
     </section>
 </body>
+<script>
+    function juntarCodigos() {
+        // Obtenha os valores dos quatro campos de código
+        var codigo1 = document.getElementById("codigo").value;
+        var codigo2 = document.getElementById("codigo2").value;
+        var codigo3 = document.getElementById("codigo3").value;
+        var codigo4 = document.getElementById("codigo4").value;
+
+        // Junte os quatro códigos em uma única senha
+        var senha = codigo1 + codigo2 + codigo3 + codigo4;
+
+        // Atribua a senha ao campo de senha
+        document.getElementById("senha").value = senha;
+    }
+</script>
 <script>
     function moveToNextInput(currentInput, nextInputName) {
         const maxLength = parseInt(currentInput.getAttribute('maxlength'));
