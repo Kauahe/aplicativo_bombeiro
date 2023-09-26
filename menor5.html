@@ -26,7 +26,7 @@
 
    
     <H4> GLASGOW</H4>
-    <H3> menor de 5 anos</H3>
+    <H5> menor de 5 anos</H5>
     <div class="TOTAL">
         <div class="T1">
             <button class="azul1"  onclick="Abra1();">
@@ -145,16 +145,24 @@
                         </td>
                     </tr>
                 </table>
-        
+                <div class="btt">
+                    <button id="comprar2" onclick="Comprar2();" class="confirmaPAG">
+                        <b><span
+                    id="confirm2">CONFIRMAR
+                </span></b>
+
+                  <img class="img_ok" id="img_ok" src="img/correto.png">
+                    </button>
+                </div>
             </div>
         </div>
        
     </div>
     <div class="borda">
         <P><b>TOTAL (GCS) (3-15)</b></P>
-        <div class="branco"></div>
+       <div class="branco"></div>
     </div>
-
+    <a href="pag_inicial.html"><div class="enviar" value="Enviar"></a>
 </body>
 <script>
       function Comprar1()
@@ -162,7 +170,7 @@
         $("#comprar1").animate({height:"20px"}, 300);
         $("#confirm1").animate({opacity:"0"}, 300);
         $("#comprar1").animate({width:"280px", borderRadius:"50px"}, 600, Imagem1);
-        $("#comprar1").animate({height:"60px",width:"60px", borderRadius:"30px"}, 700);
+        $("#comprar1").animate({height:"60px",width:"60px", borderRadius:"60px"}, 700);
         comprar.style.backgroundSize="100%"
         comprar.style.borderColor="white"
     }
@@ -188,22 +196,21 @@
         abrir3.style.visibility="visible"
         abrir2.style.visibility="hidden"
         abrir1.style.visibility="hidden"
-        $("#abrir3").animate({height:"210px"},1000);
+        $("#abrir3").animate({height:"380px"},1000);
     }
     function Abra2() 
     {
         abrir3.style.visibility="hidden"
         abrir2.style.visibility="visible"
         abrir1.style.visibility="hidden"
-        $("#abrir2").animate({height:"210px"},1000);
+        $("#abrir2").animate({height:"335px"},1000);
     }
     function Abra1() 
     {
         abrir3.style.visibility="hidden"
         abrir2.style.visibility="hidden"
         abrir1.style.visibility="visible"
-        $("#abrir1").animate({height:"210px"},1000);
+        $("#abrir1").animate({height:"180px"},1000);
     }
 </script>
-
 </html>

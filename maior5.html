@@ -1,49 +1,216 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/menor5.css">
-    <title>login</title>
+    <title>INÍCIO</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="jquery.js"></script>
 </head>
-
 <body>
-
+    
     <header>
-
         <div class="imagem">
-            <img src="img/logosembrilho.png" width="50px" height="49px">
-        </div>
-        <div class="row">
-            <h1>SOS BOMBEIROS</h1>
-            <h2>NÚCLEO DE OPERAÇÕES AÉREAS E RESGATE</h2>
-        </div>
+            <img src="img/logosembrilho.png" width="50px" height="49px"></div>
+            <div class="row">
+                <h1>SOS BOMBEIROS</h1>
+            </div>
+            <div class="row2">
+                <h2>NÚCLEO DE OPERAÇÕES AÉREAS E RESGATE</h2>
+            </div>     
+    </div>
     </header>
 
-    <H3> SEU PACIENTE É:</H3>
-    <H4> MAIOR DE 5 ANOS</H4>
-    <div class="total">
-        <div class="azul1">
-           <a>ABERTURA OCULAR</a>
-           <img src="img/seta.png" height="20px">
+   
+    <H4> GLASGOW</H4>
+    <H5> maior de 5 anos</H5>
+    <div class="TOTAL">
+        <div class="T1">
+            <button class="azul1"  onclick="Abra1();">
+                <a>ABERTURA OCULAR</a>
+            </button>
+            <button class="azul2"  onclick="Abra2();">
+                <a>RESPOSTA VERBAL</a>
+            </button>
+            <button class="azul3"  onclick="Abra3();">
+                <a>RESPOSTA MOTORA</a>
+            </button>
         </div>
-        <div class="azul2">
-            <a>RESPOSTA VERBAL</a>
-            <img src="img/seta.png" height="20px">
+        <div class="T2">
+            <div id="abrir1" class="branco1"> 
+                <table>
+                    <tr>
+                        <td>Espontânea</td>
+                        <td> <input class="box" type="checkbox"> 4
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Comando Verbal</td>
+                        <td> <input class="box" type="checkbox"> 3
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Estímulo doloroso</td>
+                        <td> <input class="box" type="checkbox"> 2
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Nenhuma</td>
+                        <td> <input class="box" type="checkbox"> 1
+                        </td>
+                    </tr>
+                    
+                </table>
+                <div class="btt">
+                    <button id="comprar1" onclick="Comprar1();" class="confirmaPAG">
+                        <b><span
+                    id="confirm1">CONFIRMAR
+                </span></b>
+
+                  <img class="img_ok" id="img_ok" src="img/correto.png">
+                    </button>
+                </div>
+            </div>
+            <div id="abrir2" class="branco2">
+                <table>
+                    <tr>
+                        <td>Orientado</td>
+                        <td> <input class="box" type="checkbox"> 5
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Confuso</td>
+                        <td> <input class="box" type="checkbox"> 4
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Palavras inapropriadas</td>
+                        <td> <input class="box" type="checkbox"> 3
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Palavras incompreensíveis</td>
+                        <td> <input class="box" type="checkbox"> 2
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Nenhuma resposta verbal</td>
+                        <td> <input class="box" type="checkbox"> 1
+                        </td>
+                    </tr>
+                </table>
+                <div class="btt">
+                    <button id="comprar2" onclick="Comprar2();" class="confirmaPAG">
+                        <b><span
+                    id="confirm2">CONFIRMAR
+                </span></b>
+
+                  <img class="img_ok" id="img_ok" src="img/correto.png">
+                    </button>
+                </div>
+            </div>
+            <div id="abrir3" class="branco3">
+                <table>
+                    <tr>
+                        <td>Obedece comandos</td>
+                        <td> <input class="box" type="checkbox"> 6
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Localiza dor</td>
+                        <td> <input class="box" type="checkbox"> 5
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Movimento de retirada</td>
+                        <td> <input class="box" type="checkbox"> 4
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Flexão anormal</td>
+                        <td> <input class="box" type="checkbox"> 3
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Extensão anormal</td>
+                        <td> <input class="box" type="checkbox"> 2
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Nenhuma</td>
+                        <td> <input class="box" type="checkbox"> 1
+                        </td>
+                    </tr>
+                </table>
+                <div class="btt">
+                    <button id="comprar2" onclick="Comprar2();" class="confirmaPAG">
+                        <b><span
+                    id="confirm2">CONFIRMAR
+                </span></b>
+
+                  <img class="img_ok" id="img_ok" src="img/correto.png">
+                    </button>
+                </div>
+            </div>
         </div>
-        <div class="azul3">
-            <a>RESPOSTA MOTORA</a>
-            <img src="img/seta.png" height="20px">
-        </div>
+       
     </div>
     <div class="borda">
         <P><b>TOTAL (GCS) (3-15)</b></P>
         <div class="branco"></div>
     </div>
-
+            <input type="button" class="enviar" value="Enviar"/>
 </body>
-
+<script>
+      function Comprar1()
+    {
+        $("#comprar1").animate({height:"20px"}, 300);
+        $("#confirm1").animate({opacity:"0"}, 300);
+        $("#comprar1").animate({width:"280px", borderRadius:"50px"}, 600, Imagem1);
+        $("#comprar1").animate({height:"60px",width:"60px", borderRadius:"60px"}, 700);
+        comprar.style.backgroundSize="100%"
+        comprar.style.borderColor="white"
+    }
+    function Imagem1()
+    {
+        $("#img_ok").animate({opacity:"1"}, 1000, Abra2);
+    }
+      function Comprar2()
+    {
+        $("#comprar2").animate({height:"20px"}, 300);
+        $("#confirm2").animate({opacity:"0"}, 300);
+        $("#comprar2").animate({width:"280px", borderRadius:"50px"}, 600, Imagem2);
+        $("#comprar2").animate({height:"60px",width:"60px", borderRadius:"30px"}, 700);
+        comprar.style.backgroundSize="100%"
+        comprar.style.borderColor="white"
+    }
+    function Imagem2()
+    {
+        $("#img_ok").animate({opacity:"1"}, 1000, Abra3);
+    }
+    function Abra3() 
+    {
+        abrir3.style.visibility="visible"
+        abrir2.style.visibility="hidden"
+        abrir1.style.visibility="hidden"
+        $("#abrir3").animate({height:"380px"},1000);
+    }
+    function Abra2() 
+    {
+        abrir3.style.visibility="hidden"
+        abrir2.style.visibility="visible"
+        abrir1.style.visibility="hidden"
+        $("#abrir2").animate({height:"335px"},1000);
+    }
+    function Abra1() 
+    {
+        abrir3.style.visibility="hidden"
+        abrir2.style.visibility="hidden"
+        abrir1.style.visibility="visible"
+        $("#abrir1").animate({height:"180px"},1000);
+    }
+</script>
 </html>

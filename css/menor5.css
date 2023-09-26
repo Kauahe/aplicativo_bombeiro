@@ -51,25 +51,24 @@ h2 {
    font-weight: 200;
 }
 
-H3 {
+H5 {
    color: #000000;
    text-align: center;
    font-family: Genos;
-   font-size: 18px;
+   font-size: 15px;
    font-style: italic;
    font-weight: 200;
    text-align: center;
-   margin-top: -90x;
-   margin-left: -220px;
+   margin-top: -50px;
+   text-transform: uppercase;
 }
 
 H4 {
    color: rgb(0, 0, 0);
    font-family: "Audiowide", sans-serif;
-   font-size: 30px;
+   font-size: 34px;
    text-align: center;
-   margin-top: 25px;
-   margin-left: -180px;
+   margin-top: 35px;
 }
 
 .TOTAL {
@@ -81,8 +80,7 @@ H4 {
    justify-content: space-around;
 }
 
-.T1 
-{
+.T1 {
    width: 150px;
    height: 80vh;
    justify-items: center;
@@ -94,8 +92,8 @@ H4 {
 }
 
 .azul1 {
-   width: 115px;
-   height: 110px;
+   width: 90px;
+   height: 80px;
    flex-shrink: 0;
    border-radius: 10px;
    background: #1F3173;
@@ -107,17 +105,17 @@ H4 {
    display: flex;
    flex-direction: row;
    color: white;
-   font-size: 17px;
+   font-size: 12px;
    font-family: "Audiowide", sans-serif;
    font-weight: 800;
    line-height: normal;
    text-transform: uppercase;
-   margin-top: 80px;
+   margin-top: 70px;
 }
 
 .azul2 {
-   width: 115px;
-   height:110px;
+   width: 90px;
+   height: 80px;
    flex-shrink: 0;
    border-radius: 10px;
    background: #1F3173;
@@ -134,12 +132,12 @@ H4 {
    font-weight: 800;
    line-height: normal;
    text-transform: uppercase;
-   margin-top: 105px;
+   margin-top: 175px;
 }
 
 .azul3 {
-   width: 115px;
-   height: 110px;
+   width: 90px;
+   height: 80px;
    flex-shrink: 0;
    border-radius: 10px;
    background: #1F3173;
@@ -156,43 +154,43 @@ H4 {
    font-weight: 800;
    line-height: normal;
    text-transform: uppercase;
-   margin-top: 125px;
+   margin-top: 280px;
 }
-.T2
-{
+
+.T2 {
    width: 100%;
    height: 80vh;
 }
-#abrir1
-{
-   width: 200px;
+
+#abrir1 {
+   width: 220px;
    height: 30px;
    background: #B5B5B5;
-box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+   box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
    margin-top: 25px;
-   margin-left: 20PX;
+   margin-left: 10PX;
    border-radius: 20px;
    visibility: hidden;
 }
-#abrir2
-{
-   width: 200px;
-   height: 30px;
+
+#abrir2 {
+   width: 230px;
+   height:30px;
    background: #B5B5B5;
-box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+   box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
    margin-top: 10px;
-   margin-left: 20PX;
+   margin-left: 10PX;
    border-radius: 20px;
    visibility: hidden;
 }
-#abrir3 
-{
-   width: 200px;
+
+#abrir3 {
+   width: 240px;
    height: 30px;
    background: #B5B5B5;
-box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+   box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
    margin-top: 10px;
-   margin-left: 20PX;
+   margin-left: 10PX;
    border-radius: 20px;
    visibility: hidden;
 }
@@ -206,7 +204,7 @@ box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0
    background: linear-gradient(180deg, rgba(16, 41, 134, 0.00) 4.87%, rgba(42, 78, 212, 0.03) 4.88%);
    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
    margin-left: 50px;
-   margin-top: 130px;
+   margin-top: 385px;
    justify-content: space-around;
    justify-items: center;
    align-items: center;
@@ -223,6 +221,7 @@ box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0
    border-radius: 12px;
    border: 1px solid var(--Color-2, #A6A6A6);
    background: #FFF;
+   margin-top: -15px;
 }
 
 P {
@@ -234,62 +233,77 @@ P {
 }
 
 a {
-   font-size: 16px;
+   font-size: 12px;
 }
-th 
-{
-    height: 70px;
+
+th {
+   height: 70px;
 }
-td
-{
-   font-family: cursive; 
+
+td {
+   font-family: cursive;
    text-align: center;
    font-size: 15px;
 }
-table, th, td 
-{
-    border: 0.5px solid;
-    border-color: white;
-    font-size: 20px;
-    margin-top: 10px;
-    margin-left: 20px;
+
+table,th,
+td {
+   border: 0.5px solid;
+   border-color: white;
+   font-size: 16px;
+   margin-top: 10px;
+   margin-left: 20px;
 }
-.box
-{
-   height: 25px;
-   width: 25px;
+
+.box {
+   height: 15px;
+   width: 15px;
 }
-/* testando esse cu do caralho  */
-.confirmaPAG
+
+.confirmaPAG {
+   width: 60%;
+   height: 5vh;
+   background-color: #97f3ace4;
+   border-radius: 20px;
+   border-style: solid;
+   border-color: rgb(21, 71, 64);
+   font-family: "Audiowide", sans-serif;
+   cursor: pointer;
+   position: relative;
+   margin-left: 25px;
+}
+
+.btt {
+   width: 90%;
+   height: 9vh;
+   background-color: transparent;
+   display: flex;
+   align-content: center;
+   align-items: center;
+   justify-content: center;
+   justify-items: center;
+}
+
+.img_ok {
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   opacity: 0;
+   width: 54px;
+   margin-left: 1px;
+   margin-top: 1px;
+}
+.enviar
 {
-    width: 60%;
-    height: 5vh;
-    background-color: #97f3ace4;
-    border-radius: 20px;
+    width: 150px;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 100px;
+    border-radius: 25px;
+    color: white;
+    border-style: none;
+    background: linear-gradient(292deg, #000 0%, rgba(0, 0, 0, 0.00) 100%);
     border-style: solid;
-    border-color: rgb(21, 71, 64);
-    font-family: "Audiowide", sans-serif;
-    cursor: pointer;
-    position: relative;
-}
-.btt
-{
-    width: 90%;
-    height: 9vh;
-    background-color:transparent;
-    display: flex;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-    justify-items: center; 
-}
-.img_ok
-{
-    position: absolute;
-    top:0px;
-    left: 0px;
-    opacity: 0;
-    width:54px; 
-    margin-left:1px;
-    margin-top:1px;  
+    border-color: rgba(0, 0, 0, 0.59);
+    text-transform: uppercase;
 }
