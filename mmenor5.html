@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/menor5.css">
+    <title>INÍCIO</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="jquery.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="imagem">
+            <img src="img/logosembrilho.png" width="50px" height="49px">
+        </div>
+        <div class="row">
+            <h1>SOS BOMBEIROS</h1>
+        </div>
+        <div class="row2">
+            <h2>NÚCLEO DE OPERAÇÕES AÉREAS E RESGATE</h2>
+        </div>
+        </div>
+    </header>
+
+
+    <H4> GLASGOW</H4>
+    <H5> menor de 5 anos</H5>
+
+        <div class="TOTAL">
+
+            <div class="caixa1" id="abrir1"  onclick="Abra1();">
+                <a>ABERTURA OCULAR</a>
+                <div class="seta"> <img src="img/seta.png" width="20px"></div>
+                <div class="btt">
+                    <button id="comprar1" onclick="Comprar1();" class="confirmaPAG">
+                        <b><span
+                    id="confirm1">OK
+                        </span></b>
+                    </button>
+                </div>
+            </div>
+            <button class="caixa2"  id="abrir2"  onclick="Abra2();">
+                <a>RESPOSTA VERBAL</a>
+                <div class="seta"> <img src="img/seta.png" width="20px"></div>
+            </button>
+            <button class="caixa3"  id="abrir3" onclick="Abra3();">
+                <a>RESPOSTA MOTORA</a>
+                <div class="seta"> <img src="img/seta.png" width="20px"></div>
+            </button>
+        </div>
+
+    <body>
+<script>
+    function Abra3() 
+    {
+        $("#abrir3").animate({height:"380px"},1000);
+    }
+    function Abra2() 
+    {
+        $("#abrir2").animate({height:"335px"},1000);
+    }
+    function Abra1() 
+    {
+        $("#abrir1").animate({height:"180px"},1000);
+    }
+</script>
+</html>
