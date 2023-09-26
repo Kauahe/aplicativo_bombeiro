@@ -55,20 +55,21 @@ H3 {
    color: #000000;
    text-align: center;
    font-family: Genos;
-   font-size: 15px;
+   font-size: 18px;
    font-style: italic;
    font-weight: 200;
    text-align: center;
-   margin-top: 55PX;
-   margin-top: 32px;
+   margin-top: -90x;
+   margin-left: -220px;
 }
 
 H4 {
    color: rgb(0, 0, 0);
    font-family: "Audiowide", sans-serif;
-   font-size: 25px;
+   font-size: 30px;
    text-align: center;
-   margin-top: -15px;
+   margin-top: 25px;
+   margin-left: -180px;
 }
 
 .TOTAL {
@@ -165,9 +166,10 @@ H4 {
 #abrir1
 {
    width: 200px;
-   height: 30vh;
-   background-color: white;
-   margin-top: 10px;
+   height: 30px;
+   background: #B5B5B5;
+box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+   margin-top: 25px;
    margin-left: 20PX;
    border-radius: 20px;
    visibility: hidden;
@@ -175,8 +177,9 @@ H4 {
 #abrir2
 {
    width: 200px;
-   height: 30vh;
-   background-color: white;
+   height: 30px;
+   background: #B5B5B5;
+box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
    margin-top: 10px;
    margin-left: 20PX;
    border-radius: 20px;
@@ -185,8 +188,9 @@ H4 {
 #abrir3 
 {
    width: 200px;
-   height: 30vh;
-   background-color: white;
+   height: 30px;
+   background: #B5B5B5;
+box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
    margin-top: 10px;
    margin-left: 20PX;
    border-radius: 20px;
@@ -231,4 +235,61 @@ P {
 
 a {
    font-size: 16px;
+}
+th 
+{
+    height: 70px;
+}
+td
+{
+   font-family: cursive; 
+   text-align: center;
+   font-size: 15px;
+}
+table, th, td 
+{
+    border: 0.5px solid;
+    border-color: white;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.box
+{
+   height: 25px;
+   width: 25px;
+}
+/* testando esse cu do caralho  */
+.confirmaPAG
+{
+    width: 60%;
+    height: 5vh;
+    background-color: #97f3ace4;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: rgb(21, 71, 64);
+    font-family: "Audiowide", sans-serif;
+    cursor: pointer;
+    position: relative;
+}
+.btt
+{
+    width: 90%;
+    height: 9vh;
+    background-color:transparent;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center; 
+}
+.img_ok
+{
+    position: absolute;
+    top:0px;
+    left: 0px;
+    opacity: 0;
+    width:54px; 
+    margin-left:1px;
+    margin-top:1px;  
 }
