@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 22/09/2023 às 04:10
+-- Tempo de geração: 28/09/2023 às 13:15
 -- Versão do servidor: 10.4.28-MariaDB
 -- Versão do PHP: 8.2.4
 
@@ -32,7 +32,8 @@ CREATE TABLE `cadastro` (
   `email` varchar(45) NOT NULL,
   `cpf` varchar(11) NOT NULL,
   `id` int(11) NOT NULL,
-  `senha` varchar(4) NOT NULL
+  `senha` varchar(4) NOT NULL,
+  `imagem_blob` mediumblob NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --

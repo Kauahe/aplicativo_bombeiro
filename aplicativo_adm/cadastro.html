@@ -25,7 +25,7 @@
     <div class="titulo"><b>CADASTRO</b></div>
     <main>
         <div class="box">
-            <form id="cadastroForm" action="php/cadastro.php" method="post" onsubmit="juntarCodigos()">
+            <form id="cadastroForm" action="php/cadastro.php" method="post" onsubmit="juntarCodigos()" enctype="multipart/form-data">
 
                 <label for="nome"><b>NOME:</b></label>
                 <input type="text" id="nome" name="nome" class="inp" required><br><br>
@@ -46,12 +46,13 @@
                     </div>
                     <input type="hidden" id="senha" name="senha">
                 </div><br><br>
-                <div class="foto"><b>ADICIONAR FOTO</b>
-                </div>
+                <!-- Campo de upload de imagem -->
+    <label for="imagem"><b>ADICIONAR FOTO:</b></label>
+    <input type="file" id="imagem" name="imagem" accept="image/*" class="inp" required><br><br>
                 <input class="botao" type="submit" value="Cadastrar">
 
             </form>
-            <div style="color: rgb(143, 255, 109); font-size: 25px;" id="mensagem" ></div>
+            <div style="color: rgb(143, 255, 109); font-size: 15px;" id="mensagem" ></div>
         </div>
     </main>
 </body>
