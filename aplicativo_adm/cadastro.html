@@ -25,7 +25,7 @@
     <div class="titulo"><b>CADASTRO</b></div>
     <main>
         <div class="box">
-            <form id="cadastroForm" action="php/cadastro.php" method="post" onsubmit="juntarCodigos()" enctype="multipart/form-data">
+            <form id="cadastroForm" action="" method="post" onsubmit="juntarCodigos()" enctype="multipart/form-data">
 
                 <label for="nome"><b>NOME:</b></label>
                 <input type="text" id="nome" name="nome" class="inp" required><br><br>
@@ -48,8 +48,8 @@
                 </div><br><br>
                 <!-- Campo de upload de imagem -->
     <label for="imagem"><b>ADICIONAR FOTO:</b></label>
-    <input type="file" id="imagem" name="imagem" accept="image/*" class="inp" required><br><br>
-                <input class="botao" type="submit" value="Cadastrar">
+    <input type="file" id="imagem" name="foto" accept="image/*" class="inp" required><br><br>
+                <input class="botao" type="submit"  value="Cadastrar2">
 
             </form>
             <div style="color: rgb(143, 255, 109); font-size: 15px;" id="mensagem" ></div>
@@ -77,13 +77,21 @@
             e.preventDefault(); // Evita o comportamento padrão do formulário
 
             // Use AJAX para enviar os dados do formulário
+            var dados = $('#cadastroForm').serialize();
             $.ajax({
-                type: "POST",
+                type: "post",
                 url: "php/cadastro.php", // URL para o arquivo de processamento PHP
-                data: $(this).serialize(), // Serialize os dados do formulário
+                data: dados, // Serialize os dados do formulário
                 success: function(response) {
                     // Exibe a mensagem de sucesso na div "mensagem"
-                    $("#mensagem").html("Cadastro realizado com sucesso!");
+                    if(response == 1){
+                        $("#mensagem").html("Cadastro realizado com sucesso!");
+                    }
+                    else{
+                        $("#mensagem").html("erro");
+                        console.log(response)
+                    }
+                    
                 },
                 error: function(xhr, status, error) {
                     // Exibe uma mensagem de erro se houver algum problema
