@@ -103,10 +103,10 @@ h2 {
    align-items: center;
    align-content: center;
    display: flex;
-  
+
 }
 
-.tipo{
+.tipo {
    width: 100%;
    height: 15%;
    background-color: thistle;
@@ -117,12 +117,11 @@ h2 {
    align-items: center;
    align-content: center;
    display: flex;
-   gap:3px;
+   gap: 3px;
    margin-top: 0%;
 }
 
-.espacar
-{
+.espacar {
    width: 55%;
    height: 90%;
    border-top-right-radius: 16px;
@@ -135,7 +134,7 @@ h2 {
    gap: 8px;
 }
 
-.local{
+.local {
    width: 45%;
    height: 70%;
    font-size: 15px;
@@ -144,7 +143,7 @@ h2 {
 
 }
 
-.evelin{
+.evelin {
    width: 100%;
    height: 85%;
 
@@ -158,28 +157,29 @@ h2 {
    gap: 18px;
 }
 
-.fil{
+.fil {
    width: 20%;
    height: 100%;
-  
+
 }
 
-.fil1{
+.fil1 {
    width: 20%;
    height: 100%;
    margin-left: 5px;
 
-   
+
 }
 
-.boxi{
+.boxi {
    width: 90%;
    height: 15px;
    border-radius: 5px;
    margin-top: 10px;
    border-style: none;
 }
-.fieldset{
+
+.fieldset {
    height: 100%;
    gap: 10px;
    border-style: none;
