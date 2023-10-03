@@ -26,11 +26,25 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $stmt->bindParam(":senha", $senha);
         $stmt->bindParam(":imagem", $imagemData, PDO::PARAM_LOB); // Use PDO::PARAM_LOB para dados BLOB
 
-       
+        if ($stmt->execute()) {
+            // Defina a resposta como sucesso
+            $response["success"] = true;
+            $response["message"] = "Cadastro realizado com sucesso!";
+        } else {
+            // Defina a resposta como erro e exiba informações de erro
+            $response["success"] = false;
+            $response["message"] = "Erro ao cadastrar: " . $stmt->errorInfo()[2];
+            var_dump($stmt->errorInfo()); // Exibir informações de erro
+        }
+    } else {
+        // Se não foi selecionada uma imagem
+        $response["success"] = false;
+        $response["message"] = "Por favor, selecione uma imagem.";
+    }
 
     // Retorne a resposta como JSON
-    header("Content-type: application/json");
-    echo json_encode($response);
-    exit; // Pare a execução do PHP após enviar a resposta JSON
+    //header("Content-type: application/json");
+    echo(1);
+    
 }
 ?>
