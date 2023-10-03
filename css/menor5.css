@@ -7,7 +7,9 @@ body {
    align-items: center;
    align-content: center;
    font-family: OCR A Std, monospace;
-
+   flex-direction: column;
+   height: 100vh;
+   width: 100%;
 }
 
 header,
@@ -71,14 +73,15 @@ H4 {
    text-align: center;
    margin-top: 35px;
 }
-h6
-{
-   margin-top: 155px;
+
+.titulo {
    color: #1F3173;
    font-family: "Audiowide", sans-serif;
    font-size: 20px;
    text-align: center;
+ 
 }
+
 .TOTAL {
    width: 100%;
    height: 50vh;
@@ -89,8 +92,8 @@ h6
    font-weight: 800;
 
 }
-.caixa1
- {
+
+.caixa1 {
    width: 357px;
    height: 75px;
    flex-shrink: 0;
@@ -99,11 +102,16 @@ h6
    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
    margin-top: 15px;
    flex-direction: column;
-   justify-content:space-between;
-  display: flex; 
- }
-.caixa2
- {
+   justify-content: space-between;
+   display: flex;
+}
+
+.primeira {
+   margin: 0;
+   color: black;
+}
+
+.caixa2 {
    width: 357px;
    height: 75px;
    flex-shrink: 0;
@@ -112,11 +120,11 @@ h6
    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
    margin-top: 15px;
    flex-direction: column;
-   justify-content:space-between;
-  display: flex; 
- }
-.caixa3
- {
+   justify-content: space-between;
+   display: flex;
+}
+
+.caixa3 {
    width: 357px;
    height: 75px;
    flex-shrink: 0;
@@ -125,16 +133,17 @@ h6
    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
    margin-top: 15px;
    flex-direction: column;
-   justify-content:space-between;
-  display: flex; 
- }
- .seta
- {
+   justify-content: space-between;
+   display: flex;
+}
+
+.seta {
    width: 30px;
    height: 30px;
    margin-top: 15px;
    padding: 5px;
- } 
+}
+
 .T1 {
    width: 150px;
    height: 80vh;
@@ -145,9 +154,20 @@ h6
    flex-direction: column;
    margin-left: 10px;
 }
+
 .T2 {
-   width: 100%;
-   height: 80vh;
+   width: 90%;
+   background-color: #bab9b9b1;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   align-content: center;
+   justify-content: space-around;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   border-radius: 10px;
+   margin-left: 18px;
+
 }
 
 .abrir1 {
@@ -162,7 +182,7 @@ h6
 
 .abrir2 {
    width: 230px;
-   height:30px;
+   height: 30px;
    background: #B5B5B5;
    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
    margin-top: 10px;
@@ -189,13 +209,13 @@ h6
    background: linear-gradient(180deg, rgba(16, 41, 134, 0.00) 4.87%, rgba(42, 78, 212, 0.03) 4.88%);
    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
    margin-left: 50px;
-   margin-top: 385px;
    justify-content: space-around;
    justify-items: center;
    align-items: center;
    align-content: center;
    display: flex;
    flex-direction: column;
+   margin-top: 25px;
 
 }
 
@@ -207,6 +227,15 @@ h6
    border: 1px solid var(--Color-2, #A6A6A6);
    background: #FFF;
    margin-top: -15px;
+   text-align: center;
+   justify-content: center;
+   justify-self: center;
+   align-items: center;
+   align-content: center;
+   display: flex;
+   font-weight: 600;
+   font-size: 19px;
+
 }
 
 P {
@@ -217,37 +246,36 @@ P {
    text-align: center;
 }
 
-a
-{
+a {
    color: white;
    font-size: 20px;
-    font-family: "Audiowide", sans-serif;
-    margin-top: 20px;
-    margin-left: 15px;
-}
-
-th {
-   height: 80px;
+   font-family: "Audiowide", sans-serif;
+   margin-top: 20px;
+   margin-left: 15px;
 }
 
 td {
-   font-family: cursive;
+   font-family: Candara;
+   font-size: 17px;
    text-align: center;
-   font-size: 15px;
 }
 
-table,th,
-td {
-   border: 0.5px solid;
-   border-color: white;
-   font-size: 16px;
-   margin-top: 10px;
-   margin-left: 20px;
+.lulu
+{
+   color: rgb(0, 0, 0);
+   font-size: 17px;
+   text-align: center;
+}
+.lulu2
+{
+   color: #102986;
+   font-weight: 800;
+   font-family: Candara;
+   font-size: 17px;
 }
 
 .box {
    height: 15px;
-   width: 15px;
 }
 
 .confirmaPAG {
@@ -283,17 +311,47 @@ td {
    margin-left: 1px;
    margin-top: 1px;
 }
-.enviar
-{
-    width: 150px;
-    height: 40px;
-    margin-top: 20px;
-    margin-left: 100px;
-    border-radius: 25px;
-    color: white;
-    border-style: none;
-    background: linear-gradient(292deg, #000 0%, rgba(0, 0, 0, 0.00) 100%);
-    border-style: solid;
-    border-color: rgba(0, 0, 0, 0.59);
-    text-transform: uppercase;
+
+.enviar {
+   width: 150px;
+   height: 40px;
+   
+   margin-left: 100px;
+   border-radius: 25px;
+   color: white;
+   border-style: none;
+   background: linear-gradient(292deg, #000 0%, rgba(0, 0, 0, 0.00) 100%);
+   border-style: solid;
+   border-color: rgba(0, 0, 0, 0.59);
+   text-transform: uppercase;
+}
+
+.branco1 {
+   width: 100%;
+
+   display: flex;
+   align-content: center;
+   align-items: center;
+   justify-content: center;
+   justify-items: center;
+}
+
+.branco2 {
+
+   width: 100%;
+   height: 200px;
+   display: flex;
+   align-content: center;
+   align-items: center;
+   justify-content: center;
+   justify-items: center;
+}
+
+.branco3 {
+   width: 100%;
+   display: flex;
+   align-content: center;
+   align-items: center;
+   justify-content: center;
+   justify-items: center;
 }

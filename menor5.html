@@ -27,130 +27,96 @@
    
     <H4> GLASGOW</H4>
     <H5> menor de 5 anos</H5>
-    <div class="TOTAL">
-        <div class="T2">
-            <div id="abrir1" class="branco1"> 
-                <h6> ABERTURA OCULAR</h6>
-                <table class="primeira">
-                    <tr>
-                        <td>Espontânea</td>
-                        <td> <input class="box" type="checkbox"> 4
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Comando Verbal</td>
-                        <td> <input class="box" type="checkbox"> 3
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Estímulo doloroso</td>
-                        <td> <input class="box" type="checkbox"> 2
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Nenhuma</td>
-                        <td> <input class="box" type="checkbox"> 1
-                        </td>
-                    </tr>
+        <div class="T2"> 
+            <div class="titulo"><B>ABERTURA OCULAR</B></div>
+            <table width="80%" border="1" cellpadding="0" cellspacing="0" class="primeira">
+                <tr>
+                    <td width="80%">Espontânea</td>
+                    <td class="lulu2"> <input class="box" type="radio" name="primeiro"> 4 </td>
+                </tr>
+                <tr>
+                    <td>Comando Verbal</td>
+                    <td class="lulu2"> <input class="box" type="radio" name="primeiro"> 3 </td>
+                </tr>
+                <tr>
+                    <td>Estímulo doloroso</td>
+                    <td class="lulu2"> <input class="box" type="radio" name="primeiro"> 2 </td>
+                </tr>
+                <tr>
+                    <td>Nenhuma</td>
+                    <td class="lulu2"> <input class="box" type="radio" name="primeiro"> 1 </td>
                     
-                </table>
-                <div class="btt">
-                    <button id="comprar1" onclick="Comprar1();" class="confirmaPAG">
-                        <b><span
-                    id="confirm1">CONFIRMAR
-                </span></b>
-
-                  <img class="img_ok" id="img_ok" src="img/correto.png">
-                    </button>
-                </div>
-            </div>
-            <div id="abrir2" class="branco2">
-                <table>
+                </tr>
+                
+            </table><br>
+            <div class="titulo"><B>RESPOSTA VERBAL</B></div>
+                <table border="1" cellpadding="0" cellspacing="0" width="90%">
                     <tr>
-                        <td>Palavras/frases apropriadas</td>
-                        <td> <input class="box" type="checkbox"> 5
+                        <td width="80%">Palavras/frases apropriadas</td>
+                        <td class="lulu2"> <input class="box" type="radio" name="segundo"> 5 </td>
                         </td>
                     </tr>
                     <tr>
                         <td>Palavras inapropriadas</td>
-                        <td> <input class="box" type="checkbox"> 4
+                        <td class="lulu2"> <input class="box" type="radio" name="segundo"> 4 </td>
                         </td>
                     </tr>
                     <tr>
                         <td>Choro/gritos persistentes</td>
-                        <td> <input class="box" type="checkbox"> 3
+                        <td class="lulu2"> <input class="box" type="radio" name="segundo"> 3 </td>
                         </td>
                     </tr>
                     <tr>
                         <td>Sons incompreensíveis</td>
-                        <td> <input class="box" type="checkbox"> 2
+                        <td class="lulu2"> <input class="box" type="radio" name="segundo"> 2 </td>
                         </td>
                     </tr>
                     <tr>
                         <td>Nenhuma resposta verbal</td>
-                        <td> <input class="box" type="checkbox"> 1
+                        <td class="lulu2"> <input class="box" type="radio" name="segundo"> 1 </td>
+                        </td>
+                    </tr>
+                </table><br>
+          
+                <div class="titulo"><B>RESPOSTA MOTORA</B></div>
+                <table border="1" cellpadding="0" cellspacing="0" width="100%">
+                    <tr>
+                        <td width="80%" class="lulu">Obedece prontamente</td>
+                        <td class="lulu2"> <input class="box" type="radio" name="terceiro"> 6 </td>
+                    </tr>
+                    <tr>
+                        <td class="lulu">Localiza dor ou estímulo tatil</td>
+                        <td class="lulu2"> <input class="box" type="radio" name="terceiro"> 5 </td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="lulu">Retirada do segmento estimulado</td>
+                        <td class="lulu2"> <input class="box" type="radio" name="terceiro"> 4 </td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="lulu">Flexão anormal (decortificação)</td>
+                        <td class="lulu2"> <input class="box" type="radio" name="terceiro"> 3 </td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="lulu">Extensão anormal (decerebração)</td>
+                        <td class="lulu2"> <input class="box" type="radio" name="terceiro"> 2 </td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="lulu">Ausência (paralisisa flácida,hipotônia)</td>
+                        <td class="lulu2"> <input class="box" type="radio" name="terceiro"> 1 </td>
                         </td>
                     </tr>
                 </table>
-                <div class="btt">
-                    <button id="comprar2" onclick="Comprar2();" class="confirmaPAG">
-                        <b><span
-                    id="confirm2">CONFIRMAR
-                </span></b>
-
-                  <img class="img_ok" id="img_ok" src="img/correto.png">
-                    </button>
-                </div>
-            </div>
-            <div id="abrir3" class="branco3">
-                <table>
-                    <tr>
-                        <td>Obedece prontamnete</td>
-                        <td> <input class="box" type="checkbox"> 6
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Localiza dor ou estímulo tatil</td>
-                        <td> <input class="box" type="checkbox"> 5
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Retirada do segmento estimulado</td>
-                        <td> <input class="box" type="checkbox"> 4
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Flexão anormal (decortificação)</td>
-                        <td> <input class="box" type="checkbox"> 3
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Extensão anormal (decerebração)</td>
-                        <td> <input class="box" type="checkbox"> 2
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Ausência (paralisisa flácida,hipotônia)</td>
-                        <td> <input class="box" type="checkbox"> 1
-                        </td>
-                    </tr>
-                </table>
-                <div class="btt">
-                    <button id="comprar2" onclick="Comprar2();" class="confirmaPAG">
-                        <b><span
-                    id="confirm2">CONFIRMAR
-                </span></b>
-
-                  <img class="img_ok" id="img_ok" src="img/correto.png">
-                    </button>
-                </div>
-            </div>
+                <button class="bution"> CALCULAR</button>
         </div>
        
-    </div>
+   
     <div class="borda">
         <P><b>TOTAL (GCS) (3-15)</b></P>
-       <div class="branco"></div>
+       <span class="branco"> soma </span>
     </div>
     <a href="pag_inicial.html"><div class="enviar" value="Enviar"></a>
 </body>
