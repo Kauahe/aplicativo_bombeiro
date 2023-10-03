@@ -25,6 +25,7 @@
     <div class="trauma"><b>ESCOLHA O LOCAL DO TRAUMA</b></div>
     <div class="img">
         <img src="img/adulto.png" width="100%" height="100%">
+        <div class="p1" id="p1" onclick="Gravar('p1');"></div>
     </div>
     <div class="info">
         <div class="dados">
@@ -82,5 +83,21 @@
             </div>
         </div>
 </body>
-
+<script>
+    function Gravar(id)
+    {
+        c = cpf.value
+        if(document.getElementById(id).style.backgroundColor == "yellow")
+        {
+            document.getElementById(id).style.backgroundColor = ""
+            // aqui você deverá APAGAR essa opção (coluna) do banco de dados:
+            window.open("grava.php?p="+id+"&checado=0&cpf="+c,"_blank")
+        }else{
+            document.getElementById(id).style.backgroundColor = "yellow"
+            // aqui você deverá ALTERAR essa opção (coluna) do banco de dados:
+            window.open("grava.php?p="+id+"&checado=1&cpf="+c,"_blank")
+        }
+       
+    }
+</script>
 </html>
