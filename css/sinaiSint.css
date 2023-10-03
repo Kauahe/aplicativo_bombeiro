@@ -108,18 +108,27 @@ h2 {
 .bcp {
    margin-top: 6px;
    margin-left: 4px;
+   margin-top: 10px;
+}
+
+.bcp1 {
+   margin-top: 6px;
+   margin-left: 4px;
+   margin-top: 13px;
 }
 
 .bpm {
    width: 40px;
    height: 25px;
    border-radius: 10px;
+   margin-top: 5px;
 }
 
 .input1 {
    width: 35px;
    height: 30px;
    border-radius: 10px;
+   margin-top: 5px;
 }
 
 .input2 {
@@ -127,6 +136,7 @@ h2 {
    height: 30px;
    border-radius: 10px;
    margin-left: 10px;
+   margin-top: 5px;
 }
 
 .c2 {
@@ -173,4 +183,50 @@ h2 {
    align-content: center;
    display: flex;
    margin-left: 10px;
+   margin-top: 14px;
+}
+
+.fild4 {
+   height: 50px;
+   flex-direction: row;
+   display: flex;
+   border-style: none;
+}
+
+.seg{
+   margin-top: 6px;
+   margin-left: 4px;
+   height: 25px;
+   width: 17%;
+   font-size: 20px;
+   align-items: center;
+   align-content: center;
+   display: flex;
+
+}
+
+.check{
+   height: 25px;
+   width: 17%;
+   margin-top: 7px;
+   margin-left:-12px;
+}
+
+.check2{
+   height: 25px;
+   width: 17%;
+   margin-top: 7px;
+   margin-left:-12px;
+}
+
+.seg2{
+   margin-top: 6px;
+   margin-left: 4px;
+   height: 25px;
+   width: 20%;
+   font-size: 20px;
+   align-items: center;
+   align-content: center;
+   display: flex;
+
 }

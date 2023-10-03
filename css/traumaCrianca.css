@@ -167,6 +167,8 @@ h2 {
    width: 20%;
    height: 100%;
    margin-left: 5px;
+
+
 }
 
 .boxi {
@@ -181,18 +183,4 @@ h2 {
    height: 100%;
    gap: 10px;
    border-style: none;
-}
-
-
-
-
-.p1{
-   position: absolute;
-   top:220px;
-   left:266px;
-   width: 10px;
-   height: 10px;
-   border-radius: 50%;
-   border-style: solid;
-   border-color: black;
 }
