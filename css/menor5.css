@@ -79,7 +79,7 @@ H4 {
    font-family: "Audiowide", sans-serif;
    font-size: 20px;
    text-align: center;
- 
+
 }
 
 .TOTAL {
@@ -157,7 +157,6 @@ H4 {
 
 .T2 {
    width: 90%;
-   background-color: #bab9b9b1;
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -167,7 +166,9 @@ H4 {
    padding-bottom: 20px;
    border-radius: 10px;
    margin-left: 18px;
-
+   flex-shrink: 0;
+   background-color: #e1dfdfe8;
+   box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .abrir1 {
@@ -235,7 +236,6 @@ H4 {
    display: flex;
    font-weight: 600;
    font-size: 19px;
-
 }
 
 P {
@@ -260,14 +260,13 @@ td {
    text-align: center;
 }
 
-.lulu
-{
+.lulu {
    color: rgb(0, 0, 0);
    font-size: 17px;
    text-align: center;
 }
-.lulu2
-{
+
+.lulu2 {
    color: #102986;
    font-weight: 800;
    font-family: Candara;
@@ -277,14 +276,13 @@ td {
 .box {
    height: 15px;
 }
-
-.confirmaPAG {
-   width: 50PX;
+.confirma {
+   width: 150PX;
    height: 4vh;
-   background-color: #97f3ace4;
+   background:white;
    border-radius: 20px;
    border-style: solid;
-   border-color: rgb(21, 71, 64);
+   border-color:#1F3173;
    font-family: "Audiowide", sans-serif;
    cursor: pointer;
    position: relative;
@@ -292,6 +290,7 @@ td {
 }
 
 .btt {
+   margin-top: 10px;
    width: 90%;
    height: 9vh;
    background-color: transparent;
@@ -311,24 +310,30 @@ td {
    margin-left: 1px;
    margin-top: 1px;
 }
-
-.enviar {
-   width: 150px;
-   height: 40px;
-   
-   margin-left: 100px;
-   border-radius: 25px;
-   color: white;
-   border-style: none;
-   background: linear-gradient(292deg, #000 0%, rgba(0, 0, 0, 0.00) 100%);
-   border-style: solid;
-   border-color: rgba(0, 0, 0, 0.59);
-   text-transform: uppercase;
+.mm
+{
+   color:#1F3173;
 }
-
+.enviar {
+   background-color: #1F3173;
+   color: #d9d9d9;
+   font-size: 15PX;
+   font-family: "Audiowide", sans-serif;
+   margin-top: 10px;
+   margin-left: 65px;
+   width: 50%;
+   height: 5vh;
+   border-radius: 20px;
+   font-size: 15px;
+   text-align: center;
+   display: flex;
+   align-content: center;
+   align-items: center;
+   justify-content: center;
+   justify-items: center;
+}
 .branco1 {
    width: 100%;
-
    display: flex;
    align-content: center;
    align-items: center;
@@ -336,8 +341,8 @@ td {
    justify-items: center;
 }
 
-.branco2 {
-
+.branco2
+ {
    width: 100%;
    height: 200px;
    display: flex;
@@ -346,7 +351,6 @@ td {
    justify-content: center;
    justify-items: center;
 }
-
 .branco3 {
    width: 100%;
    display: flex;
@@ -354,4 +358,15 @@ td {
    align-items: center;
    justify-content: center;
    justify-items: center;
+}
+.bution
+{
+   background-color: #1F3173;
+   color: #d9d9d9;
+   font-family: "Audiowide", sans-serif;
+   margin-top: 15px;
+   width: 40%;
+   height: 6vh;
+   border-radius: 30px;
+   font-size: 15px;
 }

@@ -67,28 +67,42 @@ h2 {
    margin-left: 20px;
    flex-shrink: 0;
    border-radius: 10px;
-   background: linear-gradient(180deg, #102986 33.78%, rgba(42, 78, 212, 0.87) 101.93%);
-   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+   background: linear-gradient(180deg, #102986 29.78%, rgba(42, 78, 212, 0.87) 100%);
+   box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
    flex-direction: column;
+   justify-content: center;
+   justify-items: center;
+   align-items: center;
+   align-content: center;
    display: flex;
+   font-family: Candara;
+   font-size: 20px;
+   text-align: center;
 }
 
 .c1 {
-   width: 100%;
-   height: 70px;
-   background-color: rgba(255, 250, 244, 0.578);
-   border-top-right-radius: 10px;
-   border-top-left-radius: 10px;
+   width: 70%;
+   height: 75px;
+   background-color:rgba(255, 255, 255, 0.884);
+   box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(5, 10, 78, 0.25), 0px 1px 0px 0px rgba(0, 0, 0, 0.25);
+   border-radius: 10px;
    flex-direction: column;
    display: flex;
 }
 
-.fild1 {
+.fild1 
+{
    height: 50px;
    flex-direction: row;
    display: flex;
+   justify-content: center;
+   justify-items: center;
+   align-items: center;
+   align-content: center;
    border-style: none;
-
+   text-align: center;
+   margin-left: 40px
+;
 }
 
 .fild2 {
@@ -115,6 +129,7 @@ h2 {
    margin-top: 6px;
    margin-left: 4px;
    margin-top: 13px;
+   font-size: 17px;
 }
 
 .bpm {

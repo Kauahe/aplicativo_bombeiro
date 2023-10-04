@@ -104,11 +104,12 @@ header,footer{
 
  h3
  {
-   color: white;
-   font-size: 14px;
+    color: white;
+    font-size: 19px;
     font-family: "Audiowide", sans-serif;
     margin-top: 20px;
     margin-left: 15px;
+    font-weight: 200;
  }
 
  .seta
@@ -134,11 +135,12 @@ header,footer{
  {
   width: 84%;
   height: 60px;
-  margin-top: 60px;
-  position: absolute;
   display: none;
   opacity:0;
   color: white;
+  background-color: red;
+  display: flex;
+  flex-direction: column;
  }
  
  .dados2
@@ -176,6 +178,5 @@ header,footer{
 
  .fild1
  {
-  position: absolute;
-  margin-left:-50px;
+  
  }

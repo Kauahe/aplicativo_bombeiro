@@ -7,7 +7,9 @@ body {
    align-items: center;
    align-content: center;
    font-family: OCR A Std, monospace;
-
+   flex-direction: column;
+   height: 100vh;
+   width: 100%;
 }
 
 header,
@@ -51,6 +53,7 @@ h2 {
    font-weight: 200;
 }
 
+
 H5 {
    color: #000000;
    text-align: center;
@@ -71,13 +74,74 @@ H4 {
    margin-top: 35px;
 }
 
+.titulo {
+   color: #1F3173;
+   font-family: "Audiowide", sans-serif;
+   font-size: 20px;
+   text-align: center;
+
+}
+
 .TOTAL {
    width: 100%;
-   height: 80vh;
+   height: 50vh;
    display: flex;
-   flex-direction: row;
+   flex-direction: column;
    margin-top: -25px;
    justify-content: space-around;
+   font-weight: 800;
+
+}
+
+.caixa1 {
+   width: 357px;
+   height: 75px;
+   flex-shrink: 0;
+   border-radius: 10px;
+   background: linear-gradient(180deg, #102986 29.78%, rgba(42, 78, 212, 0.87) 100%);
+   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+   margin-top: 15px;
+   flex-direction: column;
+   justify-content: space-between;
+   display: flex;
+}
+
+.primeira {
+   margin: 0;
+   color: black;
+}
+
+.caixa2 {
+   width: 357px;
+   height: 75px;
+   flex-shrink: 0;
+   border-radius: 10px;
+   background: linear-gradient(180deg, #102986 29.78%, rgba(42, 78, 212, 0.87) 100%);
+   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+   margin-top: 15px;
+   flex-direction: column;
+   justify-content: space-between;
+   display: flex;
+}
+
+.caixa3 {
+   width: 357px;
+   height: 75px;
+   flex-shrink: 0;
+   border-radius: 10px;
+   background: linear-gradient(180deg, #102986 29.78%, rgba(42, 78, 212, 0.87) 100%);
+   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+   margin-top: 15px;
+   flex-direction: column;
+   justify-content: space-between;
+   display: flex;
+}
+
+.seta {
+   width: 30px;
+   height: 30px;
+   margin-top: 15px;
+   padding: 5px;
 }
 
 .T1 {
@@ -91,78 +155,23 @@ H4 {
    margin-left: 10px;
 }
 
-.azul1 {
-   width: 90px;
-   height: 80px;
-   flex-shrink: 0;
-   border-radius: 10px;
-   background: #1F3173;
-   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-   justify-content: space-around;
-   align-content: center;
-   justify-items: center;
-   align-items: center;
-   display: flex;
-   flex-direction: row;
-   color: white;
-   font-size: 12px;
-   font-family: "Audiowide", sans-serif;
-   font-weight: 800;
-   line-height: normal;
-   text-transform: uppercase;
-   margin-top: 70px;
-}
-
-.azul2 {
-   width: 90px;
-   height: 80px;
-   flex-shrink: 0;
-   border-radius: 10px;
-   background: #1F3173;
-   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-   justify-content: space-around;
-   align-content: center;
-   justify-items: center;
-   align-items: center;
-   display: flex;
-   flex-direction: row;
-   color: white;
-   font-size: 17px;
-   font-family: "Audiowide", sans-serif;
-   font-weight: 800;
-   line-height: normal;
-   text-transform: uppercase;
-   margin-top: 175px;
-}
-
-.azul3 {
-   width: 90px;
-   height: 80px;
-   flex-shrink: 0;
-   border-radius: 10px;
-   background: #1F3173;
-   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-   justify-content: space-around;
-   align-content: center;
-   justify-items: center;
-   align-items: center;
-   display: flex;
-   flex-direction: row;
-   color: white;
-   font-size: 17px;
-   font-family: "Audiowide", sans-serif;
-   font-weight: 800;
-   line-height: normal;
-   text-transform: uppercase;
-   margin-top: 280px;
-}
-
 .T2 {
-   width: 100%;
-   height: 80vh;
+   width: 90%;
+   background-color: #e1dfdfe8;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   align-content: center;
+   justify-content: space-around;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   border-radius: 10px;
+   margin-left: 18px;
+   flex-shrink: 0;
+   box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-#abrir1 {
+.abrir1 {
    width: 220px;
    height: 30px;
    background: #B5B5B5;
@@ -170,21 +179,19 @@ H4 {
    margin-top: 25px;
    margin-left: 10PX;
    border-radius: 20px;
-   visibility: hidden;
 }
 
-#abrir2 {
+.abrir2 {
    width: 230px;
-   height:30px;
+   height: 30px;
    background: #B5B5B5;
    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
    margin-top: 10px;
    margin-left: 10PX;
    border-radius: 20px;
-   visibility: hidden;
 }
 
-#abrir3 {
+.abrir3 {
    width: 240px;
    height: 30px;
    background: #B5B5B5;
@@ -192,7 +199,6 @@ H4 {
    margin-top: 10px;
    margin-left: 10PX;
    border-radius: 20px;
-   visibility: hidden;
 }
 
 .borda {
@@ -204,13 +210,13 @@ H4 {
    background: linear-gradient(180deg, rgba(16, 41, 134, 0.00) 4.87%, rgba(42, 78, 212, 0.03) 4.88%);
    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
    margin-left: 50px;
-   margin-top: 385px;
    justify-content: space-around;
    justify-items: center;
    align-items: center;
    align-content: center;
    display: flex;
    flex-direction: column;
+   margin-top: 25px;
 
 }
 
@@ -221,7 +227,15 @@ H4 {
    border-radius: 12px;
    border: 1px solid var(--Color-2, #A6A6A6);
    background: #FFF;
-   margin-top: -19px;
+   margin-top: -15px;
+   text-align: center;
+   justify-content: center;
+   justify-self: center;
+   align-items: center;
+   align-content: center;
+   display: flex;
+   font-weight: 600;
+   font-size: 19px;
 }
 
 P {
@@ -233,40 +247,42 @@ P {
 }
 
 a {
-   font-size: 12px;
-}
-
-th {
-   height: 70px;
+   color: white;
+   font-size: 20px;
+   font-family: "Audiowide", sans-serif;
+   margin-top: 20px;
+   margin-left: 15px;
 }
 
 td {
-   font-family: cursive;
+   font-family: Candara;
+   font-size: 17px;
    text-align: center;
-   font-size: 15px;
 }
 
-table,th,
-td {
-   border: 0.5px solid;
-   border-color: white;
-   font-size: 16px;
-   margin-top: 10px;
-   margin-left: 20px;
+.lulu {
+   color: rgb(0, 0, 0);
+   font-size: 17px;
+   text-align: center;
+}
+
+.lulu2 {
+   color: #102986;
+   font-weight: 800;
+   font-family: Candara;
+   font-size: 17px;
 }
 
 .box {
    height: 15px;
-   width: 15px;
 }
-
-.confirmaPAG {
-   width: 60%;
-   height: 5vh;
-   background-color: #97f3ace4;
+.confirma {
+   width: 150PX;
+   height: 4vh;
+   background:white;
    border-radius: 20px;
    border-style: solid;
-   border-color: rgb(21, 71, 64);
+   border-color:#1F3173;
    font-family: "Audiowide", sans-serif;
    cursor: pointer;
    position: relative;
@@ -274,6 +290,7 @@ td {
 }
 
 .btt {
+   margin-top: 10px;
    width: 90%;
    height: 9vh;
    background-color: transparent;
@@ -293,17 +310,63 @@ td {
    margin-left: 1px;
    margin-top: 1px;
 }
-.enviar
+.mm
 {
-    width: 150px;
-    height: 40px;
-    margin-top: 20px;
-    margin-left: 100px;
-    border-radius: 25px;
-    color: white;
-    border-style: none;
-    background: linear-gradient(292deg, #000 0%, rgba(0, 0, 0, 0.00) 100%);
-    border-style: solid;
-    border-color: rgba(0, 0, 0, 0.59);
-    text-transform: uppercase;
+   color:#1F3173;
+}
+.enviar {
+   background-color: #1F3173;
+   color: #d9d9d9;
+   font-size: 15PX;
+   font-family: "Audiowide", sans-serif;
+   margin-top: 10px;
+   margin-left: 65px;
+   width: 50%;
+   height: 5vh;
+   border-radius: 20px;
+   font-size: 15px;
+   text-align: center;
+   display: flex;
+   align-content: center;
+   align-items: center;
+   justify-content: center;
+   justify-items: center;
+}
+.branco1 {
+   width: 100%;
+   display: flex;
+   align-content: center;
+   align-items: center;
+   justify-content: center;
+   justify-items: center;
+}
+
+.branco2
+ {
+   width: 100%;
+   height: 200px;
+   display: flex;
+   align-content: center;
+   align-items: center;
+   justify-content: center;
+   justify-items: center;
+}
+.branco3 {
+   width: 100%;
+   display: flex;
+   align-content: center;
+   align-items: center;
+   justify-content: center;
+   justify-items: center;
+}
+.bution
+{
+   background-color: #1F3173;
+   color: #d9d9d9;
+   font-family: "Audiowide", sans-serif;
+   margin-top: 15px;
+   width: 40%;
+   height: 6vh;
+   border-radius: 30px;
+   font-size: 15px;
 }

@@ -26,191 +26,193 @@
 
    
     <H4> GLASGOW</H4>
-    <H5> maior de 5 anos</H5>
-    <div class="TOTAL">
-        <div class="T1">
-            <button class="azul1"  onclick="Abra1();">
-                <a>ABERTURA OCULAR</a>
-            </button>
-            <button class="azul2"  onclick="Abra2();">
-                <a>RESPOSTA VERBAL</a>
-            </button>
-            <button class="azul3"  onclick="Abra3();">
-                <a>RESPOSTA MOTORA</a>
-            </button>
-        </div>
-        <div class="T2">
-            <div id="abrir1" class="branco1"> 
-                <table>
-                    <tr>
-                        <td>Espontânea</td>
-                        <td> <input class="box" type="checkbox"> 4
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Comando Verbal</td>
-                        <td> <input class="box" type="checkbox"> 3
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Estímulo doloroso</td>
-                        <td> <input class="box" type="checkbox"> 2
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Nenhuma</td>
-                        <td> <input class="box" type="checkbox"> 1
-                        </td>
-                    </tr>
+    <H5> <B>maior</B> de 5 anos</H5>
+        <div class="T2"> 
+            <div class="titulo"><B>ABERTURA OCULAR</B></div>
+            <table width="80%" border="1" cellpadding="0" cellspacing="0" class="primeira">
+                <tr>
+                    <td width="80%">Espontânea</td>
+                    <td class="lulu2"> <input class="box" type="radio" name="primeiro" id="primeiro4" onclick="somar()"> 4 </td>
+                </tr>
+                <tr>
+                    <td>Comando Verbal</td>
+                    <td class="lulu2"> <input class="box" type="radio" name="primeiro" id="primeiro3" onclick="somar()"> 3 </td>
+                </tr>
+                <tr>
+                    <td>Estímulo doloroso</td>
+                    <td class="lulu2"> <input class="box" type="radio" name="primeiro" id="primeiro2" onclick="somar()"> 2 </td>
+                </tr>
+                <tr>
+                    <td>Nenhuma</td>
+                    <td class="lulu2"> <input class="box" type="radio" name="primeiro" id="primeiro1" onclick="somar()"> 1 </td>
                     
-                </table>
-                <div class="btt">
-                    <button id="comprar1" onclick="Comprar1();" class="confirmaPAG">
-                        <b><span
-                    id="confirm1">CONFIRMAR
-                </span></b>
-
-                  <img class="img_ok" id="img_ok" src="img/correto.png">
-                    </button>
-                </div>
-            </div>
-            <div id="abrir2" class="branco2">
-                <table>
+                </tr>
+                
+            </table><br>
+            <div class="titulo"><B>RESPOSTA VERBAL</B></div>
+                <table border="1" cellpadding="0" cellspacing="0" width="90%">
                     <tr>
-                        <td>Orientado</td>
-                        <td> <input class="box" type="checkbox"> 5
+                        <td width="80%">Orientado</td>
+                        <td class="lulu2"> <input class="box" type="radio" name="segundo" id="segundo5" onclick="somar()"> 5 </td>
                         </td>
                     </tr>
                     <tr>
                         <td>Confuso</td>
-                        <td> <input class="box" type="checkbox"> 4
+                        <td class="lulu2"> <input class="box" type="radio" name="segundo" id="segundo4" onclick="somar()"> 4 </td>
                         </td>
                     </tr>
                     <tr>
-                        <td>Palavras inapropriadas</td>
-                        <td> <input class="box" type="checkbox"> 3
+                        <td>Palavras Inapropriadas</td>
+                        <td class="lulu2"> <input class="box" type="radio" name="segundo" id="segundo3" onclick="somar()"> 3 </td>
                         </td>
                     </tr>
                     <tr>
                         <td>Palavras incompreensíveis</td>
-                        <td> <input class="box" type="checkbox"> 2
+                        <td class="lulu2"> <input class="box" type="radio" name="segundo" id="segundo2" onclick="somar()"> 2 </td>
                         </td>
                     </tr>
                     <tr>
-                        <td>Nenhuma resposta verbal</td>
-                        <td> <input class="box" type="checkbox"> 1
+                        <td>Nenhuma </td>
+                        <td class="lulu2"> <input class="box" type="radio" name="segundo" id="segundo1" onclick="somar()"> 1 </td>
+                        </td>
+                    </tr>
+                </table><br>
+          
+                <div class="titulo"><B>RESPOSTA MOTORA</B></div>
+                <table border="1" cellpadding="0" cellspacing="0" width="90%">
+                    <tr>
+                        <td width="80%" class="lulu">Obedece comandos</td>
+                        <td class="lulu2"> <input class="box" type="radio" name="terceiro" id="terceiro6" onclick="somar()"> 6 </td>
+                    </tr>
+                    <tr>
+                        <td class="lulu">Localiza dor</td>
+                        <td class="lulu2"> <input class="box" type="radio" name="terceiro" id="terceiro5" onclick="somar()"> 5 </td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="lulu">Movimento de retirada</td>
+                        <td class="lulu2"> <input class="box" type="radio" name="terceiro" id="terceiro4" onclick="somar()"> 4 </td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="lulu">Flexão anormal</td>
+                        <td class="lulu2"> <input class="box" type="radio" name="terceiro" id="terceiro3" onclick="somar()"> 3 </td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="lulu">Extensão anormal</td>
+                        <td class="lulu2"> <input class="box" type="radio" name="terceiro" id="terceiro2" onclick="somar()"> 2 </td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="lulu">Nenhuma</td>
+                        <td class="lulu2"> <input class="box" type="radio" name="terceiro" id="terceiro1" onclick="somar()"> 1 </td>
                         </td>
                     </tr>
                 </table>
-                <div class="btt">
-                    <button id="comprar2" onclick="Comprar2();" class="confirmaPAG">
-                        <b><span
-                    id="confirm2">CONFIRMAR
-                </span></b>
-
-                  <img class="img_ok" id="img_ok" src="img/correto.png">
-                    </button>
-                </div>
-            </div>
-            <div id="abrir3" class="branco3">
-                <table>
-                    <tr>
-                        <td>Obedece comandos</td>
-                        <td> <input class="box" type="checkbox"> 6
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Localiza dor</td>
-                        <td> <input class="box" type="checkbox"> 5
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Movimento de retirada</td>
-                        <td> <input class="box" type="checkbox"> 4
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Flexão anormal</td>
-                        <td> <input class="box" type="checkbox"> 3
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Extensão anormal</td>
-                        <td> <input class="box" type="checkbox"> 2
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Nenhuma</td>
-                        <td> <input class="box" type="checkbox"> 1
-                        </td>
-                    </tr>
-                </table>
-                <div class="btt">
-                    <button id="comprar2" onclick="Comprar2();" class="confirmaPAG">
-                        <b><span
-                    id="confirm2">CONFIRMAR
-                </span></b>
-
-                  <img class="img_ok" id="img_ok" src="img/correto.png">
-                    </button>
-                </div>
-            </div>
+                
         </div>
        
-    </div>
+   
     <div class="borda">
         <P><b>TOTAL (GCS) (3-15)</b></P>
-        <div class="branco"></div>
+       <span id="soma_total" class="branco">  </span>
     </div>
-            <input type="button" class="enviar" value="Enviar"/>
+    <div class="btt">
+        <button id="comprar" onclick="Comprar();" class="confirma">
+            <b><span class="mm"
+        id="confirm">CONFIRMAR
+    </span></b>
+
+      <img class="img_ok" id="img_ok" src="img/correto.png">
+        </button>
+    </div>
 </body>
 <script>
-      function Comprar1()
+      function Comprar()
     {
-        $("#comprar1").animate({height:"20px"}, 300);
-        $("#confirm1").animate({opacity:"0"}, 300);
-        $("#comprar1").animate({width:"280px", borderRadius:"50px"}, 600, Imagem1);
-        $("#comprar1").animate({height:"60px",width:"60px", borderRadius:"60px"}, 700);
+        $("#comprar").animate({height:"20px"}, 1000);
+        $("#confirm").animate({opacity:"0"}, 500);
+        $("#comprar").animate({width:"200px", borderRadius:"50px"}, 1000, Imagem);
+        $("#comprar").animate({height:"60px",width:"60px", borderRadius:"30px"}, 700);
         comprar.style.backgroundSize="100%"
         comprar.style.borderColor="white"
     }
-    function Imagem1()
+    function Imagem()
     {
-        $("#img_ok").animate({opacity:"1"}, 1000, Abra2);
+        $("#img_ok").animate({opacity:"1"}, 1000, Sair);
     }
-      function Comprar2()
+    function Sair()
     {
-        $("#comprar2").animate({height:"20px"}, 300);
-        $("#confirm2").animate({opacity:"0"}, 300);
-        $("#comprar2").animate({width:"280px", borderRadius:"50px"}, 600, Imagem2);
-        $("#comprar2").animate({height:"60px",width:"60px", borderRadius:"30px"}, 700);
-        comprar.style.backgroundSize="100%"
-        comprar.style.borderColor="white"
+        window.open("pag_inicial.html","_self");
     }
-    function Imagem2()
+
+    soma= 0
+    function somar() 
     {
-        $("#img_ok").animate({opacity:"1"}, 1000, Abra3);
+        soma=0
+       if (primeiro4.checked)
+       {
+        soma = soma + 4
+       }
+       if (primeiro3.checked)
+       {
+        soma = soma + 3
+       }
+       if (primeiro2.checked)
+       {
+        soma = soma + 2
+       }
+       if (primeiro1.checked)
+       {
+        soma = soma + 1
+       }
+       if (segundo5.checked)
+       {
+        soma = soma + 5
+       }
+       if (segundo4.checked)
+       {
+        soma = soma + 4
+       }
+       if (segundo3.checked)
+       {
+        soma = soma + 3
+       }
+       if (segundo2.checked)
+       {
+        soma = soma + 2
+       }
+       if (segundo1.checked)
+       {
+        soma = soma + 1
+       }
+       if (terceiro6.checked)
+       {
+        soma = soma + 6
+       }
+       if (terceiro5.checked)
+       {
+        soma = soma + 5
+       }
+       if (terceiro4.checked)
+       {
+        soma = soma + 4
+       }
+       if (terceiro3.checked)
+       {
+        soma = soma + 3
+       }
+       if (terceiro2.checked)
+       {
+        soma = soma + 2
+       }
+       if (terceiro1.checked)
+       {
+        soma = soma + 1
+       }
+       soma_total.innerHTML= soma
     }
-    function Abra3() 
-    {
-        abrir3.style.visibility="visible"
-        abrir2.style.visibility="hidden"
-        abrir1.style.visibility="hidden"
-        $("#abrir3").animate({height:"380px"},1000);
-    }
-    function Abra2() 
-    {
-        abrir3.style.visibility="hidden"
-        abrir2.style.visibility="visible"
-        abrir1.style.visibility="hidden"
-        $("#abrir2").animate({height:"335px"},1000);
-    }
-    function Abra1() 
-    {
-        abrir3.style.visibility="hidden"
-        abrir2.style.visibility="hidden"
-        abrir1.style.visibility="visible"
-        $("#abrir1").animate({height:"180px"},1000);
-    }
+</script>
 </script>
 </html>
