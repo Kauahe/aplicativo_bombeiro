@@ -25,7 +25,28 @@
     <div class="trauma"><b>ESCOLHA O LOCAL DO TRAUMA</b></div>
     <div class="img">
         <img src="img/adulto.png" width="100%" height="100%">
-        <div class="p1" id="p1" onclick="Gravar('p1');"></div>
+        <div class="braco" id="p1" onclick="Gravar('p1');"></div>
+        <div class="braco2" id="p2" onclick="Gravar('p2');"></div>
+        <div class="coxa" id="p3" onclick="Gravar('p3');"></div>
+        <div class="coxa2" id="p4" onclick="Gravar('p4');"></div>
+        <div class="canela" id="p5" onclick="Gravar('p5');"></div>
+        <div class="canela2" id="p6" onclick="Gravar('p6');"></div>
+        <div class="pe" id="p7" onclick="Gravar('p7');"></div>
+        <div class="pe2" id="p8" onclick="Gravar('p8');"></div>
+        <div class="cabeca" id="p8" onclick="Gravar('p8');"></div>
+        <div class="peito" id="p8" onclick="Gravar('p8');"></div>
+        <div class="peito2" id="p8" onclick="Gravar('p8');"></div>
+        <div class="abdomen" id="p8" onclick="Gravar('p8');"></div>
+        <div class="abdomen2" id="p8" onclick="Gravar('p8');"></div>
+
+        <div class="cabeca2" id="p8" onclick="Gravar('p8');"></div>
+        <div class="braco3" id="p1" onclick="Gravar('p1');"></div>
+        <div class="braco4" id="p1" onclick="Gravar('p1');"></div>
+        <div class="coxa3" id="p4" onclick="Gravar('p4');"></div>
+        <div class="coxa4" id="p4" onclick="Gravar('p4');"></div>
+        <div class="panturra" id="p4" onclick="Gravar('p4');"></div>
+        <div class="panturra2" id="p4" onclick="Gravar('p4');"></div>
+
     </div>
     <div class="info">
         <div class="dados">
@@ -84,20 +105,18 @@
         </div>
 </body>
 <script>
-    function Gravar(id)
-    {
-        c = cpf.value
-        if(document.getElementById(id).style.backgroundColor == "yellow")
-        {
+    function Gravar(id) {
+
+        if (document.getElementById(id).style.backgroundColor == "red") {
             document.getElementById(id).style.backgroundColor = ""
             // aqui você deverá APAGAR essa opção (coluna) do banco de dados:
-            window.open("grava.php?p="+id+"&checado=0&cpf="+c,"_blank")
-        }else{
-            document.getElementById(id).style.backgroundColor = "yellow"
+            window.open("grava.php?p=" + id + "&checado=0&cpf=" + c, "_blank")
+        } else {
+            document.getElementById(id).style.backgroundColor = "red"
             // aqui você deverá ALTERAR essa opção (coluna) do banco de dados:
-            window.open("grava.php?p="+id+"&checado=1&cpf="+c,"_blank")
+            window.open("grava.php?p=" + id + "&checado=1&cpf=" + c, "_blank")
         }
-       
     }
 </script>
+
 </html>

@@ -186,10 +186,221 @@ h2 {
 
 
 
-.p1{
+.braco{
    position: absolute;
-   top:220px;
-   left:266px;
+   top:260px;
+   left:220px;
+   width: 10px;
+   height: 10px;
+   border-radius: 50%;
+   border-style: solid;
+   border-color: black;
+}
+
+.braco2{
+   position: absolute;
+   top:260px;
+   left:310px;
+   width: 10px;
+   height: 10px;
+   border-radius: 50%;
+   border-style: solid;
+   border-color: black;
+}
+
+.coxa{
+   position: absolute;
+   top:340px;
+   left:245px;
+   width: 10px;
+   height: 10px;
+   border-radius: 50%;
+   border-style: solid;
+   border-color: black;
+}
+
+.coxa2{
+   position: absolute;
+   top:340px;
+   left:285px;
+   width: 10px;
+   height: 10px;
+   border-radius: 50%;
+   border-style: solid;
+   border-color: black;
+}
+
+.canela{
+   position: absolute;
+   top:420px;
+   left:250px;
+   width: 10px;
+   height: 10px;
+   border-radius: 50%;
+   border-style: solid;
+   border-color: black;
+}
+
+.canela2{
+   position: absolute;
+   top:420px;
+   left:285px;
+   width: 10px;
+   height: 10px;
+   border-radius: 50%;
+   border-style: solid;
+   border-color: black;
+}
+
+.pe{
+   position: absolute;
+   top:460px;
+   left:255px;
+   width: 10px;
+   height: 10px;
+   border-radius: 50%;
+   border-style: solid;
+   border-color: black;
+}
+
+.pe2{
+   position: absolute;
+   top:460px;
+   left:285px;
+   width: 10px;
+   height: 10px;
+   border-radius: 50%;
+   border-style: solid;
+   border-color: black;
+}
+
+.cabeca{
+   position: absolute;
+   top:165px;
+   left:268px;
+   width: 10px;
+   height: 10px;
+   border-radius: 50%;
+   border-style: solid;
+   border-color: black;
+}
+
+.peito{
+   position: absolute;
+   top:230px;
+   left:250px;
+   width: 10px;
+   height: 10px;
+   border-radius: 50%;
+   border-style: solid;
+   border-color: black;
+}
+
+.peito2{
+   position: absolute;
+   top:230px;
+   left:285px;
+   width: 10px;
+   height: 10px;
+   border-radius: 50%;
+   border-style: solid;
+   border-color: black;
+}
+
+.abdomen{
+   position: absolute;
+   top:265px;
+   left:250px;
+   width: 10px;
+   height: 10px;
+   border-radius: 50%;
+   border-style: solid;
+   border-color: black;
+}
+
+.abdomen2{
+   position: absolute;
+   top:265px;
+   left:285px;
+   width: 10px;
+   height: 10px;
+   border-radius: 50%;
+   border-style: solid;
+   border-color: black;
+}
+
+
+
+.cabeca2{
+   position: absolute;
+   top:165px;
+   left:93px;
+   width: 10px;
+   height: 10px;
+   border-radius: 50%;
+   border-style: solid;
+   border-color: black;
+}
+
+.braco3{
+   position: absolute;
+   top:260px;
+   left:50px;
+   width: 10px;
+   height: 10px;
+   border-radius: 50%;
+   border-style: solid;
+   border-color: black;
+}
+
+.braco4{
+   position: absolute;
+   top:260px;
+   left:140px;
+   width: 10px;
+   height: 10px;
+   border-radius: 50%;
+   border-style: solid;
+   border-color: black;
+}
+
+.coxa3{
+   position: absolute;
+   top:340px;
+   left:115px;
+   width: 10px;
+   height: 10px;
+   border-radius: 50%;
+   border-style: solid;
+   border-color: black;
+}
+
+.coxa4{
+   position: absolute;
+   top:340px;
+   left:75px;
+   width: 10px;
+   height: 10px;
+   border-radius: 50%;
+   border-style: solid;
+   border-color: black;
+}
+
+.panturra{
+   position: absolute;
+   top:410px;
+   left:110px;
+   width: 10px;
+   height: 10px;
+   border-radius: 50%;
+   border-style: solid;
+   border-color: black;
+}
+
+.panturra2{
+   position: absolute;
+   top:410px;
+   left:75px;
    width: 10px;
    height: 10px;
    border-radius: 50%;
