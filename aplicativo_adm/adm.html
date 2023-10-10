@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>adm</title>
     <link rel="stylesheet" href="css/adm.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
 </head>
 
 <body>
@@ -31,15 +32,7 @@
             </div>
             <div class="linha"></div>
         </div>
-        <div class="cadastros">
-          
-         
-            
-            
-            
-
-            
-        </div>
+        <div class="cadastros"></div>
     </div>
 </body>
 
@@ -59,46 +52,43 @@
 
     if (data.length > 0) {
         $.each(data, function (index, usuario) {
-            // Crie uma div "barra" para cada usuário
+            //barra para cada usuário
             var divBarra = $("<div class='barra'></div>");
 
-            // Crie uma div para os detalhes do usuário
+            //  div do usuário
             var divDetalhes = $("<div class='detalhes-usuario'></div>");
-            divDetalhes.html("<b>Nome:</b> " + usuario.Nome +"&nbsp;"+ "&nbsp;"+"&nbsp;"+"&nbsp;"+"&nbsp;"+"<br><b>Email:</b> " + usuario.email + "&nbsp;"+"&nbsp;"+"&nbsp;"+"&nbsp;"+"&nbsp;"+"<br><b>CPF:</b> " + usuario.CPF);
+            divDetalhes.html("<b>Nome:</b>" +"&nbsp;" + usuario.Nome +"&nbsp;"+ "&nbsp;"+"&nbsp;"+"&nbsp;"+"&nbsp;"+"<br><b>Email:</b> " + "&nbsp;"+ usuario.email + "&nbsp;"+"&nbsp;"+"&nbsp;"+"&nbsp;"+"&nbsp;"+"<br><b>CPF:</b> " + "&nbsp;" + usuario.CPF);
 
-            // Crie uma div para os botões
+            // div dos botões
             var divBotoes = $("<br><div class='botoes-usuario'></div>");
-
-            // Crie botões de alterar e excluir
-            var btnAlterar = $("<button class='btn-alterar'>Alterar</button>");
-            var btnExcluir = $("<button class='btn-excluir'data-id='" + usuario.id + "'>Excluir</button>");
-
-            // Adicione os botões à div de botões
-            divBotoes.append(btnAlterar);
+            
+            var btnExcluir = $("<button onclick=excluir('$id') class='btn-excluir'data-id='" + usuario.id + "'>Excluir</button>");
+           
+            // add os botões na div de botões
+         
             divBotoes.append(btnExcluir);
 
-            // Adicione as divs de detalhes e botões à div "barra"
+            // add as divs de detalhes/botões na div Barra
             divBarra.append(divDetalhes);
             divBarra.append(divBotoes);
 
-            // Adicione a div "barra" à div "cadastros"
+            // add Barra na div "cadastros"
             cadastrosDiv.append(divBarra);
         });
     } else {
-        // Caso não haja usuários cadastrados
+        // se não tiver usuários cadastrados
         cadastrosDiv.html("Nenhum usuário cadastrado.");
     }
 },
-
                 error: function (xhr, status, error) {
                     // Exibe uma mensagem de erro se houver algum problema
                     $(".cadastros").html("Erro ao buscar usuários: " + error);
                 }
             });
         });
+
+      
     </script>
     
-</body>
 
-</html>
 </html>

@@ -79,9 +79,10 @@ H4 {
 .titulo {
     width: 100%;
     height: 50px;
-    margin-top: 30px;
+    margin-left: 5px;
+    margin-top: 40px;
     color: black;
-    font-size: 40px;
+    font-size: 30px;
     font-family: "Audiowide", sans-serif;
     justify-content: center;
     justify-items: center;
@@ -95,7 +96,7 @@ H4 {
     width: 1166px;
     height: 586px;
     flex-shrink: 0;
-    margin-left: 220px;
+    margin-left: 300px;
     margin-top: 15px;
     border-radius: 34px;
     background: #FFF;
@@ -148,8 +149,9 @@ H4 {
     color: black;
     text-decoration: none;
     transition: 0.3;
-  border-radius: 10px;
+    border-radius: 10px;
     text-align: center;
+    font-family: "Audiowide", sans-serif;
 }
 
 
@@ -157,9 +159,8 @@ H4 {
     width: 90%;
     height: 100%;
     margin-top: 30px;
-    max-height: 400px; /* Defina a altura máxima desejada para a div "cadastros" */
-    overflow-y: auto; /* Adicione uma barra de rolagem vertical quando necessário */
-  
+    max-height: 400px; 
+    overflow-y: auto; 
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -183,9 +184,10 @@ H4 {
 .detalhes-usuario {
     display: flex;
     flex-direction: row;
+    font-family: Candara;
+    font-size: 18px;
     
 }
-
 .usuario > {
     margin-right: 10px; /* ou qualquer valor desejado */
 }
@@ -194,26 +196,27 @@ H4 {
     margin-right: 0; /* Remove a margem do último elemento */
 }
 .btn-alterar{
-    width: 50px;
+    width: 60px;
     height: 30px;
-    border-radius: 8px;
+    border-radius: 20px;
 background: #102986;
 color: #FFF;
 text-align: center;
-font-family: Inter;
+font-family: Candara;
 font-size: 15px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
+
 }
 .btn-excluir{
-    width: 50px;
+    width: 100px;
     height: 30px;
-    border-radius: 8px;
+    border-radius: 30px;
     background: #102986;
     color: #FFF;
     text-align: center;
-font-family: Inter;
+font-family: Candara;
 font-size: 15px;
 font-style: normal;
 font-weight: 400;
@@ -224,11 +227,6 @@ line-height: normal;
     width: 100%;
     height: 100;
     display: flex;
-    justify-content: end;
-
-    
-
-
-    
+    justify-content: end;   
 }
 
