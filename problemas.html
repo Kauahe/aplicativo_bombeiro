@@ -19,11 +19,12 @@
             <h2>NÚCLEO DE OPERAÇÕES AÉREAS E RESGATE</h2>
     </div>
 </header>
-    <div class="escrita"><b>PROBLEMAS SUSPEITOS:</b> </div>
     
-    <div class="fundo">   
+    
+    <div class="fundo">
+        <div class="escrita"><b>PROBLEMAS SUSPEITOS:</b> </div>   
 
-        <button class="box"><h3>PSIQUIÁTRICO</h3> 
+        <button class="box"><h3>PSIQUIÁTRICO</h3><input type="checkbox" class="bebe" > 
         </button>
 
         <button class="box" id="abrir1" onclick="Abra1();"><h3>RESPIRATÓRIO</h3>
@@ -81,8 +82,18 @@
         </div>
 
     </div>
+    <div class="btt">
+        <button id="envie" onclick="Sair();" class="confirma">
+            <b><span class="mm"
+        id="confirm">CONFIRMAR
+    </button></span></b>
 
+    
     <script>
+         function Sair()
+    {
+        window.open("pag_inicial.html","_self"), 2000;
+    }
         function Abra1()
         {
             $("#abrir1").animate({height:"130px"}, 500);
