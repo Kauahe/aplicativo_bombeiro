@@ -121,3 +121,37 @@ h2
   justify-content: center;
   justify-items: center;
 }
+.confirma {
+  width: 150PX;
+  height: 4vh;
+  background:white;
+  border-radius: 20px;
+  border-style: solid;
+  border-color:#1F3173;
+  font-family: "Audiowide", sans-serif;
+  cursor: pointer;
+  position: relative;
+  margin-left: 25px;
+}
+
+.btt {
+  margin-top: 10px;
+  width: 90%;
+  height: 9vh;
+  background-color: transparent;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+.img_ok {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  opacity: 0;
+  width: 54px;
+  margin-left: 1px;
+  margin-top: 1px;
+}
