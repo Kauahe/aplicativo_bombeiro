@@ -60,8 +60,7 @@ header,footer{
 
  .fundo
  {
-   margin-left: 10px;
-   width: 94%;
+   width: 80%;
    height: 600px;
    margin-top: 50px;
    background-color: #e1dfdfe8;
@@ -77,22 +76,76 @@ header,footer{
 
  .box
  {
-   width: 307px;
+   width: 90%;
    height: 58px;
    flex-shrink: 0;
    border-radius: 10px;
    background: linear-gradient(180deg, #102986 29.78%, rgba(42, 78, 212, 0.87) 100%);
    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
    margin-top: 15px;
-   flex-direction: row;
+   flex-direction: column;
    justify-content:space-around;
-  display: flex;
-    
+  display: flex; 
  }
-
+ .box1
+ {
+   width: 90%;
+   height: 58px;
+   flex-shrink: 0;
+   border-radius: 10px;
+   background: linear-gradient(180deg, #102986 29.78%, rgba(42, 78, 212, 0.87) 100%);
+   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+   margin-top: 15px;
+   flex-direction: column;
+   display: flex; 
+   justify-content:space-between;
+   padding-bottom: 20px;
+ }
+ .box2
+ {
+   width: 90%;
+   height: 58px;
+   flex-shrink: 0;
+   border-radius: 10px;
+   background: linear-gradient(180deg, #102986 29.78%, rgba(42, 78, 212, 0.87) 100%);
+   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+   margin-top: 15px;
+   flex-direction: column;
+   justify-content:space-between;
+   padding-bottom: 20px;
+  display: flex; 
+ }
+ .box3
+ {
+   width: 90%;
+   height: 58px;
+   flex-shrink: 0;
+   border-radius: 10px;
+   background: linear-gradient(180deg, #102986 29.78%, rgba(42, 78, 212, 0.87) 100%);
+   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+   margin-top: 15px;
+   flex-direction: column;
+   justify-content:space-between;
+   padding-bottom: 20px;
+  display: flex; 
+ }
+ .box4
+ {
+   width: 90%;
+   height: 58px;
+   flex-shrink: 0;
+   border-radius: 10px;
+   background: linear-gradient(180deg, #102986 29.78%, rgba(42, 78, 212, 0.87) 100%);
+   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+   margin-top: 15px;
+   flex-direction: column;
+   justify-content:space-between;
+   padding-bottom: 20px;
+  display: flex; 
+ }
  .box6
  {
-   width: 307px;
+   width: 90%;
    height: 58px;
    flex-shrink: 0;
    border-radius: 10px;
@@ -109,13 +162,15 @@ header,footer{
     color: white;
     font-size: 19px;
     font-family: "Audiowide", sans-serif;
-    margin-top: 20px;
+    margin-top: 15px;
     margin-left: 15px;
     font-weight: 200;
  }
 .bebe
 {
-   margin-top: 20px;
+   position: absolute;
+   margin-left: 210px;
+   margin-top: 10px;
    height: 20px;
    width: 20px;
 }
@@ -123,7 +178,7 @@ header,footer{
  {
    width: 30px;
    height: 25px;
-   margin-top: 15px;
+   margin-top: 10px;
    padding: 5px;
  } 
 
@@ -137,51 +192,45 @@ header,footer{
    margin-left: 5px;
    width: 180px;
    height: 17px;
+   text-align: center;
+   font-size: 17px;
  }
 
  .dados1
  {
-  width: 84%;
-  height: 60px;
-  display: none;
+   font-size: 15px;
   opacity:0;
   color: white;
-  background-color: red;
+  justify-content: space-around;
+  align-content:flex-start;
+  align-items: flex-start;
+  padding-left: 20px;
   display: flex;
   flex-direction: column;
  }
- 
  .dados2
  {
-  width: 84%;
-  height: 60px;
-  margin-top: 60px;
-  background-color: rgba(255, 255, 255, 0.288);
-  position: absolute;
-  display: none;
-  opacity:0;
+   font-size: 15px;
+   opacity:0;
+   color: white;
+  justify-content: space-around;
+  align-content:flex-start;
+  align-items: flex-start;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
  }
- 
  .dados3
  {
-  width: 84%;
-  height: 60px;
-  margin-top: 60px;
-  background-color: rgba(255, 255, 255, 0.288);
-  position: absolute;
-  display: none;
+   font-size: 12px;
   opacity:0;
- }
- 
- .dados4
- {
-  width: 84%;
-  height: 60px;
-  margin-top: 60px;
-  background-color: rgba(255, 255, 255, 0.288);
-  position: absolute;
-  display: none;
-  opacity:0;
+  color: white;
+  justify-content: space-around;
+  align-content:flex-start;
+  align-items: flex-start;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
  }
  .confirma {
    width: 150PX;
@@ -207,4 +256,3 @@ header,footer{
    justify-content: center;
    justify-items: center;
 }
-

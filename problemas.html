@@ -27,50 +27,42 @@
         <button class="box"><h3>PSIQUIÁTRICO</h3><input type="checkbox" class="bebe" > 
         </button>
 
-        <button class="box" id="abrir1" onclick="Abra1();"><h3>RESPIRATÓRIO</h3>
-            <div class="seta"> <img src="img/seta.png" width="20px"></div>
+        <button class="box1" id="abrir1" onclick="Abra1();"><h3>RESPIRATÓRIO</h3>
 
             <div class="dados1" id="dados1">
                   
-                    <input type="checkbox" class="fild1" > DPOC <br> <br>
-                    <input type="checkbox" >&nbsp; INALAÇÃO FUMAÇA
+                  <div> <input type="checkbox" class="fild1" > DPOC </div> 
+                   <div> <input type="checkbox" >&nbsp; INALAÇÃO FUMAÇA</div>
             </div>
         </button>
 
-        <button class="box"  id="abrir2" onclick="Abra2();"><h3>DIABETES</h3>
-            <div class="seta"> <img src="img/seta.png" width="20px"></div>
+        <button class="box2"  id="abrir2" onclick="Abra2();"><h3>DIABETES</h3>
 
-            <div class="dados1" id="dados2">
+            <div class="dados2" id="dados2">
                   
-                    <input class="ww" type="checkbox" >&nbsp; HIPERGLICEMIA <br> <br>
-                    <input class="ww" type="checkbox" >&nbsp; HIPOGLICEMIA
-            </div>
-
-        </button>
-
-        <button class="box" id="abrir3" onclick="Abra3();"><h3>OBSTÉTRICO</h3>
-            <div class="seta"> <img src="img/seta.png" width="20px"></div>
-
-            <div class="dados1" id="dados3">
-                  
-                    <input type="checkbox">&nbsp; PARTO EMERGENCIAL <br>
-                    <input type="checkbox">&nbsp; GESTANTE <br>
-                    <input type="checkbox">&nbsp; HEMOR.EXCESSIVA 
+                   <div> <input class="ww" type="checkbox" >&nbsp; HIPERGLICEMIA </div><br>
+                  <div>  <input class="ww" type="checkbox" >&nbsp; HIPOGLICEMIA</div>
             </div>
 
         </button>
 
-        <button class="box" id="abrir4" onclick="Abra4();"><h3>TRANSPORTE</h3>
-            <div class="seta"> <img src="img/seta.png" width="20px"></div>
-            <div class="dados1" id="dados4">
-                <fieldset>
+        <button class="box3" id="abrir3" onclick="Abra3();"><h3>OBSTÉTRICO</h3><br>
+
+            <div class="dados3" id="dados3">
                   
-                    <input type="checkbox" >&nbsp; ÁREO <br> <br>
-                    <input type="checkbox" >&nbsp; CLÍNICO <br> <br>
-                    <input type="checkbox">&nbsp; EMERGENCIAL
+                   <div> <input type="checkbox">&nbsp; PARTO EMERGENCIAL</div><br>
+                   <div> <input type="checkbox">&nbsp; GESTANTE</div> <br>
+                    <div><input type="checkbox">&nbsp; HEMOR.EXCESSIVA </div>
+            </div>
 
+        </button>
 
-                </fieldset>
+        <button class="box4" id="abrir4" onclick="Abra4();"><h3>TRANSPORTE</h3>
+            <div class="dados3" id="dados4">
+               
+                <div> <input type="checkbox">&nbsp; ÁREO</div><br>
+                <div> <input type="checkbox">&nbsp; CLÍNICO</div> <br>
+                 <div><input type="checkbox">&nbsp; EMERGENCIAL </div>
             </div>
 
         </button>
@@ -118,7 +110,7 @@
             $("#abrir2").animate({height:"130px"}, 500);
             $("#abrir3").animate({height:"50px"}, 500);
             $("#abrir4").animate({height:"50px"}, 500);
-            $("#dados2").animate({height:"64px", opacity:1}, 900);
+            $("#dados2").animate({height:"50px", opacity:1}, 900);
             document.getElementById("dados1").style.display="none"; 
             document.getElementById("dados2").style.display="flex"; 
             document.getElementById("dados3").style.display="none"; 
@@ -135,7 +127,7 @@
             $("#abrir2").animate({height:"50px"}, 500);
             $("#abrir3").animate({height:"130px"}, 500);
             $("#abrir4").animate({height:"50px"}, 500);  
-            $("#dados3").animate({height:"64px", opacity:1}, 900);     
+            $("#dados3").animate({height:"200px", opacity:1}, 900);     
             document.getElementById("dados1").style.display="none"; 
             document.getElementById("dados2").style.display="none"; 
             document.getElementById("dados3").style.display="flex"; 
@@ -152,7 +144,7 @@
             $("#abrir2").animate({height:"50px"}, 500);
             $("#abrir3").animate({height:"50px"}, 500);
             $("#abrir4").animate({height:"130px"}, 500);
-            $("#dados4").animate({height:"64px", opacity:1}, 900);
+            $("#dados4").animate({height:"200px", opacity:1}, 900);
             document.getElementById("dados1").style.display="none"; 
             document.getElementById("dados2").style.display="none"; 
             document.getElementById("dados3").style.display="none"; 
