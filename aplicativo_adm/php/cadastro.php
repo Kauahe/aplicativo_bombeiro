@@ -11,40 +11,44 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $senha = $_POST["senha"]; // O campo "senha" agora contém a senha combinada
 
     // Processar o upload da imagem
-    if ($_FILES["imagem"]["error"] == 0) {
-        $imagemTmpName = $_FILES["imagem"]["tmp_name"];
-        $imagemData = file_get_contents($imagemTmpName); // Lê os dados da imagem como um BLOB
+    if (isset($_FILES["imagem"])) {
+        if ($_FILES["imagem"]["error"] == 0) {
+            $imagemTmpName = $_FILES["imagem"]["tmp_name"];
+            $imagemData = file_get_contents($imagemTmpName); // Lê os dados da imagem como um BLOB
 
-        // Inserir os dados no banco de dados, incluindo os dados da imagem
-        $sql = "INSERT INTO cadastro (Nome, email, CPF, senha, imagem_blob) VALUES (:nome, :email, :cpf, :senha, :imagem)";
-        $stmt = $pdo->prepare($sql);
+            // Inserir os dados no banco de dados, incluindo os dados da imagem
+            $sql = "INSERT INTO cadastro (Nome, email, CPF, senha, imagem_blob) VALUES (:nome, :email, :cpf, :senha, :imagem)";
+            $stmt = $pdo->prepare($sql);
 
-        // Vincular os valores às variáveis na consulta
-        $stmt->bindParam(":nome", $nome);
-        $stmt->bindParam(":email", $email);
-        $stmt->bindParam(":cpf", $cpf);
-        $stmt->bindParam(":senha", $senha);
-        $stmt->bindParam(":imagem", $imagemData, PDO::PARAM_LOB); // Use PDO::PARAM_LOB para dados BLOB
+            // Vincular os valores às variáveis na consulta
+            $stmt->bindParam(":nome", $nome);
+            $stmt->bindParam(":email", $email);
+            $stmt->bindParam(":cpf", $cpf);
+            $stmt->bindParam(":senha", $senha);
+            $stmt->bindParam(":imagem", $imagemData, PDO::PARAM_LOB); // Use PDO::PARAM_LOB para dados BLOB
 
-        if ($stmt->execute()) {
-            // Defina a resposta como sucesso
-            $response["success"] = true;
-            $response["message"] = "Cadastro realizado com sucesso!";
+            if ($stmt->execute()) {
+                // Defina a resposta como sucesso
+                $response["success"] = true;
+                $response["message"] = "Cadastro realizado com sucesso!";
+            } else {
+                // Defina a resposta como erro e exiba informações de erro
+                $response["success"] = false;
+                $response["message"] = "Erro ao cadastrar: " . $stmt->errorInfo()[2];
+            }
         } else {
-            // Defina a resposta como erro e exiba informações de erro
+            // Trate o erro no envio de imagem
             $response["success"] = false;
-            $response["message"] = "Erro ao cadastrar: " . $stmt->errorInfo()[2];
-            var_dump($stmt->errorInfo()); // Exibir informações de erro
+            $response["message"] = "Erro ao enviar a imagem: " . $_FILES["imagem"]["error"];
         }
     } else {
-        // Se não foi selecionada uma imagem
+        // O campo "foto" não foi definido no formulário
         $response["success"] = false;
-        $response["message"] = "Por favor, selecione uma imagem.";
+        $response["message"] = "O campo de imagem não foi definido no formulário.";
     }
 
     // Retorne a resposta como JSON
-    //header("Content-type: application/json");
-    echo(1);
-    
+    header("Content-type: application/json");
+    echo json_encode($response);
 }
 ?>

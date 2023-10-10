@@ -183,25 +183,5 @@ form {
 
     
 </body>
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-    const mostrarFormularioButton = document.getElementById("mostrarFormulario");
-    const formularioModal = document.getElementById("formularioModal");
-    const fecharFormularioButton = document.getElementById("fecharFormulario");
 
-    mostrarFormularioButton.addEventListener("click", function () {
-        formularioModal.style.display = "block";
-    });
-
-    fecharFormularioButton.addEventListener("click", function () {
-        formularioModal.style.display = "none";
-    });
-
-    window.addEventListener("click", function (event) {
-        if (event.target == formularioModal) {
-            formularioModal.style.display = "none";
-        }
-    });
-});
-</script>
 </html>

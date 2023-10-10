@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -32,10 +32,7 @@
             <div class="linha"></div>
         </div>
         <div class="cadastros">
-            <div class="barra"></div>
-            <div class="barra"></div>
-            <div class="barra"></div>
-            <div class="barra"></div>
+          
          
             
             
@@ -46,4 +43,62 @@
     </div>
 </body>
 
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Use AJAX para buscar a lista de usuários
+            $.ajax({
+                type: "GET",
+                url: "php/listar_usuarios.php",
+                dataType: "json",
+          
+
+              success: function (data) {
+    var cadastrosDiv = $(".cadastros");
+
+    if (data.length > 0) {
+        $.each(data, function (index, usuario) {
+            // Crie uma div "barra" para cada usuário
+            var divBarra = $("<div class='barra'></div>");
+
+            // Crie uma div para os detalhes do usuário
+            var divDetalhes = $("<div class='detalhes-usuario'></div>");
+            divDetalhes.html("<b>Nome:</b> " + usuario.Nome +"&nbsp;"+ "&nbsp;"+"&nbsp;"+"&nbsp;"+"&nbsp;"+"<br><b>Email:</b> " + usuario.email + "&nbsp;"+"&nbsp;"+"&nbsp;"+"&nbsp;"+"&nbsp;"+"<br><b>CPF:</b> " + usuario.CPF);
+
+            // Crie uma div para os botões
+            var divBotoes = $("<br><div class='botoes-usuario'></div>");
+
+            // Crie botões de alterar e excluir
+            var btnAlterar = $("<button class='btn-alterar'>Alterar</button>");
+            var btnExcluir = $("<button class='btn-excluir'data-id='" + usuario.id + "'>Excluir</button>");
+
+            // Adicione os botões à div de botões
+            divBotoes.append(btnAlterar);
+            divBotoes.append(btnExcluir);
+
+            // Adicione as divs de detalhes e botões à div "barra"
+            divBarra.append(divDetalhes);
+            divBarra.append(divBotoes);
+
+            // Adicione a div "barra" à div "cadastros"
+            cadastrosDiv.append(divBarra);
+        });
+    } else {
+        // Caso não haja usuários cadastrados
+        cadastrosDiv.html("Nenhum usuário cadastrado.");
+    }
+},
+
+                error: function (xhr, status, error) {
+                    // Exibe uma mensagem de erro se houver algum problema
+                    $(".cadastros").html("Erro ao buscar usuários: " + error);
+                }
+            });
+        });
+    </script>
+    
+</body>
+
+</html>
 </html>
