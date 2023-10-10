@@ -80,7 +80,30 @@
 
 
     </div>
+    <div class="btt">
+        <button id="envie" onclick="Sair();" class="confirma">
+            <b><span class="mm"
+        id="confirm">CONFIRMAR
+    </button></span></b>
 
 </body>
-
+<script>
+    function Sair()
+    {
+        window.open("pag_inicial.html","_self"), 3000;
+    }
+    function Comprar()
+    {
+        $("#comprar").animate({height:"20px"}, 1000);
+        $("#confirm").animate({opacity:"0"}, 500);
+        $("#comprar").animate({width:"200px", borderRadius:"50px"}, 1000, Imagem);
+        $("#comprar").animate({height:"60px",width:"60px", borderRadius:"30px"}, 700);
+        comprar.style.backgroundSize="100%"
+        comprar.style.borderColor="white"
+    }
+    function Imagem()
+    {
+        $("#img_ok").animate({opacity:"1"}, 1000, Sair);
+    }
+</script>
 </html>
