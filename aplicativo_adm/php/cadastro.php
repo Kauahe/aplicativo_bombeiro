@@ -3,7 +3,8 @@ include("../../php/conecta.php");
 
 $response = array(); // Inicializa um array para armazenar a resposta
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+if ($_SERVER["REQUEST_METHOD"] == "POST") 
+{
     // Recupere os valores do formulário
     $nome = $_POST["nome"];
     $email = $_POST["email"];

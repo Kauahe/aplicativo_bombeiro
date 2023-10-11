@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,41 +22,80 @@
     <div class="texto"><b>INFORMAÇÕES</b></div>
 
     <div class="box">
+        <form action="" method="post" id="cadastrarPac"> 
         <fieldset>
             DATA: <br>
-            <input type="date" class="data" >
+            <input type="date" name="data_ocr" class="data" >
             <br> <br>
             NOME DO HOSPITAL:<br>
-            <input type="text" class="text"> <br> <br>
+            <input type="text" name="nome_hospital" class="text"> <br> <br>
 
             NOME :<br>
-            <input type="text" class="text"><br> <br>
+            <input type="text" name="nome_pac"class="text"><br> <br>
 
             IDADE:<br>
-            <input type="number" class="text"><br> <br>
+            <input type="number" name="idade_pac" class="text"><br> <br>
 
             RG/CPF:<br>
-            <input type="number" class="text"><br> <br>
+            <input type="number" name="cpf" class="text"><br> <br>
 
             FONE:<br>
-            <input type="number"  class="text"><br> <br>
+            <input type="number" name="telefone_pac" class="text"><br> <br>
 
             NOME DO ACOMPANHANTE:<br>
-            <input type="text" class="text"><br> <br>
+            <input type="text" name="nome_acomp" class="text"><br> <br>
 
             IDADE DO ACOMPANHANTE:<br>
-            <input type="number" class="text"><br> <br>
+            <input type="number" name="idade_acomp" class="text"><br> <br>
 
             LOCAL DA OCORRÊNCIA:<br>
-            <input type="text" class="text"><br> <br>
+            <input type="text" name="local_ocr" class="text"><br> <br>
 
-            <input type="button" class="enviar" value="Enviar"/>
 
         </fieldset>
-    </div>
+        <input class="enviar" type="submit"  value="Cadastrar">
+
+            </form>
+            <div style="color: rgb(143, 255, 109); font-size: 15px;" id="mensagem" ></div>
+       
 
 
 
 
 </body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function() {
+    $("#cadastrarPac").submit(function(e) {
+        e.preventDefault();
+
+        // Enviar os dados do formulário
+        var formData = new FormData(this);
+
+        $.ajax({
+            type: "post",
+            url: "php/cadastroPac.php",  // Substitua pelo caminho correto
+            data: formData,
+            contentType: false,
+            processData: false,
+            success: function(response) {
+                if (response.success === true) {
+                    $("#mensagem").html("Cadastro realizado com sucesso!");
+                } else {
+                    $("#mensagem").html("Erro: " + response.message);
+                }
+            },
+            error: function(xhr, status, error) {
+                $("#mensagem").html("Erro ao cadastrar: " + error);
+            }
+        });
+    });
+});
+</script>
+
+
+  
+  
+  
+  
 </html>

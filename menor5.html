@@ -214,5 +214,28 @@
        soma_total.innerHTML= soma
     }
 </script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function() {
+    $("#glasgow_menor").submit(function(e) 
+    {
+        e.preventDefault();
+
+        // Enviar os dados do formulário
+        var formData = new FormData(this);
+
+        $.ajax({
+            type: "post",
+            url: "php/glasgow_menor.php",  
+            data: formData,
+            contentType: false,
+            processData: false,
+            error: function(xhr, status, error)
+             {
+                $("#mensagem").html("Erro ao enviar dados: " + error);
+            }
+        });
+    });
+});
 </script>
 </html>
