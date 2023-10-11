@@ -1,152 +1,163 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/problemas.css">
+    <link rel="stylesheet" href="css/formaCond.css">
     <title>login</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
     <script src="jquery.js"></script>
 </head>
-<body> 
+
+<body>
     <header>
-      
+
         <div class="imagem">
-            <img src="img/logosembrilho.png" width="50px" height="49px"></div>
-            <div class="row">
+            <img src="img/logosembrilho.png" width="50px" height="49px">
+        </div>
+        <div class="row">
             <h1>SOS BOMBEIROS</h1>
             <h2>NÚCLEO DE OPERAÇÕES AÉREAS E RESGATE</h2>
-    </div>
-</header>
-    
-    
+        </div>
+    </header>
+
+
     <div class="fundo">
-        <div class="escrita"><b>CONDUÇÃO</b> </div>   
+        <div class="escrita"><b>CONDUÇÃO</b> </div>
 
-        <button class="box"><h3>FORMA DE CONDUÇÃO</h3> 
-        </button>
 
-        <button class="box1" id="abrir1" onclick="Abra1();"><h3>RESPIRATÓRIO</h3>
+        <div class="arrumar">
+            <button class="box1" id="abrir1" onclick="Abra1();">
+                <h3>FORMA DE CONDUÇÃO</h3>
 
-            <div class="dados1" id="dados1">
-                  
-                  <div> <input type="checkbox" class="fild1" > DPOC </div> 
-                   <div> <input type="checkbox" >&nbsp; INALAÇÃO FUMAÇA</div>
-            </div>
-        </button>
+                <div class="dados1" id="dados1">
 
-        <button class="box2"  id="abrir2" onclick="Abra2();"><h3>DECISÃO DE TRANSPORTES</h3>
+                    <div> <input type="checkbox" class="fild1"> DEITADA </div>
+                    <div> <input type="checkbox">&nbsp; SEMI-SENTADA</div>
+                    <div> <input type="checkbox">&nbsp; SENTADA</div>
+                </div>
+            </button>
 
-            <div class="dados2" id="dados2">
-                  
-                   <div> <input class="ww" type="checkbox" >&nbsp; HIPERGLICEMIA </div><br>
-                  <div>  <input class="ww" type="checkbox" >&nbsp; HIPOGLICEMIA</div>
-            </div>
+            <button class="box2" id="abrir2" onclick="Abra2();">
+                <h3>DECISÃO DE TRANSPORTES</h3>
 
-        </button>
+                <div class="dados2" id="dados2">
 
-        <button class="box3" id="abrir3" onclick="Abra3();"><h3>INFORMAÇÕES DA VÍTIMA</h3><br>
+                    <div> <input class="ww" type="checkbox">&nbsp; CRITICO </div>
+                    <div> <input class="ww" type="checkbox">&nbsp; INSTÁVEL</div>
+                    <div> <input class="ww" type="checkbox">&nbsp; POTENCIALMENTE INSTÁVEL</div>
+                    <div> <input class="ww" type="checkbox">&nbsp; ESTÁVEL</div>
+                </div>
 
-            <div class="dados3" id="dados3">
-                  
-                   <div> <input type="checkbox">&nbsp; PARTO EMERGENCIAL</div><br>
-                   <div> <input type="checkbox">&nbsp; GESTANTE</div> <br>
+            </button>
+
+            <button class="box3" id="abrir3" onclick="Abra3();">
+                <h3>INFORMAÇÕES DA VÍTIMA</h3><br>
+
+                <div class="dados3" id="dados3">
+
+                    <div> <input type="checkbox">&nbsp; PARTO EMERGENCIAL</div>
+                    <div> <input type="checkbox">&nbsp; GESTANTE</div>
                     <div><input type="checkbox">&nbsp; HEMOR.EXCESSIVA </div>
-            </div>
+                </div>
 
-        </button>
+            </button>
 
-        <button class="box4" id="abrir4" onclick="Abra4();"><h3>EQUIPE DE ATENDIMENTO/ USB</h3>
-            <div class="dados3" id="dados4">
-               
-                <div> <input type="checkbox">&nbsp; ÁREO</div><br>
-                <div> <input type="checkbox">&nbsp; CLÍNICO</div> <br>
-                 <div><input type="checkbox">&nbsp; EMERGENCIAL </div>
-            </div>
+            <button class="box4" id="abrir4" onclick="Abra4();">
+                <h3>EQUIPE DE ATENDIMENTO/USB</h3>
+                <div class="dados3" id="dados4">
 
-        </button>
+                    <div class="pode">
+                        <div class="tipo"></div>
+                        <div class="in">
+                            <input type="text" class="equi">
+                            <input type="text" class="equi">
+                            <input type="text" class="equi">
+                            <input type="text" class="equi">
+                            <input type="text" class="equi">
+                            <input type="text" class="equi">
+                        </div>
+                    </div>
+                </div>
 
+            </button>
+        </div>
     </div>
     <div class="btt">
         <button id="envie" onclick="Sair();" class="confirma">
-            <b><span class="mm"
-        id="confirm">CONFIRMAR
-    </button></span></b>
+            <b><span class="mm" id="confirm">CONFIRMAR
+        </button></span></b>
 
-    
-    <script>
-         function Sair()
-    {
-        window.open("pag_inicial.html","_self"), 2000;
-    }
-        function Abra1()
-        {
-            $("#abrir1").animate({height:"130px"}, 500);
-            $("#abrir2").animate({height:"50px"}, 500);
-            $("#abrir3").animate({height:"50px"}, 500);
-            $("#abrir4").animate({height:"50px"}, 500);
-            $("#dados1").animate({height:"64px", opacity:1}, 900);
-            document.getElementById("dados1").style.display="flex"; 
-            document.getElementById("dados2").style.display="none"; 
-            document.getElementById("dados3").style.display="none"; 
-            document.getElementById("dados4").style.display="none"; 
-            document.getElementById("dados1").style.opacity=0;
-            document.getElementById("dados2").style.opacity=0; 
-            document.getElementById("dados3").style.opacity=0; 
-            document.getElementById("dados4").style.opacity=0; 
-        }
-        
 
-        function Abra2()
-        {
-            $("#abrir1").animate({height:"50px"}, 500);
-            $("#abrir2").animate({height:"130px"}, 500);
-            $("#abrir3").animate({height:"50px"}, 500);
-            $("#abrir4").animate({height:"50px"}, 500);
-            $("#dados2").animate({height:"50px", opacity:1}, 900);
-            document.getElementById("dados1").style.display="none"; 
-            document.getElementById("dados2").style.display="flex"; 
-            document.getElementById("dados3").style.display="none"; 
-            document.getElementById("dados4").style.display="none"; 
-            document.getElementById("dados1").style.opacity=0;
-            document.getElementById("dados2").style.opacity=0; 
-            document.getElementById("dados3").style.opacity=0; 
-            document.getElementById("dados4").style.opacity=0; 
-        }
+        <script>
+            function Sair() {
+                window.open("pag_inicial.html", "_self"), 2000;
+            }
+            function Abra1() {
+                $("#abrir1").animate({ height: "130px" }, 500);
+                $("#abrir2").animate({ height: "70px" }, 500);
+                $("#abrir3").animate({ height: "70px" }, 500);
+                $("#abrir4").animate({ height: "70px" }, 500);
+                $("#dados1").animate({ height: "64px", opacity: 1 }, 900);
+                document.getElementById("dados1").style.display = "flex";
+                document.getElementById("dados2").style.display = "none";
+                document.getElementById("dados3").style.display = "none";
+                document.getElementById("dados4").style.display = "none";
+                document.getElementById("dados1").style.opacity = 0;
+                document.getElementById("dados2").style.opacity = 0;
+                document.getElementById("dados3").style.opacity = 0;
+                document.getElementById("dados4").style.opacity = 0;
+            }
 
-        function Abra3()
-        {
-            $("#abrir1").animate({height:"50px"}, 500);
-            $("#abrir2").animate({height:"50px"}, 500);
-            $("#abrir3").animate({height:"130px"}, 500);
-            $("#abrir4").animate({height:"50px"}, 500);  
-            $("#dados3").animate({height:"200px", opacity:1}, 900);     
-            document.getElementById("dados1").style.display="none"; 
-            document.getElementById("dados2").style.display="none"; 
-            document.getElementById("dados3").style.display="flex"; 
-            document.getElementById("dados4").style.display="none";
-            document.getElementById("dados1").style.opacity=0;
-            document.getElementById("dados2").style.opacity=0; 
-            document.getElementById("dados3").style.opacity=0; 
-            document.getElementById("dados4").style.opacity=0;  
-        }
 
-        function Abra4()
-        {
-            $("#abrir1").animate({height:"50px"}, 500);
-            $("#abrir2").animate({height:"50px"}, 500);
-            $("#abrir3").animate({height:"50px"}, 500);
-            $("#abrir4").animate({height:"130px"}, 500);
-            $("#dados4").animate({height:"200px", opacity:1}, 900);
-            document.getElementById("dados1").style.display="none"; 
-            document.getElementById("dados2").style.display="none"; 
-            document.getElementById("dados3").style.display="none"; 
-            document.getElementById("dados4").style.display="flex"; 
-            document.getElementById("dados1").style.opacity=0;
-            document.getElementById("dados2").style.opacity=0; 
-            document.getElementById("dados3").style.opacity=0; 
-            document.getElementById("dados4").style.opacity=0; 
-        }
-    </script>
+            function Abra2() {
+                $("#abrir1").animate({ height: "70px" }, 500);
+                $("#abrir2").animate({ height: "180px" }, 500);
+                $("#abrir3").animate({ height: "70px" }, 500);
+                $("#abrir4").animate({ height: "70px" }, 500);
+                $("#dados2").animate({ height: "70px", opacity: 1 }, 900);
+                document.getElementById("dados1").style.display = "none";
+                document.getElementById("dados2").style.display = "flex";
+                document.getElementById("dados3").style.display = "none";
+                document.getElementById("dados4").style.display = "none";
+                document.getElementById("dados1").style.opacity = 0;
+                document.getElementById("dados2").style.opacity = 0;
+                document.getElementById("dados3").style.opacity = 0;
+                document.getElementById("dados4").style.opacity = 0;
+            }
+
+            function Abra3() {
+                $("#abrir1").animate({ height: "70px" }, 500);
+                $("#abrir2").animate({ height: "70px" }, 500);
+                $("#abrir3").animate({ height: "180px" }, 500);
+                $("#abrir4").animate({ height: "70px" }, 500);
+                $("#dados3").animate({ height: "200px", opacity: 1 }, 900);
+                document.getElementById("dados1").style.display = "none";
+                document.getElementById("dados2").style.display = "none";
+                document.getElementById("dados3").style.display = "flex";
+                document.getElementById("dados4").style.display = "none";
+                document.getElementById("dados1").style.opacity = 0;
+                document.getElementById("dados2").style.opacity = 0;
+                document.getElementById("dados3").style.opacity = 0;
+                document.getElementById("dados4").style.opacity = 0;
+            }
+
+            function Abra4() {
+                $("#abrir1").animate({ height: "70px" }, 500);
+                $("#abrir2").animate({ height: "70px" }, 500);
+                $("#abrir3").animate({ height: "70px" }, 500);
+                $("#abrir4").animate({ height: "210px" }, 500);
+                $("#dados4").animate({ height: "200px", opacity: 1 }, 900);
+                document.getElementById("dados1").style.display = "none";
+                document.getElementById("dados2").style.display = "none";
+                document.getElementById("dados3").style.display = "none";
+                document.getElementById("dados4").style.display = "flex";
+                document.getElementById("dados1").style.opacity = 0;
+                document.getElementById("dados2").style.opacity = 0;
+                document.getElementById("dados3").style.opacity = 0;
+                document.getElementById("dados4").style.opacity = 0;
+            }
+        </script>
 </body>
