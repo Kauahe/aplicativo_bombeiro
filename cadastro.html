@@ -1,101 +1,102 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PERFIL</title>
     <link rel="stylesheet" href="css/cadastro.css">
+    <title>login</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
 </head>
+
 <body>
-    <header>
-      
+
+    <header class="tudo">
+
         <div class="imagem">
-            <img src="img/logosembrilho.png" width="50px" height="49px"></div>
-            <div class="row">
+            <img src="img/logosembrilho.png" width="50px" height="49px">
+        </div>
+        <div class="row">
             <h1>SOS BOMBEIROS</h1>
             <h2>NÚCLEO DE OPERAÇÕES AÉREAS E RESGATE</h2>
-         </div>
+        </div>
     </header>
 
-    <div class="texto"><b>INFORMAÇÕES</b></div>
+
 
     <div class="box">
-        <form action="" method="post" id="cadastrarPac"> 
-        <fieldset>
-            DATA: <br>
-            <input type="date" name="data_ocr" class="data" >
-            <br> <br>
-            NOME DO HOSPITAL:<br>
-            <input type="text" name="nome_hospital" class="text"> <br> <br>
+        <div class="texto"><b>INFORMAÇÕES DO PACIENTE</b></div><BR><br><br>
+        <form action="" method="post" id="cadastrarPac">
+            <fieldset>
+                <div class="minitexto">DATA:</div> <br>
+                <input type="date" name="data_ocr" class="data"><BR><BR>
+                <div class="minitexto">NOME DO HOSPITAL::</div>
+                <input type="text" name="nome_hospital" class="text"> <BR><BR>
 
-            NOME :<br>
-            <input type="text" name="nome_pac"class="text"><br> <br>
+                <div class="minitexto">NOME DO PACIENTE:</div>
+                <input type="text" name="nome_pac" class="text"><BR><BR>
 
-            IDADE:<br>
-            <input type="number" name="idade_pac" class="text"><br> <br>
+                <div class="minitexto">IDADE DO PACIENTE:</div>
+                <input type="number" name="idade_pac" class="text"><BR><BR>
 
-            RG/CPF:<br>
-            <input type="number" name="cpf" class="text"><br> <br>
+                <div class="minitexto">RG/CPF:</div>
+                <input type="number" name="cpf" class="text"><BR><BR>
 
-            FONE:<br>
-            <input type="number" name="telefone_pac" class="text"><br> <br>
+                <div class="minitexto">FONE:</div>
+                <input type="number" name="telefone_pac" class="text"><BR><BR>
 
-            NOME DO ACOMPANHANTE:<br>
-            <input type="text" name="nome_acomp" class="text"><br> <br>
+                <div class="minitexto">NOME DO ACOMPANHANTE:</div>
+                <input type="text" name="nome_acomp" class="text"><BR><BR>
 
-            IDADE DO ACOMPANHANTE:<br>
-            <input type="number" name="idade_acomp" class="text"><br> <br>
+                <div class="minitexto">IDADE DO ACOMPANHANTE:</div>
+                <input type="number" name="idade_acomp" class="text"><BR><BR>
 
-            LOCAL DA OCORRÊNCIA:<br>
-            <input type="text" name="local_ocr" class="text"><br> <br>
+                <div class="minitexto">LOCAL DA OCORRÊNCIA:</div>
+                <input type="text" name="local_ocr" class="text"><BR><BR>
+            </fieldset>
+            <input class="enviar" type="submit" value="Cadastrar">
+        </div>
+        
+        </form>
 
-
-        </fieldset>
-        <input class="enviar" type="submit"  value="Cadastrar">
-
-            </form>
-            <div style="color: rgb(143, 255, 109); font-size: 15px;" id="mensagem" ></div>
-       
-
-
+    <div style="color: rgb(32, 134, 1); width: 100%;font-size: 15px; margin-top: 35px; margin-left: 70px; text-transform: uppercase;" id="mensagem"></div>
 
 
 </body>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
-$(document).ready(function() {
-    $("#cadastrarPac").submit(function(e) {
-        e.preventDefault();
+    $(document).ready(function () {
+        $("#cadastrarPac").submit(function (e) {
+            e.preventDefault();
 
-        // Enviar os dados do formulário
-        var formData = new FormData(this);
+            // Enviar os dados do formulário
+            var formData = new FormData(this);
 
-        $.ajax({
-            type: "post",
-            url: "php/cadastroPac.php",  // Substitua pelo caminho correto
-            data: formData,
-            contentType: false,
-            processData: false,
-            success: function(response) {
-                if (response.success === true) {
-                    $("#mensagem").html("Cadastro realizado com sucesso!");
-                } else {
-                    $("#mensagem").html("Erro: " + response.message);
+            $.ajax({
+                type: "post",
+                url: "php/cadastroPac.php",  // Substitua pelo caminho correto
+                data: formData,
+                contentType: false,
+                processData: false,
+                success: function (response) {
+                    if (response.success === true) {
+                        $("#mensagem").html("Cadastro realizado com sucesso!");
+                    } else {
+                        $("#mensagem").html("Erro: " + response.message);
+                    }
+                },
+                error: function (xhr, status, error) {
+                    $("#mensagem").html("Erro ao cadastrar: " + error);
                 }
-            },
-            error: function(xhr, status, error) {
-                $("#mensagem").html("Erro ao cadastrar: " + error);
-            }
+            });
         });
     });
-});
 </script>
 
 
-  
-  
-  
-  
+
+
+
+
 </html>
