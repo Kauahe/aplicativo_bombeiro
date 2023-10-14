@@ -82,6 +82,7 @@
                 success: function (response) {
                     if (response.success === true) {
                         $("#mensagem").html("Cadastro realizado com sucesso!");
+                        window.open("pag_inicial.html");
                     } else {
                         $("#mensagem").html("Erro: " + response.message);
                     }

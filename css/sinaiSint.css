@@ -78,13 +78,13 @@ h2 {
 }
 
 .c1 {
-   width: 100%;
+   width: 90%;
    height: 75px;
    border-radius: 10px;
    flex-direction: column;
    display: flex;
    border-radius: 5px;
-   background-color: rgba(225, 222, 218, 0.65);
+   background-color: rgba(204, 202, 201, 0.65);
    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0.25, 0.50), 0px 4px 4px 0px rgba(0, 0, 0.25, 0.25), 0px 4px 4px 0px rgba(0, 0, 0.25, 0.25);
 }
 
@@ -163,45 +163,45 @@ h2 {
 }
 
 .c2 {
-   width: 100%;
+   width: 90%;
    height: 70px;
-   background-color: rgba(225, 222, 218, 0.65);
+   background-color: rgba(204, 202, 201, 0.65);
    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0.25, 0.50), 0px 4px 4px 0px rgba(0, 0, 0.25, 0.25), 0px 4px 4px 0px rgba(0, 0, 0.25, 0.25);
    margin-top: 20px;
    border-radius: 5px;
 }
 
 .c3 {
-   width: 100%;
+   width: 90%;
    height: 70px;
-   background-color: rgba(225, 222, 218, 0.65);
+   background-color: rgba(204, 202, 201, 0.65);
    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0.25, 0.50), 0px 4px 4px 0px rgba(0, 0, 0.25, 0.25), 0px 4px 4px 0px rgba(0, 0, 0.25, 0.25);
    margin-top: 20px;
    border-radius: 5px;
 }
 
 .c4 {
-   width: 100%;
+   width: 90%;
    height: 70px;
-   background-color: rgba(225, 222, 218, 0.65);
+   background-color: rgba(204, 202, 201, 0.65);
    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0.25, 0.50), 0px 4px 4px 0px rgba(0, 0, 0.25, 0.25), 0px 4px 4px 0px rgba(0, 0, 0.25, 0.25);
    margin-top: 20px;
    border-radius: 5px;
 }
 
 .c5 {
-   width: 100%;
+   width: 90%;
    height: 70px;
-   background-color: rgba(225, 222, 218, 0.65);
+   background-color: rgba(204, 202, 201, 0.65);
    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0.25, 0.50), 0px 4px 4px 0px rgba(0, 0, 0.25, 0.25), 0px 4px 4px 0px rgba(0, 0, 0.25, 0.25);
    margin-top: 20px;
    border-radius: 5px;
 }
 
 .c6 {
-   width: 100%;
+   width: 90%;
    height: 70px;
-   background-color: rgba(225, 222, 218, 0.65);
+   background-color: rgba(204, 202, 201, 0.65);
    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0.25, 0.50), 0px 4px 4px 0px rgba(0, 0, 0.25, 0.25), 0px 4px 4px 0px rgba(0, 0, 0.25, 0.25);
    margin-top: 20px;
    border-radius: 5px;
@@ -296,4 +296,20 @@ h2 {
    width: 54px;
    margin-left: 1px;
    margin-top: 1px;
+}
+.enviar
+{
+   font-weight: 400;
+   text-transform: uppercase;
+   margin-top:15px ;
+   margin-left: 55px;
+   background-color: #1F3173;
+   color: #d9d9d9;
+   font-family: "Audiowide", sans-serif;
+   margin-top: 5px;
+   width: 55%;
+   height: 50px;
+   border-radius: 10px;
+   font-size: 15px;
+   margin-bottom: 30px;
 }
