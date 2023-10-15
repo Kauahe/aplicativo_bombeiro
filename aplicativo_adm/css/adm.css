@@ -102,7 +102,7 @@ H4 {
     margin-top: 15px;
     border-radius: 34px;
     background: #FFF;
-    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.250), 4px 4px 4px 0px rgba(0, 0, 0, 0.250), 4px 4px 4px 0px rgba(0, 0, 0, 0.50);
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.250), 4px 4px 4px 0px rgba(0, 0, 0, 0.50), 4px 4px 4px 0px rgba(0, 0, 0, 0.50);
     justify-content: center;
     justify-items: center;
     align-items: center;
@@ -110,7 +110,6 @@ H4 {
     flex-direction: column;
     display: flex;
 }
-
 .cdt {
     width: 100%;
     height: 17%;
@@ -184,14 +183,15 @@ H4 {
     justify-content: space-around;
     border-radius: 10px;
     box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-
+    font-size: 20px;
 
 }
 .detalhes-usuario {
     display: flex;
     flex-direction: row;
     font-family: Candara;
-    font-size: 18px;
+    font-size: 22px;
+    margin-top: 20px;
     
 }
 .usuario > {
@@ -217,21 +217,24 @@ line-height: normal;
 }
 .btn-excluir{
     width: 100px;
-    height: 30px;
+    height: 40px;
     border-radius: 30px;
     background: #102986;
     color: #FFF;
     text-align: center;
+    margin-top: 20px;
 font-family: Candara;
 font-size: 15px;
 font-style: normal;
-font-weight: 400;
+font-weight: 800;
 line-height: normal;
+text-transform: uppercase;
+box-shadow: 4px 4px 4px 0px rgba(255, 255, 255, 0.25), 0px 4px 4px 0px rgba(255, 255, 255, 0.25), 0px 4px 4px 0px rgba(255, 255, 255, 0.25);
 
 }
 .botoes-usuario {
-    width: 100%;
-    height: 100;
+    width: 120px;
+    height: 50px;
     display: flex;
     justify-content: end;   
 }

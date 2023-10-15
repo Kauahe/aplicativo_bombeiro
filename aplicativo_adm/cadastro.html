@@ -8,6 +8,7 @@
     <title>Cadastro</title>
     <link rel="stylesheet" href="css/cadastro.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
 </head>
 
 <body>
@@ -22,7 +23,7 @@
             </div>
         </div>
     </header>
-    <div class="titulo"><b>CADASTRO</b></div>
+    <div class="titulo">CADASTRAR NOVO BOMBEIRO</div>
     <main>
         <div class="box">
             <form id="cadastroForm" action="" method="post" onsubmit="juntarCodigos()" enctype="multipart/form-data">
@@ -36,8 +37,9 @@
                 <label for="cpf"><b>CPF:</b></label>
                 <input type="tel" id="cpf" name="cpf" class="inp" required><br><br>
 
+
                 <div class="centralizar">
-                    <div class="cdg"><b>CÓDIGO</b></div>
+                    <div class="cdg">CÓDIGO</div>
                     <div class="códigos">
                         <input class="cod" type="password" id="codigo" name="codigo" maxlength="1" required oninput="moveToNextInput(this, 'codigo2')" >
                         <input class="cod" type="password" id="codigo2" name="codigo2" maxlength="1" required oninput="moveToNextInput(this, 'codigo3')" onkeydown="handleBackspace(this, 'codigo')">
