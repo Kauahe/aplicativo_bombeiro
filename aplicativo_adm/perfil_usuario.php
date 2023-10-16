@@ -1,5 +1,6 @@
 <?php
- include("../php/conecta.php");
+include("../php/conecta.php");
+
 // ID do usuário recebido na URL
 if (isset($_GET['id'])) {
     $userId = $_GET['id'];
@@ -8,8 +9,8 @@ if (isset($_GET['id'])) {
     $sql = "SELECT nome, email, cpf, imagem_blob FROM cadastro WHERE id = $userId";
     $result = $pdo->query($sql);
 
-    if ($result->num_rows > 0) {
-        while ($row = $result->fetch_assoc()) {
+    if ($result->rowCount() > 0) {
+        while ($row = $result->fetch()) {
             $nome = $row['nome'];
             $email = $row['email'];
             $cpf = $row['cpf'];
@@ -18,7 +19,8 @@ if (isset($_GET['id'])) {
     }
 }
 
-$pdo->close();
+$pdo = null; // Feche a conexão PDO
+
 ?>
 
 <!DOCTYPE html>
@@ -34,7 +36,7 @@ $pdo->close();
 
 <body>
     <header>
-    <div class="espaco">
+        <div class="espaco">
             <div class="imagem">
                 <img src="../img/logosembrilho.png" width="60px" height="60px">
             </div>
@@ -48,7 +50,7 @@ $pdo->close();
     <div class="titulo"><b> PERFIL</b> </div>
     <div class="caixa">
         <div class="foto">
-            <img src="data:image/jpeg;base64,<?php echo base64_encode($imagem_blob); ?>" width="200px" height="200px" alt="Foto do usuário">
+            <img src="data:image/jpeg;base64,<?php echo base64_encode($imagem_blob); ?>" width="300px" height="300px" alt="Foto do usuário">
         </div>
         <div class="alterar">
             <div class="alt"><b>ALTERAR</b></div>
@@ -57,21 +59,21 @@ $pdo->close();
 
     <div class="info">
         <div class="nome">
-            <div class="tx1"><b>NOME:</b></div>
+            <div class="tx1"><b>NOME:<br><?php echo $nome; ?></b></div>
             <div class="linha1"></div>
-            <div class="valor"><?php echo $nome; ?></div>
+            <div class="valor"></div>
         </div>
 
         <div class="email">
-            <div class="tx1"><b>EMAIL:</b></div>
+            <div class="tx1"><b>EMAIL:<br><?php echo $email; ?></b></div>
             <div class="linha2"></div>
-            <div class="valor"><?php echo $email; ?></div>
+            <div class="valor"></div>
         </div>
 
         <div class="telefone">
-            <div class="tx1"><b>CPF:</b></div>
+            <div class="tx1"><b>CPF:<br> <?php echo $cpf; ?></b></div>
             <div class="linha1"></div>
-            <div class="valor"><?php echo $cpf; ?></div>
+            <div class="valor"></div>
         </div>
     </div>
 </body>

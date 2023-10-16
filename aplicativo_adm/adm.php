@@ -43,8 +43,8 @@
 
                 if ($stmt->rowCount() > 0) {
                     while ($row = $stmt->fetch()) {
-                        echo "<div class='barra' data-id='" . $row["id"] . "' onclick='redirectToProfile(this)'>";
-                        echo "<div class='info-usuario'>";
+                        echo "<div class='barra' >";
+                        echo "<div class='info-usuario'data-id='" . $row["id"] . "' onclick='redirectToProfile(this)'>";
                         echo "<div class='info-id'> " . $row["id"] . "</div>";
                         echo "<div class='info-nome'> " . $row["nome"] . "</div>";
                         echo "<div class='info-email'> " . $row["email"] . "</div>";
