@@ -1,19 +1,28 @@
 <?php
+// Inclua o arquivo de conexão com o banco de dados
 include("../../php/conecta.php");
 
-$usuarios = array(); // Inicializa um array para armazenar os usuários
+// Função para listar usuários
+function listarUsuarios($pdo) {
+    $sql = "SELECT id, nome, email FROM cadastro";
+    $stmt = $pdo->query($sql);
 
-// Consulta SQL para buscar os usuários
-$sql = "SELECT Nome, email, CPF FROM cadastro";
-$result = $pdo->query($sql);
-
-if ($result) {
-    while ($row = $result->fetch(PDO::FETCH_ASSOC)) {
-        $usuarios[] = $row;
+    if ($stmt->rowCount() > 0) {
+        while ($row = $stmt->fetch()) {
+            echo "<div class='barra'>";
+            echo "<div class='info-usuario'>";
+            echo "<div class='info-id'> " . $row["id"] . "</div>";
+            echo "<div class='info-nome'> " . $row["nome"] . "</div>";
+            echo "<div class='info-email'>" . $row["email"] . "</div>";
+            echo "</div>";
+            echo "<div class='excluir' data-userid='" . $row["id"] . "'>Excluir</div>";
+            echo "</div>";
+        }
+    } else {
+        echo "Nenhum usuário encontrado.";
     }
 }
 
-// Retorne a lista de usuários como JSON
-header("Content-type: application/json");
-echo json_encode($usuarios);
+// Listar usuários
+listarUsuarios($pdo);
 ?>

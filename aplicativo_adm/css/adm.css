@@ -171,6 +171,7 @@ H4 {
     overflow-y: scroll;
 }
 
+
 .barra {
     width: 90%;
     height: 20%;
@@ -215,23 +216,28 @@ font-weight: 400;
 line-height: normal;
 
 }
-.btn-excluir{
+.excluir {
     width: 100px;
-    height: 40px;
+    height: 28px;
     border-radius: 30px;
     background: #102986;
     color: #FFF;
     text-align: center;
     margin-top: 20px;
-font-family: Candara;
-font-size: 15px;
-font-style: normal;
-font-weight: 800;
-line-height: normal;
-text-transform: uppercase;
-box-shadow: 4px 4px 4px 0px rgba(255, 255, 255, 0.25), 0px 4px 4px 0px rgba(255, 255, 255, 0.25), 0px 4px 4px 0px rgba(255, 255, 255, 0.25);
-
+    font-family: Candara;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 28px; /* Centraliza verticalmente o texto */
+    text-transform: uppercase;
+    box-shadow: 4px 4px 4px 0px rgba(255, 255, 255, 0.25), 0px 4px 4px 0px rgba(255, 255, 255, 0.25), 0px 4px 4px 0px rgba(255, 255, 255, 0.25);
+    transition: 0.5;
 }
+.excluir:hover{
+    cursor: pointer;
+    background-color: #091a58;
+}
+
 .botoes-usuario {
     width: 120px;
     height: 50px;
@@ -239,3 +245,33 @@ box-shadow: 4px 4px 4px 0px rgba(255, 255, 255, 0.25), 0px 4px 4px 0px rgba(255,
     justify-content: end;   
 }
 
+.info-usuario {
+    display: flex;
+    flex-direction: row; /* Alterado para uma linha para alinhar as informações horizontalmente */
+    font-family: Candara;
+    font-size: 22px;
+    margin-top: 20px;
+    align-items: center; /* Alinha as informações verticalmente ao centro */
+}
+
+.info-id,
+.info-nome,
+.info-email {
+    margin-right: 20px; /* Adiciona espaçamento entre as informações com margem direita */
+}
+
+/* Adicione estilos para destacar o que é cada informação (ID, Nome, Email) */
+.info-id::before {
+    content: "ID: "; /* Adiciona rótulo "ID: " antes da informação de ID */
+    font-weight: bold;
+}
+
+.info-nome::before {
+    content: "Nome: "; /* Adiciona rótulo "Nome: " antes da informação de Nome */
+    font-weight: bold;
+}
+
+.info-email::before {
+    content: "Email: "; /* Adiciona rótulo "Email: " antes da informação de Email */
+    font-weight: bold;
+}
