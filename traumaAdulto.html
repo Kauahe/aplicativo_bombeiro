@@ -38,7 +38,7 @@
         <div class="peito2" id="PeitoEsquerdo" onclick="Gravar('PeitoEsquerdo');"></div>
         <div class="abdomen" id="AbdomenDireito" onclick="Gravar('AbdomenDireito');"></div>
         <div class="abdomen2" id="AbdomenEsquerdo" onclick="Gravar('AbdomenEsquerdo');"></div>
-        <div class="cabeca2" id="CabecaTras" onclick="Gravar('CabecaTras');"></div>
+        <div class="cabeca2" id="CabecaTras" onclick="Gravar('CabecaTras');"></div> <!-- Parte de tras -->
         <div class="braco4" id="BracoD" onclick="Gravar('BracoD');"></div>
         <div class="braco3" id="BracoE" onclick="Gravar('BracoE');"></div>
         <div class="coxa3" id="CoxaD" onclick="Gravar('CoxaD');"></div>
@@ -62,27 +62,26 @@
             <div class="evelin">
                 <div class="fil1">
                     <fieldset class="fieldset">
-                        <input type="text" class="boxi">
-                        <input type="text" class="boxi">
-                        <input type="text" class="boxi">
-                        <input type="text" class="boxi">
-                    
+                        <input type="text" name="local1" value="" id="local1" class="boxi">
+                        <input type="text" name="local2" value="" id="local1"class="boxi">
+                        <input type="text" name="local3" value="" id="local1"class="boxi">
+                        <input type="text" name="local4" value="" id="local1"class="boxi">
                     </fieldset>
                 </div>
                 <div class="fil">
                     <fieldset class="fieldset">
-                        <input type="text" class="boxi">
-                        <input type="text" class="boxi">
-                        <input type="text" class="boxi">
-                        <input type="text" class="boxi">
+                        <input type="text" name="lado1" value="" id="lado1" class="boxi">
+                        <input type="text" name="lado2" value="" id="lado2" class="boxi">
+                        <input type="text" name="lado3" value="" id="lado3" class="boxi">
+                        <input type="text" name="lado4" value="" id="lado4" class="boxi">
                     </fieldset>
                 </div>
                 <div class="fil">
                     <fieldset class="fieldset">
-                        <input type="text" class="boxi">
-                        <input type="text" class="boxi">
-                        <input type="text" class="boxi">
-                        <input type="text" class="boxi">
+                        <input type="text" name="face1" id="face1" class="boxi">
+                        <input type="text" name="face2" id="face2" class="boxi">
+                        <input type="text" name="face3" id="face3" class="boxi">
+                        <input type="text" name="face4" id="face4" class="boxi">
                     </fieldset>
                 </div>
                 <div class="fil">
@@ -98,17 +97,23 @@
             </div>
         </div>
 </body>
+
 <script>
     function Gravar(id) {
-
+        var nomeLocal = id; // O nome do local é igual ao id neste caso, mas você pode personalizar conforme necessário.
+        var inputLocal = document.getElementById("local1"); // Obtenha o elemento de input pelo ID. Você pode ajustar isso para outros inputs, se necessário.
+        
         if (document.getElementById(id).style.backgroundColor == "red") {
-            document.getElementById(id).style.backgroundColor = ""
+            document.getElementById(id).style.backgroundColor = "";
             // aqui você deverá APAGAR essa opção (coluna) do banco de dados:
-            window.open("grava.php?p=" + id + "&checado=0&cpf=" + c, "_blank")
+           
+            // Se o fundo era vermelho e o local foi clicado novamente, apague o valor do input
+            inputLocal.value = "";
         } else {
-            document.getElementById(id).style.backgroundColor = "red"
+            document.getElementById(id).style.backgroundColor = "red";
             // aqui você deverá ALTERAR essa opção (coluna) do banco de dados:
-            window.open("grava.php?p=" + id + "&checado=1&cpf=" + c, "_blank")
+            // Preencha o input "local1" com o nome do local
+            inputLocal.value = nomeLocal;
         }
     }
 </script>

@@ -122,7 +122,7 @@ H4 {
 }
 
 .add {
-    width: 60%;
+    width: 35%;
     height: 50%;
     margin-top: 35px;
     justify-content: center;
@@ -130,7 +130,17 @@ H4 {
     align-content: center;
     flex-direction: column;
     display: flex;
+    transition: 0.5s;
+    margin-left: 8px;
 
+}
+.add:hover{
+    background-color: #e9e9e9;
+    border-radius: 5px;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    width: 35%;
+    cursor: pointer;
+   
 }
 
 .linha {
@@ -153,7 +163,9 @@ H4 {
     border-radius: 10px;
     text-align: center;
     font-family: "Audiowide", sans-serif;
+    transition: 0.5s;
 }
+
 
 
 .cadastros {
@@ -185,7 +197,11 @@ H4 {
     border-radius: 10px;
     box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     font-size: 20px;
+    transition: 0.5s;
 
+}
+.barra:hover{
+    background-color: #c2c2c2;
 }
 .detalhes-usuario {
     display: flex;
@@ -195,6 +211,7 @@ H4 {
     margin-top: 20px;
     
 }
+
 .usuario > {
     margin-right: 10px; /* ou qualquer valor desejado */
 }
@@ -252,6 +269,10 @@ line-height: normal;
     font-size: 22px;
     margin-top: 20px;
     align-items: center; /* Alinha as informações verticalmente ao centro */
+}
+.info-usuario:hover{
+ cursor: pointer;
+ 
 }
 
 .info-id,
