@@ -5,6 +5,7 @@
 body{
   width: 360px;
   height: 740px;
+
   background: #D9D9D9;
   display: flex;
   flex-direction: column;
@@ -73,7 +74,7 @@ h2
   border-color: transparent;
   margin: 4px;
   padding: 4px;
-  background-color: #d5d4d4e8;
+  background-color: #D9D9D9;
   box-shadow: 4px 4px 4px 0px rgba(0, 0, 0.25, 0.50), 0px 4px 4px 0px rgba(0, 0, 0.25, 0.50), 0px 4px 4px 0px rgba(0, 0, 0.25, 0.50);
 }
 .degrade
