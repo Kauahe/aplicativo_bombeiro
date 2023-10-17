@@ -48,9 +48,8 @@ h1
 }
 .boxtotal
 {
-    width: 100%;
+    width: 360px;
     height: 600px;
-    background-color: aqua;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -60,23 +59,28 @@ h1
 }
 .box1
 {
-    width: 108px;
+    width: 155px;
     height: 548px;
     flex-shrink: 0;
     border: 1px solid #000;
     background: #C8C8C8;
-    box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.24);
-    margin-top:50px;
+    box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.24); box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     
 }
 .box2
 {
-    width: 108px;
+    width: 155px;
     height: 548px;
     flex-shrink: 0;
     border: 1px solid #000;
     background: #C8C8C8;
     box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.24);
-    margin-top:50px;
-    
+}
+.h3
+{
+    font-family: "Audiowide", sans-serif;
+    font-size: 23px;
+    margin-left: 50px;
+    margin-top: 30px;
+    font-weight: 800;
 }
