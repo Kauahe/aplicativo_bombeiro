@@ -1,3 +1,6 @@
+<?php
+$cpf = $_GET["cpf"];
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -51,10 +54,11 @@
         </fieldset>
     </div>
     <div class="btt">
-        <button id="envie" type="button" onclick="Gravar();" class="confirma">
+        <button id="envie" type="button" onclick="Gravar()" class="confirma">
             <b><span class="mm"
         id="confirm">CONFIRMAR
     </button></span></b>
+    <input id="cpf" name="cpf" type="hidden" value="<?php echo("$cpf"); ?>">
 </form>
 
 </body>
@@ -72,7 +76,7 @@ $.ajax
     dataType: 'json',
     success: function (resposta)
      {
-        console.log(resposta.r)
+        alert("Dados gravados com sucesso!")
      },
     error: function (xhr, status, error) {
         $("#mensagem").html("Erro ao cadastrar: " + error);

@@ -41,40 +41,29 @@ h1
     display: flex;
     flex-direction: row;
 }
+.h3
+{
+    color:#051450e8
+}
 .imagem
 {
     margin-top: 8px;
     margin-left: 15px;
 }
-.boxtotal
-{
-    width: 360px;
-    height: 600px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    justify-items: center;
-    align-items: center;
-    align-content: center;
-}
 .box1
 {
-    width: 155px;
-    height: 548px;
+    margin-left: 35px;
+    width: 290px;
+    height: 2315px;
     flex-shrink: 0;
-    border: 1px solid #000;
-    background: #C8C8C8;
-    box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.24); box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    
+    border-radius: 20px;
+    background-color: #c3c3c3e8;
+   box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.50), 0px 4px 4px 0px rgba(0, 0, 0, 0.50), 0px 4px 4px 0px rgba(0, 0, 0, 0.50);
 }
-.box2
+.outros
 {
-    width: 155px;
-    height: 548px;
-    flex-shrink: 0;
-    border: 1px solid #000;
-    background: #C8C8C8;
-    box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.24);
+    width: 60%;
+    margin-left: 80px;
 }
 .h3
 {
@@ -83,4 +72,33 @@ h1
     margin-left: 50px;
     margin-top: 30px;
     font-weight: 800;
+}
+.caixinha
+{
+    width: 20px;
+    height: 20px;
+    margin-left: 20px;
+    border-color: #051450e8;
+    border-style: solid;
+    border-width: 1px;
+}
+.caixa2
+{
+    width: 20px;
+    height: 20px;
+    margin-left: 20px;
+}
+.escrita
+{
+    font-family: Candara;
+    font-size: 17px;
+    margin-left: 50px;
+    margin-top: -23px;
+}
+.subescrita
+{
+    font-family: Candara;
+    font-size: 16px;
+    margin-left: 50px;
+    margin-top: -23px;
 }
