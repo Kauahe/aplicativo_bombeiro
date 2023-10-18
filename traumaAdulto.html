@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>traumas</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
     <link rel="stylesheet" href="css/traumaAdulto.css">
 </head>
@@ -62,10 +62,10 @@
             <div class="evelin">
                 <div class="fil1">
                     <fieldset class="fieldset">
-                        <input type="text" name="local1" value="" id="local1" class="boxi">
-                        <input type="text" name="local2" value="" id="local1"class="boxi">
-                        <input type="text" name="local3" value="" id="local1"class="boxi">
-                        <input type="text" name="local4" value="" id="local1"class="boxi">
+                        <input type="text" name="local1" value="" id="local1" class="boxi"readonly>
+                        <input type="text" name="local2" value="" id="local2"class="boxi"readonly>
+                        <input type="text" name="local3" value="" id="local3"class="boxi"readonly>
+                        <input type="text" name="local4" value="" id="local4"class="boxi"readonly>
                     </fieldset>
                 </div>
                 <div class="fil">
@@ -99,23 +99,56 @@
 </body>
 
 <script>
+    var locaisSelecionados = 0; // Variável para controlar a quantidade de locais selecionados.
+
     function Gravar(id) {
         var nomeLocal = id; // O nome do local é igual ao id neste caso, mas você pode personalizar conforme necessário.
-        var inputLocal = document.getElementById("local1"); // Obtenha o elemento de input pelo ID. Você pode ajustar isso para outros inputs, se necessário.
-        
+        var inputLocal1 = document.getElementById("local1");
+        var inputLocal2 = document.getElementById("local2");
+        var inputLocal3 = document.getElementById("local3");
+        var inputLocal4 = document.getElementById("local4");
+
+        if (inputLocal1.value === nomeLocal) {
+            inputLocal1.value = "";
+            locaisSelecionados--;
+        } else if (inputLocal2.value === nomeLocal) {
+            inputLocal2.value = "";
+            locaisSelecionados--;
+        } else if (inputLocal3.value === nomeLocal) {
+            inputLocal3.value = "";
+            locaisSelecionados--;
+        } else if (inputLocal4.value === nomeLocal) {
+            inputLocal4.value = "";
+            locaisSelecionados--;
+        } else {
+            if (locaisSelecionados < 4) {
+                if (inputLocal1.value === "") {
+                    inputLocal1.value = nomeLocal;
+                    locaisSelecionados++;
+                } else if (inputLocal2.value === "") {
+                    inputLocal2.value = nomeLocal;
+                    locaisSelecionados++;
+                } else if (inputLocal3.value === "") {
+                    inputLocal3.value = nomeLocal;
+                    locaisSelecionados++;
+                } else if (inputLocal4.value === "") {
+                    inputLocal4.value = nomeLocal;
+                    locaisSelecionados++;
+                }
+            }
+        }
+
         if (document.getElementById(id).style.backgroundColor == "red") {
             document.getElementById(id).style.backgroundColor = "";
             // aqui você deverá APAGAR essa opção (coluna) do banco de dados:
-           
-            // Se o fundo era vermelho e o local foi clicado novamente, apague o valor do input
-            inputLocal.value = "";
         } else {
             document.getElementById(id).style.backgroundColor = "red";
             // aqui você deverá ALTERAR essa opção (coluna) do banco de dados:
-            // Preencha o input "local1" com o nome do local
-            inputLocal.value = nomeLocal;
         }
     }
 </script>
+
+
+
 
 </html>
