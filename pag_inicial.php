@@ -1,3 +1,6 @@
+<?php
+$cpf = $_GET["cpf"];
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -39,7 +42,7 @@
             <img class="ajuste" src="img/ft 6.png" width="75px">
             <p><b>AVALIAÇÃO <br> GLASGOW </b></p>
         </div></a>
-        <a href="tipoOcr.html"> <div class="op2">
+        <a href="tipoOcr.php?cpf=<?php echo($cpf);  ?>"> <div class="op2">
             <img src="img/ft 4.png" width="70px">
             <p><b>TIPO DE <br> OCORRÊNCIA</b></p>
         </div></a>
