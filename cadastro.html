@@ -40,7 +40,7 @@
                 <input type="number" name="idade_pac" class="text"><BR><BR>
 
                 <div class="minitexto">RG/CPF:</div>
-                <input type="number" name="cpf" class="text"><BR><BR>
+                <input type="number" id="cpf" name="cpf" class="text"><BR><BR>
 
                 <div class="minitexto">FONE:</div>
                 <input type="number" name="telefone_pac" class="text"><BR><BR>
@@ -81,7 +81,7 @@
                 success: function (response) {
                     if (response.success === true) {
                         $("#mensagem").html("Cadastro realizado com sucesso!");
-                        window.open("pag_inicial.html");
+                        window.open("pag_inicial.php?cpf="+cpf.value, "_self");
                     } else {
                         $("#mensagem").html("Erro: " + response.message);
                     }
