@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 13/10/2023 às 01:45
+-- Tempo de geração: 18-Out-2023 às 17:27
 -- Versão do servidor: 10.4.28-MariaDB
--- Versão do PHP: 8.2.4
+-- versão do PHP: 8.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `cadastro`
+-- Estrutura da tabela `cadastro`
 --
 
 CREATE TABLE `cadastro` (
@@ -37,7 +37,7 @@ CREATE TABLE `cadastro` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Despejando dados para a tabela `cadastro`
+-- Extraindo dados da tabela `cadastro`
 --
 
 INSERT INTO `cadastro` (`nome`, `email`, `cpf`, `id`, `senha`, `imagem_blob`) VALUES
@@ -46,7 +46,7 @@ INSERT INTO `cadastro` (`nome`, `email`, `cpf`, `id`, `senha`, `imagem_blob`) VA
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `cadastropac`
+-- Estrutura da tabela `cadastropac`
 --
 
 CREATE TABLE `cadastropac` (
@@ -62,16 +62,24 @@ CREATE TABLE `cadastropac` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Despejando dados para a tabela `cadastropac`
+-- Extraindo dados da tabela `cadastropac`
 --
 
 INSERT INTO `cadastropac` (`data_ocr`, `nome_hospital`, `nome_pac`, `idade_pac`, `cpf`, `telefone_pac`, `nome_acomp`, `idade_acomp`, `local_ocr`) VALUES
-('2023-01-20', 'joao pessoa', 'Evelin', 17, '78965412303', '123654789', 'Kauã', 18, 'Rua Jarivatuba');
+('2006-02-18', 'Dona Helena', 'Evelin', 12, '12279762919', '47889538765', 'rwhrehe', 34, 'ewgwegy'),
+('7854-05-04', 'rhreg', 'wrgtwrge', 34, '123456789', '627853', 'erhdtjhteuet', 23, 'qtweytwry'),
+('4555-04-24', '3tqetfrea', 'dsgwryghrs', 345, '234325246', '326436536', 'wrywry', 54, 'wywry'),
+('2023-10-11', 't5e35', 'ewtwry', 4546, '421614361', '3643', 'tehteh', 5436, 'teteh'),
+('8624-05-04', 'ytur', 'eyaea', 78, '4547545', '326565', 'teste', 52, 'sdageag'),
+('2023-10-04', 'ewrewt', 'rwrwy', 34, '4874837819', '248578249', 'dhfgeuafgi', 52466537, 'wrhgregh'),
+('2023-01-20', 'joao pessoa', 'Evelin', 17, '78965412303', '123654789', 'Kauã', 18, 'Rua Jarivatuba'),
+('2524-05-04', 'wyeryeq', '4wt6w', 3523, '84637282734', '3647364782', 'wegruiwgiwt', 25, 'gfjdgojw'),
+('2005-06-25', 'eqtqetq', '523t4wt', 45, '9876543210', '865984368892', 'tgweywrw', 34, 'qTYWRYWRY');
 
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `glasgow_menor`
+-- Estrutura da tabela `glasgow_menor`
 --
 
 CREATE TABLE `glasgow_menor` (
@@ -82,30 +90,77 @@ CREATE TABLE `glasgow_menor` (
   `soma_GSC` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `tipoocr`
+--
+
+CREATE TABLE `tipoocr` (
+  `opcao1` int(11) NOT NULL,
+  `opcao2` int(11) NOT NULL,
+  `opcao3` int(11) NOT NULL,
+  `opcao4` int(11) NOT NULL,
+  `opcao5` int(11) NOT NULL,
+  `opcao6` int(11) NOT NULL,
+  `opcao7` int(11) NOT NULL,
+  `opcao8` int(11) NOT NULL,
+  `opcao9` int(11) NOT NULL,
+  `opcao10` int(11) NOT NULL,
+  `opcao11` int(11) NOT NULL,
+  `opcao12` int(11) NOT NULL,
+  `opcao13` int(11) NOT NULL,
+  `opcao14` int(11) NOT NULL,
+  `opcao15` int(11) NOT NULL,
+  `opcao16` int(11) NOT NULL,
+  `opcao17` int(11) NOT NULL,
+  `opcao18` int(11) NOT NULL,
+  `opcao19` int(11) NOT NULL,
+  `opcao20` int(11) NOT NULL,
+  `opcao21` int(11) NOT NULL,
+  `cpf` varchar(11) NOT NULL,
+  `id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Extraindo dados da tabela `tipoocr`
+--
+
+INSERT INTO `tipoocr` (`opcao1`, `opcao2`, `opcao3`, `opcao4`, `opcao5`, `opcao6`, `opcao7`, `opcao8`, `opcao9`, `opcao10`, `opcao11`, `opcao12`, `opcao13`, `opcao14`, `opcao15`, `opcao16`, `opcao17`, `opcao18`, `opcao19`, `opcao20`, `opcao21`, `cpf`, `id`) VALUES
+(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '123456789', 1),
+(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, '9876543210', 2),
+(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, '4874837819', 3);
+
 --
 -- Índices para tabelas despejadas
 --
 
 --
--- Índices de tabela `cadastro`
+-- Índices para tabela `cadastro`
 --
 ALTER TABLE `cadastro`
   ADD PRIMARY KEY (`id`);
 
 --
--- Índices de tabela `cadastropac`
+-- Índices para tabela `cadastropac`
 --
 ALTER TABLE `cadastropac`
   ADD PRIMARY KEY (`cpf`);
 
 --
--- Índices de tabela `glasgow_menor`
+-- Índices para tabela `glasgow_menor`
 --
 ALTER TABLE `glasgow_menor`
   ADD PRIMARY KEY (`cpf`);
 
 --
--- AUTO_INCREMENT para tabelas despejadas
+-- Índices para tabela `tipoocr`
+--
+ALTER TABLE `tipoocr`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT de tabelas despejadas
 --
 
 --
@@ -113,6 +168,12 @@ ALTER TABLE `glasgow_menor`
 --
 ALTER TABLE `cadastro`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
+
+--
+-- AUTO_INCREMENT de tabela `tipoocr`
+--
+ALTER TABLE `tipoocr`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
