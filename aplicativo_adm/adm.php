@@ -28,9 +28,13 @@
                 <form>
                     <a href="cadastro.html" class="btn"><b>+ ADICIONAR INTEGRANTE</b></a>
                 </form>
+               
             </div>
-            <div class="linha"></div>
+            <div class="margimdocu">
+            <Button class="meucu">listagem</Button> <!--adicione a função de listar por ordem alfabetica ou id aqui-->
+         </div>
         </div>
+        <div class="linha"></div>
         <div class="cadastros">
            <?php
             // Inclua o arquivo de conexão com o banco de dados

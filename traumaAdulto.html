@@ -25,26 +25,41 @@
     <div class="trauma"><b>ESCOLHA O LOCAL DO TRAUMA</b></div>
     <div class="img">
         <img src="img/adulto.png" width="100%" height="100%">
-        <div class="braco" id="BracoDreito" onclick="Gravar('BracoDreito');"></div>
-        <div class="braco2" id="BracoEsquerdo" onclick="Gravar('BracoEsquerdo');"></div>
-        <div class="coxa" id="CoxaDireita" onclick="Gravar('CoxaDireita');"></div>
-        <div class="coxa2" id="CoxaEsquerda" onclick="Gravar('CoxaEsquerda');"></div>
-        <div class="canela" id="CanelaDireita" onclick="Gravar('CanelaDireita');"></div>
-        <div class="canela2" id="CanelaEsquerda" onclick="Gravar('CanelaEsquerda');"></div>
-        <div class="pe" id="PeDireito" onclick="Gravar('PeDireito');"></div>
-        <div class="pe2" id="PeEsquerda" onclick="Gravar('PeEsquerda');"></div>
-        <div class="cabeca" id="Cabeca" onclick="Gravar('Cabeca');"></div>
-        <div class="peito" id="PeitoDireito" onclick="Gravar('PeitoDireito');"></div>
-        <div class="peito2" id="PeitoEsquerdo" onclick="Gravar('PeitoEsquerdo');"></div>
-        <div class="abdomen" id="AbdomenDireito" onclick="Gravar('AbdomenDireito');"></div>
-        <div class="abdomen2" id="AbdomenEsquerdo" onclick="Gravar('AbdomenEsquerdo');"></div>
-        <div class="cabeca2" id="CabecaTras" onclick="Gravar('CabecaTras');"></div> <!-- Parte de tras -->
-        <div class="braco4" id="BracoD" onclick="Gravar('BracoD');"></div>
-        <div class="braco3" id="BracoE" onclick="Gravar('BracoE');"></div>
-        <div class="coxa3" id="CoxaD" onclick="Gravar('CoxaD');"></div>
-        <div class="coxa4" id="CoxaE" onclick="Gravar('CoxaE');"></div>
-        <div class="panturra" id="PanturrilhaD" onclick="Gravar('PanturrilhaD');"></div>
-        <div class="panturra2" id="PanturrilhaE" onclick="Gravar('PanturrilhaE');"></div>
+    <div class="frente" id="frente" value="frente">
+        
+        <div class="direita_frente" id="direita" value="direito">
+            <div class="braco" id="BracoDreito" onclick="Gravar('BracoDreito');"></div>
+            <div class="coxa" id="CoxaDireita" onclick="Gravar('CoxaDireita');"></div>
+            <div class="canela" id="CanelaDireita" onclick="Gravar('CanelaDireita');"></div>
+            <div class="peito" id="PeitoDireito" onclick="Gravar('PeitoDireito');"></div>
+            <div class="abdomen" id="AbdomenDireito" onclick="Gravar('AbdomenDireito');"></div>
+            <div class="pe" id="PeDireito" onclick="Gravar('PeDireito');"></div>
+        </div>
+            <div class="cabeca" id="Cabeca" onclick="Gravar('Cabeca');"></div>
+        <div class="esquerda_frente" id="esquerda_frente" value="esquerdo">
+            <div class="peito2" id="PeitoEsquerdo" onclick="Gravar('PeitoEsquerdo');"></div>
+            <div class="braco2" id="BracoEsquerdo" onclick="Gravar('BracoEsquerdo');"></div>
+            <div class="coxa2" id="CoxaEsquerda" onclick="Gravar('CoxaEsquerda');"></div>
+            <div class="canela2" id="CanelaEsquerda" onclick="Gravar('CanelaEsquerda');"></div>
+            <div class="pe2" id="PeEsquerda" onclick="Gravar('PeEsquerda');"></div>
+            <div class="abdomen2" id="AbdomenEsquerdo" onclick="Gravar('AbdomenEsquerdo');"></div>
+        </div>
+    </div>
+    <div class="costas" id="costas" value="costas">
+        <div class="direita_costas" id="direita_costas" value="direita">
+            
+            <div class="braco4" id="BracoD" onclick="Gravar('BracoD');"></div>
+            <div class="coxa3" id="CoxaD" onclick="Gravar('CoxaD');"></div>
+            <div class="panturra" id="PanturrilhaD" onclick="Gravar('PanturrilhaD');"></div>
+
+        </div>
+            <div class="cabeca2" id="CabecaTras" onclick="Gravar('CabecaTras');"></div>
+        <div class="esquerda_costas" id="esquerda_costas" value="esquerda">           
+            <div class="braco3" id="BracoE" onclick="Gravar('BracoE');"></div>
+            <div class="coxa4" id="CoxaE" onclick="Gravar('CoxaE');"></div>
+            <div class="panturra2" id="PanturrilhaE" onclick="Gravar('PanturrilhaE');"></div>
+        </div> 
+    </div>
 
     </div>
     <div class="info">
@@ -70,10 +85,10 @@
                 </div>
                 <div class="fil">
                     <fieldset class="fieldset">
-                        <input type="text" name="lado1" value="" id="lado1" class="boxi">
-                        <input type="text" name="lado2" value="" id="lado2" class="boxi">
-                        <input type="text" name="lado3" value="" id="lado3" class="boxi">
-                        <input type="text" name="lado4" value="" id="lado4" class="boxi">
+                        <input type="text" name="lado1" value="" id="lado1" class="boxi"readonly>
+                        <input type="text" name="lado2" value="" id="lado2" class="boxi"readonly>
+                        <input type="text" name="lado3" value="" id="lado3" class="boxi"readonly>
+                        <input type="text" name="lado4" value="" id="lado4" class="boxi"readonly>
                     </fieldset>
                 </div>
                 <div class="fil">
@@ -147,8 +162,3 @@
         }
     }
 </script>
-
-
-
-
-</html>
