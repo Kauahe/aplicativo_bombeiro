@@ -9,7 +9,10 @@ body {
     background: #D9D9D9;
     display: flex;
     flex-direction: column;
-    overflow-y: hidden;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+  
 
 }
 
@@ -98,8 +101,6 @@ H4 {
     width: 1166px;
     height: 586px;
     flex-shrink: 0;
-    margin-left: 300px;
-    margin-top: 15px;
     border-radius: 34px;
     background: #FFF;
     box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.250), 4px 4px 4px 0px rgba(0, 0, 0, 0.50), 4px 4px 4px 0px rgba(0, 0, 0, 0.50);
@@ -113,18 +114,20 @@ H4 {
 .cdt {
     width: 100%;
     height: 17%;
-    margin-top: -20px;
-   
+  
     border-top-right-radius: 34px;
     border-top-left-radius: 34px;
-    flex-direction: column;
+    flex-direction: row;
     display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+ 
 }
 
 .add {
     width: 35%;
     height: 50%;
-    margin-top: 35px;
+    
     justify-content: center;
     justify-items: center;
     align-content: center;
@@ -133,6 +136,18 @@ H4 {
     transition: 0.5s;
     margin-left: 8px;
 
+}
+.meucu{
+    width:100%;
+    height:100%;
+    
+    
+  
+}
+.margimdocu{
+    width:30%;
+    height:50%;
+    margin-right:20px;
 }
 .add:hover{
     background-color: #e9e9e9;
@@ -145,7 +160,7 @@ H4 {
 
 .linha {
     width: 100%;
-    height: 2%;
+    height:  0.5%;
     margin-top: 15px;
     background-color: black;
 }
