@@ -25,9 +25,15 @@
     <div class="caixa">
         <div class="cdt">
             <div class="add">
-                <form>
-                    <a href="cadastro.html" class="btn"><b>LISTAR POR</b></a>
-                </form>
+            <select id="selectList" name="list">
+           
+                    <a class="btn"><b>LISTAR POR...</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="../img/32195.png" width="10px" heigth="10px"></a>
+                
+              
+            <option value="opcao1">Opção 1</option>
+            <option value="opcao2">Opção 2</option>
+            <option value="opcao3">Opção 3</option>
+        </select>
                
             </div>
         
@@ -67,13 +73,13 @@
 </body>
 <script>
 $(document).ready(function () {
-    $('.cadastros_pac').on('click', '.excluir', function () {
+    $('.cadastro_pac').on('click', '.excluir', function () {
         var userId = $(this).data('userid');
         if (confirm('Tem certeza de que deseja excluir esta ococrrencia?')) {
             $.ajax({
                 url: 'php/excluir_ocr.php',
                 method: 'POST',
-                data: { id: userId },
+                data: { num_ocorrencia: userId },
                 success: function (data) {
                     // Atualize a lista de usuários após a exclusão
                     listarOcorrencias();
@@ -94,4 +100,10 @@ $(document).ready(function () {
         });
     }
 });
+<script>
+document.getElementById("showSelect").addEventListener("click", function() {
+    var select = document.getElementById("selectList");
+    select.style.display = "block";
+});
+</script>
 </script>

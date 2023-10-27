@@ -134,8 +134,11 @@ H4 {
     flex-direction: column;
     display: flex;
     transition: 0.5s;
-    margin-left: 8px;
-
+    background-color: #e7e7e7;
+    width: 35%;
+    margin-left: 15px;
+    border: solid black 1px;
+    border-radius: 4px;
 }
 .meucu{
     width:100%;
@@ -150,10 +153,9 @@ H4 {
     margin-right:20px;
 }
 .add:hover{
-    background-color: #e9e9e9;
+    background-color: #f8f8f8;
     border-radius: 5px;
     box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    width: 35%;
     cursor: pointer;
    
 }
@@ -202,7 +204,7 @@ H4 {
 .barra {
     width: 90%;
     height: 20%;
-    background-color: #d47777;
+    background-color: #e7e7e7;
     border: 1px solid #ccc;
     padding: 20px;
     margin-bottom: 10px;
@@ -238,15 +240,23 @@ H4 {
     width: 60px;
     height: 30px;
     border-radius: 20px;
-background: #102986;
-color: #FFF;
-text-align: center;
-font-family: Candara;
-font-size: 15px;
+    background: #102986;
+    color: #FFF;
+       text-align: center;
+    font-family: Candara;
+    font-size: 15px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
 
+}
+  /* Estilo para ocultar o select inicialmente */
+  select {
+    display: none;
+  }
+.a::before {
+    content: "listar por "; /* Adiciona rótulo "Nome: " antes da informação de Nome */
+    font-weight: bold;
 }
 .excluir {
     width: 100px;
