@@ -31,7 +31,10 @@
                
             </div>
             <div class="margimdocu">
-            <Button class="meucu">listagem</Button> <!--adicione a função de listar por ordem alfabetica ou id aqui-->
+            <select class="meucu" name="listar" name="ordenacao" id="ordenacao">listagem
+            <option value="opcao1">ID</option>
+            <option value="opcao2">Nome</option>
+            <option value="opcao3">Data</option><select> <!--adicione a função de listar por ordem alfabetica ou id aqui-->
          </div>
         </div>
         <div class="linha"></div>
@@ -69,6 +72,18 @@
 </body>
 <script>
 $(document).ready(function () {
+    // Função para listar usuários
+    function listarUsuarios(ordenacao) {
+        $.ajax({
+            url: 'php/listar_usuarios.php',
+            method: 'GET',
+            data: { ordenacao: ordenacao },
+            success: function (data) {
+                $('.cadastros').html(data);
+            }
+        });
+    }
+
     $('.cadastros').on('click', '.excluir', function () {
         var userId = $(this).data('userid');
         if (confirm('Tem certeza de que deseja excluir este usuário?')) {
@@ -78,31 +93,29 @@ $(document).ready(function () {
                 data: { id: userId },
                 success: function (data) {
                     // Atualize a lista de usuários após a exclusão
-                    listarUsuarios();
+                    listarUsuarios($('#ordenacao').val());
                     alert(data); // Exibe uma mensagem com o resultado da exclusão
                 }
             });
         }
     });
 
-    // Função para listar usuários novamente após a exclusão
-    function listarUsuarios() {
-        $.ajax({
-            url: 'php/listar_usuarios.php', // Crie um arquivo PHP para listar usuários
-            method: 'GET',
-            success: function (data) {
-                $('.cadastros').html(data); // Atualize a lista de usuários
-            }
-        });
-    }
+    // Quando o valor selecionado no <select> muda, chame a função de ordenação
+    $('#ordenacao').on('change', function () {
+        listarUsuarios($(this).val());
+    });
+
+    // Chame a função listarUsuarios com a ordenação padrão
+    listarUsuarios($('#ordenacao').val());
 });
-</script>
-<script>
+
 function redirectToProfile(element) {
-    const userId = element.getAttribute("data-id");
+    const userId = element.getAttribute('data-id');
     if (userId) {
-        window.location.href = "perfil_usuario.php?id=" + userId;
+        window.location.href = 'perfil_usuario.php?id=' + userId;
     }
 }
 </script>
-</html>
+
+
+
