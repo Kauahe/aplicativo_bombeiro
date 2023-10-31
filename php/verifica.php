@@ -15,7 +15,9 @@ $matchingCodes = $statement->fetchAll(PDO::FETCH_ASSOC);
 
 if (count($matchingCodes) > 0) {
     // Redirecionar para a página desejada
+    $_SESSION["usuario"] = $matchingCodes[0]["id"];
     header("Location:../animacao.html");
+
     exit();
 } else {
     // Exibir mensagem de erro

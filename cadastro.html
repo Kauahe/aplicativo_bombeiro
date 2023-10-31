@@ -26,7 +26,7 @@
 
     <div class="texto"><b>INFORMAÇÕES DO PACIENTE</b></div>
     <div class="box">
-        <form action="" method="post" id="cadastrarPac">
+        <form action="php/cadastroPac.php" method="post" id="cadastrarPac">
             <fieldset><br><br><br><br><br><br>
                 <div class="minitexto">DATA:</div> <br>
                 <input type="date" name="data_ocr" class="data"><BR><BR>
@@ -82,8 +82,10 @@
                 processData: false,
                 success: function (response) {
                     if (response.success === true) {
-                        $("#mensagem").html("Cadastro realizado com sucesso!");
-                        window.open("pag_inicial.php?cpf="+cpf.value, "_self");
+                        //$("#mensagem").html("Cadastro realizado com sucesso!!!!!");
+                        window.open("pag_inicial.php");
+                        $("#mensagem").html("Cadastro realizado com sucessoooooo!");
+                        
                     } else {
                         $("#mensagem").html("Erro: " + response.message);
                     }

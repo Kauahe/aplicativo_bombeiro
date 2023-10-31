@@ -1,6 +1,7 @@
 <?php
 include("conecta.php");
-   $num_ocorrencia=($_POST["num_ocorrencia"]);
+session_start();
+   $num_ocorrencia=  $_SESSION["nrOcorrencia"];
    $opcao1=isset($_POST["opcao1"]) ? 1: 0;
    $opcao2=isset($_POST["opcao2"]) ? 1: 0;
    $opcao3=isset($_POST["opcao3"]) ? 1: 0;
@@ -23,7 +24,7 @@ include("conecta.php");
    $opcao20=isset($_POST["opcao20"]) ? 1: 0;
    $opcao21=isset($_POST["opcao21"]) ? 1: 0;
    
-   $sql = "INSERT INTO tipoocr VALUES (:op1, :op2, :op3, :op4, :op5, :op6, :op7, :op8, :op9, :op10, :op11, :op12, :op13, :op14, :op15, :op16, :op17, :op18, :op19, :op20, :op21, :num_ocorrencia, :id)";
+   $sql = "INSERT INTO tipoocr VALUES (:id, :num_ocorrencia, :op1, :op2, :op3, :op4, :op5, :op6, :op7, :op8, :op9, :op10, :op11, :op12, :op13, :op14, :op15, :op16, :op17, :op18, :op19, :op20, :op21  )";
     $stmt = $pdo->prepare($sql);
    $n=null;
     $stmt->bindParam(':id', $n);
