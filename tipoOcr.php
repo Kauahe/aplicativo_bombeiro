@@ -1,5 +1,5 @@
 <?php
-$cpf = $_GET["cpf"];
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -58,7 +58,7 @@ $cpf = $_GET["cpf"];
             <b><span class="mm"
         id="confirm">CONFIRMAR
     </button></span></b>
-    <input id="cpf" name="cpf" type="hidden" value="<?php echo("$cpf"); ?>">
+    <!-- <input id="cpf" name="cpf" type="hidden" value="<?php //echo("$cpf"); ?>"> -->
 </form>
 
 </body>
@@ -67,6 +67,7 @@ $cpf = $_GET["cpf"];
     function Gravar()
     {
         var dados= $('#form1').serialize();
+        
         
 $.ajax
 ({
@@ -89,6 +90,8 @@ $.ajax
         window.open("pag_inicial.html","_self"), 2000;
     }
 </script>
+
+
 </html>
 
    
