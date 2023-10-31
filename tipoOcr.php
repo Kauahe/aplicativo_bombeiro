@@ -87,7 +87,7 @@ $.ajax
 
     function Sair()
     {
-        window.open("pag_inicial.html","_self"), 2000;
+        window.open("pag_inicial.php","_self"), 2000;
     }
 </script>
 
