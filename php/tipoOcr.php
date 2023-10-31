@@ -1,6 +1,7 @@
 <?php
 include("conecta.php");
 session_start();
+$_SESSION["v"]= "v";
    $num_ocorrencia=  $_SESSION["nrOcorrencia"];
    $opcao1=isset($_POST["opcao1"]) ? 1: 0;
    $opcao2=isset($_POST["opcao2"]) ? 1: 0;
@@ -52,6 +53,6 @@ session_start();
     $stmt->bindParam(':op21', $opcao21);
   
     $stmt->execute();
+    header("pag_inicial.php")
 
-    echo("{\"r\":\"$opcao1\"}");
 ?>
