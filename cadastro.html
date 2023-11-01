@@ -67,35 +67,7 @@
 </body>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
-    $(document).ready(function () {
-        $("#cadastrarPac").submit(function (e) {
-            e.preventDefault();
-
-            // Enviar os dados do formulário
-            var formData = new FormData(this);
-
-            $.ajax({
-                type: "post",
-                url: "php/cadastroPac.php",  // Substitua pelo caminho correto
-                data: formData,
-                contentType: false,
-                processData: false,
-                success: function (response) {
-                    if (response.success === true) {
-                        //$("#mensagem").html("Cadastro realizado com sucesso!!!!!");
-                        window.open("pag_inicial.php");
-                        $("#mensagem").html("Cadastro realizado com sucessoooooo!");
-                        
-                    } else {
-                        $("#mensagem").html("Erro: " + response.message);
-                    }
-                },
-                error: function (xhr, status, error) {
-                    $("#mensagem").html("Erro ao cadastrar: " + error);
-                }
-            });
-        });
-    });
+    
 
     function ValidarTelefone () 
     {

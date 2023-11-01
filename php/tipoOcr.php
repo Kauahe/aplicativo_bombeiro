@@ -53,6 +53,7 @@ $_SESSION["v"]= "v";
     $stmt->bindParam(':op21', $opcao21);
   
     $stmt->execute();
-    header("pag_inicial.php")
+    
+    header("Location:../pag_inicial.php");
 
 ?>

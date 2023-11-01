@@ -1,6 +1,7 @@
 <?php
 include("conecta.php");
 session_start();
+$_SESSION["v"]= "v";
 $response = array(); // Inicializa um array para armazenar a resposta
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -44,7 +45,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Retorne a resposta como JSON
-    header("Content-type: application/json");
-    echo json_encode($response);
+    header("Location:../pag_inicial.php");
 }
 ?>
