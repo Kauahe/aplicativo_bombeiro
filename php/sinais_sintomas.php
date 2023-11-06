@@ -1,7 +1,7 @@
 <?php
 include("conecta.php");
 session_start();
-$_SESSION["v"]= "v";
+    $_SESSION["v"]= "v";
    $num_ocorrencia=  $_SESSION["nrOcorrencia"];
    $opcao1=isset($_POST["opcao1"]) ? 1: 0;
    $opcao2=isset($_POST["opcao2"]) ? 1: 0;
@@ -90,46 +90,46 @@ $_SESSION["v"]= "v";
     $stmt->bindParam(':op20', $opcao20);
     $stmt->bindParam(':op21', $opcao21);
     $stmt->bindParam(':op21', $opcao21);
-$stmt->bindParam(':op22', $opcao22);
-$stmt->bindParam(':op23', $opcao23);
-$stmt->bindParam(':op24', $opcao24);
-$stmt->bindParam(':op25', $opcao25);
-$stmt->bindParam(':op26', $opcao26);
-$stmt->bindParam(':op27', $opcao27);
-$stmt->bindParam(':op28', $opcao28);
-$stmt->bindParam(':op29', $opcao29);
-$stmt->bindParam(':op30', $opcao30);
-$stmt->bindParam(':op31', $opcao31);
-$stmt->bindParam(':op32', $opcao32);
-$stmt->bindParam(':op33', $opcao33);
-$stmt->bindParam(':op34', $opcao34);
-$stmt->bindParam(':op35', $opcao35);
-$stmt->bindParam(':op36', $opcao36);
-$stmt->bindParam(':op37', $opcao37);
-$stmt->bindParam(':op38', $opcao38);
-$stmt->bindParam(':op39', $opcao39);
-$stmt->bindParam(':op40', $opcao40);
-$stmt->bindParam(':op41', $opcao41);
-$stmt->bindParam(':op42', $opcao42);
-$stmt->bindParam(':op43', $opcao43);
-$stmt->bindParam(':op44', $opcao44);
-$stmt->bindParam(':op45', $opcao45);
-$stmt->bindParam(':op46', $opcao46);
-$stmt->bindParam(':op47', $opcao47);
-$stmt->bindParam(':op48', $opcao48);
-$stmt->bindParam(':op49', $opcao49);
-$stmt->bindParam(':op50', $opcao50);
-$stmt->bindParam(':op51', $opcao51);
-$stmt->bindParam(':op52', $opcao52);
-$stmt->bindParam(':op53', $opcao53);
-$stmt->bindParam(':op54', $opcao54);
-$stmt->bindParam(':op55', $opcao55);
-$stmt->bindParam(':op56', $opcao56);
-$stmt->bindParam(':op57', $opcao57);
-$stmt->bindParam(':Outros', $Outros);
-
-
-$stmt->execute();
-
-header("Location:../pag_inicial.php");
-?>
+    $stmt->bindParam(':op22', $opcao22);
+    $stmt->bindParam(':op23', $opcao23);
+    $stmt->bindParam(':op24', $opcao24);
+    $stmt->bindParam(':op25', $opcao25);
+    $stmt->bindParam(':op26', $opcao26);
+    $stmt->bindParam(':op27', $opcao27);
+    $stmt->bindParam(':op28', $opcao28);
+    $stmt->bindParam(':op29', $opcao29);
+    $stmt->bindParam(':op30', $opcao30);
+    $stmt->bindParam(':op31', $opcao31);
+    $stmt->bindParam(':op32', $opcao32);
+    $stmt->bindParam(':op33', $opcao33);
+    $stmt->bindParam(':op34', $opcao34);
+    $stmt->bindParam(':op35', $opcao35);
+    $stmt->bindParam(':op36', $opcao36);
+    $stmt->bindParam(':op37', $opcao37);
+    $stmt->bindParam(':op38', $opcao38);
+    $stmt->bindParam(':op39', $opcao39);
+    $stmt->bindParam(':op40', $opcao40);
+    $stmt->bindParam(':op41', $opcao41);
+    $stmt->bindParam(':op42', $opcao42);
+    $stmt->bindParam(':op43', $opcao43);
+    $stmt->bindParam(':op44', $opcao44);
+    $stmt->bindParam(':op45', $opcao45);
+    $stmt->bindParam(':op46', $opcao46);
+    $stmt->bindParam(':op47', $opcao47);
+    $stmt->bindParam(':op48', $opcao48);
+    $stmt->bindParam(':op49', $opcao49);
+    $stmt->bindParam(':op50', $opcao50);
+    $stmt->bindParam(':op51', $opcao51);
+    $stmt->bindParam(':op52', $opcao52);
+    $stmt->bindParam(':op53', $opcao53);
+    $stmt->bindParam(':op54', $opcao54);
+    $stmt->bindParam(':op55', $opcao55);
+    $stmt->bindParam(':op56', $opcao56);
+    $stmt->bindParam(':op57', $opcao57);
+    $stmt->bindParam(':Outros', $Outros);
+    
+    
+    $stmt->execute();
+    
+    header("Location:../pag_inicial.php");
+    ?>
