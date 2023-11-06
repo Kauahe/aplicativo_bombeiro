@@ -32,7 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Retorne a resposta como JSON
-    header("Content-type: application/json");
-    echo json_encode($response);
+    header("Location:../pag_inicial.php");
+   
 }
 ?>
