@@ -3,7 +3,7 @@ include("conecta.php");
 session_start();
 $_SESSION["v"]= "v";
    $num_ocorrencia=  $_SESSION["nrOcorrencia"];
-   $opcao1=isset($_POST["opcao1"]) ? 1: 0;
+   $opcao1=isset($_POST["opcao1"])  ? "Causado por animais " : "";
    $opcao2=isset($_POST["opcao2"]) ? 1: 0;
    $opcao3=isset($_POST["opcao3"]) ? 1: 0;
    $opcao4=isset($_POST["opcao4"]) ? 1: 0;

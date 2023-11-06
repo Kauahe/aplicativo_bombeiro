@@ -24,7 +24,7 @@
     </div>
     </header>
 
-    <form action="" id="form1" method="post">
+    <form action="php/tipoOcorrencia.php" id="form1" method="post">
         <br><div class="tit"><b>TIPO DE OCORRÊNCIA</b></div>
         <div class="subtit"><b>PRÉ-HOSPITALAR</b></div><br>
         <div class="degrade">
@@ -53,44 +53,12 @@
             <input class="caixa" type="checkbox" id="op21" name="opcao21"> &nbsp; transferência  <br> <br>
         </fieldset>
     </div>
-    <div class="btt">
-        <button id="envie" type="button" onclick="Gravar()" class="confirma">
-            <b><span class="mm"
-        id="confirm">CONFIRMAR
-    </button></span></b>
+    <input class="enviar" type="submit" value="Cadastrar" ><br><br><br><br>
     <!-- <input id="cpf" name="cpf" type="hidden" value="<?php //echo("$cpf"); ?>"> -->
 </form>
 
 </body>
 <script src="jquery.js"></script>
-<script>
-    function Gravar()
-    {
-        var dados= $('#form1').serialize();
-        
-        
-$.ajax
-({
-    type: "POST",
-    url: "php/tipoOcr.php",  // Substitua pelo caminho correto
-    data: dados,
-    dataType: 'json',
-    success: function (resposta)
-     {
-        alert("Dados gravados com sucesso!")
-     },
-    error: function (xhr, status, error) {
-        $("#mensagem").html("Erro ao cadastrar: " + error);
-    }
-    });
-}
-
-    function Sair()
-    {
-        window.open("pag_inicial.php","_self"), 2000;
-    }
-</script>
-
 
 </html>
 
