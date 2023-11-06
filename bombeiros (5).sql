@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 01-Nov-2023 às 15:35
+-- Tempo de geração: 06-Nov-2023 às 13:36
 -- Versão do servidor: 10.4.28-MariaDB
 -- versão do PHP: 8.2.4
 
@@ -68,11 +68,11 @@ CREATE TABLE `cadastropac` (
 --
 
 INSERT INTO `cadastropac` (`num_ocorrencia`, `data_ocr`, `nome_hospital`, `nome_pac`, `idade_pac`, `telefone_pac`, `nome_acomp`, `idade_acomp`, `local_ocr`, `cpf`, `bombeiro`) VALUES
-(12, '2323-02-20', 'hospital', 'gabriel', 18, '123457892532', 'ferreira', 10, 'procopio', 123456, 46),
 (23, '0000-00-00', 'ferreira', '', 0, '', '', 0, '', 0, 46),
 (24, '0000-00-00', 'Evelin Solange', 'Evelin ', 18, '47992260467', 'wgrre', 18, 'wegtwrhg', 122797, 46),
-(27, '0000-00-00', ' qg2ctvwrq', 'ttrrr', 17, '', '', 0, '', 0, 46),
-(29, '0000-00-00', 'tais carla', 'gabriel', 0, '', '', 0, '', 0, 46);
+(29, '0000-00-00', 'tais carla', 'gabriel', 0, '', '', 0, '', 0, 46),
+(30, '0000-00-00', '', 'Julia', 0, '', '', 0, '', 0, 46),
+(31, '0000-00-00', '', 'André', 0, '', '', 0, '', 0, 46);
 
 -- --------------------------------------------------------
 
@@ -86,6 +86,29 @@ CREATE TABLE `glasgow_menor` (
   `resposta_verbal` varchar(45) NOT NULL,
   `respoosta_motora` varchar(45) NOT NULL,
   `soma_GSC` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `problemas`
+--
+
+CREATE TABLE `problemas` (
+  `id` int(11) NOT NULL,
+  `nrOcorrencia` int(11) NOT NULL,
+  `opcao0` int(11) DEFAULT NULL,
+  `opcao1` int(11) DEFAULT NULL,
+  `opcao2` int(11) DEFAULT NULL,
+  `opcao3` int(11) DEFAULT NULL,
+  `opcao4` int(11) DEFAULT NULL,
+  `opcao5` int(11) DEFAULT NULL,
+  `opcao6` int(11) DEFAULT NULL,
+  `opcao7` int(11) DEFAULT NULL,
+  `opcao8` int(11) DEFAULT NULL,
+  `opcao9` int(11) DEFAULT NULL,
+  `opcao10` int(11) DEFAULT NULL,
+  `Outros` text DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
@@ -176,27 +199,27 @@ INSERT INTO `sinais_sintomas` (`id`, `nrOcorrencia`, `opcao1`, `opcao2`, `opcao3
 CREATE TABLE `tipoocr` (
   `id` int(11) NOT NULL,
   `nrOcorrencia` int(11) NOT NULL,
-  `opcao1` int(11) NOT NULL,
-  `opcao2` int(11) NOT NULL,
-  `opcao3` int(11) NOT NULL,
-  `opcao4` int(11) NOT NULL,
-  `opcao5` int(11) NOT NULL,
-  `opcao6` int(11) NOT NULL,
-  `opcao7` int(11) NOT NULL,
-  `opcao8` int(11) NOT NULL,
-  `opcao9` int(11) NOT NULL,
-  `opcao10` int(11) NOT NULL,
-  `opcao11` int(11) NOT NULL,
-  `opcao12` int(11) NOT NULL,
-  `opcao13` int(11) NOT NULL,
-  `opcao14` int(11) NOT NULL,
-  `opcao15` int(11) NOT NULL,
-  `opcao16` int(11) NOT NULL,
-  `opcao17` int(11) NOT NULL,
-  `opcao18` int(11) NOT NULL,
-  `opcao19` int(11) NOT NULL,
-  `opcao20` int(11) NOT NULL,
-  `opcao21` int(11) NOT NULL
+  `opcao1` varchar(45) NOT NULL,
+  `opcao2` varchar(45) NOT NULL,
+  `opcao3` varchar(45) NOT NULL,
+  `opcao4` varchar(45) NOT NULL,
+  `opcao5` varchar(45) NOT NULL,
+  `opcao6` varchar(45) NOT NULL,
+  `opcao7` varchar(45) NOT NULL,
+  `opcao8` varchar(45) NOT NULL,
+  `opcao9` varchar(45) NOT NULL,
+  `opcao10` varchar(45) NOT NULL,
+  `opcao11` varchar(45) NOT NULL,
+  `opcao12` varchar(45) NOT NULL,
+  `opcao13` varchar(45) NOT NULL,
+  `opcao14` varchar(45) NOT NULL,
+  `opcao15` varchar(45) NOT NULL,
+  `opcao16` varchar(45) NOT NULL,
+  `opcao17` varchar(45) NOT NULL,
+  `opcao18` varchar(45) NOT NULL,
+  `opcao19` varchar(45) NOT NULL,
+  `opcao20` varchar(45) NOT NULL,
+  `opcao21` varchar(45) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -204,11 +227,8 @@ CREATE TABLE `tipoocr` (
 --
 
 INSERT INTO `tipoocr` (`id`, `nrOcorrencia`, `opcao1`, `opcao2`, `opcao3`, `opcao4`, `opcao5`, `opcao6`, `opcao7`, `opcao8`, `opcao9`, `opcao10`, `opcao11`, `opcao12`, `opcao13`, `opcao14`, `opcao15`, `opcao16`, `opcao17`, `opcao18`, `opcao19`, `opcao20`, `opcao21`) VALUES
-(4, 23, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0),
-(5, 23, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0),
-(6, 23, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0),
-(7, 23, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0),
-(8, 23, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0);
+(13, 31, 'Causado por animais ', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'),
+(14, 31, 'Causado por animais ', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0');
 
 --
 -- Índices para tabelas despejadas
@@ -232,6 +252,13 @@ ALTER TABLE `cadastropac`
 --
 ALTER TABLE `glasgow_menor`
   ADD PRIMARY KEY (`id_ocorrencia`);
+
+--
+-- Índices para tabela `problemas`
+--
+ALTER TABLE `problemas`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `nrOcorrencia` (`nrOcorrencia`);
 
 --
 -- Índices para tabela `sinais_sintomas`
@@ -261,7 +288,13 @@ ALTER TABLE `cadastro`
 -- AUTO_INCREMENT de tabela `cadastropac`
 --
 ALTER TABLE `cadastropac`
-  MODIFY `num_ocorrencia` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
+  MODIFY `num_ocorrencia` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
+
+--
+-- AUTO_INCREMENT de tabela `problemas`
+--
+ALTER TABLE `problemas`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT de tabela `sinais_sintomas`
@@ -273,7 +306,7 @@ ALTER TABLE `sinais_sintomas`
 -- AUTO_INCREMENT de tabela `tipoocr`
 --
 ALTER TABLE `tipoocr`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- Restrições para despejos de tabelas
@@ -290,6 +323,12 @@ ALTER TABLE `cadastropac`
 --
 ALTER TABLE `glasgow_menor`
   ADD CONSTRAINT `glasgow_menor_ibfk_1` FOREIGN KEY (`id_ocorrencia`) REFERENCES `cadastropac` (`num_ocorrencia`);
+
+--
+-- Limitadores para a tabela `problemas`
+--
+ALTER TABLE `problemas`
+  ADD CONSTRAINT `problemas_ibfk_1` FOREIGN KEY (`nrOcorrencia`) REFERENCES `cadastropac` (`num_ocorrencia`);
 
 --
 -- Limitadores para a tabela `sinais_sintomas`
