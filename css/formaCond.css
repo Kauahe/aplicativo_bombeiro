@@ -200,6 +200,7 @@ h3 {
     padding-left: 20px;
     display: flex;
     flex-direction: column;
+    margin-left: 40px;
 }
 
 .confirma {
