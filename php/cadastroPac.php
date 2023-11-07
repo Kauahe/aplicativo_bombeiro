@@ -1,7 +1,10 @@
 <?php
 include("conecta.php");
 session_start();
-$_SESSION["v"]= "v";
+$_SESSION["v1"]= "v";
+
+
+
 $response = array(); // Inicializa um array para armazenar a resposta
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {

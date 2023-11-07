@@ -74,12 +74,14 @@ H4 {
    margin-top: 35px;
 }
 
-.titulo {
+.titulo 
+{
    color: #1F3173;
    font-family: "Audiowide", sans-serif;
    font-size: 20px;
    text-align: center;
-
+   width: 100%;
+   margin-left: -20px;
 }
 
 .TOTAL {
@@ -109,6 +111,7 @@ H4 {
 .primeira {
    margin: 0;
    color: black;
+   width: 200px;
 }
 
 .caixa2 {
@@ -258,6 +261,7 @@ td {
    font-family: Candara;
    font-size: 17px;
    text-align: center;
+   width: 100%;
 }
 
 .lulu {
@@ -314,23 +318,21 @@ td {
 {
    color:#1F3173;
 }
-.enviar {
-   background-color: #1F3173;
-   color: #d9d9d9;
-   font-size: 15PX;
-   font-family: "Audiowide", sans-serif;
-   margin-top: 10px;
-   margin-left: 65px;
-   width: 50%;
-   height: 5vh;
-   border-radius: 20px;
-   font-size: 15px;
-   text-align: center;
-   display: flex;
-   align-content: center;
-   align-items: center;
-   justify-content: center;
-   justify-items: center;
+.enviar
+{
+    font-weight: 400;
+    text-transform: uppercase;
+    background-color: #1F3173;
+    color: #d9d9d9;
+    font-family: "Audiowide", sans-serif;
+    margin-top: 25px;
+    width: 55%;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 75PX;
 }
 .branco1 {
    width: 100%;

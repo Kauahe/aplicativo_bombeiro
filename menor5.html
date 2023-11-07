@@ -30,7 +30,7 @@
         <div class="T2"> 
             <div class="titulo"><B>ABERTURA OCULAR</B></div>
             <table width="80%" border="1" cellpadding="0" cellspacing="0" class="primeira">
-                <form action="php/glasgow_menor.php" method="post">
+        <form action="php/glasgow_menor.php" method="post" >
                 <tr>
                     <td width="80%">Espontânea</td>
                     <td class="lulu2"> <input class="box" type="radio" name="opcao1" id="primeiro4" onclick="somar()"> 4 </td>
@@ -114,10 +114,9 @@
                 
         </div>
        
-   
     <div class="borda">
         <P><b>TOTAL (GCS) (3-15)</b></P>
-       <span id="soma_total" name="opcao16" class="branco">  </span>
+       <input type="text" id="soma_total" name="opcao16" class="branco"> 
     </div>
     <input class="enviar" type="submit" value="Cadastrar" ><br><br><br><br>
     </form>
@@ -205,7 +204,7 @@
        {
         soma = soma + 1
        }
-       soma_total.innerHTML= soma
+       soma_total.value= soma
     }
 </script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
