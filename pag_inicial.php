@@ -1,12 +1,38 @@
 <?php
 session_start();
-$v="";
-// Verifique se a variável de sessão 'v' está definida
-if (isset($_SESSION['v'])) {
-    $v = $_SESSION['v'];
+$v1="";
+$v2="";
+$v2="";
+$v2="";
+$v2="";
+$v2="";
+$v2="";
+$v2="";
 
-   
-  
+// Verifique se a variável de sessão 'v' está definida
+if (isset($_SESSION['v1'])) {
+    $v1 = $_SESSION['v1']; 
+}
+if (isset($_SESSION['v2'])) {
+  $v2 = $_SESSION['v2'];
+}
+if (isset($_SESSION['v3'])) {
+  $v3 = $_SESSION['v3'];
+}
+if (isset($_SESSION['v4'])) {
+  $v4 = $_SESSION['v4'];
+}
+if (isset($_SESSION['v5'])) {
+  $v5 = $_SESSION['v5'];
+}
+if (isset($_SESSION['v6'])) {
+  $v6 = $_SESSION['v6'];
+}
+if (isset($_SESSION['v7'])) {
+  $v7 = $_SESSION['v7'];
+}
+if (isset($_SESSION['v8'])) {
+  $v6 = $_SESSION['v8'];
 }
 ?>
 <!DOCTYPE html>
@@ -39,7 +65,7 @@ if (isset($_SESSION['v'])) {
         <a href="cadastro.html">  <div id="op1" 
        
         class="<?php 
-          if ($v == 'v') {
+          if ($v1 == 'v') {
       echo("opv");
           }
           else{
@@ -52,7 +78,7 @@ if (isset($_SESSION['v'])) {
             <p><b>CADASTRO <br> DO PACIENTE </b></p>
         </div></a>
         <a href="sinais.sintomas.html"> <div id="op2"class="<?php 
-          if ($v == 'v') {
+          if ($v2 == 'v') {
       echo("opv");
           }
           else{
@@ -65,7 +91,7 @@ if (isset($_SESSION['v'])) {
     </div><br><br><br>
     <div class="dupla1">
         <a href="avaliacao.html">  <div  id="op3"class="<?php 
-          if ($v == 'v') {
+          if ($v3 == 'v') {
       echo("opv");
           }
           else{
@@ -76,7 +102,7 @@ if (isset($_SESSION['v'])) {
             <p><b>AVALIAÇÃO <br> GLASGOW </b></p>
         </div></a>
         <a href="tipoOcr.php"> <div  id="op4"class="<?php 
-          if ($v == 'v') {
+          if ($v4 == 'v') {
       echo("opv");
           }
           else{
@@ -90,7 +116,7 @@ if (isset($_SESSION['v'])) {
     <br><br><br>
     <div class="dupla1">
         <a href="sinaisvitais.html">  <div id="op2" class="<?php 
-          if ($v == 'v') {
+          if ($v5 == 'v') {
       echo("opv");
           }
           else{
@@ -101,7 +127,7 @@ if (isset($_SESSION['v'])) {
             <p><b>SINAIS <br> VITAIS</b></p>
         </div></a>
         <a href="problemas.html"> <div  id="op6"class="<?php 
-          if ($v == 'v') {
+          if ($v6 == 'v') {
       echo("opv");
           }
           else{
@@ -115,7 +141,7 @@ if (isset($_SESSION['v'])) {
     <br><br><br>
     <div class="dupla1">
         <div  id="op7" class="<?php 
-          if ($v == 'v') {
+          if ($v7 == 'v') {
       echo("opv");
           }
           else{
@@ -126,7 +152,7 @@ if (isset($_SESSION['v'])) {
             <p1><b>FORMA DE <BR> CONDUÇÃO</b></p1>
         </div></a>
         <a href="traumaAdulto.html"> <div id="op8" class="<?php 
-          if ($v == 'v') {
+          if ($v8 == 'v') {
       echo("opv");
           }
           else{
