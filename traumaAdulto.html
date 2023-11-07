@@ -28,12 +28,12 @@
     <div class="frente" id="frente" value="frente">
         
         <div class="direita_frente" id="direita" value="direito">
-            <div class="braco" id="BracoDreito" onclick="Gravar('BracoDreito');"></div>
-            <div class="coxa" id="CoxaDireita" onclick="Gravar('CoxaDireita');"></div>
-            <div class="canela" id="CanelaDireita" onclick="Gravar('CanelaDireita');"></div>
-            <div class="peito" id="PeitoDireito" onclick="Gravar('PeitoDireito');"></div>
-            <div class="abdomen" id="AbdomenDireito" onclick="Gravar('AbdomenDireito');"></div>
-            <div class="pe" id="PeDireito" onclick="Gravar('PeDireito');"></div>
+            <div class="braco" id="BracoDreito" onclick="Gravar('BracoDreito');"value="braço"></div>
+            <div class="coxa" id="CoxaDireita" onclick="Gravar('CoxaDireita');"value="coxa"></div>
+            <div class="canela" id="CanelaDireita" onclick="Gravar('CanelaDireita');"value="peito"></div>
+            <div class="peito" id="PeitoDireito" onclick="Gravar('PeitoDireito');" value="peito"></div>
+            <div class="abdomen" id="AbdomenDireito" onclick="Gravar('AbdomenDireito');" value="abdomen"></div>
+            <div class="pe" id="PeDireito" onclick="Gravar('PeDireito');"value="pé"></div>
         </div>
             <div class="cabeca" id="Cabeca" onclick="Gravar('Cabeca');"></div>
         <div class="esquerda_frente" id="esquerda_frente" value="esquerdo">
@@ -93,18 +93,58 @@
                 </div>
                 <div class="fil">
                     <fieldset class="fieldset">
-                        <input type="text" name="face1" id="face1" class="boxi">
-                        <input type="text" name="face2" id="face2" class="boxi">
-                        <input type="text" name="face3" id="face3" class="boxi">
-                        <input type="text" name="face4" id="face4" class="boxi">
+                        <input type="text" name="face1" value="" id="face1" class="boxi"readonly>
+                        <input type="text" name="face2" value="" id="face2" class="boxi"readonly>
+                        <input type="text" name="face3" value="" id="face3" class="boxi"readonly>
+                        <input type="text" name="face4" value="" id="face4" class="boxi"readonly>
                     </fieldset>
                 </div>
                 <div class="fil">
                     <fieldset class="fieldset">
-                        <input type="text" class="boxi">
-                        <input type="text" class="boxi">
-                        <input type="text" class="boxi">
-                        <input type="text" class="boxi">
+                        <select class="boxi">
+                            <option class="N">fratura</option>
+                            <option class="N">ferimento</option>
+                            <option class="N">hemorragia</option>
+                            <option class="N">esviceração</option>
+                            <option class="N">F.A.B/ F.A.F</option>
+                            <option class="N">Amputação</option>
+                            <option class="N">Queimadura 1°G</option>
+                            <option class="N">Queimadura 2°G</option>
+                            <option class="N">Queimadura 3°G</option>
+                        </select>
+                        <select class="boxi">
+                            <option class="N">fratura</option>
+                            <option class="N">ferimento</option>
+                            <option class="N">hemorragia</option>
+                            <option class="N">esviceração</option>
+                            <option class="N">F.A.B/ F.A.F</option>
+                            <option class="N">Amputação</option>
+                            <option class="N">Queimadura 1°G</option>
+                            <option class="N">Queimadura 2°G</option>
+                            <option class="N">Queimadura 3°G</option>
+                        </select>
+                        <select class="boxi">
+                            <option class="N">fratura</option>
+                            <option class="N">ferimento</option>
+                            <option class="N">hemorragia</option>
+                            <option class="N">esviceração</option>
+                            <option class="N">F.A.B/ F.A.F</option>
+                            <option class="N">Amputação</option>
+                            <option class="N">Queimadura 1°G</option>
+                            <option class="N">Queimadura 2°G</option>
+                            <option class="N">Queimadura 3°G</option>
+                        </select>
+                        <select class="boxi">
+                            <option class="N">fratura</option>
+                            <option class="N">ferimento</option>
+                            <option class="N">hemorragia</option>
+                            <option class="N">esviceração</option>
+                            <option class="N">F.A.B/ F.A.F</option>
+                            <option class="N">Amputação</option>
+                            <option class="N">Queimadura 1°G</option>
+                            <option class="N">Queimadura 2°G</option>
+                            <option class="N">Queimadura 3°G</option>
+                        </select>
                     </fieldset>
                 </div>
               
@@ -123,42 +163,73 @@
         var inputLocal3 = document.getElementById("local3");
         var inputLocal4 = document.getElementById("local4");
 
-        if (inputLocal1.value === nomeLocal) {
-            inputLocal1.value = "";
+        var inputLado1 = document.getElementById("lado1");
+        var inputLado2 = document.getElementById("lado2");
+        var inputLado3 = document.getElementById("lado3");
+        var inputLado4 = document.getElementById("lado4");
+
+        var inputFace1 = document.getElementById("face1");
+        var inputFace2 = document.getElementById("face2");
+        var inputFace3 = document.getElementById("face3");
+        var inputFace4 = document.getElementById("face4");
+
+        var divSelecionada = document.getElementById(id);
+        var valorDaDiv = divSelecionada.getAttribute("value");
+
+        if (divSelecionada.style.backgroundColor == "red") {
+            // Se a div já estiver selecionada, deselecione-a.
+            divSelecionada.style.backgroundColor = "";
             locaisSelecionados--;
-        } else if (inputLocal2.value === nomeLocal) {
-            inputLocal2.value = "";
-            locaisSelecionados--;
-        } else if (inputLocal3.value === nomeLocal) {
-            inputLocal3.value = "";
-            locaisSelecionados--;
-        } else if (inputLocal4.value === nomeLocal) {
-            inputLocal4.value = "";
-            locaisSelecionados--;
+
+            // Verifique se a opção deselecionada é a que está nos campos de entrada e, se for, limpe esses campos.
+            if (inputLocal1.value === valorDaDiv) {
+                inputLocal1.value = "";
+                inputLado1.value = "";
+                inputFace1.value = "";
+            } else if (inputLocal2.value === valorDaDiv) {
+                inputLocal2.value = "";
+                inputLado2.value = "";
+                inputFace2.value = "";
+            } else if (inputLocal3.value === valorDaDiv) {
+                inputLocal3.value = "";
+                inputLado3.value = "";
+                inputFace3.value = "";
+            } else if (inputLocal4.value === valorDaDiv) {
+                inputLocal4.value = "";
+                inputLado4.value = "";
+                inputFace4.value = "";
+            }
         } else {
             if (locaisSelecionados < 4) {
                 if (inputLocal1.value === "") {
-                    inputLocal1.value = nomeLocal;
+                    inputLocal1.value = valorDaDiv;
                     locaisSelecionados++;
+
+                    inputLado1.value = divSelecionada.parentNode.getAttribute("value");
+                    inputFace1.value = divSelecionada.parentNode.parentNode.getAttribute("value");
                 } else if (inputLocal2.value === "") {
-                    inputLocal2.value = nomeLocal;
+                    inputLocal2.value = valorDaDiv;
                     locaisSelecionados++;
+
+                    inputLado2.value = divSelecionada.parentNode.getAttribute("value");
+                    inputFace2.value = divSelecionada.parentNode.parentNode.getAttribute("value");
                 } else if (inputLocal3.value === "") {
-                    inputLocal3.value = nomeLocal;
+                    inputLocal3.value = valorDaDiv;
                     locaisSelecionados++;
+
+                    inputLado3.value = divSelecionada.parentNode.getAttribute("value");
+                    inputFace3.value = divSelecionada.parentNode.parentNode.getAttribute("value");
                 } else if (inputLocal4.value === "") {
-                    inputLocal4.value = nomeLocal;
+                    inputLocal4.value = valorDaDiv;
                     locaisSelecionados++;
+
+                    inputLado4.value = divSelecionada.parentNode.getAttribute("value");
+                    inputFace4.value = divSelecionada.parentNode.parentNode.getAttribute("value");
                 }
             }
-        }
-
-        if (document.getElementById(id).style.backgroundColor == "red") {
-            document.getElementById(id).style.backgroundColor = "";
-            // aqui você deverá APAGAR essa opção (coluna) do banco de dados:
-        } else {
-            document.getElementById(id).style.backgroundColor = "red";
-            // aqui você deverá ALTERAR essa opção (coluna) do banco de dados:
+            // Ao selecionar, defina a cor de fundo para indicar a seleção.
+            divSelecionada.style.backgroundColor = "red";
         }
     }
 </script>
+
