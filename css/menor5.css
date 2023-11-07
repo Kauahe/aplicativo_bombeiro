@@ -19,7 +19,22 @@ footer {
    height: 62px;
    filter: drop-shadow(0px 14px 3px rgba(0, 0, 0, 0.25));
 }
-
+.enviar
+{
+    font-weight: 400;
+    text-transform: uppercase;
+    background-color: #1F3173;
+    color: #d9d9d9;
+    font-family: "Audiowide", sans-serif;
+    margin-top: 25px;
+    width: 55%;
+    height: 100px;
+    border-radius: 10px;
+    font-size: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
 h1 {
    color: white;
    font-family: "Audiowide", sans-serif;
