@@ -27,24 +27,25 @@
    
     <H4> GLASGOW</H4>
     <H5> <B>maior</B> de 5 anos</H5>
-        <div class="T2"> 
+        <div> 
+        <form action="php/glasgow_maior.php" method="post" class="T2">
             <div class="titulo"><B>ABERTURA OCULAR</B></div>
             <table width="80%" border="1" cellpadding="0" cellspacing="0" class="primeira">
                 <tr>
                     <td width="80%">Espontânea</td>
-                    <td class="lulu2"> <input class="box" type="radio" name="primeiro" id="primeiro4" onclick="somar()"> 4 </td>
+                    <td class="lulu2"> <input class="box" type="radio" name="opcao1" id="primeiro4" onclick="somar()"> 4 </td>
                 </tr>
                 <tr>
                     <td>Comando Verbal</td>
-                    <td class="lulu2"> <input class="box" type="radio" name="primeiro" id="primeiro3" onclick="somar()"> 3 </td>
+                    <td class="lulu2"> <input class="box" type="radio" name="opcao2" id="primeiro3" onclick="somar()"> 3 </td>
                 </tr>
                 <tr>
                     <td>Estímulo doloroso</td>
-                    <td class="lulu2"> <input class="box" type="radio" name="primeiro" id="primeiro2" onclick="somar()"> 2 </td>
+                    <td class="lulu2"> <input class="box" type="radio" name="opcao3" id="primeiro2" onclick="somar()"> 2 </td>
                 </tr>
                 <tr>
                     <td>Nenhuma</td>
-                    <td class="lulu2"> <input class="box" type="radio" name="primeiro" id="primeiro1" onclick="somar()"> 1 </td>
+                    <td class="lulu2"> <input class="box" type="radio" name="opcao4" id="primeiro1" onclick="somar()"> 1 </td>
                     
                 </tr>
                 
@@ -53,27 +54,27 @@
                 <table border="1" cellpadding="0" cellspacing="0" width="90%">
                     <tr>
                         <td width="80%">Orientado</td>
-                        <td class="lulu2"> <input class="box" type="radio" name="segundo" id="segundo5" onclick="somar()"> 5 </td>
+                        <td class="lulu2"> <input class="box" type="radio" name="opcao5" id="segundo5" onclick="somar()"> 5 </td>
                         </td>
                     </tr>
                     <tr>
                         <td>Confuso</td>
-                        <td class="lulu2"> <input class="box" type="radio" name="segundo" id="segundo4" onclick="somar()"> 4 </td>
+                        <td class="lulu2"> <input class="box" type="radio" name="opcao6" id="segundo4" onclick="somar()"> 4 </td>
                         </td>
                     </tr>
                     <tr>
                         <td>Palavras Inapropriadas</td>
-                        <td class="lulu2"> <input class="box" type="radio" name="segundo" id="segundo3" onclick="somar()"> 3 </td>
+                        <td class="lulu2"> <input class="box" type="radio" name="opcao7" id="segundo3" onclick="somar()"> 3 </td>
                         </td>
                     </tr>
                     <tr>
                         <td>Palavras incompreensíveis</td>
-                        <td class="lulu2"> <input class="box" type="radio" name="segundo" id="segundo2" onclick="somar()"> 2 </td>
+                        <td class="lulu2"> <input class="box" type="radio" name="opcao8" id="segundo2" onclick="somar()"> 2 </td>
                         </td>
                     </tr>
                     <tr>
                         <td>Nenhuma </td>
-                        <td class="lulu2"> <input class="box" type="radio" name="segundo" id="segundo1" onclick="somar()"> 1 </td>
+                        <td class="lulu2"> <input class="box" type="radio" name="opcao9" id="segundo1" onclick="somar()"> 1 </td>
                         </td>
                     </tr>
                 </table><br>
@@ -82,51 +83,46 @@
                 <table border="1" cellpadding="0" cellspacing="0" width="90%">
                     <tr>
                         <td width="80%" class="lulu">Obedece comandos</td>
-                        <td class="lulu2"> <input class="box" type="radio" name="terceiro" id="terceiro6" onclick="somar()"> 6 </td>
+                        <td class="lulu2"> <input class="box" type="radio" name="opcao10" id="terceiro6" onclick="somar()"> 6 </td>
                     </tr>
                     <tr>
                         <td class="lulu">Localiza dor</td>
-                        <td class="lulu2"> <input class="box" type="radio" name="terceiro" id="terceiro5" onclick="somar()"> 5 </td>
+                        <td class="lulu2"> <input class="box" type="radio" name="opcao11" id="terceiro5" onclick="somar()"> 5 </td>
                         </td>
                     </tr>
                     <tr>
                         <td class="lulu">Movimento de retirada</td>
-                        <td class="lulu2"> <input class="box" type="radio" name="terceiro" id="terceiro4" onclick="somar()"> 4 </td>
+                        <td class="lulu2"> <input class="box" type="radio" name="opcao12" id="terceiro4" onclick="somar()"> 4 </td>
                         </td>
                     </tr>
                     <tr>
                         <td class="lulu">Flexão anormal</td>
-                        <td class="lulu2"> <input class="box" type="radio" name="terceiro" id="terceiro3" onclick="somar()"> 3 </td>
+                        <td class="lulu2"> <input class="box" type="radio" name="opcao13" id="terceiro3" onclick="somar()"> 3 </td>
                         </td>
                     </tr>
                     <tr>
                         <td class="lulu">Extensão anormal</td>
-                        <td class="lulu2"> <input class="box" type="radio" name="terceiro" id="terceiro2" onclick="somar()"> 2 </td>
+                        <td class="lulu2"> <input class="box" type="radio" name="opcao14" id="terceiro2" onclick="somar()"> 2 </td>
                         </td>
                     </tr>
                     <tr>
                         <td class="lulu">Nenhuma</td>
-                        <td class="lulu2"> <input class="box" type="radio" name="terceiro" id="terceiro1" onclick="somar()"> 1 </td>
+                        <td class="lulu2"> <input class="box" type="radio" name="opcao15" id="terceiro1" onclick="somar()"> 1 </td>
                         </td>
                     </tr>
                 </table>
                 
         </div>
+        <div class="borda">
+            <P><b>TOTAL (GCS) (3-15)</b></P>
+           <input type="text" id="soma_total" name="opcao16" class="branco">
+        </div>
+        <input class="enviar" type="submit" value="Cadastrar" ><br><br><br><br>
+    </form>
        
    
-    <div class="borda">
-        <P><b>TOTAL (GCS) (3-15)</b></P>
-       <span id="soma_total" class="branco">  </span>
-    </div>
-    <div class="btt">
-        <button id="comprar" onclick="Comprar();" class="confirma">
-            <b><span class="mm"
-        id="confirm">CONFIRMAR
-    </span></b>
-
-      <img class="img_ok" id="img_ok" src="img/correto.png">
-        </button>
-    </div>
+   
+  
 </body>
 <script>
       function Comprar()
@@ -211,7 +207,7 @@
        {
         soma = soma + 1
        }
-       soma_total.innerHTML= soma
+       soma_total.value= soma
     }
 </script>
 </script>

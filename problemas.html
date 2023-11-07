@@ -27,7 +27,7 @@
         <button class="box"><h3>PSIQUIÁTRICO</h3><input type="checkbox" name="opcao0" class="bebe" > 
         </button>
 
-        <button class="box1" id="abrir1" onclick="Abra1();"><h3>RESPIRATÓRIO</h3>
+        <button type="button" class="box1" id="abrir1" onclick="Abra1();"><h3>RESPIRATÓRIO</h3>
 
             <div class="dados1" id="dados1">
                   
@@ -36,7 +36,7 @@
             </div>
         </button>
 
-        <button class="box2"  id="abrir2" onclick="Abra2();"><h3>DIABETES</h3>
+        <button type="button" class="box2"  id="abrir2" onclick="Abra2();"><h3>DIABETES</h3>
 
             <div class="dados2" id="dados2">
                   
@@ -46,7 +46,7 @@
 
         </button>
 
-        <button class="box3" id="abrir3" onclick="Abra3();"><h3>OBSTÉTRICO</h3><br>
+        <button type="button" class="box3" id="abrir3" onclick="Abra3();"><h3>OBSTÉTRICO</h3><br>
 
             <div class="dados3" id="dados3">
                   
@@ -57,7 +57,7 @@
 
         </button>
 
-        <button class="box4" id="abrir4" onclick="Abra4();"><h3>TRANSPORTE</h3>
+        <button type="button" class="box4" id="abrir4" onclick="Abra4();"><h3>TRANSPORTE</h3>
             <div class="dados3" id="dados4">
                
                 <div> <input type="checkbox" name="opcao8">&nbsp; ÁREO</div><br>
@@ -78,10 +78,6 @@
 
 </div>
     <script>
-         function Sair()
-    {
-        window.open("pag_inicial.html","_self"), 2000;
-    }
         function Abra1()
         {
             $("#abrir1").animate({height:"130px"}, 500);
