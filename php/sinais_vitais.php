@@ -9,8 +9,9 @@ $_SESSION["v5"]= "v";
    $opcao4=$_POST["opcao4"];
    $opcao5=$_POST["opcao5"];
    $opcao6=$_POST["opcao6"];
-   $opcao7=$_POST["opcao7"];
-   $opcao8=$_POST["opcao8"];
+   $opcao7 = isset($_POST["opcao7"]) ? "> 2 seg" : "-";
+   $opcao8 = isset($_POST["opcao8"]) ? "< 2 seg" : "-";
+  
    
    $sql = "INSERT INTO sinaisvitais VALUES (:id, :num_ocorrencia, :op1, :op2, :op3, :op4, :op5, :op6, :op7, :op8 )";
     $stmt = $pdo->prepare($sql);
