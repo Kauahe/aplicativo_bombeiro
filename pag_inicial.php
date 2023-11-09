@@ -2,12 +2,12 @@
 session_start();
 $v1="";
 $v2="";
-$v2="";
-$v2="";
-$v2="";
-$v2="";
-$v2="";
-$v2="";
+$v3="";
+$v4="";
+$v5="";
+$v6="";
+$v7="";
+$v8="";
 
 // Verifique se a variável de sessão 'v' está definida
 if (isset($_SESSION['v1'])) {
@@ -32,7 +32,7 @@ if (isset($_SESSION['v7'])) {
   $v7 = $_SESSION['v7'];
 }
 if (isset($_SESSION['v8'])) {
-  $v6 = $_SESSION['v8'];
+  $v8 = $_SESSION['v8'];
 }
 ?>
 <!DOCTYPE html>
