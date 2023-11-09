@@ -23,31 +23,42 @@
             </div>
         </div>
     </header>
-    <div class="titulo">CADASTRAR NOVO BOMBEIRO</div>
     <main>
-        <div class="box">
-            <form id="cadastroForm" action="" method="post" onsubmit="juntarCodigos()" enctype="multipart/form-data">
-
-                <label for="nome"><b>NOME:</b></label>
-                <input type="text" id="nome" name="nome" class="inp" required><br><br>
-
-                <label for="email"><b>EMAIL:</b></label>
-                <input type="email" id="email" name="email" class="inp" required><br><br>
-
-                <label for="cpf"><b>CPF:</b></label>
+        <div class="bomb">
+            <img class="imgbomb" src="../img/bombeiroadm 1.png">
+        </div>
+        <form id="cadastroForm" action="" method="post" onsubmit="juntarCodigos()" enctype="multipart/form-data">
+        <div class="box1">
+            <label for="nome"><b>NOME:</b></label>
+            <input type="text" id="nome" name="nome" class="inp" required><br><br>
+        </div>
+        <div class="box2">
+            <label for="cpf"><b>CPF:</b></label>
                 <input type="tel" id="cpf" name="cpf" class="inp" required><br><br>
+        </div>
+        <div class="box3">
+            <div class="centralizar">
+                <div class="cdg">CÓDIGO</div>
+                <div class="codigos">
+                    <input class="cod" type="password" id="codigo" name="codigo" maxlength="1" required oninput="moveToNextInput(this, 'codigo2')" >
+                    <input class="cod" type="password" id="codigo2" name="codigo2" maxlength="1" required oninput="moveToNextInput(this, 'codigo3')" onkeydown="handleBackspace(this, 'codigo')">
+                    <input class="cod" type="password" id="codigo3" name="codigo3" maxlength="1" required oninput="moveToNextInput(this, 'codigo4')" onkeydown="handleBackspace(this, 'codigo2')">
+                    <input class="cod" type="password" id="codigo4" name="codigo4" maxlength="1" required onkeydown="handleBackspace(this, 'codigo3')">
+                </div>
+                <input type="hidden" id="senha" name="senha">
+            </div><br><br>
+        </div>
+        <div class="box">
+           
+
+               
+
+               
 
 
-                <div class="centralizar">
-                    <div class="cdg">CÓDIGO</div>
-                    <div class="codigos">
-                        <input class="cod" type="password" id="codigo" name="codigo" maxlength="1" required oninput="moveToNextInput(this, 'codigo2')" >
-                        <input class="cod" type="password" id="codigo2" name="codigo2" maxlength="1" required oninput="moveToNextInput(this, 'codigo3')" onkeydown="handleBackspace(this, 'codigo')">
-                        <input class="cod" type="password" id="codigo3" name="codigo3" maxlength="1" required oninput="moveToNextInput(this, 'codigo4')" onkeydown="handleBackspace(this, 'codigo2')">
-                        <input class="cod" type="password" id="codigo4" name="codigo4" maxlength="1" required onkeydown="handleBackspace(this, 'codigo3')">
-                    </div>
-                    <input type="hidden" id="senha" name="senha">
-                </div><br><br>
+                
+
+                
              
                 <label for="imagem" class="label-imagem">Selecionar Imagem</label>
                 <span class="nome-arquivo"></span>

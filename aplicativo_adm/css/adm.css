@@ -32,13 +32,7 @@ footer {
     top: 7px
 }
 
-.espaco {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    justify-items: center;
-    align-content: center;
-}
+
 
 .row {
     position: absolute;
@@ -56,10 +50,9 @@ h2 {
     color: #FFF;
     text-align: center;
     font-family: Genos;
-    font-size: 10px;
+    font-size: 15px;
     font-style: italic;
     font-weight: 200;
-    margin-left: -90px;
 }
 
 H3 {
@@ -84,7 +77,7 @@ H4 {
     width: 100%;
     height: 50px;
     margin-left: 5px;
-    margin-top: 40px;
+    margin-top: 55px;
     color: black;
     font-size: 30px;
     font-family: "Audiowide", sans-serif;
@@ -94,12 +87,13 @@ H4 {
     align-content: center;
     display: flex;
     text-align: center;
+    margin-bottom: 20px;
 
 }
 
 .caixa {
     width: 1166px;
-    height: 586px;
+    height: 500px;
     flex-shrink: 0;
     border-radius: 34px;
     background: #FFF;
@@ -140,9 +134,14 @@ H4 {
 .meucu{
     width:100%;
     height:100%;
-    
-    
-  
+    border-style: solid;
+    border-width: 3px;
+    border-color: #000000;
+    border-radius: 10px;
+    padding-left: 10px;
+    font-family: Candara;
+    font-size: 20px;
+    font-weight: 600;
 }
 .margimdocu{
     width:30%;
