@@ -97,7 +97,7 @@ h2 {
 
 .dados {
    width: 92%;
-   height: 85%;
+   height: 90%;
    border-radius: 16px;
    background-color: #9E9E9E;
    justify-content: space-around;
@@ -177,9 +177,20 @@ h2 {
    width: 100%;
    height: 25px;
    border-radius: 5px;
+   margin-top: 15px;
+   border-style: none;
+   text-align: center;
+}
+.box2
+ {
+   width: 100%;
+   height: 25px;
+   border-radius: 5px;
    margin-top: 10px;
    border-style: none;
+   text-align: center;
 }
+
 
 .fieldset {
    height: 80%;
@@ -407,4 +418,18 @@ h2 {
    border-radius: 50%;
    border-style: solid;
    border-color: black;
+}
+.enviar
+{
+   
+    text-transform: uppercase;
+    background-color: #1F3173;
+    color: #d9d9d9;
+    font-family: "Audiowide", sans-serif;
+    width: 35%;
+    height: 30px;
+    border-radius: 10px;
+    margin-top: 10px;
+   margin-bottom: 5px;
+
 }

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 06-Nov-2023 às 13:36
+-- Tempo de geração: 09-Nov-2023 às 11:27
 -- Versão do servidor: 10.4.28-MariaDB
 -- versão do PHP: 8.2.4
 
@@ -72,21 +72,91 @@ INSERT INTO `cadastropac` (`num_ocorrencia`, `data_ocr`, `nome_hospital`, `nome_
 (24, '0000-00-00', 'Evelin Solange', 'Evelin ', 18, '47992260467', 'wgrre', 18, 'wegtwrhg', 122797, 46),
 (29, '0000-00-00', 'tais carla', 'gabriel', 0, '', '', 0, '', 0, 46),
 (30, '0000-00-00', '', 'Julia', 0, '', '', 0, '', 0, 46),
-(31, '0000-00-00', '', 'André', 0, '', '', 0, '', 0, 46);
+(31, '0000-00-00', '', 'André', 0, '', '', 0, '', 0, 46),
+(32, '0000-00-00', '', 'Amanda', 0, '', '', 0, '', 0, 46),
+(33, '0000-00-00', '', 'weley', 0, '', '', 0, '', 0, 46),
+(34, '0000-00-00', '', 'kauã', 0, '', '', 0, '', 0, 46),
+(35, '0000-00-00', '', 'salfiafbasd', 0, '', '', 0, '', 0, 46),
+(36, '0000-00-00', '', 'kauã henrique', 0, '', '', 0, '', 0, 46),
+(37, '0000-00-00', '', 'QWDQ', 0, '', '', 0, '', 0, 46),
+(38, '0000-00-00', '', 'Gabriel B', 0, '', '', 0, '', 0, 46),
+(39, '0000-00-00', '', 'salfiafbasd', 0, '', '', 0, '', 0, 46);
 
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `glasgow_menor`
+-- Estrutura da tabela `maior5`
 --
 
-CREATE TABLE `glasgow_menor` (
-  `id_ocorrencia` int(11) NOT NULL,
-  `abertura` varchar(45) NOT NULL,
-  `resposta_verbal` varchar(45) NOT NULL,
-  `respoosta_motora` varchar(45) NOT NULL,
-  `soma_GSC` int(11) NOT NULL
+CREATE TABLE `maior5` (
+  `id` int(11) NOT NULL,
+  `nrOcorrencia` int(11) NOT NULL,
+  `opcao1` varchar(45) DEFAULT NULL,
+  `opcao2` varchar(45) DEFAULT NULL,
+  `opcao3` varchar(45) DEFAULT NULL,
+  `opcao4` varchar(45) DEFAULT NULL,
+  `opcao5` varchar(45) DEFAULT NULL,
+  `opcao6` varchar(45) DEFAULT NULL,
+  `opcao7` varchar(45) DEFAULT NULL,
+  `opcao8` varchar(45) DEFAULT NULL,
+  `opcao9` varchar(45) DEFAULT NULL,
+  `opcao10` varchar(45) DEFAULT NULL,
+  `opcao11` varchar(45) DEFAULT NULL,
+  `opcao12` varchar(45) DEFAULT NULL,
+  `opcao13` varchar(45) DEFAULT NULL,
+  `opcao14` varchar(45) DEFAULT NULL,
+  `opcao15` varchar(45) DEFAULT NULL,
+  `opcao16` varchar(45) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Extraindo dados da tabela `maior5`
+--
+
+INSERT INTO `maior5` (`id`, `nrOcorrencia`, `opcao1`, `opcao2`, `opcao3`, `opcao4`, `opcao5`, `opcao6`, `opcao7`, `opcao8`, `opcao9`, `opcao10`, `opcao11`, `opcao12`, `opcao13`, `opcao14`, `opcao15`, `opcao16`) VALUES
+(1, 37, 'Espontânea', '-', '-', '-', 'Orientado', '-', '-', '-', '-', 'Obedece comandos ', '-', '-', '-', '-', '-', '0'),
+(2, 37, 'Espontânea', '-', '-', '-', 'Orientado', '-', '-', '-', '-', 'Obedece comandos ', '-', '-', '-', '-', '-', '0'),
+(3, 37, 'Espontânea', '-', '-', '-', '-', 'Confuso', '-', '-', '-', 'Obedece comandos ', '-', '-', '-', '-', '-', '0'),
+(4, 37, '-', 'Comando Verbal', '-', '-', '-', 'Confuso', '-', '-', '-', '-', '-', '-', 'Flexão anormal', '-', '-', '10'),
+(5, 37, 'Espontânea', '-', '-', '-', '-', 'Confuso', '-', '-', '-', 'Obedece comandos ', '-', '-', '-', '-', '-', '14'),
+(6, 38, '-', 'Comando Verbal', '-', '-', '-', 'Confuso', '-', '-', '-', 'Obedece comandos ', '-', '-', '-', '-', '-', '13');
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `menor5`
+--
+
+CREATE TABLE `menor5` (
+  `id` int(11) NOT NULL,
+  `nrOcorrencia` int(11) NOT NULL,
+  `opcao1` varchar(45) DEFAULT NULL,
+  `opcao2` varchar(45) DEFAULT NULL,
+  `opcao3` varchar(45) DEFAULT NULL,
+  `opcao4` varchar(45) DEFAULT NULL,
+  `opcao5` varchar(45) DEFAULT NULL,
+  `opcao6` varchar(45) DEFAULT NULL,
+  `opcao7` varchar(45) DEFAULT NULL,
+  `opcao8` varchar(45) DEFAULT NULL,
+  `opcao9` varchar(45) DEFAULT NULL,
+  `opcao10` varchar(45) DEFAULT NULL,
+  `opcao11` varchar(45) DEFAULT NULL,
+  `opcao12` varchar(45) DEFAULT NULL,
+  `opcao13` varchar(45) DEFAULT NULL,
+  `opcao14` varchar(45) DEFAULT NULL,
+  `opcao15` varchar(45) DEFAULT NULL,
+  `opcao16` varchar(45) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Extraindo dados da tabela `menor5`
+--
+
+INSERT INTO `menor5` (`id`, `nrOcorrencia`, `opcao1`, `opcao2`, `opcao3`, `opcao4`, `opcao5`, `opcao6`, `opcao7`, `opcao8`, `opcao9`, `opcao10`, `opcao11`, `opcao12`, `opcao13`, `opcao14`, `opcao15`, `opcao16`) VALUES
+(1, 35, 'Espontânea', '-', '-', '-', 'Palavras/frases apropriadas', '-', '-', '-', '-', 'Obedece prontamente ', '-', '-', '-', '-', '-', '0'),
+(2, 37, 'Espontânea', '-', '-', '-', 'Palavras/frases apropriadas', '-', '-', '-', '-', 'Obedece prontamente ', '-', '-', '-', '-', '-', '15'),
+(3, 38, 'Espontânea', '-', '-', '-', 'Palavras/frases apropriadas', '-', '-', '-', '-', 'Obedece prontamente ', '-', '-', '-', '-', '-', '15'),
+(4, 38, 'Espontânea', '-', '-', '-', 'Palavras/frases apropriadas', '-', '-', '-', '-', 'Obedece prontamente ', '-', '-', '-', '-', '-', '15');
 
 -- --------------------------------------------------------
 
@@ -111,6 +181,49 @@ CREATE TABLE `problemas` (
   `Outros` text DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Extraindo dados da tabela `problemas`
+--
+
+INSERT INTO `problemas` (`id`, `nrOcorrencia`, `opcao0`, `opcao1`, `opcao2`, `opcao3`, `opcao4`, `opcao5`, `opcao6`, `opcao7`, `opcao8`, `opcao9`, `opcao10`, `Outros`) VALUES
+(10, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
+(11, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
+(12, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'wrewr'),
+(13, 38, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
+(14, 38, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
+(15, 38, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
+(16, 38, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
+(17, 38, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, ''),
+(18, 38, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
+(19, 38, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
+(20, 38, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
+(21, 38, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
+(22, 38, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
+(23, 38, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
+(24, 38, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
+(25, 38, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
+(26, 38, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, ''),
+(27, 38, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, ''),
+(28, 38, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, '');
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `sinaisvitais`
+--
+
+CREATE TABLE `sinaisvitais` (
+  `nrOcorrencia` int(11) NOT NULL,
+  `id` int(11) NOT NULL,
+  `opcao2` varchar(45) DEFAULT NULL,
+  `opcao3` varchar(45) DEFAULT NULL,
+  `opcao4` varchar(45) DEFAULT NULL,
+  `opcao5` varchar(45) DEFAULT NULL,
+  `opcao6` varchar(45) DEFAULT NULL,
+  `opcao7` varchar(45) DEFAULT NULL,
+  `opcao8` varchar(45) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
 -- --------------------------------------------------------
 
 --
@@ -120,55 +233,55 @@ CREATE TABLE `problemas` (
 CREATE TABLE `sinais_sintomas` (
   `id` int(11) NOT NULL,
   `nrOcorrencia` int(11) NOT NULL,
-  `opcao1` tinyint(1) DEFAULT NULL,
-  `opcao2` tinyint(1) DEFAULT NULL,
-  `opcao3` tinyint(1) DEFAULT NULL,
-  `opcao4` tinyint(1) DEFAULT NULL,
-  `opcao5` tinyint(1) DEFAULT NULL,
-  `opcao6` tinyint(1) DEFAULT NULL,
-  `opcao7` tinyint(1) DEFAULT NULL,
-  `opcao8` tinyint(1) DEFAULT NULL,
-  `opcao9` tinyint(1) DEFAULT NULL,
-  `opcao10` tinyint(1) DEFAULT NULL,
-  `opcao11` tinyint(1) DEFAULT NULL,
-  `opcao12` tinyint(1) DEFAULT NULL,
-  `opcao13` tinyint(1) DEFAULT NULL,
-  `opcao14` tinyint(1) DEFAULT NULL,
-  `opcao15` tinyint(1) DEFAULT NULL,
-  `opcao16` tinyint(1) DEFAULT NULL,
-  `opcao17` tinyint(1) DEFAULT NULL,
-  `opcao18` tinyint(1) DEFAULT NULL,
-  `opcao19` tinyint(1) DEFAULT NULL,
-  `opcao20` tinyint(1) DEFAULT NULL,
-  `opcao21` tinyint(1) DEFAULT NULL,
-  `opcao22` tinyint(1) DEFAULT NULL,
-  `opcao23` tinyint(1) DEFAULT NULL,
-  `opcao24` tinyint(1) DEFAULT NULL,
-  `opcao25` tinyint(1) DEFAULT NULL,
-  `opcao26` tinyint(1) DEFAULT NULL,
-  `opcao27` tinyint(1) DEFAULT NULL,
-  `opcao28` tinyint(1) DEFAULT NULL,
-  `opcao29` tinyint(1) DEFAULT NULL,
-  `opcao30` tinyint(1) DEFAULT NULL,
-  `opcao31` tinyint(1) DEFAULT NULL,
-  `opcao32` tinyint(1) DEFAULT NULL,
-  `opcao33` tinyint(1) DEFAULT NULL,
-  `opcao34` tinyint(1) DEFAULT NULL,
-  `opcao35` tinyint(1) DEFAULT NULL,
-  `opcao36` tinyint(1) DEFAULT NULL,
-  `opcao37` tinyint(1) DEFAULT NULL,
-  `opcao38` tinyint(1) DEFAULT NULL,
-  `opcao39` tinyint(1) DEFAULT NULL,
-  `opcao40` tinyint(1) DEFAULT NULL,
-  `opcao41` tinyint(1) DEFAULT NULL,
-  `opcao42` tinyint(1) DEFAULT NULL,
-  `opcao43` tinyint(1) DEFAULT NULL,
-  `opcao44` tinyint(1) DEFAULT NULL,
-  `opcao45` tinyint(1) DEFAULT NULL,
-  `opcao46` tinyint(1) DEFAULT NULL,
-  `opcao47` tinyint(1) DEFAULT NULL,
-  `opcao48` tinyint(1) DEFAULT NULL,
-  `opcao49` tinyint(1) DEFAULT NULL,
+  `opcao1` varchar(45) DEFAULT NULL,
+  `opcao2` varchar(45) DEFAULT NULL,
+  `opcao3` varchar(45) DEFAULT NULL,
+  `opcao4` varchar(45) DEFAULT NULL,
+  `opcao5` varchar(45) DEFAULT NULL,
+  `opcao6` varchar(45) DEFAULT NULL,
+  `opcao7` varchar(45) DEFAULT NULL,
+  `opcao8` varchar(45) DEFAULT NULL,
+  `opcao9` varchar(45) DEFAULT NULL,
+  `opcao10` varchar(45) DEFAULT NULL,
+  `opcao11` varchar(45) DEFAULT NULL,
+  `opcao12` varchar(45) DEFAULT NULL,
+  `opcao13` varchar(45) DEFAULT NULL,
+  `opcao14` varchar(45) DEFAULT NULL,
+  `opcao15` varchar(45) DEFAULT NULL,
+  `opcao16` varchar(45) DEFAULT NULL,
+  `opcao17` varchar(45) DEFAULT NULL,
+  `opcao18` varchar(45) DEFAULT NULL,
+  `opcao19` varchar(45) DEFAULT NULL,
+  `opcao20` varchar(45) DEFAULT NULL,
+  `opcao21` varchar(45) DEFAULT NULL,
+  `opcao22` varchar(45) DEFAULT NULL,
+  `opcao23` varchar(45) DEFAULT NULL,
+  `opcao24` varchar(45) DEFAULT NULL,
+  `opcao25` varchar(45) DEFAULT NULL,
+  `opcao26` varchar(45) DEFAULT NULL,
+  `opcao27` varchar(45) DEFAULT NULL,
+  `opcao28` varchar(45) DEFAULT NULL,
+  `opcao29` varchar(45) DEFAULT NULL,
+  `opcao30` varchar(45) DEFAULT NULL,
+  `opcao31` varchar(45) DEFAULT NULL,
+  `opcao32` varchar(45) DEFAULT NULL,
+  `opcao33` varchar(45) DEFAULT NULL,
+  `opcao34` varchar(45) DEFAULT NULL,
+  `opcao35` varchar(45) DEFAULT NULL,
+  `opcao36` varchar(45) DEFAULT NULL,
+  `opcao37` varchar(45) DEFAULT NULL,
+  `opcao38` varchar(45) DEFAULT NULL,
+  `opcao39` varchar(45) DEFAULT NULL,
+  `opcao40` varchar(45) DEFAULT NULL,
+  `opcao41` varchar(45) DEFAULT NULL,
+  `opcao42` varchar(45) DEFAULT NULL,
+  `opcao43` varchar(45) DEFAULT NULL,
+  `opcao44` varchar(45) DEFAULT NULL,
+  `opcao45` text DEFAULT NULL,
+  `opcao46` text DEFAULT NULL,
+  `opcao47` text DEFAULT NULL,
+  `opcao48` text DEFAULT NULL,
+  `opcao49` tinyint(45) DEFAULT NULL,
   `opcao50` tinyint(1) DEFAULT NULL,
   `opcao51` tinyint(1) DEFAULT NULL,
   `opcao52` tinyint(1) DEFAULT NULL,
@@ -185,10 +298,18 @@ CREATE TABLE `sinais_sintomas` (
 --
 
 INSERT INTO `sinais_sintomas` (`id`, `nrOcorrencia`, `opcao1`, `opcao2`, `opcao3`, `opcao4`, `opcao5`, `opcao6`, `opcao7`, `opcao8`, `opcao9`, `opcao10`, `opcao11`, `opcao12`, `opcao13`, `opcao14`, `opcao15`, `opcao16`, `opcao17`, `opcao18`, `opcao19`, `opcao20`, `opcao21`, `opcao22`, `opcao23`, `opcao24`, `opcao25`, `opcao26`, `opcao27`, `opcao28`, `opcao29`, `opcao30`, `opcao31`, `opcao32`, `opcao33`, `opcao34`, `opcao35`, `opcao36`, `opcao37`, `opcao38`, `opcao39`, `opcao40`, `opcao41`, `opcao42`, `opcao43`, `opcao44`, `opcao45`, `opcao46`, `opcao47`, `opcao48`, `opcao49`, `opcao50`, `opcao51`, `opcao52`, `opcao53`, `opcao54`, `opcao55`, `opcao56`, `opcao57`, `Outros`) VALUES
-(3, 29, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, ''),
-(4, 29, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, ''),
-(5, 29, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, ''),
-(6, 29, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, '');
+(3, 29, '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '1', '0', '0', 0, 0, 0, 0, 0, 0, 1, 0, 0, ''),
+(4, 29, '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '1', '0', '0', 0, 0, 0, 0, 0, 0, 1, 0, 0, ''),
+(5, 29, '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 0, 0, 1, 0, 0, 0, 0, 0, 0, ''),
+(6, 29, '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 0, 0, 1, 0, 0, 0, 0, 0, 0, ''),
+(7, 32, '1', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
+(8, 33, '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 0, 0, 0, 0, 0, 0, 0, 0, 0, NULL),
+(9, 33, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 0, 0, 0, 0, 0, 0, 0, 0, 0, NULL),
+(10, 33, '', '', 'Agitação', 'Amnésia', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 0, 0, 0, 0, 0, 0, 0, 0, 0, NULL),
+(11, 33, '', '', '', '', '', '', '', '', '', '', '', 'Lábios', '', 'Convulsão', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 0, 0, 0, 0, 0, 0, 0, 0, 0, NULL),
+(12, 33, '-', '-', 'Agitação', '-', '-', '-', '-', 'Bradpnéia', '-', '-', '-', '-', '-', '-', '-', '-', '-', '', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', 0, 0, 0, 0, 0, 0, 0, 0, 0, NULL),
+(13, 38, '-', 'Afundamendo de crânio', 'Agitação', 'Amnésia', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', 0, 0, 0, 0, 0, 0, 0, 0, 0, NULL),
+(14, 39, 'Abdomen Sensível/Rígido', 'Afundamendo de crânio', 'Agitação', 'Amnésia', 'Angina de peito ', 'Apnéia', 'Bradicardia  ', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', 0, 0, 0, 0, 0, 0, 0, 0, 0, NULL);
 
 -- --------------------------------------------------------
 
@@ -218,17 +339,20 @@ CREATE TABLE `tipoocr` (
   `opcao17` varchar(45) NOT NULL,
   `opcao18` varchar(45) NOT NULL,
   `opcao19` varchar(45) NOT NULL,
-  `opcao20` varchar(45) NOT NULL,
-  `opcao21` varchar(45) NOT NULL
+  `opcao20` varchar(45) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Extraindo dados da tabela `tipoocr`
 --
 
-INSERT INTO `tipoocr` (`id`, `nrOcorrencia`, `opcao1`, `opcao2`, `opcao3`, `opcao4`, `opcao5`, `opcao6`, `opcao7`, `opcao8`, `opcao9`, `opcao10`, `opcao11`, `opcao12`, `opcao13`, `opcao14`, `opcao15`, `opcao16`, `opcao17`, `opcao18`, `opcao19`, `opcao20`, `opcao21`) VALUES
-(13, 31, 'Causado por animais ', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'),
-(14, 31, 'Causado por animais ', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0');
+INSERT INTO `tipoocr` (`id`, `nrOcorrencia`, `opcao1`, `opcao2`, `opcao3`, `opcao4`, `opcao5`, `opcao6`, `opcao7`, `opcao8`, `opcao9`, `opcao10`, `opcao11`, `opcao12`, `opcao13`, `opcao14`, `opcao15`, `opcao16`, `opcao17`, `opcao18`, `opcao19`, `opcao20`) VALUES
+(13, 31, 'Causado por animais ', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'),
+(14, 31, 'Causado por animais ', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'),
+(15, 32, '', '1', '1', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'),
+(16, 33, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'Trabalho ', ''),
+(17, 33, '-', '-', '-', 'Emergência médica', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-'),
+(18, 38, '-', '-', '-', 'Emergência médica', 'Queda de altura 2M', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-');
 
 --
 -- Índices para tabelas despejadas
@@ -248,15 +372,30 @@ ALTER TABLE `cadastropac`
   ADD KEY `bombeiro` (`bombeiro`);
 
 --
--- Índices para tabela `glasgow_menor`
+-- Índices para tabela `maior5`
 --
-ALTER TABLE `glasgow_menor`
-  ADD PRIMARY KEY (`id_ocorrencia`);
+ALTER TABLE `maior5`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `nrOcorrencia` (`nrOcorrencia`);
+
+--
+-- Índices para tabela `menor5`
+--
+ALTER TABLE `menor5`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `nrOcorrencia` (`nrOcorrencia`);
 
 --
 -- Índices para tabela `problemas`
 --
 ALTER TABLE `problemas`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `nrOcorrencia` (`nrOcorrencia`);
+
+--
+-- Índices para tabela `sinaisvitais`
+--
+ALTER TABLE `sinaisvitais`
   ADD PRIMARY KEY (`id`),
   ADD KEY `nrOcorrencia` (`nrOcorrencia`);
 
@@ -288,25 +427,43 @@ ALTER TABLE `cadastro`
 -- AUTO_INCREMENT de tabela `cadastropac`
 --
 ALTER TABLE `cadastropac`
-  MODIFY `num_ocorrencia` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
+  MODIFY `num_ocorrencia` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
+
+--
+-- AUTO_INCREMENT de tabela `maior5`
+--
+ALTER TABLE `maior5`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
+--
+-- AUTO_INCREMENT de tabela `menor5`
+--
+ALTER TABLE `menor5`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT de tabela `problemas`
 --
 ALTER TABLE `problemas`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
+
+--
+-- AUTO_INCREMENT de tabela `sinaisvitais`
+--
+ALTER TABLE `sinaisvitais`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de tabela `sinais_sintomas`
 --
 ALTER TABLE `sinais_sintomas`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT de tabela `tipoocr`
 --
 ALTER TABLE `tipoocr`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- Restrições para despejos de tabelas
@@ -319,16 +476,28 @@ ALTER TABLE `cadastropac`
   ADD CONSTRAINT `cadastropac_ibfk_1` FOREIGN KEY (`bombeiro`) REFERENCES `cadastro` (`id`);
 
 --
--- Limitadores para a tabela `glasgow_menor`
+-- Limitadores para a tabela `maior5`
 --
-ALTER TABLE `glasgow_menor`
-  ADD CONSTRAINT `glasgow_menor_ibfk_1` FOREIGN KEY (`id_ocorrencia`) REFERENCES `cadastropac` (`num_ocorrencia`);
+ALTER TABLE `maior5`
+  ADD CONSTRAINT `maior5_ibfk_1` FOREIGN KEY (`nrOcorrencia`) REFERENCES `cadastropac` (`num_ocorrencia`);
+
+--
+-- Limitadores para a tabela `menor5`
+--
+ALTER TABLE `menor5`
+  ADD CONSTRAINT `menor5_ibfk_1` FOREIGN KEY (`nrOcorrencia`) REFERENCES `cadastropac` (`num_ocorrencia`);
 
 --
 -- Limitadores para a tabela `problemas`
 --
 ALTER TABLE `problemas`
   ADD CONSTRAINT `problemas_ibfk_1` FOREIGN KEY (`nrOcorrencia`) REFERENCES `cadastropac` (`num_ocorrencia`);
+
+--
+-- Limitadores para a tabela `sinaisvitais`
+--
+ALTER TABLE `sinaisvitais`
+  ADD CONSTRAINT `sinaisvitais_ibfk_1` FOREIGN KEY (`nrOcorrencia`) REFERENCES `cadastropac` (`num_ocorrencia`);
 
 --
 -- Limitadores para a tabela `sinais_sintomas`

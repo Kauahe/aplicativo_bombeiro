@@ -30,34 +30,34 @@
         <div class="direita_frente" id="direita" value="direito">
             <div class="braco" id="BracoDreito" onclick="Gravar('BracoDreito');"value="braço"></div>
             <div class="coxa" id="CoxaDireita" onclick="Gravar('CoxaDireita');"value="coxa"></div>
-            <div class="canela" id="CanelaDireita" onclick="Gravar('CanelaDireita');"value="peito"></div>
+            <div class="canela" id="CanelaDireita" onclick="Gravar('CanelaDireita');"value="canela"></div>
             <div class="peito" id="PeitoDireito" onclick="Gravar('PeitoDireito');" value="peito"></div>
             <div class="abdomen" id="AbdomenDireito" onclick="Gravar('AbdomenDireito');" value="abdomen"></div>
             <div class="pe" id="PeDireito" onclick="Gravar('PeDireito');"value="pé"></div>
         </div>
-            <div class="cabeca" id="Cabeca" onclick="Gravar('Cabeca');"></div>
-        <div class="esquerda_frente" id="esquerda_frente" value="esquerdo">
-            <div class="peito2" id="PeitoEsquerdo" onclick="Gravar('PeitoEsquerdo');"></div>
-            <div class="braco2" id="BracoEsquerdo" onclick="Gravar('BracoEsquerdo');"></div>
-            <div class="coxa2" id="CoxaEsquerda" onclick="Gravar('CoxaEsquerda');"></div>
-            <div class="canela2" id="CanelaEsquerda" onclick="Gravar('CanelaEsquerda');"></div>
-            <div class="pe2" id="PeEsquerda" onclick="Gravar('PeEsquerda');"></div>
-            <div class="abdomen2" id="AbdomenEsquerdo" onclick="Gravar('AbdomenEsquerdo');"></div>
+            <div class="cabeca" id="Cabeca" onclick="Gravar('Cabeca');"value="cabeca"></div>
+        <div class="esquerda_frente" id="esquerda_frente" value="esquerdo" >
+            <div class="peito2" id="PeitoEsquerdo" onclick="Gravar('PeitoEsquerdo');"value="peito"></div>
+            <div class="braco2" id="BracoEsquerdo" onclick="Gravar('BracoEsquerdo');"value="braço"></div>
+            <div class="coxa2" id="CoxaEsquerda" onclick="Gravar('CoxaEsquerda');"value="coxa"></div>
+            <div class="canela2" id="CanelaEsquerda" onclick="Gravar('CanelaEsquerda');"value="canela"></div>
+            <div class="pe2" id="PeEsquerda" onclick="Gravar('PeEsquerda');"value="pé"></div>
+            <div class="abdomen2" id="AbdomenEsquerdo" onclick="Gravar('AbdomenEsquerdo');"value="abdomen"></div>
         </div>
     </div>
     <div class="costas" id="costas" value="costas">
         <div class="direita_costas" id="direita_costas" value="direita">
             
-            <div class="braco4" id="BracoD" onclick="Gravar('BracoD');"></div>
-            <div class="coxa3" id="CoxaD" onclick="Gravar('CoxaD');"></div>
-            <div class="panturra" id="PanturrilhaD" onclick="Gravar('PanturrilhaD');"></div>
+            <div class="braco4" id="BracoD" onclick="Gravar('BracoD');"value="braço"></div>
+            <div class="coxa3" id="CoxaD" onclick="Gravar('CoxaD');"value="posterior"></div>
+            <div class="panturra" id="PanturrilhaD" onclick="Gravar('PanturrilhaD');"value="panturrilha"></div>
 
         </div>
-            <div class="cabeca2" id="CabecaTras" onclick="Gravar('CabecaTras');"></div>
+            <div class="cabeca2" id="CabecaTras" onclick="Gravar('CabecaTras');"value="cabeça"></div>
         <div class="esquerda_costas" id="esquerda_costas" value="esquerda">           
-            <div class="braco3" id="BracoE" onclick="Gravar('BracoE');"></div>
-            <div class="coxa4" id="CoxaE" onclick="Gravar('CoxaE');"></div>
-            <div class="panturra2" id="PanturrilhaE" onclick="Gravar('PanturrilhaE');"></div>
+            <div class="braco3" id="BracoE" onclick="Gravar('BracoE');"value="braço"></div>
+            <div class="coxa4" id="CoxaE" onclick="Gravar('CoxaE');"value="posterior"></div>
+            <div class="panturra2" id="PanturrilhaE" onclick="Gravar('PanturrilhaE');"value="panturrilha"></div>
         </div> 
     </div>
 
@@ -74,10 +74,12 @@
                     <div class="local">TIPO</div>
                 </div>
             </div>
+         
             <div class="evelin">
                 <div class="fil1">
+        <form action="php/traumaAdulto.php" method="post">
                     <fieldset class="fieldset">
-                        <input type="text" name="local1" value="" id="local1" class="boxi"readonly>
+                        <input type="text" name="local1" value="" id="local1" class="box2"readonly>
                         <input type="text" name="local2" value="" id="local2"class="boxi"readonly>
                         <input type="text" name="local3" value="" id="local3"class="boxi"readonly>
                         <input type="text" name="local4" value="" id="local4"class="boxi"readonly>
@@ -102,55 +104,60 @@
                 <div class="fil">
                     <fieldset class="fieldset">
                         <select class="boxi">
-                            <option class="N">fratura</option>
-                            <option class="N">ferimento</option>
-                            <option class="N">hemorragia</option>
-                            <option class="N">esviceração</option>
-                            <option class="N">F.A.B/ F.A.F</option>
-                            <option class="N">Amputação</option>
-                            <option class="N">Queimadura 1°G</option>
-                            <option class="N">Queimadura 2°G</option>
-                            <option class="N">Queimadura 3°G</option>
+                            <option class="N" name="op1">fratura </option>
+                            <option class="N" name="op8">ferimento</option>
+                            <option class="N" name="op3">hemorragia</option>
+                            <option class="N" name="op4">esviceração</option>
+                            <option class="N" name="op5">F.A.B/ F.A.F</option>
+                            <option class="N" name="op6">Amputação</option>
+                            <option class="N" name="op7">Queimadura 1°G</option>
+                            <option class="N" name="op8">Queimadura 2°G</option>
+                            <option class="N" name="op9">Queimadura 3°G</option>
                         </select>
                         <select class="boxi">
-                            <option class="N">fratura</option>
-                            <option class="N">ferimento</option>
-                            <option class="N">hemorragia</option>
-                            <option class="N">esviceração</option>
-                            <option class="N">F.A.B/ F.A.F</option>
-                            <option class="N">Amputação</option>
-                            <option class="N">Queimadura 1°G</option>
-                            <option class="N">Queimadura 2°G</option>
-                            <option class="N">Queimadura 3°G</option>
+                            <option class="N" name="op1">fratura </option>
+                            <option class="N" name="op8">ferimento</option>
+                            <option class="N" name="op3">hemorragia</option>
+                            <option class="N" name="op4">esviceração</option>
+                            <option class="N" name="op5">F.A.B/ F.A.F</option>
+                            <option class="N" name="op6">Amputação</option>
+                            <option class="N" name="op7">Queimadura 1°G</option>
+                            <option class="N" name="op8">Queimadura 2°G</option>
+                            <option class="N" name="op9">Queimadura 3°G</option>
                         </select>
                         <select class="boxi">
-                            <option class="N">fratura</option>
-                            <option class="N">ferimento</option>
-                            <option class="N">hemorragia</option>
-                            <option class="N">esviceração</option>
-                            <option class="N">F.A.B/ F.A.F</option>
-                            <option class="N">Amputação</option>
-                            <option class="N">Queimadura 1°G</option>
-                            <option class="N">Queimadura 2°G</option>
-                            <option class="N">Queimadura 3°G</option>
+                            <option class="N" name="op1">fratura </option>
+                            <option class="N" name="op8">ferimento</option>
+                            <option class="N" name="op3">hemorragia</option>
+                            <option class="N" name="op4">esviceração</option>
+                            <option class="N" name="op5">F.A.B/ F.A.F</option>
+                            <option class="N" name="op6">Amputação</option>
+                            <option class="N" name="op7">Queimadura 1°G</option>
+                            <option class="N" name="op8">Queimadura 2°G</option>
+                            <option class="N" name="op9">Queimadura 3°G</option>
                         </select>
                         <select class="boxi">
-                            <option class="N">fratura</option>
-                            <option class="N">ferimento</option>
-                            <option class="N">hemorragia</option>
-                            <option class="N">esviceração</option>
-                            <option class="N">F.A.B/ F.A.F</option>
-                            <option class="N">Amputação</option>
-                            <option class="N">Queimadura 1°G</option>
-                            <option class="N">Queimadura 2°G</option>
-                            <option class="N">Queimadura 3°G</option>
+                            <option class="N" name="op1">fratura </option>
+                            <option class="N" name="op8">ferimento</option>
+                            <option class="N" name="op3">hemorragia</option>
+                            <option class="N" name="op4">esviceração</option>
+                            <option class="N" name="op5">F.A.B/ F.A.F</option>
+                            <option class="N" name="op6">Amputação</option>
+                            <option class="N" name="op7">Queimadura 1°G</option>
+                            <option class="N" name="op8">Queimadura 2°G</option>
+                            <option class="N" name="op9">Queimadura 3°G</option>
                         </select>
                     </fieldset>
+                   
                 </div>
-              
-
+          
+               
             </div>
+            <input class="enviar" type="submit" value="Cadastrar">
+        </form>
+           
         </div>
+      
 </body>
 
 <script>
@@ -232,4 +239,7 @@
         }
     }
 </script>
+
+
+
 
