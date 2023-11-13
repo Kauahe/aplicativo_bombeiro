@@ -22,36 +22,36 @@
     </header>
     <div class="fundo">
         <div class="titulo">GESTACIONAL</div>
-
+        <form action="php/gestacional.php" method="post">
         <div class="box">
             <div class="pergunta"><b>PERÍODO GESTACIONAL</b> </div>
             <div class="rsp">
-                <input type="text" class="resposta">
+                <input type="text" class="resposta" name="opcao1">
             </div>
         </div>
 
-        
+
 
         <div class="box3">
             <div class="pergunta"><b>FEZ PRÉ-NATAL?</b></div>
             <div class="rsp2">
-                <input class="input" type="checkbox">
+                <input class="input" type="checkbox" name="opcao2">
                 <div class="arruma">SIM</div>
-                <input class="input" type="checkbox">
+                <input class="input" type="checkbox" name="opcao3">
                 <div class="arruma">NÃO</div>
             </div>
             <div class="inp">
                 <div class="arr"><b>QUAIS:</b></div>
-                <input type="text" class="resposta1">
+                <input type="text" class="resposta1" name="opcao4">
             </div>
         </div>
 
         <div class="boxeve">
             <div class="pergunta"><b> POSSIBILIDADE DA <br> COMPLICAÇÕES?</b></div>
             <div class="rsp1">
-                <input class="input" type="checkbox">
+                <input class="input" type="checkbox" name="opcao5">
                 <div class="arruma">SIM</div>
-                <input class="input" type="checkbox">
+                <input class="input" type="checkbox" name="opcao6">
                 <div class="arruma">NÃO</div>
             </div>
 
@@ -60,14 +60,14 @@
         <div class="box5">
             <div class="pergunta"><b>É O PRIMEIRO FILHO?</b></div>
             <div class="rsp2">
-                <input class="input" type="checkbox">
+                <input class="input" type="checkbox" name="opcao7">
                 <div class="arruma">SIM</div>
-                <input class="input" type="checkbox">
+                <input class="input" type="checkbox" name="opcao8">
                 <div class="arruma">NÃO</div>
             </div>
             <div class="inp">
                 <div class="arr"><b>QUANTOS:</b></div>
-                <input type="text" class="resposta1">
+                <input type="text" class="resposta1" name="opcao9">
             </div>
         </div>
 
@@ -75,31 +75,31 @@
             <div class="pergunta"><b>INÍCIO DAS CONTRAÇÕES</b></div>
             <div class="rsp2">
                 <div class="arr"><b>HORÁRIO:</b></div>
-                <input type="time" class="resposta1">
+                <input type="time" class="resposta1" name="opcao10">
             </div>
-            
+
         </div>
 
-       
+
 
         <div class="box6">
             <div class="pergunta"><b>INGERIU ALIMENTO LÍQUIDO >6:</b></div>
             <div class="rsp2">
                 <div class="arr"><b>DURAÇÃO:</b></div>
-                <input type="text" class="resposta2">
+                <input type="text" class="resposta2" name="opcao11">
             </div>
             <div class="inp">
                 <div class="arr"><b>INTERVALO:</b></div>
-                <input type="text" class="resposta2">
+                <input type="text" class="resposta2" name="opcao12">
             </div>
         </div>
 
         <div class="box2">
             <div class="perguntaevacuar"><b>PRESSÃO NA REGIÃO DO QUADRIL OU <br>VONTADE DE EVACUAR</b></div>
             <div class="rsp2">
-                <input class="input" type="checkbox">
+                <input class="input" type="checkbox" name="opcao13">
                 <div class="arruma">SIM</div>
-                <input class="input" type="checkbox">
+                <input class="input" type="checkbox" name="opcao14">
                 <div class="arruma">NÃO</div>
             </div>
         </div>
@@ -107,9 +107,9 @@
         <div class="box1">
             <div class="pergunta"><b> JÁ HOUVE RUPTURA NA BOLSA?</b></div>
             <div class="rsp1">
-                <input class="input" type="checkbox">
+                <input class="input" type="checkbox" name="opcao15">
                 <div class="arruma">SIM</div>
-                <input class="input" type="checkbox">
+                <input class="input" type="checkbox" name="opcao16">
                 <div class="arruma">NÃO</div>
             </div>
         </div>
@@ -117,9 +117,9 @@
         <div class="box7">
             <div class="pergunta"><b> FOI FEITO INSPEÇÃO VISUAL?</b></div>
             <div class="rsp1">
-                <input class="input" type="checkbox">
+                <input class="input" type="checkbox" name="opcao17">
                 <div class="arruma">SIM</div>
-                <input class="input" type="checkbox">
+                <input class="input" type="checkbox" name="opcao18">
                 <div class="arruma">NÃO</div>
             </div>
         </div>
@@ -127,19 +127,20 @@
         <div class="box8">
             <div class="pergunta"><b> PARTO REALIZADO?</b></div>
             <div class="rsp1">
-                <input class="input" type="checkbox">
+                <input class="input" type="checkbox" name="opcao19">
                 <div class="arruma">SIM</div>
-                <input class="input" type="checkbox">
+                <input class="input" type="checkbox" name="opcao20">
                 <div class="arruma">NÃO</div>
             </div>
             <div class="inp">
                 <div class="arr"><b> NASCIMENTO:</b></div>
-                <input type="time" class="resposta1">
+                <input type="time" class="resposta1" name="opcao21">
             </div>
         </div>
 
 
-        <button class="botao">ENVIAR</button>
+        <input class="enviar" type="submit" value="Cadastrar">
+    </form>
     </div>
 </body>
 
