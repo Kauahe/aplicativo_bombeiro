@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 10/11/2023 às 00:27
+-- Tempo de geração: 13/11/2023 às 23:47
 -- Versão do servidor: 10.4.28-MariaDB
 -- Versão do PHP: 8.2.4
 
@@ -47,6 +47,18 @@ CREATE TABLE `anamnese` (
   `opcao15` varchar(45) NOT NULL,
   `opcao16` varchar(45) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Despejando dados para a tabela `anamnese`
+--
+
+INSERT INTO `anamnese` (`id`, `nrOcorrencia`, `opcao1`, `opcao2`, `opcao3`, `opcao4`, `opcao5`, `opcao6`, `opcao7`, `opcao8`, `opcao9`, `opcao10`, `opcao11`, `opcao12`, `opcao13`, `opcao14`, `opcao15`, `opcao16`) VALUES
+(1, 46, 'oi', '-', '-', '', '-', '-', '', '-', '-', '', '-', '-', '', '-', '-', ''),
+(2, 47, 'dddd', 'Sim', '-', '10dias', 'Sim', '-', 'rinite', 'Sim ', '-', '12:36', 'Sim', '-', 'po', 'Sim ', '-', '14:03'),
+(3, 51, '', '-', '-', '', '-', '-', '', '-', '-', '', '-', '-', '', '-', '-', ''),
+(4, 51, '', '-', '-', '', '-', '-', '', '-', '-', '', '-', '-', '', '-', '-', ''),
+(5, 52, '', '-', '-', '', '-', '-', '', '-', '-', '', '-', '-', '', '-', '-', ''),
+(6, 53, '', '-', '-', '', '-', '-', '', '-', '-', '', '-', '-', '', '-', '-', '');
 
 -- --------------------------------------------------------
 
@@ -95,7 +107,16 @@ CREATE TABLE `cadastropac` (
 --
 
 INSERT INTO `cadastropac` (`num_ocorrencia`, `data_ocr`, `nome_hospital`, `nome_pac`, `idade_pac`, `telefone_pac`, `nome_acomp`, `idade_acomp`, `local_ocr`, `cpf`, `bombeiro`) VALUES
-(44, '0000-00-00', 'Gabriel', 'santos', 0, '', '', 0, '', 0, 46);
+(44, '0000-00-00', 'Gabriel', 'santos', 0, '', '', 0, '', 0, 46),
+(45, '0000-00-00', 'São jose', 'aaaa', 14, '', '', 0, '', 0, 46),
+(46, '0000-00-00', 'São jose huuuuu', 'llolo', 36, '', '', 0, '', 0, 46),
+(47, '0000-00-00', 'São jose', 'fulano', 32, '', '', 0, '', 0, 46),
+(48, '0000-00-00', 'infantil', 'pedrinho', 12, '', '', 0, '', 0, 46),
+(49, '0000-00-00', 'henri', 'kakaaaaa', 45, '', '', 0, '', 0, 46),
+(50, '0000-00-00', 'lo', 'li', 56, '', '', 0, '', 0, 46),
+(51, '0000-00-00', '4', '4', 4, '', '', 0, '', 0, 46),
+(52, '0000-00-00', 't', 't', 7, '', '', 0, '', 0, 46),
+(53, '0000-00-00', 'São jose', 'kakaaaaa', 3, '', '', 0, '', 0, 46);
 
 -- --------------------------------------------------------
 
@@ -123,6 +144,57 @@ CREATE TABLE `formacond` (
   `opcao15` varchar(45) DEFAULT NULL,
   `opcao16` varchar(45) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Despejando dados para a tabela `formacond`
+--
+
+INSERT INTO `formacond` (`id`, `nrOcorrencia`, `opcao1`, `opcao2`, `opcao3`, `opcao4`, `opcao5`, `opcao6`, `opcao7`, `opcao8`, `opcao9`, `opcao10`, `opcao11`, `opcao12`, `opcao13`, `opcao14`, `opcao15`, `opcao16`) VALUES
+(22, 50, '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '', '', '', '', '', ''),
+(23, 50, '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '', '', '', '', '', ''),
+(24, 50, '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '', '', '', '', '', ''),
+(25, 51, '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '', '', '', '', '', '');
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura para tabela `gestacional`
+--
+
+CREATE TABLE `gestacional` (
+  `id` int(11) NOT NULL,
+  `nrOcorrencia` int(11) NOT NULL,
+  `opcao1` varchar(45) NOT NULL,
+  `opcao2` varchar(45) NOT NULL,
+  `opcao3` varchar(45) NOT NULL,
+  `opcao4` varchar(45) NOT NULL,
+  `opcao5` varchar(45) NOT NULL,
+  `opcao6` varchar(45) NOT NULL,
+  `opcao7` varchar(45) NOT NULL,
+  `opcao8` varchar(45) NOT NULL,
+  `opcao9` varchar(45) NOT NULL,
+  `opcao10` varchar(45) NOT NULL,
+  `opcao11` varchar(45) NOT NULL,
+  `opcao12` varchar(45) NOT NULL,
+  `opcao13` varchar(45) NOT NULL,
+  `opcao14` varchar(45) NOT NULL,
+  `opcao15` varchar(45) NOT NULL,
+  `opcao16` varchar(45) NOT NULL,
+  `opcao17` varchar(45) NOT NULL,
+  `opcao18` varchar(45) NOT NULL,
+  `opcao19` varchar(45) NOT NULL,
+  `opcao20` varchar(45) NOT NULL,
+  `opcao21` varchar(45) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Despejando dados para a tabela `gestacional`
+--
+
+INSERT INTO `gestacional` (`id`, `nrOcorrencia`, `opcao1`, `opcao2`, `opcao3`, `opcao4`, `opcao5`, `opcao6`, `opcao7`, `opcao8`, `opcao9`, `opcao10`, `opcao11`, `opcao12`, `opcao13`, `opcao14`, `opcao15`, `opcao16`, `opcao17`, `opcao18`, `opcao19`, `opcao20`, `opcao21`) VALUES
+(1, 48, '10mes', 'Sim', '-', '10dias', 'Sim', '-', '-', 'Não', '2', '12:36', '2horas', '5minutos', 'Sim', '-', '-', 'Não', 'Sim', '-', 'Sim', '-', '08:26'),
+(2, 51, '', '-', '-', '', '-', '-', '-', '-', '', '', '', '', '-', '-', '-', '-', '-', '-', '-', '-', ''),
+(3, 52, '', '-', '-', '', '-', '-', '-', '-', '', '', '', '', '-', '-', '-', '-', '-', '-', '-', '-', '');
 
 -- --------------------------------------------------------
 
@@ -208,15 +280,16 @@ CREATE TABLE `problemas` (
 --
 
 CREATE TABLE `sinaisvitais` (
-  `nrOcorrencia` int(11) NOT NULL,
   `id` int(11) NOT NULL,
-  `opcao2` varchar(45) DEFAULT NULL,
-  `opcao3` varchar(45) DEFAULT NULL,
-  `opcao4` varchar(45) DEFAULT NULL,
-  `opcao5` varchar(45) DEFAULT NULL,
-  `opcao6` varchar(45) DEFAULT NULL,
-  `opcao7` varchar(45) DEFAULT NULL,
-  `opcao8` varchar(45) DEFAULT NULL
+  `nrOcorrencia` int(11) NOT NULL,
+  `opcao1` varchar(45) NOT NULL,
+  `opcao2` varchar(45) NOT NULL,
+  `opcao3` varchar(45) NOT NULL,
+  `opcao4` varchar(45) NOT NULL,
+  `opcao5` varchar(45) NOT NULL,
+  `opcao6` varchar(45) NOT NULL,
+  `opcao7` varchar(45) NOT NULL,
+  `opcao8` varchar(45) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
@@ -385,6 +458,13 @@ ALTER TABLE `formacond`
   ADD KEY `nrOcorrencia` (`nrOcorrencia`);
 
 --
+-- Índices de tabela `gestacional`
+--
+ALTER TABLE `gestacional`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `nrOcorrencia` (`nrOcorrencia`);
+
+--
 -- Índices de tabela `maior5`
 --
 ALTER TABLE `maior5`
@@ -441,7 +521,7 @@ ALTER TABLE `traumaadulto`
 -- AUTO_INCREMENT de tabela `anamnese`
 --
 ALTER TABLE `anamnese`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT de tabela `cadastro`
@@ -453,13 +533,19 @@ ALTER TABLE `cadastro`
 -- AUTO_INCREMENT de tabela `cadastropac`
 --
 ALTER TABLE `cadastropac`
-  MODIFY `num_ocorrencia` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=45;
+  MODIFY `num_ocorrencia` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=54;
 
 --
 -- AUTO_INCREMENT de tabela `formacond`
 --
 ALTER TABLE `formacond`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+
+--
+-- AUTO_INCREMENT de tabela `gestacional`
+--
+ALTER TABLE `gestacional`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT de tabela `maior5`
@@ -483,7 +569,7 @@ ALTER TABLE `problemas`
 -- AUTO_INCREMENT de tabela `sinaisvitais`
 --
 ALTER TABLE `sinaisvitais`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT de tabela `sinais_sintomas`
@@ -524,6 +610,12 @@ ALTER TABLE `cadastropac`
 --
 ALTER TABLE `formacond`
   ADD CONSTRAINT `formacond_ibfk_1` FOREIGN KEY (`nrOcorrencia`) REFERENCES `cadastropac` (`num_ocorrencia`);
+
+--
+-- Restrições para tabelas `gestacional`
+--
+ALTER TABLE `gestacional`
+  ADD CONSTRAINT `gestacional_ibfk_1` FOREIGN KEY (`nrOcorrencia`) REFERENCES `cadastropac` (`num_ocorrencia`);
 
 --
 -- Restrições para tabelas `maior5`
