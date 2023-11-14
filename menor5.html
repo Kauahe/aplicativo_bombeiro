@@ -118,9 +118,16 @@
         <P><b>TOTAL (GCS) (3-15)</b></P>
        <input type="text" id="soma_total" name="opcao16" class="branco"> 
     </div>
-    <input class="enviar" type="submit" value="Cadastrar" ><br><br><br><br>
+
+    <div class="bts">
+      
+        <button class="enviar0"  function="voltar()"> VOLTAR</button>
+        <input class="enviar" type="submit" value="Cadastrar">
+    </div>
+  
     </form>
 </body>
+
 <script>
       function Comprar()
     {
@@ -205,6 +212,11 @@
         soma = soma + 1
        }
        soma_total.value= soma
+    }
+
+    function voltar()
+    {
+        window.history.back();
     }
 </script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

@@ -53,7 +53,12 @@
             <input class="caixa" type="checkbox" id="op21" name="opcao21"> &nbsp; transferência  <br> <br>
         </fieldset>
     </div>
-    <input class="enviar" type="submit" value="Cadastrar" ><br><br><br><br>
+    
+    <div class="bts">
+      
+            <button class="enviar0"  function="voltar()"> VOLTAR</button>
+            <input class="enviar" type="submit" value="Cadastrar">
+        </div>
     <!-- <input id="cpf" name="cpf" type="hidden" value="<?php //echo("$cpf"); ?>"> -->
 </form>
 
