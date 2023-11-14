@@ -74,7 +74,11 @@
         </div>
 
     </div>
-    <input class="enviar" type="submit" value="Cadastrar" ><br><br><br><br>
+    <div class="bts">
+      
+        <button class="envia"  function="voltar()"> VOLTAR</button>
+        <input class="enviar" type="submit" value="Cadastrar">
+    </div>
 </form>
 </div>
     <script>
@@ -145,6 +149,11 @@
             document.getElementById("dados2").style.opacity=0; 
             document.getElementById("dados3").style.opacity=0; 
             document.getElementById("dados4").style.opacity=0; 
+        }
+
+        function voltar()
+        {
+            window.history.back();
         }
     </script>
 </body>

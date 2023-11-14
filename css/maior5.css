@@ -318,6 +318,23 @@ td {
 {
    color:#1F3173;
 }
+.enviar0
+{
+    font-weight: 400;
+    text-transform: uppercase;
+    background-color: #1F3173;
+    color: #d9d9d9;
+    font-family: "Audiowide", sans-serif;
+    width: 40%;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 10PX;
+   text-align: center;
+}
+
 .enviar
 {
     font-weight: 400;
@@ -325,14 +342,25 @@ td {
     background-color: #1F3173;
     color: #d9d9d9;
     font-family: "Audiowide", sans-serif;
-    margin-top: 25px;
-    width: 55%;
+    width: 40%;
     height: 50px;
     border-radius: 10px;
     font-size: 15px;
     padding-top: 10px;
     padding-bottom: 10px;
-    margin-left: 75PX;
+    margin-left: 35PX;
+}
+
+.bts{
+    width: 100%;
+    height: 70px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
 }
 .branco1 {
    width: 100%;

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,83 +23,93 @@
     </header>
 
     <div class="texto"><b>SINAIS VITAIS</b></div>
-    <form action="php/sinais_vitais.php" method="post">
-    <div class="caixa"><br>
-        <div class="c1"><b>PRESSÃO ARTERIAL </b>
-            <fieldset class="fild1">
-                <input type="number" class="input1" name="opcao1">
-                <div class="x"><b>X</b></div>
-                <input type="number" class="input2" name="opcao2">
-                 <div class="bcp1"> <b>MMHG</b></div>
-            </fieldset>
+    <form action="php/sinais_vitais.php" method="post" class="formmm">
+        <div class="caixa"><br>
+            <div class="c1"><b>PRESSÃO ARTERIAL </b>
+             
+                <fieldset class="fild1">
+                    <input type="number" class="input1" name="opcao1">
+                    <div class="x"><b>X</b></div>
+                    <input type="number" class="input2" name="opcao2">
+                    <div class="bcp1"> <b>MMHG</b></div>
+                </fieldset>
+            </div>
+
+            <div class="c2"><b>PULSO</b>
+                <fieldset class="fild3">
+                    <input type="number" class="bpm" name="opcao3">
+                    <div class="bcp"> <b>B.C.P.M</b></div>
+                </fieldset>
+            </div>
+
+
+
+            <div class="c3"><b>RESPIRAÇÃO</b>
+                <fieldset class="fild3">
+                    <input type="number" class="bpm" name="opcao4">
+                    <div class="bcp"> <b>M.R.M</b></div>
+                </fieldset>
+            </div>
+
+
+
+            <div class="c4"><b>SATURAÇÃO</b>
+                <fieldset class="fild3">
+                    <input type="number" class="bpm" name="opcao5">
+                    <div class="bcp"> <b>%</b></div>
+                </fieldset>
+            </div>
+
+
+            <div class="c5"><b>TEMPERATURA</b>
+                <fieldset class="fild3">
+                    <input type="number" class="bpm" name="opcao6">
+                    <div class="bcp"> <b>°C</b></div>
+                </fieldset>
+            </div>
+
+
+            <div class="c6"><b>PERFUSÃO</b>
+                <fieldset class="fild4">
+                    <div class="seg"><b>>2 seg</b></div>
+                    <input type="checkbox" class="check" name="opcao7">
+                    <div class="seg2"><b>
+                            < 2 seg</b>
+                    </div>
+                    <input type="checkbox" class="check" name="opcao8">
+
+                </fieldset>
+
+            </div>
+
         </div>
+        <br>
+        <div class="bts">
 
-        <div class="c2"><b>PULSO</b>
-            <fieldset class="fild3">
-                <input type="number" class="bpm" name="opcao3"> 
-                <div class="bcp"> <b>B.C.P.M</b></div>
-            </fieldset>
+            <button class="envia" function="voltar()"> VOLTAR</button>
+            <input class="enviar" type="submit" value="Cadastrar">
         </div>
-
-
-
-        <div class="c3"><b>RESPIRAÇÃO</b>
-            <fieldset class="fild3">
-                <input type="number" class="bpm" name="opcao4"> 
-                <div class="bcp"> <b>M.R.M</b></div>
-            </fieldset>
-        </div>
-
-
-
-        <div class="c4"><b>SATURAÇÃO</b>
-            <fieldset class="fild3">
-                <input type="number" class="bpm" name="opcao5"> 
-                <div class="bcp"> <b>%</b></div>
-            </fieldset>
-        </div>
-
-
-        <div class="c5"><b>TEMPERATURA</b>
-            <fieldset class="fild3">
-                <input type="number" class="bpm" name="opcao6"> 
-                <div class="bcp"> <b>°C</b></div>
-            </fieldset>
-        </div>
-
-
-        <div class="c6"><b>PERFUSÃO</b>
-            <fieldset class="fild4">
-                <div class="seg"><b>>2 seg</b></div>
-                <input type="checkbox" class="check" name="opcao7">
-                <div class="seg2"><b> < 2 seg</b></div>
-                <input type="checkbox" class="check" name="opcao8">
-
-            </fieldset>      
-        
-        </div>
-
-    </div>
-   <br><input class="enviar" type="submit" value="Cadastrar" >
-</form>
+    </form>
 </body>
 <script>
-    function Sair()
-    {
-        window.open("pag_inicial.php","_self"), 3000;
+    function Sair() {
+        window.open("pag_inicial.php", "_self"), 3000;
     }
-    function Comprar()
-    {
-        $("#comprar").animate({height:"20px"}, 1000);
-        $("#confirm").animate({opacity:"0"}, 500);
-        $("#comprar").animate({width:"200px", borderRadius:"50px"}, 1000, Imagem);
-        $("#comprar").animate({height:"60px",width:"60px", borderRadius:"30px"}, 700);
-        comprar.style.backgroundSize="100%"
-        comprar.style.borderColor="white"
+    function Comprar() {
+        $("#comprar").animate({ height: "20px" }, 1000);
+        $("#confirm").animate({ opacity: "0" }, 500);
+        $("#comprar").animate({ width: "200px", borderRadius: "50px" }, 1000, Imagem);
+        $("#comprar").animate({ height: "60px", width: "60px", borderRadius: "30px" }, 700);
+        comprar.style.backgroundSize = "100%"
+        comprar.style.borderColor = "white"
     }
-    function Imagem()
-    {
-        $("#img_ok").animate({opacity:"1"}, 1000, Sair);
+    function Imagem() {
+        $("#img_ok").animate({ opacity: "1" }, 1000, Sair);
+    }
+
+    function voltar() {
+        window.history.back();
     }
 </script>
+
 </html>

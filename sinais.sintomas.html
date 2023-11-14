@@ -205,15 +205,23 @@
     </div>
 
 
-    </form>
 
     <div class="bts">
-        <input class="enviar0" type="submit" value="voltar" function="voltar()">
+      
+        <button class="enviar0"  function="voltar()"> VOLTAR</button>
         <input class="enviar" type="submit" value="Cadastrar">
     </div>
 
+</form>
 </body>
-<script src="jquery.js"></script>
+<script src="jquery.js">
+
+function voltar()
+{
+    window.history.back();
+}
+
+</script>
 
 
 </html>
