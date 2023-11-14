@@ -13,32 +13,34 @@
 
 <body>
     <header>
-        <div class="espaco">
+
             <div class="imagem">
                 <img src="../img/logosembrilho.png" width="60px" height="60px">
             </div>
             <div class="row">
-                <h1>SOS BOMBEIROS</h1>
-                <h2>NÚCLEO DE OPERAÇÕES AÉREAS E RESGATE</h2>
+                <div class="h1">SOS BOMBEIROS</div>
+                <div class="h2" >NÚCLEO DE OPERAÇÕES AÉREAS E RESGATE</div>
             </div>
-        </div>
+            <a href="adm.php"><div class="opcao1"> <b>INÍCIO</b></div></a> 
+            <a href="cadastro.html"><div class="opcao2"><b>CADASTRO DE BOMBEIROS</b></div></a>
+            <a href="ocorrencia.php"><div class="opcao3"><b>REGISTRO DE OCORRÊNCIAS</b></div></a>
     </header>
     <main>
         <div class="bomb">
             <img class="imgbomb" src="../img/bombeiroadm 1.png">
         </div>
-        <form id="cadastroForm" action="" method="post" onsubmit="juntarCodigos()" enctype="multipart/form-data">
+        <form id="cadastroForm" class="total" action="" method="post" onsubmit="juntarCodigos()" enctype="multipart/form-data">
         <div class="box1">
-            <label for="nome"><b>NOME:</b></label>
+            <label for="nome" class="nome"><b>NOME:</b></label><BR>
             <input type="text" id="nome" name="nome" class="inp" required><br><br>
         </div>
         <div class="box2">
-            <label for="cpf"><b>CPF:</b></label>
+            <label for="cpf" class="nome"><b>CPF:</b></label><br>
                 <input type="tel" id="cpf" name="cpf" class="inp" required><br><br>
         </div>
         <div class="box3">
             <div class="centralizar">
-                <div class="cdg">CÓDIGO</div>
+                <div class="nome">CÓDIGO</div><br>
                 <div class="codigos">
                     <input class="cod" type="password" id="codigo" name="codigo" maxlength="1" required oninput="moveToNextInput(this, 'codigo2')" >
                     <input class="cod" type="password" id="codigo2" name="codigo2" maxlength="1" required oninput="moveToNextInput(this, 'codigo3')" onkeydown="handleBackspace(this, 'codigo')">
@@ -47,25 +49,13 @@
                 </div>
                 <input type="hidden" id="senha" name="senha">
             </div><br><br>
+            <div class="alinhamento_do_botao">
+                <input class="enviar" type="submit"  value="Cadastrar">
+            </div>
         </div>
-        <div class="box">
-           
-
-               
-
-               
-
-
-                
-
-                
-             
-                <label for="imagem" class="label-imagem">Selecionar Imagem</label>
+                <label for="imagem" class="label-imagem">ADICIONAR FOTO</label>
                 <span class="nome-arquivo"></span>
                 <input type="file" id="imagem" name="imagem" accept="image/*" class="input_imagem" required>
-             <div class="alinhamento_do_botao">
-                <input class="botao" type="submit"  value="Cadastrar">
-            </div>
             </form>
             <div style="color: rgb(143, 255, 109); font-size: 15px;" id="mensagem" ></div>
         </div>

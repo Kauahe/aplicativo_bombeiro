@@ -32,6 +32,7 @@ $pdo = null; // Feche a conexão PDO
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfil</title>
     <link rel="stylesheet" href="css/perfil.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
 </head>
 
 <body>
@@ -44,6 +45,9 @@ $pdo = null; // Feche a conexão PDO
                 <h1>SOS BOMBEIROS</h1>
                 <h2>NÚCLEO DE OPERAÇÕES AÉREAS E RESGATE</h2>
             </div>
+            <a href="adm.php"><div class="opcao1"> <b>INÍCIO</b></div></a> 
+            <a href="cadastro.html"><div class="opcao2"><b>CADASTRO DE BOMBEIROS</b></div></a>
+            <a href="ocorrencia.php"><div class="opcao3"><b>REGISTRO DE OCORRÊNCIAS</b></div></a>
         </div>
     </header>
 

@@ -19,6 +19,9 @@
                 <h1>SOS BOMBEIROS</h1>
                 <h2>NÚCLEO DE OPERAÇÕES AÉREAS E RESGATE</h2>
             </div>
+            <a href="adm.php"><div class="opcao1"> <b>INÍCIO</b></div></a> 
+            <a href="cadastro.html"><div class="opcao2"><b>CADASTRO DE BOMBEIROS</b></div></a>
+            <a href="ocorrencia.php"><div class="opcao3"><b>REGISTRO DE OCORRÊNCIAS</b></div></a>
         </div>
     </header>
     <div class="titulo"><b>BOMBEIROS CADASTROS:</b></div>
@@ -30,8 +33,9 @@
                 </form>
                
             </div>
-            <div class="margimdocu">
-            <select class="meucu" name="listar" name="ordenacao" id="ordenacao">listagem
+            <img src="..img/lupa.png" class="lupa">
+            <div class="marge">
+            <select class="select" name="listar" name="ordenacao" id="ordenacao">
             <option value="opcao1">ID</option>
             <option value="opcao2">Nome</option>
             <option value="opcao3">Data</option><select> <!--adicione a função de listar por ordem alfabetica ou id aqui-->
