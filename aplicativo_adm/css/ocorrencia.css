@@ -31,7 +31,100 @@ footer {
     left: 12px;
     top: 7px
 }
+.opcao1 {
+    margin-top: 20px;
+    margin-left: 600px;
+    border-radius: 10px;
+    display: flex;
+    width: 150px;
+    height: 40px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #f3f3f3;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 16px;
+    font-style: normal;
+    line-height: normal;
+    text-transform: uppercase;
+    font-family: "Audiowide", sans-serif;
+    border-radius: 50px;
+    border: 1px solid #FFF;
+    background: #000;
+}
 
+.opcao2 {
+    margin-top: 20px;
+    margin-left: -370px;
+    border-radius: 10px;
+    display: flex;
+    width: 300px;
+    height: 40px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #f3f3f3;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 16px;
+    font-style: normal;
+    line-height: normal;
+    text-transform: uppercase;
+    font-family: "Audiowide", sans-serif;
+    border-radius: 50px;
+    border: 1px solid #FFF;
+    background: #000;
+}
+
+.opcao3 {
+    margin-top: 20px;
+    margin-left: -440px;
+    border-radius: 10px;
+    display: flex;
+    width: 350px;
+    height: 40px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #f3f3f3;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 16px;
+    font-style: normal;
+    line-height: normal;
+    text-transform: uppercase;
+    font-family: "Audiowide", sans-serif;
+    border-radius: 50px;
+    border: 1px solid #FFF;
+    background: #000;
+}
+.opcao1:hover {
+    background: #102986;
+    color: #FFF;
+    border-radius: 50px;
+    box-shadow: 4px 4px 4px 0px rgba(92, 92, 92, 0.25), 0px 4px 4px 0px rgba(92, 92, 92, 0.25), 0px 4px 4px 0px rgba(92, 92, 92, 0.25);
+    width: 150px;
+    cursor: pointer;
+}
+
+.opcao2:hover {
+    background: #102986;
+    color: #FFF;
+    border-radius: 50px;
+    box-shadow: 4px 4px 4px 0px rgba(92, 92, 92, 0.25), 0px 4px 4px 0px rgba(92, 92, 92, 0.25), 0px 4px 4px 0px rgba(92, 92, 92, 0.25);
+    width: 300px;
+    cursor: pointer;
+}
+
+.opcao3:hover {
+    background: #102986;
+    color: #FFF;
+    border-radius: 50px;
+    box-shadow: 4px 4px 4px 0px rgba(92, 92, 92, 0.25), 0px 4px 4px 0px rgba(92, 92, 92, 0.25), 0px 4px 4px 0px rgba(92, 92, 92, 0.25);
+    width: 350px;
+    cursor: pointer;
+}
 .espaco {
     display: flex;
     justify-content: space-between;
@@ -49,7 +142,8 @@ footer {
 h1 {
     color: white;
     font-family: "Audiowide", sans-serif;
-    font-size: 31px;
+    font-size: 20px;
+    margin-top: 10px;
 }
 
 h2 {
@@ -59,7 +153,7 @@ h2 {
     font-size: 10px;
     font-style: italic;
     font-weight: 200;
-    margin-left: -90px;
+    margin-left: -2px;
 }
 
 H3 {
@@ -83,10 +177,10 @@ H4 {
 .titulo {
     width: 100%;
     height: 50px;
-    margin-left: 5px;
+    margin-left: -1020px;
     margin-top: 40px;
     color: black;
-    font-size: 30px;
+    font-size: 25px;
     font-family: "Audiowide", sans-serif;
     justify-content: center;
     justify-items: center;
@@ -98,8 +192,8 @@ H4 {
 }
 
 .caixa {
-    width: 1166px;
-    height: 586px;
+    width: 1350px;
+    height: 500px;
     flex-shrink: 0;
     border-radius: 34px;
     background: #FFF;
@@ -110,6 +204,7 @@ H4 {
     align-content: center;
     flex-direction: column;
     display: flex;
+    margin-top: 20px;
 }
 .cdt {
     width: 100%;
@@ -122,23 +217,6 @@ H4 {
     justify-content: space-between;
     align-items: flex-end;
  
-}
-
-.add {
-    width: 35%;
-    height: 50%;
-    
-    justify-content: center;
-    justify-items: center;
-    align-content: center;
-    flex-direction: column;
-    display: flex;
-    transition: 0.5s;
-    background-color: #e7e7e7;
-    width: 35%;
-
-    border: solid rgb(175, 175, 175) 1px;
-    border-radius: 15px;
 }
 .meucu{
     width:100%;
@@ -258,6 +336,20 @@ H4 {
 select{
     height: 100%;
     border-radius: 15px;
+    width: 500px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #000000;
+    border-radius: 10px;
+    padding-left: 10px;
+    font-family: Candara;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 7px;
+    border: 1px solid #000;
+    background: #D9D9D9;
+    padding-top: -50px;
+    margin-left: 10px;
 }
 .usuario > {
     margin-right: 10px; /* ou qualquer valor desejado */
@@ -335,7 +427,7 @@ select{
 
 /* Adicione estilos para destacar o que é cada informação (ID, Nome, Email) */
 .info-id::before {
-    content: "numero: "; /* Adiciona rótulo "ID: " antes da informação de ID */
+    content: "Nº da ocorrência "; /* Adiciona rótulo "ID: " antes da informação de ID */
     font-weight: bold;
 }
 

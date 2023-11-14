@@ -19,18 +19,21 @@
                 <h1>SOS BOMBEIROS</h1>
                 <h2>NÚCLEO DE OPERAÇÕES AÉREAS E RESGATE</h2>
             </div>
+            <a href="adm.php"><div class="opcao1"> <b>INÍCIO</b></div></a> 
+            <a href="cadastro.html"><div class="opcao2"><b>CADASTRO DE BOMBEIROS</b></div></a>
+            <a href="ocorrencia.php"><div class="opcao3"><b>REGISTRO DE OCORRÊNCIAS</b></div></a>
         </div>
     </header>
-    <div class="titulo"><b>OCORRÊNCIAS </b></div>
+    <div class="titulo"><b>OCORRÊNCIAS 🚨</b></div>
     <div class="caixa">
         <div class="cdt">
             <div class="butao">
                 <div class="add">
                     <select id="selectList" class="selecionar" name="list">
-                        <option>Selecionar por..</option>
-                        <option value="num_ocorrencia">Numero da ocorrencia</option>
-                        <option value="data_ocr">Data</option>
-                        <option value="nome_pac">Nome</option>
+                        <option>Selecionar por...</option>
+                        <option value="num_ocorrencia">Nº da ocorrência (mais recente para mais antigo)</option>
+                        <option value="data_ocr">Data (mais recente para mais antiga)</option>
+                        <option value="nome_pac">Nome (ordem alfabética)</option>
                     </select>
                 </div>
               
