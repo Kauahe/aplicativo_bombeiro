@@ -22,91 +22,103 @@
     </header>
     <div class="fundo">
         <div class="titulo">ANAMNESE</div>
-       <form action="php/anamnese.php" method="post">
-        <div class="box">
-            <div class="pergunta"><b>O QUE ACONTECEU<br>(SINAIS E SINTOMAS)</b></div>
-            <div class="rsp">
-                <input type="text" class="resposta" name="opcao1">
-            </div>
-        </div>
-
-        <div class="box1">
-            <div class="pergunta"><b> ACONTECEU OUTRAS <br> VEZES</b></div>
-            <div class="rsp1">
-                <input type="checkbox" name="opcao2">
-                <div class="arruma">SIM</div>
-                <input type="checkbox" name="opcao3">
-                <div class="arruma">NÃO</div>
+        <form action="php/anamnese.php" method="post">
+            <div class="box">
+                <div class="pergunta"><b>O QUE ACONTECEU<br>(SINAIS E SINTOMAS)</b></div>
+                <div class="rsp">
+                    <input type="text" class="resposta" name="opcao1">
+                </div>
             </div>
 
-        </div>
+            <div class="box1">
+                <div class="pergunta"><b> ACONTECEU OUTRAS <br> VEZES</b></div>
+                <div class="rsp1">
+                    <input type="checkbox" name="opcao2">
+                    <div class="arruma">SIM</div>
+                    <input type="checkbox" name="opcao3">
+                    <div class="arruma">NÃO</div>
+                </div>
 
-        <div class="box2">
-            <div class="pergunta"><b>A QUANTO TEMPO <br> ACONTECEU?</b></div>
-            <div class="rsp">
-                <input type="text" class="resposta" name="opcao4">
             </div>
-        </div>
 
-        <div class="box3">
-            <div class="pergunta"><b>POSSUI ALGUM <br> PROBLEMA DE SAÚDE?</b></div>
-            <div class="rsp2">
-                <input type="checkbox" name="opcao5">
-                <div class="arruma">SIM</div>
-                <input type="checkbox" name="opcao6">
-                <div class="arruma">NÃO</div>
+            <div class="box2">
+                <div class="pergunta"><b>A QUANTO TEMPO <br> ACONTECEU?</b></div>
+                <div class="rsp">
+                    <input type="text" class="resposta" name="opcao4">
+                </div>
             </div>
-            <div class="inp">
-                <div class="arr"><b>QUAIS:</b></div>
-                <input type="text" class="resposta1" name="opcao7">
-            </div>
-        </div>
 
-        <div class="box4">
-            <div class="pergunta"><b>FAZ USO DE MEDICAÇÃO?</b></div>
-            <div class="rsp2">
-                <input type="checkbox" name="opcao8">
-                <div class="arruma">SIM</div>
-                <input type="checkbox" name="opcao9">
-                <div class="arruma">NÃO</div>
+            <div class="box3">
+                <div class="pergunta"><b>POSSUI ALGUM <br> PROBLEMA DE SAÚDE?</b></div>
+                <div class="rsp2">
+                    <input type="checkbox" name="opcao5">
+                    <div class="arruma">SIM</div>
+                    <input type="checkbox" name="opcao6">
+                    <div class="arruma">NÃO</div>
+                </div>
+                <div class="inp">
+                    <div class="arr"><b>QUAIS:</b></div>
+                    <input type="text" class="resposta1" name="opcao7">
+                </div>
             </div>
-            <div class="inp">
-                <div class="arr"><b>HORÁRIO:</b></div>
-                <input type="time" class="resposta1" name="opcao10">
-            </div>
-        </div>
 
-        <div class="box5">
-            <div class="pergunta"><b>ALÉRGICO A ALGUMA COISA?</b></div>
-            <div class="rsp2">
-                <input type="checkbox" name="opcao11">
-                <div class="arruma">SIM</div>
-                <input type="checkbox" name="opcao12"2>
-                <div class="arruma">NÃO</div>
+            <div class="box4">
+                <div class="pergunta"><b>FAZ USO DE MEDICAÇÃO?</b></div>
+                <div class="rsp2">
+                    <input type="checkbox" name="opcao8">
+                    <div class="arruma">SIM</div>
+                    <input type="checkbox" name="opcao9">
+                    <div class="arruma">NÃO</div>
+                </div>
+                <div class="inp">
+                    <div class="arr"><b>HORÁRIO:</b></div>
+                    <input type="time" class="resposta1" name="opcao10">
+                </div>
             </div>
-            <div class="inp">
-                <div class="arr"><b>O QUE:</b></div>
-                <input type="text" class="resposta1" name="opcao13">
-            </div>
-        </div>
 
-        <div class="box6">
-            <div class="pergunta"><b>INGERIU ALIMENTO LÍQUIDO >6:</b></div>
-            <div class="rsp2">
-                <input type="checkbox" name="opcao14">
-                <div class="arruma">SIM</div>
-                <input type="checkbox" name="opcao15">
-                <div class="arruma">NÃO</div>
+            <div class="box5">
+                <div class="pergunta"><b>ALÉRGICO A ALGUMA COISA?</b></div>
+                <div class="rsp2">
+                    <input type="checkbox" name="opcao11">
+                    <div class="arruma">SIM</div>
+                    <input type="checkbox" name="opcao12" 2>
+                    <div class="arruma">NÃO</div>
+                </div>
+                <div class="inp">
+                    <div class="arr"><b>O QUE:</b></div>
+                    <input type="text" class="resposta1" name="opcao13">
+                </div>
             </div>
-            <div class="inp">
-                <div class="arr"><b>HORAS:</b></div>
-                <input type="time" class="resposta1" name="opcao16">
-            </div>
-        </div>
 
-        <input class="enviar" type="submit" value="Cadastrar" >
-    </form>
+            <div class="box6">
+                <div class="pergunta"><b>INGERIU ALIMENTO LÍQUIDO >6:</b></div>
+                <div class="rsp2">
+                    <input type="checkbox" name="opcao14">
+                    <div class="arruma">SIM</div>
+                    <input type="checkbox" name="opcao15">
+                    <div class="arruma">NÃO</div>
+                </div>
+                <div class="inp">
+                    <div class="arr"><b>HORAS:</b></div>
+                    <input type="time" class="resposta1" name="opcao16">
+                </div>
+            </div>
+
+            <div class="bts">
+                <input class="enviar0" type="submit" value="voltar" function="voltar()">
+                <input class="enviar" type="submit" value="Cadastrar">
+            </div>
+        </form>
     </div>
 </body>
 
-</html>
+ <script>
+
+    function voltar()
+    {
+        window.history.back();
+    }
+    
+ </script>
+ 
+ </html>
