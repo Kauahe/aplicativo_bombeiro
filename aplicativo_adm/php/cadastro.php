@@ -32,6 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
                 // Defina a resposta como sucesso
                 $response["success"] = true;
                 $response["message"] = "Cadastro realizado com sucesso!";
+                var_dump($response);
             } else {
                 // Defina a resposta como erro e exiba informações de erro
                 $response["success"] = false;
@@ -47,9 +48,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
         $response["success"] = false;
         $response["message"] = "O campo de imagem não foi definido no formulário.";
     }
-
+    header("Location:../adm.php");
     // Retorne a resposta como JSON
-    header("Content-type: application/json");
-    echo json_encode($response);
+    //header("Content-type: application/json");
+    //echo json_encode($response);
 }
 ?>

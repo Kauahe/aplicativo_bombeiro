@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CADASTRO Do BOMBEIRO</title>
+    <link rel="stylesheet" href="css/historico.Ocr.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+</head>
+
+<body>
+    <header>
+
+        <div class="imagem">
+            <img src="../img/logosembrilho.png" width="60px" height="60px">
+        </div>
+       <div class="titulo"></div>
+        <a href="adm.php">
+            <div class="opcao1"> <b>VOLTAR</b></div>
+        </a>
+    </header>
+    <div class="preto">INFORMAÇÕES PESSOAIS DO PACIENTE</div>
+    <div class="borda">
+        <div class="div1"><BR>
+            <div class="minitexto">NOME DO PACIENTE:</div> 
+            <input type="text" name="nome_pac" class="text"><button class="alterar">⚙️</button>
+
+            <BR><BR><div class="minitexto">IDADE DO PACIENTE:</div>
+            <input type="number" name="idade_pac" class="text" readonly><button class="alterar2">⚙️</button><BR><BR>
+        </div>
+            <div class="div2"><BR>
+                <div class="minitexto">RG/CPF:</div>
+                <input max="14" class="text" type="text" id="cpf" name="cpf" onkeyup="ValidarCPF()" ;><button class="alterar">⚙️</button>
+                <BR><BR>
+
+                <div class="minitexto">FONE:</div>
+                <input max="14" class="text" type="text" id="telefone_pac" name="telefone_pac"
+                    onkeyup="ValidarTelefone()" ;><button class="alterar">⚙️</button>
+                <BR>
+                <BR< </div>
+            </div>
+            <div class="div3"><BR>
+                <div class="minitexto">NOME DO HOSPITAL::</div>
+                <input type="text" name="nome_hospital" class="text"> <BR><BR>
+
+                    <div class="minitexto">DATA DO INCIDENTE:</div>
+                    <input type="date" name="data_ocr" class="data"><BR><BR>
+                <BR>
+                <BR< </div>
+        </div>
+    </div>
+            <div class="row">
+                <div class="collum">
+                    <div class="preto2">INFORMAÇÕES SOBRE SINAIS E SINTOMAS</div>
+                    <div class="borda2"></div>
+                </div>
+                <div class="collum">
+                    <div class="preto2">INFORMAÇÕES SOBRE TIPO DE OCORRÊNCIA</div>
+                    <div class="borda2"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="collum">
+                    <div class="preto2">INFORMAÇÕES SOBRE GLASGOW MENOR DE 5 ANOS</div>
+                    <div class="borda2"></div>
+                </div>
+                <div class="collum">
+                    <div class="preto2">INFORMAÇÕES SOBRE GLASGOW MAIOR DE 5 ANOS</div>
+                    <div class="borda2"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="collum">
+                    <div class="preto2">INFORMAÇÕES SOBRE SINAIS VITAIS</div>
+                    <div class="borda2"></div>
+                </div>
+                <div class="collum">
+                    <div class="preto2">INFORMAÇÕES SOBRE PROBLEMAS SUSPEITOS</div>
+                    <div class="borda2"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="collum">
+                    <div class="preto2">INFORMAÇÕES SOBRE FORMA DE CONDUÇÃO</div>
+                    <div class="borda2"></div>
+                </div>
+                <div class="collum">
+                    <div class="preto2">INFORMAÇÕES SOBRE LOCALIZAÇÃO DOS TRAUMAS </div>
+                    <div class="borda3"></div>
+                </div>
+            </div>
+</body>
+
+</html>

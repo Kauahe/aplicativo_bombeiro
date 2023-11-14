@@ -14,11 +14,32 @@ body {
   font-family: Candara, sans-serif;
 }
 
-.total {
-  margin-top: -45PX;
+.row {
+  margin-left: 84px;
+  margin-top: 9px;
+  text-align: center;
+
+}
+.separador{
+ 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.row2{
+  
+  display: flex;
+  flex-direction: column;
   width: 60%;
   height: 80%;
-  margin-left: 50px;
+  justify-content: space-around;
+}
+
+.total {
+
+  width: 100%;
+  height: 100%;
+
   display: flex;
   justify-content: space-around;
   justify-items: center;
@@ -102,11 +123,7 @@ footer {
   align-items: center;
 }
 
-.row {
-  margin-left: 84px;
-  margin-top: 9px;
-  text-align: center;
-}
+
 
 .h1 
 {
@@ -341,7 +358,7 @@ form {
   width: 100%;
   display: flex;
   flex-direction: column;
-
+ 
   justify-content: center;
 }
 .inp
