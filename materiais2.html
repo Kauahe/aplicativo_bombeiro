@@ -26,20 +26,20 @@
     <div class="box1">
         <div class="material">
             <div class="azulM"> MATERIAL</div>
-            <form>
+            <form action="php/materiais2.php" method="post">
             <input class="quad" type="checkbox"  name="opcao1" value="opcao1"> <div class="escrita"> Manta Aluminizada </div> 
-            <input class="quad" type="checkbox"  name="opcao5" value="opcao5"> <div class="escrita"> Pás do DEA </div> 
-            <input class="quad" type="checkbox"  name="opcao6" value="opcao6"> <div class="escrita"> Sonda de Aspiração </div> 
-            <input class="quad" type="checkbox"  name="opcao7" value="opcao7"> <div class="escrita"> Soro Fisiológico </div> 
-            <input class="quad" type="checkbox"  name="opcao11" value="opcao11"> <div class="escrita"> Talas TAP </div> 
-            <input class="caixa2"   type="radio" name="opcao3" value="opcao3"> <div class="subescrita">P </div>
-            <input class="caixa2"   type="radio" name="opcao4" value="opcao4"> <div class="subescrita">G </div>
-            <BR> <div class="out">OUTROS:</div> <input class="outros" type="text">
+            <input class="quad" type="checkbox"  name="opcao2" value="opcao2"> <div class="escrita"> Pás do DEA </div> 
+            <input class="quad" type="checkbox"  name="opcao3" value="opcao3"> <div class="escrita"> Sonda de Aspiração </div> 
+            <input class="quad" type="checkbox"  name="opcao4" value="opcao4"> <div class="escrita"> Soro Fisiológico </div> 
+            <input class="quad" type="checkbox"  name="opcao5" value="opcao5"> <div class="escrita"> Talas TAP </div> 
+            <input class="caixa2"   type="radio" name="opcao6" value="opcao6"> <div class="subescrita">P </div>
+            <input class="caixa2"   type="radio" name="opcao7" value="opcao7"> <div class="subescrita">G </div>
+            <BR> <div class="out">OUTROS:</div> <input class="outros" name="Outros" type="text">
             
         </div>
         <div class="qntdade">
             <div class="azulQ">QTD</div>
-            <select class="N1">
+            <select class="N1" name="qntd1">
                 <option class="N">1</option>
                 <option class="N">2</option>
                 <option class="N">3</option>
@@ -51,7 +51,7 @@
                 <option class="N">9</option>
                 <option class="N">10</option>
             </select>
-            <select class="N2">
+            <select class="N2" name="qntd2">
                 <option class="N">1</option>
                 <option class="N">2</option>
                 <option class="N">3</option>
@@ -63,7 +63,7 @@
                 <option class="N">9</option>
                 <option class="N">10</option>
             </select>
-            <select class="N3">
+            <select class="N3" name="qntd3">
                 <option class="N">1</option>
                 <option class="N">2</option>
                 <option class="N">3</option>
@@ -75,7 +75,7 @@
                 <option class="N">9</option>
                 <option class="N">10</option>
             </select>
-            <select class="N4">
+            <select class="N4" name="qntd4">
                 <option class="N">1</option>
                 <option class="N">2</option>
                 <option class="N">3</option>
@@ -87,19 +87,7 @@
                 <option class="N">9</option>
                 <option class="N">10</option>
             </select>
-            <select class="N5">
-                <option class="N">1</option>
-                <option class="N">2</option>
-                <option class="N">3</option>
-                <option class="N">4</option>
-                <option class="N">5</option>
-                <option class="N">6</option>
-                <option class="N">7</option>
-                <option class="N">8</option>
-                <option class="N">9</option>
-                <option class="N">10</option>
-            </select>
-            <select class="N6">
+            <select class="N5" name="qntd5">
                 <option class="N">1</option>
                 <option class="N">2</option>
                 <option class="N">3</option>
@@ -112,10 +100,10 @@
                 <option class="N">10</option>
             </select>
         </div>
-    </form>
+    
     </div>
     
     <input class="enviar" type="submit" value="Cadastrar">
-    
+</form>
 </body> 
 </html>
