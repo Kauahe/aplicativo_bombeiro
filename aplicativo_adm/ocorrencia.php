@@ -69,6 +69,10 @@
         });
 
         // Adicione o restante do seu código jQuery aqui, incluindo a exclusão de ocorrências.
+        function redirectToProfile(element) {
+        var numOcorrencia = element.getAttribute('data-id');
+        window.location.href = 'historico.Ocr.php?num_ocorrencia=' + numOcorrencia;
+    }
     </script>
 </body>
 </html>
