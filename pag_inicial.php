@@ -103,7 +103,7 @@ if (isset($_SESSION['v8'])) {
           }
           ?>">
             <img src="img/paciente.png" width="70px">
-            <p><b>PROCEDOMENTOS <br> EFETUADOS</b></p>
+            <p><b>PROCEDIMENTOS <br> EFETUADOS</b></p>
           </div>
         </a>
 
@@ -221,7 +221,7 @@ if (isset($_SESSION['v8'])) {
           </div>
         </a>
 
-        <a href="problemas.html">
+        <a href="termo.html">
           <div id="op6" class="<?php
           if ($v6 == 'v') {
             echo ("opv");

@@ -23,38 +23,38 @@
         </div>
     </header>
 
-
-    <div class="texto"><b>INFORMAÇÕES DO PACIENTE</b></div>
+<br>
+    <div class="texto"><b>INFORMAÇÕES DO PACIENTE</b></div><br>
     <div class="box">
         <form action="php/cadastroPac.php" method="post" id="cadastrarPac">
             <fieldset><br><br><br><br><br><br>
                 <div class="minitexto">DATA DO INCIDENTE:</div> <br>
                 <input type="date" name="data_ocr" class="data"><BR><BR>
-                <div class="minitexto">NOME DO HOSPITAL::</div>
-                <input type="text" name="nome_hospital" class="text"> <BR><BR>
+                <div class="minitexto">NOME DO HOSPITAL:</div>
+                <input type="text" name="nome_hospital" class="text"  placeholder="Hospital Dona Helena"> <BR><BR>
 
                 <div class="minitexto">NOME DO PACIENTE:</div>
-                <input type="text" name="nome_pac" class="text"><BR><BR>
+                <input type="text" name="nome_pac" class="text" placeholder="Eredes Umbelino dos Navegantes Filho"><BR><BR>
 
                 <div class="minitexto">IDADE DO PACIENTE:</div>
-                <input type="number" name="idade_pac" class="text"><BR><BR>
+                <input type="number" name="idade_pac" class="text" placeholder="49 anos"> <BR><BR>
 
                 <div class="minitexto">RG/CPF:</div>
-                <input max="14" class="text" type="text" id="cpf" name="cpf" onkeyup="ValidarCPF()";>
+                <input max="14" class="text" type="text" id="cpf" name="cpf" placeholder="112.386.739-50" onkeyup="ValidarCPF()";>
                 <BR><BR>
 
                 <div class="minitexto">FONE:</div>
-                <input max="14" class="text" type="text" id="telefone_pac" name="telefone_pac" onkeyup="ValidarTelefone()";>
+                <input max="14" class="text" type="text" id="telefone_pac" placeholder="(47) 992020822" name="telefone_pac" onkeyup="ValidarTelefone()";>
                <BR><BR>
 
                 <div class="minitexto">NOME DO ACOMPANHANTE:</div>
-                <input type="text" name="nome_acomp" class="text"><BR><BR>
+                <input type="text" name="nome_acomp" class="text"placeholder="Solange dos Navegantes"> <BR><BR>
 
                 <div class="minitexto">IDADE DO ACOMPANHANTE:</div>
-                <input type="number" name="idade_acomp" class="text"><BR><BR>
+                <input type="number" name="idade_acomp" class="text" placeholder="46 anos"><BR><BR>
 
                 <div class="minitexto">LOCAL DA OCORRÊNCIA:</div>
-                <input type="text" name="local_ocr" class="text"><BR><BR>
+                <input type="text" name="local_ocr" class="text" placeholder="Rua Jarivatuba"><BR><BR>
             </fieldset>
             <input class="enviar" type="submit" value="Cadastrar">
         </div>
@@ -83,8 +83,6 @@
         if (texto.length==9) {
             telefone.value = texto + '-';
         }
-        
-
         if (resposta == true){
             telefone.classList.remove("errado");
             telefone.classList.add("certo");

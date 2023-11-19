@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/termos.css">
+    <title>login</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="imagem">
+            <img src="img/logosembrilho.png" width="50px" height="49px">
+        </div>
+        <div class="row">
+            <h1>SOS BOMBEIROS</h1>
+            <h2>NÚCLEO DE OPERAÇÕES AÉREAS E RESGATE</h2>
+        </div>
+    </header><br><br>
+    <div class="tit"> TERMO DE RECUSA </div>
+    <div class="subtit"> ATENDIMENTO E/OU TRANSPORTE </div>
+    <form action="php/termos.php" method="post" class="formulario">
+        <div class="tit2">Eu:</div>
+        <input class="caixa" name="opcao1" type="text" placeholder="Nome completo"><br>
+        <div class="tit2">Portador da carteira de identidade Nº:</div>
+        <input class="caixa" name="opcao2" type="text" placeholder="Nº identidade"><br>
+        <div class="tit2">Inscrito no CPF sob Nº:</div>
+        <input class="caixa"name="opcao3" type="text"  placeholder="Nº CPF"><br>
+        <div class="textinho">
+            
+Na qualidade de vítima/paciente, usando dos direitos que a lei me garante, me recuso neste ato o atendimento e/ou transporte oferecido pelos bombeiros voluntários de Guaramirim/SC, e assumo, individualmente a responsabilidade pelas consequências que possam ocorrer por razão da minha recusa. Declaro que fui devidamente informado sobre o procedimento pelo qual eu deveria me submeter, e alertado sobre os riscos à saúde da sua não realização.
+        </div>
+        <div class="tit2">Assinatura da Testemunha:</div>
+        <input class="caixa"name="opcao4" type="text" placeholder="Ass:"><br>
+    </div>
+
+    <input class="enviar" type="submit" value="Cadastrar">
+</form><br>
+</body>
+</html>
