@@ -237,6 +237,8 @@ while ($linhas = $comando->fetch()) {
     <link rel="stylesheet" href="css/historico.Ocr.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
 </head>
 
 <body>
@@ -254,19 +256,22 @@ while ($linhas = $comando->fetch()) {
     <div class="borda">
     <div class="div1"><BR>
             <div class="minitexto">NOME DO PACIENTE:</div> 
-            <input type="text" name="nome_pac" value="<?php if ($nome==""){}else echo $nome ?>" class="text"><button class="alterar">⚙️</button>
+            <input type="text" name="nome_pac" value="<?php if ($nome==""){}else echo $nome ?>" id="nome_pac" class="text">
+            <button class="alterar" onclick="alterarInformacao('nome_pac')">⚙️</button>
 
             <BR><BR><div class="minitexto">IDADE DO PACIENTE:</div>
-            <input type="number"   value="<?php if ($idade==""){}else echo $idade ?>" name="idade_pac" class="text" readonly><button class="alterar2">⚙️</button><BR><BR>
+            <input type="number"   value="<?php if ($idade==""){}else echo $idade ?>" id="idade_pac" name="idade_pac" class="text" readonly>
+            <button class="alterar2"onclick="alterarInformacao('idade_pac')">⚙️</button><BR><BR>
         </div>
             <div class="div2"><BR>
                 <div class="minitexto">RG/CPF:</div>
-                <input max="14" class="text"  value="<?php if ($cpf==""){}else echo $cpf ?>" type="text" id="cpf" name="cpf" onkeyup="ValidarCPF()" ;><button class="alterar">⚙️</button>
+                <input max="14" class="text"  value="<?php if ($cpf==""){}else echo $cpf ?>" type="text" id="cpf" name="cpf" onkeyup="ValidarCPF()" ;>
+                <button class="alterar"onclick="alterarInformacao('cpf')">⚙️</button>
                 <BR><BR>
 
                 <div class="minitexto">FONE:</div>
                 <input max="14" class="text" type="text" id="telefone_pac"  value="<?php if ($telefone==""){}else echo $telefone ?>" name="telefone_pac"
-                    onkeyup="ValidarTelefone()" ;><button class="alterar">⚙️</button>
+                    onkeyup="ValidarTelefone()" ;><button class="alterar" onclick="alterarInformacao('telefone_pac')">⚙️</button>
                 <BR>
                 <BR </div>
             </div>
@@ -382,5 +387,42 @@ while ($linhas = $comando->fetch()) {
                 </div>
             </div>
 </body>
+
+<script>
+function alterarInformacao(nomeCampo) {
+    // Obter o valor atual do campo
+    var valorAtual = document.getElementById(nomeCampo).value;
+
+    // Prompt para obter um novo valor do usuário
+    var novoValor = prompt('Digite o novo valor:', valorAtual);
+
+    // Verificar se o usuário pressionou "Cancelar" ou não digitou nada
+    if (novoValor === null || novoValor === valorAtual) {
+        return; // Nada foi alterado
+    }
+
+    // Enviar uma requisição AJAX para atualizar o valor no banco de dados
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+            if (this.status == 200) {
+                // Atualizar o valor exibido na página se a atualização no banco de dados foi bem-sucedida
+                if (this.responseText.trim() === 'success') {
+                    document.getElementById(nomeCampo).value = novoValor;
+                    alert('Valor atualizado com sucesso!');
+                } else {
+                    alert('Erro ao atualizar o valor. Tente novamente. Detalhes: ' + this.responseText);
+                }
+            } else {
+                alert('Erro na requisição AJAX. Status: ' + this.status);
+            }
+        }
+    };
+
+    // Configurar a requisição AJAX
+    xmlhttp.open("GET", "atualizar_valor.php?campo=" + nomeCampo + "&valor=" + novoValor, true);
+    xmlhttp.send();
+}
+</script>
 
 </html>
