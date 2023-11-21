@@ -150,3 +150,58 @@ if (isset($_SESSION['v16'])) {
     
 </body>
 </html>
+
+<div class="espaco">
+        <a href="procedimentos.html">
+          <div id="op2" class="<?php
+          if ($v2 == 'v') {
+            echo ("opv");
+          } else {
+            echo ("op2");
+          }
+          ?>">
+            <img src="img/paciente.png" width="70px">
+            <p><b>PROCEDIMENTOS <br> EFETUADOS</b></p>
+          </div>
+        </a>
+
+        <a href="anamnese.html">
+          <div id="op2" class="<?php
+          if ($v2 == 'v') {
+            echo ("opv");
+          } else {
+            echo ("op2");
+          }
+          ?>">
+            <img src="img/anamnese.png" width="70px">
+            <p><b>ANAMNESE DA <br> EMERGÊNCIA</b></p>
+          </div>
+        </a>
+      </div>
+      <div class="espaco">
+        <a href="materiais1.html">
+          <div id="op6" class="<?php
+          if ($v6 == 'v') {
+            echo ("opv");
+          } else {
+            echo ("op2");
+          }
+          ?>">
+            <img src="img/ft 3.png" width="70px">
+            <p><b>MATERIAIS <br> UTILIZADOS</b></p>
+          </div>
+        </a>
+
+        <a href="termos.html">
+          <div id="op6" class="<?php
+          if ($v6 == 'v') {
+            echo ("opv");
+          } else {
+            echo ("op2");
+          }
+          ?>">
+            <img src="img/recusaa.png" width="70px">
+            <p><b>TERMO DE <br> RECUSA</b></p>
+          </div>
+        </a>
+      </div>

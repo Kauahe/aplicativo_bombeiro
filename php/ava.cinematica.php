@@ -1,27 +1,24 @@
 <?php
 include("conecta.php");
 session_start();
-$_SESSION["v10"]= "v";
+$_SESSION["v12"]= "v";
    $num_ocorrencia=  $_SESSION["nrOcorrencia"];
-   $opcao1 = $_POST["opcao1"];
-   $opcao2=isset($_POST["opcao2"])  ? "Sim" : "";
-   $opcao3=isset($_POST["opcao3"])  ? "Não" : "";
-   $opcao4 = $_POST["opcao4"];
-   $opcao5=isset($_POST["opcao5"])  ? "Sim" : "";
-   $opcao6=isset($_POST["opcao6"])? "Não" : "";
-   $opcao7 = $_POST["opcao7"];
-   $opcao8=isset($_POST["opcao8"]) ? "Sim " : "";
-   $opcao9=isset($_POST["opcao9"]) ?  "Não " : "";
-   $opcao10 = $_POST["opcao10"];
-   $opcao11=isset($_POST["opcao11"])  ? "Sim" : "";
-   $opcao12=isset($_POST["opcao12"])  ? "Não " : "";
-   $opcao13 = $_POST["opcao13"];
-   $opcao14=isset($_POST["opcao14"]) ? "Sim " : "";
-   $opcao15=isset($_POST["opcao15"]) ? "Não " : "";
-   $opcao16 = $_POST["opcao16"];
-  
-   
-   $sql = "INSERT INTO anamnese VALUES (:id, :num_ocorrencia, :op1, :op2, :op3, :op4, :op5, :op6, :op7, :op8, :op9, :op10, :op11, :op12, :op13, :op14, :op15, :op16)";
+    $opcao1 = isset($_POST["opcao1"]) ? "sim" : "";
+    $opcao2 = isset($_POST["opcao2"]) ? "não" : "";
+    $opcao3 = isset($_POST["opcao3"]) ? "sim" : "";
+    $opcao4 = isset($_POST["opcao4"]) ? "não" : "";
+    $opcao5 = isset($_POST["opcao5"]) ? "sim" : "";
+    $opcao6 = isset($_POST["opcao6"]) ? "não" : "";
+    $opcao7 = isset($_POST["opcao7"]) ? "sim" : "";
+    $opcao8 = isset($_POST["opcao8"]) ? "não" : "";
+    $opcao9 = isset($_POST["opcao9"]) ? "sim" : "";
+    $opcao10 = isset($_POST["opcao10"]) ? "não" : "";
+    $opcao11 = isset($_POST["opcao11"]) ? "sim" : "";
+    $opcao12 = isset($_POST["opcao12"]) ? "não" : "";
+    $opcao13 = isset($_POST["opcao13"]) ? "sim" : "";
+    $opcao14 = isset($_POST["opcao14"]) ? "não" : "";
+
+    $sql = "INSERT INTO avacinema VALUES (:id, :num_ocorrencia, :op1, :op2, :op3, :op4, :op5, :op6, :op7, :op8, :op9, :op10, :op11, :op12, :op13, :op14)";
     $stmt = $pdo->prepare($sql);
    $n=null;
     $stmt->bindParam(':id', $n);
@@ -40,19 +37,13 @@ $_SESSION["v10"]= "v";
     $stmt->bindParam(':op12', $opcao12);
     $stmt->bindParam(':op13', $opcao13);
     $stmt->bindParam(':op14', $opcao14);
-    $stmt->bindParam(':op15', $opcao15);
-    $stmt->bindParam(':op16', $opcao16);
-
-  
+    
     if ($stmt->execute()) {
         // Defina a resposta como sucesso
         echo '<script>alert("Cadastro realizado com sucesso!"); window.location.href="../pag_inicial.php";</script>';
-        $_SESSION["v10"]= "v";
+        $_SESSION["v12"]= "v";
     } else {
         // Defina a resposta como erro e exiba informações de erro
         echo '<script>alert("Erro ao cadastrar: ' . $stmt->errorInfo()[2] . '");</script>';
     }
-    
-    
-
 ?>

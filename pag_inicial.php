@@ -8,6 +8,14 @@ $v5 = "";
 $v6 = "";
 $v7 = "";
 $v8 = "";
+$v9="";
+$v10="";
+$v11="";
+$v12="";
+$v13="";
+$v14="";
+$v15="";
+$v16="";
 
 // Verifique se a variável de sessão 'v' está definida
 if (isset($_SESSION['v1'])) {
@@ -33,6 +41,30 @@ if (isset($_SESSION['v7'])) {
 }
 if (isset($_SESSION['v8'])) {
   $v8 = $_SESSION['v8'];
+}
+if (isset($_SESSION['v9'])) {
+    $v9 = $_SESSION['v9']; 
+}
+if (isset($_SESSION['v10'])) {
+  $v10 = $_SESSION['v10'];
+}
+if (isset($_SESSION['v11'])) {
+  $v11 = $_SESSION['v11'];
+}
+if (isset($_SESSION['v12'])) {
+  $v12 = $_SESSION['v12'];
+}
+if (isset($_SESSION['v13'])) {
+  $v13 = $_SESSION['v13'];
+}
+if (isset($_SESSION['v14'])) {
+  $v14 = $_SESSION['v14'];
+}
+if (isset($_SESSION['v15'])) {
+  $v15 = $_SESSION['v15'];
+}
+if (isset($_SESSION['v16'])) {
+  $v16 = $_SESSION['v16'];
 }
 ?>
 <!DOCTYPE html>
@@ -93,34 +125,6 @@ if (isset($_SESSION['v8'])) {
           <p><b>SINAIS E <br> SINTOMAS</b></p>
         </div>
       </a>
-      <div class="espaco">
-        <a href="procedimentos.html">
-          <div id="op2" class="<?php
-          if ($v2 == 'v') {
-            echo ("opv");
-          } else {
-            echo ("op2");
-          }
-          ?>">
-            <img src="img/paciente.png" width="70px">
-            <p><b>PROCEDIMENTOS <br> EFETUADOS</b></p>
-          </div>
-        </a>
-
-
-        <a href="anamnese.html">
-          <div id="op2" class="<?php
-          if ($v2 == 'v') {
-            echo ("opv");
-          } else {
-            echo ("op2");
-          }
-          ?>">
-            <img src="img/anamnese.png" width="70px">
-            <p><b>ANAMNESE DA <br> EMERGÊNCIA</b></p>
-          </div>
-        </a>
-      </div>
 
     </div><br><br><br>
 
@@ -150,37 +154,9 @@ if (isset($_SESSION['v8'])) {
           <p><b>TIPO DE <br> OCORRÊNCIA</b></p>
         </div>
       </a>
-      <div class="espaco">
-        <a href="gestacional.html">
-          <div id="op4" class="<?php
-          if ($v4 == 'v') {
-            echo ("opv");
-          } else {
-            echo ("op2");
-          }
-          ?>">
-            <img src="img/gestacional.png" width="70px">
-            <p><b>ANAMNESE <br> GESTACIONAL</b></p>
-          </div>
-        </a>
 
-        <a href="avaCinematica.html">
-          <div id="op4" class="<?php
-          if ($v4 == 'v') {
-            echo ("opv");
-          } else {
-            echo ("op2");
-          }
-          ?>">
-            <img src="img/cinematica.png" width="70px">
-            <p><b>AVALIAÇÃO <br> CINEMÁTICA</b></p>
-          </div>
-        </a>
-      </div>
     </div>
     <br><br><br>
-
-
     <div class="dupla1">
 
       <a href="sinaisvitais.html">
@@ -207,38 +183,10 @@ if (isset($_SESSION['v8'])) {
           <p><b>PROBLEMAS <br> SUSPEITOS</b></p>
         </div>
       </a>
-      <div class="espaco">
-        <a href="materiais1.html">
-          <div id="op6" class="<?php
-          if ($v6 == 'v') {
-            echo ("opv");
-          } else {
-            echo ("op2");
-          }
-          ?>">
-            <img src="img/ft 3.png" width="70px">
-            <p><b>MATERIAIS <br> UTILIZADOS</b></p>
-          </div>
-        </a>
-
-        <a href="termos.html">
-          <div id="op6" class="<?php
-          if ($v6 == 'v') {
-            echo ("opv");
-          } else {
-            echo ("op2");
-          }
-          ?>">
-            <img src="img/recusaa.png" width="70px">
-            <p><b>TERMO DE <br> RECUSA</b></p>
-          </div>
-        </a>
-      </div>
     </div>
 
-
     <br><br><br>
-    <div class="dupla9">
+    <div class="dupla1">
       <div id="op7" class="<?php
       if ($v7 == 'v') {
         echo ("opv");
@@ -261,17 +209,93 @@ if (isset($_SESSION['v8'])) {
           <p><b>LOCALIZAÇÃO <br> DOS TRAUMAS</b> </p>
         </div>
       </a>
-
-      <div class="mensagem">
-        Fim da ocorrência!
         
       </div>
-      
     </div>
     <br><br><br>
+<div class="dupla1">
+        <a href="procedimentos.html">
+          <div id="op2" class="<?php
+          if ($v9 == 'v') {
+            echo ("opv");
+          } else {
+            echo ("op2");
+          }
+          ?>">
+            <img src="img/paciente.png" width="70px">
+            <p><b>PROCEDIMENTOS <br> EFETUADOS</b></p>
+          </div>
+        </a>
 
+        <a href="anamnese.html">
+          <div id="op2" class="<?php
+          if ($v10 == 'v') {
+            echo ("opv");
+          } else {
+            echo ("op2");
+          }
+          ?>">
+            <img src="img/anamnese.png" width="70px">
+            <p><b>ANAMNESE DA <br> EMERGÊNCIA</b></p>
+          </div>
+        </a>
+  </div>   <br> <br> <br>
+        <div class="dupla1">
+        <a href="gestacional.html">
+          <div id="op4" class="<?php
+          if ($v11 == 'v') {
+            echo ("opv");
+          } else {
+            echo ("op2");
+          }
+          ?>">
+            <img src="img/gestacional.png" width="70px">
+            <p><b>ANAMNESE <br> GESTACIONAL</b></p>
+          </div>
+        </a>
 
+        <a href="avaCinematica.html">
+          <div id="op4" class="<?php
+          if ($v12 == 'v') {
+            echo ("opv");
+          } else {
+            echo ("op2");
+          }
+          ?>">
+            <img src="img/cinematica.png" width="70px">
+            <p><b>AVALIAÇÃO <br> CINEMÁTICA</b></p>
+          </div>
+        </a>
+      </div>
+    </div>
+      </div> <br><br><br>
+      <div class="dupla1">
+        <a href="materiais1.html">
+          <div id="op6" class="<?php
+          if ($v13 == 'v') {
+            echo ("opv");
+          } else {
+            echo ("op2");
+          }
+          ?>">
+            <img src="img/ft 3.png" width="70px">
+            <p><b>MATERIAIS <br> UTILIZADOS</b></p>
+          </div>
+        </a>
 
+        <a href="termos.html">
+          <div id="op6" class="<?php
+          if ($v14 == 'v') {
+            echo ("opv");
+          } else {
+            echo ("op2");
+          }
+          ?>">
+            <img src="img/recusaa.png" width="70px">
+            <p><b>TERMO DE <br> RECUSA</b></p>
+          </div>
+        </a>
+      </div>
 
   </div>
 

@@ -85,7 +85,7 @@ h2 {
 
 .dupla1 {
     height: 141px;
-    width: 650px;
+    width: 290px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -344,7 +344,7 @@ a {
 .fundo {
 
     width: auto;
-    height: 90%;
+    height: 100%;
     overflow-x: auto;
 }
 

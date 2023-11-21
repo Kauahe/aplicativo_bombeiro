@@ -1,7 +1,7 @@
 <?php
 include("conecta.php");
 session_start();
-
+$_SESSION["v13"]= "v";
    $num_ocorrencia=  $_SESSION["nrOcorrencia"];
    $opcao1=isset($_POST["opcao1"]) ? "Base do estabiliza" : "";
    $qntd1 = $_POST["qntd1"];

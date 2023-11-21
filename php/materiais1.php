@@ -1,7 +1,7 @@
 <?php
 include("conecta.php");
 session_start();
-$_SESSION["v"]= "v";
+$_SESSION["v13"]= "v";
    $num_ocorrencia=  $_SESSION["nrOcorrencia"];
    $opcao1=isset($_POST["opcao1"]) ? "Ataduras" : "";
    $opcao2=isset($_POST["opcao2"]) ? "8" : "";

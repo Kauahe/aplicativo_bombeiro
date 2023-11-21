@@ -20,15 +20,16 @@
             <h2>NÚCLEO DE OPERAÇÕES AÉREAS E RESGATE</h2>
         </div>
     </header>
+<form action="php/ava.cinematica.php" method="post">
     <div class="fundo">
         <div class="titulo">CINEMÁTICA</div>
 
         <div class="box1">
             <div class="pergunta"><b> DISTÚRBIO DE COMPORTAMENTO</b></div>
             <div class="rsp1">
-                <input type="checkbox">
+                <input type="checkbox" name="opcao1">
                 <div class="arruma">SIM</div>
-                <input type="checkbox">
+                <input type="checkbox" name="opcao2">
                 <div class="arruma">NÃO</div>
             </div>
         </div>
@@ -37,9 +38,9 @@
         <div class="box1">
             <div class="pergunta"><b> ENCONTRADO DE CAPACETE</b></div>
             <div class="rsp1">
-                <input type="checkbox">
+                <input type="checkbox" name="opcao3">
                 <div class="arruma">SIM</div>
-                <input type="checkbox">
+                <input type="checkbox" name="opcao4">
                 <div class="arruma">NÃO</div>
             </div>
         </div>
@@ -48,9 +49,9 @@
         <div class="box1">
             <div class="pergunta"><b> ENCONTRADO DE CINTO</b></div>
             <div class="rsp1">
-                <input type="checkbox">
+                <input type="checkbox" name="opcao5">
                 <div class="arruma">SIM</div>
-                <input type="checkbox">
+                <input type="checkbox" name="opcao6">
                 <div class="arruma">NÃO</div>
             </div>
         </div>
@@ -59,9 +60,9 @@
         <div class="box1">
             <div class="pergunta"><b> PARA-BRISAS AVARIADO</b></div>
             <div class="rsp1">
-                <input type="checkbox">
+                <input type="checkbox" name="opcao7">
                 <div class="arruma">SIM</div>
-                <input type="checkbox">
+                <input type="checkbox" name="opcao8">
                 <div class="arruma">NÃO</div>
             </div>
         </div>
@@ -70,9 +71,9 @@
         <div class="box1">
             <div class="pergunta"><b>CAMINHANDO NA CENA</b></div>
             <div class="rsp1">
-                <input type="checkbox">
+                <input type="checkbox" name="opcao9">
                 <div class="arruma">SIM</div>
-                <input type="checkbox">
+                <input type="checkbox" name="opcao10">
                 <div class="arruma">NÃO</div>
             </div>
         </div>
@@ -81,9 +82,9 @@
         <div class="box1">
             <div class="pergunta"><b>PAINEL AVARIADO</b></div>
             <div class="rsp1">
-                <input type="checkbox">
+                <input type="checkbox" name="opcao11">
                 <div class="arruma">SIM</div>
-                <input type="checkbox">
+                <input type="checkbox" name="opcao12">
                 <div class="arruma">NÃO</div>
             </div>
         </div>
@@ -92,17 +93,20 @@
         <div class="box1">
             <div class="pergunta"><b> VOLANTE TORCIDO</b></div>
             <div class="rsp1">
-                <input type="checkbox">
+                <input type="checkbox" name="opcao13">
                 <div class="arruma">SIM</div>
-                <input type="checkbox">
+                <input type="checkbox" name="opcao14">
                 <div class="arruma">NÃO</div>
             </div>
         </div>
 
         
 
-        <button class="botao">ENVIAR</button>
+           
+    <input class="enviar" type="submit" value="Cadastrar">
+
     </div>
+</form>
 </body>
 
 </html>
