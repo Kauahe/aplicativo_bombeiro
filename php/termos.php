@@ -17,7 +17,14 @@ session_start();
     $stmt->bindParam(':op3', $opcao3);
     $stmt->bindParam(':op4', $opcao4);
   
-    $stmt->execute();   
-    header("Location: ../");
+    if ($stmt->execute()) {
+        // Defina a resposta como sucesso
+        echo '<script>alert("Cadastro realizado com sucesso!"); window.location.href="../pag_inicial2.php";</script>';
+        $_SESSION["v14"]= "v";
+    } else {
+        // Defina a resposta como erro e exiba informações de erro
+        echo '<script>alert("Erro ao cadastrar: ' . $stmt->errorInfo()[2] . '");</script>';
+    }
+    
 
 ?>

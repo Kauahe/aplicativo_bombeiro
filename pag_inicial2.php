@@ -41,7 +41,7 @@ if (isset($_SESSION['v16'])) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/pag_inicial2.css">
+    <link rel="stylesheet" href="css/pag_inicial.css">
     <title>INÍCIO</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
 </head>
@@ -62,7 +62,7 @@ if (isset($_SESSION['v16'])) {
     <div class="tit"> MENU </div>
     <div class="subtit"><b>escolha como  deseja começar:</b> </div><br>
     <div class="dupla1">
-        <a href="procedimentos.html">  <div id="op1" 
+        <a href="procedimentos.html">  <div id="op9" 
        
         class="<?php 
           if ($v9 == 'v') {
@@ -77,7 +77,7 @@ if (isset($_SESSION['v16'])) {
             <img class="ajuste" src="img/cadastro1.png" width="70px" margin-left="20px">
             <p><b>PROCEDIMENTOS <br> EFETUADOS </b></p>
         </div></a>
-        <a href="anamnese.html"> <div id="op2"class="<?php 
+        <a href="anamnese.html"> <div id="op10"class="<?php 
           if ($v10 == 'v') {
       echo("opv");
           }
@@ -91,7 +91,7 @@ if (isset($_SESSION['v16'])) {
     </div><br><br><br>
 
     <div class="dupla1">
-        <a href="gestacional.html">  <div  id="op3"class="<?php 
+        <a href="gestacional.html">  <div  id="op11"class="<?php 
           if ($v11 == 'v') {
       echo("opv");
           }
@@ -102,7 +102,7 @@ if (isset($_SESSION['v16'])) {
             <img class="ajuste" src="img/gestacional.png" width="80px">
             <p><b>ANAMNESE <br> GESTACIONAL </b></p>
         </div></a>
-        <a href="avaCinematica.html"> <div  id="op4"class="<?php 
+        <a href="avaCinematica.html"> <div  id="op12"class="<?php 
           if ($v12 == 'v') {
       echo("opv");
           }
@@ -116,7 +116,7 @@ if (isset($_SESSION['v16'])) {
     </div>
     <br><br><br>
     <div class="dupla1">
-        <a href="materiais1.html">  <div id="op2" class="<?php 
+        <a href="materiais1.html">  <div id="op13" class="<?php 
           if ($v13 == 'v') {
       echo("opv");
           }
@@ -127,7 +127,7 @@ if (isset($_SESSION['v16'])) {
             <img src="img/ft 5.png" width="70px">
             <p><b>MATERIAS <br> UTILIZADOS</b></p>
         </div></a>
-        <a href=".html"> <div  id="op6"class="<?php 
+        <a href="termos.html"> <div  id="op14"class="<?php 
           if ($v14 == 'v') {
       echo("opv");
           }

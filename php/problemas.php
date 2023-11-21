@@ -1,7 +1,7 @@
 <?php
 include("conecta.php");
 session_start();
-$_SESSION["v6"]= "v";
+
    $num_ocorrencia=  $_SESSION["nrOcorrencia"];
    $opcao0=isset($_POST["opcao0"]) ? "psiquiátrico" : "";
    $opcao1=isset($_POST["opcao1"]) ? "DPOC" : "";
@@ -35,7 +35,13 @@ $_SESSION["v6"]= "v";
 $stmt->bindParam(':Outros', $Outros);
 
 
-$stmt->execute();
-
-header("Location:../pag_inicial.php");
+  
+if ($stmt->execute()) {
+    // Defina a resposta como sucesso
+    echo '<script>alert("Cadastro realizado com sucesso!"); window.location.href="../pag_inicial.php";</script>';
+    $_SESSION["v6"]= "v";
+} else {
+    // Defina a resposta como erro e exiba informações de erro
+    echo '<script>alert("Erro ao cadastrar: ' . $stmt->errorInfo()[2] . '");</script>';
+}
 ?>

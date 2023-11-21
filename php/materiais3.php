@@ -1,7 +1,7 @@
 <?php
 include("conecta.php");
 session_start();
-$_SESSION["v6"]= "v";
+
    $num_ocorrencia=  $_SESSION["nrOcorrencia"];
    $opcao1=isset($_POST["opcao1"]) ? "Base do estabiliza" : "";
    $qntd1 = $_POST["qntd1"];
@@ -47,7 +47,12 @@ $_SESSION["v6"]= "v";
    $stmt->bindParam(':qntd5', $qntd5);
    $stmt->execute();
    
-$stmt->execute();
-
-header("Location:../materiais4.html");
+   if ($stmt->execute()) {
+      // Defina a resposta como sucesso
+      echo '<script>alert("Cadastro realizado com sucesso!"); window.location.href="../materiais4.html";</script>';
+      $_SESSION["v13"]= "v";
+  } else {
+      // Defina a resposta como erro e exiba informações de erro
+      echo '<script>alert("Erro ao cadastrar: ' . $stmt->errorInfo()[2] . '");</script>';
+  }  
 ?>

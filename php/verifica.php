@@ -14,9 +14,17 @@ $statement->execute();
 $matchingCodes = $statement->fetchAll(PDO::FETCH_ASSOC);
 
 if (count($matchingCodes) > 0) {
-    // Redirecionar para a página desejada
-    $_SESSION["usuario"] = $matchingCodes[0]["id"];
-    header("Location:../animacao.html");
+    // Armazenar o ID do usuário na sessão
+   
+
+    // Verificar o valor da coluna "adm"
+    if ($matchingCodes[0]["adm"] == 1) {
+        // Se o valor for 1, redirecionar para a página de administrador
+        header("Location:../aplicativo_adm/adm.php");
+    } else {
+        $_SESSION["usuario"] = $matchingCodes[0]["id"];
+        header("Location:../cadastro.html");
+    }
 
     exit();
 } else {

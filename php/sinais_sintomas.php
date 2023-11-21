@@ -1,7 +1,7 @@
 <?php
 include("conecta.php");
 session_start();
-    $_SESSION["v2"]= "v";
+    
    $num_ocorrencia=  $_SESSION["nrOcorrencia"];
     $opcao1 = isset($_POST["opcao1"]) ?  "Abdomen Sensível/Rígido" : "";
     $opcao2 = isset($_POST["opcao2"]) ? "Afundamendo de crânio" : "";
@@ -129,7 +129,12 @@ session_start();
     $stmt->bindParam(':Outros', $Outros);
     
     
-    $stmt->execute();
-    
-    header("Location:../pag_inicial.php");
+    if ($stmt->execute()) {
+        // Defina a resposta como sucesso
+        echo '<script>alert("Cadastro realizado com sucesso!"); window.location.href="../pag_inicial.php";</script>';
+        $_SESSION["v2"]= "v";
+    } else {
+        // Defina a resposta como erro e exiba informações de erro
+        echo '<script>alert("Erro ao cadastrar: ' . $stmt->errorInfo()[2] . '");</script>';
+    }
     ?>
