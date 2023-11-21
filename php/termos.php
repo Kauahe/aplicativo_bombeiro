@@ -19,7 +19,7 @@ session_start();
   
     if ($stmt->execute()) {
         // Defina a resposta como sucesso
-        echo '<script>alert("Cadastro realizado com sucesso!"); window.location.href="../pag_inicial2.php";</script>';
+        echo '<script>alert("Cadastro realizado com sucesso!"); window.location.href="../pag_inicial.php";</script>';
         $_SESSION["v14"]= "v";
     } else {
         // Defina a resposta como erro e exiba informações de erro

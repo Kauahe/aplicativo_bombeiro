@@ -127,7 +127,7 @@ if (isset($_SESSION['v16'])) {
             <img src="img/ft 5.png" width="70px">
             <p><b>MATERIAS <br> UTILIZADOS</b></p>
         </div></a>
-        <a href="termos.html"> <div  id="op14"class="<?php 
+        <a href=".html"> <div  id="op14"class="<?php 
           if ($v14 == 'v') {
       echo("opv");
           }

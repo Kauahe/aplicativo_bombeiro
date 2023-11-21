@@ -221,7 +221,7 @@ if (isset($_SESSION['v8'])) {
           </div>
         </a>
 
-        <a href="termo.html">
+        <a href="termos.html">
           <div id="op6" class="<?php
           if ($v6 == 'v') {
             echo ("opv");
