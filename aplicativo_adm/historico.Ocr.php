@@ -389,40 +389,31 @@ while ($linhas = $comando->fetch()) {
 </body>
 
 <script>
-function alterarInformacao(nomeCampo) {
-    // Obter o valor atual do campo
-    var valorAtual = document.getElementById(nomeCampo).value;
-
-    // Prompt para obter um novo valor do usuário
-    var novoValor = prompt('Digite o novo valor:', valorAtual);
-
-    // Verificar se o usuário pressionou "Cancelar" ou não digitou nada
-    if (novoValor === null || novoValor === valorAtual) {
-        return; // Nada foi alterado
-    }
-
-    // Enviar uma requisição AJAX para atualizar o valor no banco de dados
-    var xmlhttp = new XMLHttpRequest();
-    xmlhttp.onreadystatechange = function() {
-        if (this.readyState == 4) {
-            if (this.status == 200) {
-                // Atualizar o valor exibido na página se a atualização no banco de dados foi bem-sucedida
-                if (this.responseText.trim() === 'success') {
-                    document.getElementById(nomeCampo).value = novoValor;
-                    alert('Valor atualizado com sucesso!');
-                } else {
-                    alert('Erro ao atualizar o valor. Tente novamente. Detalhes: ' + this.responseText);
-                }
-            } else {
-                alert('Erro na requisição AJAX. Status: ' + this.status);
+        function alterarInformacao(campo) {
+            var novoValor = prompt("Informe o novo valor para " + campo + ":");
+            if (novoValor !== null) {
+                // Aqui você pode enviar a requisição AJAX para atualizar o valor no banco de dados
+                // Exemplo utilizando jQuery:
+                $.ajax({
+                    type: 'POST',
+                    url: 'atualizar_valor.php', // Substitua pelo nome do seu arquivo PHP que atualiza os dados no banco
+                    data: {
+                        campo: campo,
+                        novoValor: novoValor,
+                        numOcorrencia: '<?php echo $numOcorrencia; ?>'
+                    },
+                    success: function (response) {
+                        // Aqui você pode tratar a resposta da requisição, se necessário
+                        console.log(response);
+                        // Recarregue a página ou atualize apenas os elementos que foram alterados
+                        location.reload();
+                    },
+                    error: function (error) {
+                        console.error(error);
+                    }
+                });
             }
         }
-    };
-
-    // Configurar a requisição AJAX
-    xmlhttp.open("GET", "atualizar_valor.php?campo=" + nomeCampo + "&valor=" + novoValor, true);
-    xmlhttp.send();
-}
-</script>
+    </script>
 
 </html>

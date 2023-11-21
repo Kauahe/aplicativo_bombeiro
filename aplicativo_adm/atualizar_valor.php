@@ -1,24 +1,32 @@
 <?php
-// Conecte-se ao banco de dados e obtenha os dados do POST
-include("conecta.php");
-$campo = $_GET['campo'];
-$novoValor = $_GET['valor'];
+session_start();
 
-// Use uma declaração preparada para evitar injeção de SQL
-$stmt = $pdo->prepare("UPDATE cadastropac SET $campo = :novoValor WHERE num_ocorrencia = :num_ocorrencia"); // Substitua "cadastropac" pelo nome real da sua tabela
-$stmt->bindParam(':novoValor', $novoValor);
-$stmt->bindParam(':num_ocorrencia', $num_ocorrencia); // Substitua ":num_ocorrencia" pelo campo de identificação real do seu registro
-$num_ocorrencia = 1; // Substitua 1 pelo num_ocorrencia real do seu registro
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    // Verifica se os parâmetros necessários foram enviados
+    if (isset($_POST['campo'], $_POST['novoValor'], $_POST['numOcorrencia'])) {
+        $campo = $_POST['campo'];
+        $novoValor = $_POST['novoValor'];
+        $numOcorrencia = $_POST['numOcorrencia'];
 
-// Execute a declaração preparada
+        // Faça a conexão com o banco de dados (substitua pelos seus dados de conexão)
+        include('../php/conecta.php');
 
-    // Execute a declaração preparada
-    if ($stmt->execute()) {
-        echo 'success';
+        // Use prepared statements para evitar SQL injection
+        $comando = $pdo->prepare("UPDATE cadastropac SET $campo = :novoValor WHERE num_ocorrencia = :numOcorrencia");
+        $comando->bindParam(':novoValor', $novoValor);
+        $comando->bindParam(':numOcorrencia', $numOcorrencia);
+
+        try {
+            // Execute a atualização
+            $comando->execute();
+            echo "Valor atualizado com sucesso!";
+        } catch (PDOException $e) {
+            echo "Erro ao atualizar valor: " . $e->getMessage();
+        }
     } else {
-        throw new Exception('Erro ao executar a declaração preparada.');
+        echo "Parâmetros incompletos!";
     }
-catch (Exception $e) {
-    echo 'error: ' . $e->getMessage();
+} else {
+    echo "Método de requisição inválido!";
 }
 ?>
