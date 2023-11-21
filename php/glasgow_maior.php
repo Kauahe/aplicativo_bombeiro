@@ -46,7 +46,7 @@ session_start();
     if ($stmt->execute()) {
         // Defina a resposta como sucesso
         echo '<script>alert("Cadastro realizado com sucesso!"); window.location.href="../pag_inicial.php";</script>';
-        $_SESSION["v3"]= "v";
+        $_SESSION["ocorrencia_cadastrada_glasgow"] = true;
     } else {
         // Defina a resposta como erro e exiba informações de erro
         echo '<script>alert("Erro ao cadastrar: ' . $stmt->errorInfo()[2] . '");</script>';

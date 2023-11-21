@@ -47,9 +47,10 @@ $_SESSION["v13"]= "v";
     $stmt->bindParam(':qntd6', $qntd6);
 
     if ($stmt->execute()) {
+        $_SESSION["ocorrencia_cadastrada_materiais"] = true;
         // Defina a resposta como sucesso
         echo '<script>alert("Cadastro realizado com sucesso!"); window.location.href="../materiais2.html";</script>';
-        $_SESSION["v13"]= "v";
+        
     } else {
         // Defina a resposta como erro e exiba informações de erro
         echo '<script>alert("Erro ao cadastrar: ' . $stmt->errorInfo()[2] . '");</script>';

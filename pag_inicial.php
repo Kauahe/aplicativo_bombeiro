@@ -1,71 +1,6 @@
 <?php
 session_start();
-$v1 = "";
-$v2 = "";
-$v3 = "";
-$v4 = "";
-$v5 = "";
-$v6 = "";
-$v7 = "";
-$v8 = "";
-$v9="";
-$v10="";
-$v11="";
-$v12="";
-$v13="";
-$v14="";
-$v15="";
-$v16="";
 
-// Verifique se a variável de sessão 'v' está definida
-if (isset($_SESSION['v1'])) {
-  $v1 = $_SESSION['v1'];
-}
-if (isset($_SESSION['v2'])) {
-  $v2 = $_SESSION['v2'];
-}
-if (isset($_SESSION['v3'])) {
-  $v3 = $_SESSION['v3'];
-}
-if (isset($_SESSION['v4'])) {
-  $v4 = $_SESSION['v4'];
-}
-if (isset($_SESSION['v5'])) {
-  $v5 = $_SESSION['v5'];
-}
-if (isset($_SESSION['v6'])) {
-  $v6 = $_SESSION['v6'];
-}
-if (isset($_SESSION['v7'])) {
-  $v7 = $_SESSION['v7'];
-}
-if (isset($_SESSION['v8'])) {
-  $v8 = $_SESSION['v8'];
-}
-if (isset($_SESSION['v9'])) {
-    $v9 = $_SESSION['v9']; 
-}
-if (isset($_SESSION['v10'])) {
-  $v10 = $_SESSION['v10'];
-}
-if (isset($_SESSION['v11'])) {
-  $v11 = $_SESSION['v11'];
-}
-if (isset($_SESSION['v12'])) {
-  $v12 = $_SESSION['v12'];
-}
-if (isset($_SESSION['v13'])) {
-  $v13 = $_SESSION['v13'];
-}
-if (isset($_SESSION['v14'])) {
-  $v14 = $_SESSION['v14'];
-}
-if (isset($_SESSION['v15'])) {
-  $v15 = $_SESSION['v15'];
-}
-if (isset($_SESSION['v16'])) {
-  $v16 = $_SESSION['v16'];
-}
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -102,25 +37,13 @@ if (isset($_SESSION['v16'])) {
 
     <div class="dupla1">
       <a href="cadastro.html">
-        <div id="op1" class="<?php
-        if ($v1 == 'v') {
-          echo ("opv");
-        } else {
-          echo ("op1");
-        }
-        ?>">
+        <div id="op1" class="<?php echo (isset($_SESSION['ocorrencia_cadastrada_cadastro'])) ? 'opv' : 'op1'; ?>">
           <img class="ajuste" src="img/cadastro1.png" width="70px" margin-left="20px">
           <p><b>CADASTRO <br> DO PACIENTE </b></p>
         </div>
       </a>
       <a href="sinais.sintomas.html">
-        <div id="op2" class="<?php
-        if ($v2 == 'v') {
-          echo ("opv");
-        } else {
-          echo ("op2");
-        }
-        ?>">
+        <div id="op2" class="<?php echo (isset( $_SESSION['ocorrencia_cadastrada_sinaisSintomas'])) ? 'opv' : 'op1'; ?>">
           <img src="img/paciente.png" width="70px">
           <p><b>SINAIS E <br> SINTOMAS</b></p>
         </div>
@@ -131,25 +54,13 @@ if (isset($_SESSION['v16'])) {
     <div class="dupla1">
 
       <a href="avaliacao.html">
-        <div id="op3" class="<?php
-        if ($v3 == 'v') {
-          echo ("opv");
-        } else {
-          echo ("op2");
-        }
-        ?>">
+        <div id="op3" class="<?php echo (isset($_SESSION['ocorrencia_cadastrada_glasgow'])) ? 'opv' : 'op1'; ?>">
           <img class="ajuste" src="img/ft 6.png" width="75px">
           <p><b>AVALIAÇÃO <br> GLASGOW </b></p>
         </div>
       </a>
       <a href="tipoOcr.php">
-        <div id="op4" class="<?php
-        if ($v4 == 'v') {
-          echo ("opv");
-        } else {
-          echo ("op2");
-        }
-        ?>">
+        <div id="op4" class="<?php echo (isset($_SESSION['ocorrencia_cadastrada_tipoOcr'])) ? 'opv' : 'op1'; ?>">
           <img src="img/ft 4.png" width="70px">
           <p><b>TIPO DE <br> OCORRÊNCIA</b></p>
         </div>
@@ -160,25 +71,13 @@ if (isset($_SESSION['v16'])) {
     <div class="dupla1">
 
       <a href="sinaisvitais.html">
-        <div id="op2" class="<?php
-        if ($v5 == 'v') {
-          echo ("opv");
-        } else {
-          echo ("op2");
-        }
-        ?>">
+        <div id="op2" class="<?php echo (isset($_SESSION['ocorrencia_cadastrada_vitais'])) ? 'opv' : 'op1'; ?>">
           <img src="img/ft 5.png" width="70px">
           <p><b>SINAIS <br> VITAIS</b></p>
         </div>
       </a>
       <a href="problemas.html">
-        <div id="op6" class="<?php
-        if ($v6 == 'v') {
-          echo ("opv");
-        } else {
-          echo ("op2");
-        }
-        ?>">
+        <div id="op6" class="<?php echo (isset($_SESSION['ocorrencia_cadastrada_problemas'])) ? 'opv' : 'op1'; ?>">
           <img src="img/ft 3.png" width="70px">
           <p><b>PROBLEMAS <br> SUSPEITOS</b></p>
         </div>
@@ -187,24 +86,12 @@ if (isset($_SESSION['v16'])) {
 
     <br><br><br>
     <div class="dupla1">
-      <div id="op7" class="<?php
-      if ($v7 == 'v') {
-        echo ("opv");
-      } else {
-        echo ("op2");
-      }
-      ?>">
+      <div id="op7" class="<?php echo (isset($_SESSION['ocorrencia_cadastrada_cond'])) ? 'opv' : 'op1'; ?>">
         <a href="formaCond.html"> <img src="img/ft 2.png" width="70px"><br>
           <p1><b>FORMA DE <BR> CONDUÇÃO</b></p1>
       </div></a>
       <a href="traumaAdulto.html">
-        <div id="op8" class="<?php
-        if ($v8 == 'v') {
-          echo ("opv");
-        } else {
-          echo ("op2");
-        }
-        ?>">
+        <div id="op8" class="<?php echo (isset($_SESSION['ocorrencia_cadastrada_trauma'])) ? 'opv' : 'op1'; ?>">
           <img src="img/ft 1.png" width="70px">
           <p><b>LOCALIZAÇÃO <br> DOS TRAUMAS</b> </p>
         </div>
@@ -215,26 +102,14 @@ if (isset($_SESSION['v16'])) {
     <br><br><br>
 <div class="dupla1">
         <a href="procedimentos.html">
-          <div id="op2" class="<?php
-          if ($v9 == 'v') {
-            echo ("opv");
-          } else {
-            echo ("op2");
-          }
-          ?>">
+          <div id="op2" class="<?php echo (isset($_SESSION['ocorrencia_cadastrada_procedimentos'])) ? 'opv' : 'op1'; ?>">
             <img src="img/paciente.png" width="70px">
             <p><b>PROCEDIMENTOS <br> EFETUADOS</b></p>
           </div>
         </a>
 
         <a href="anamnese.html">
-          <div id="op2" class="<?php
-          if ($v10 == 'v') {
-            echo ("opv");
-          } else {
-            echo ("op2");
-          }
-          ?>">
+          <div id="op2" class="<?php echo (isset($_SESSION['ocorrencia_cadastrada_anamnese'])) ? 'opv' : 'op1'; ?>">
             <img src="img/anamnese.png" width="70px">
             <p><b>ANAMNESE DA <br> EMERGÊNCIA</b></p>
           </div>
@@ -242,26 +117,14 @@ if (isset($_SESSION['v16'])) {
   </div>   <br> <br> <br>
         <div class="dupla1">
         <a href="gestacional.html">
-          <div id="op4" class="<?php
-          if ($v11 == 'v') {
-            echo ("opv");
-          } else {
-            echo ("op2");
-          }
-          ?>">
+          <div id="op4" class="<?php echo (isset($_SESSION['ocorrencia_cadastrada_gestacional'])) ? 'opv' : 'op1'; ?>">
             <img src="img/gestacional.png" width="70px">
             <p><b>ANAMNESE <br> GESTACIONAL</b></p>
           </div>
         </a>
 
         <a href="avaCinematica.html">
-          <div id="op4" class="<?php
-          if ($v12 == 'v') {
-            echo ("opv");
-          } else {
-            echo ("op2");
-          }
-          ?>">
+          <div id="op4" class="<?php echo (isset($_SESSION['ocorrencia_cadastrada_cinematica'])) ? 'opv' : 'op1'; ?>">
             <img src="img/cinematica.png" width="70px">
             <p><b>AVALIAÇÃO <br> CINEMÁTICA</b></p>
           </div>
@@ -271,26 +134,14 @@ if (isset($_SESSION['v16'])) {
       </div> <br><br><br>
       <div class="dupla1">
         <a href="materiais1.html">
-          <div id="op6" class="<?php
-          if ($v13 == 'v') {
-            echo ("opv");
-          } else {
-            echo ("op2");
-          }
-          ?>">
+          <div id="op6" class="<?php echo (isset($_SESSION['ocorrencia_cadastrada_materiais'])) ? 'opv' : 'op1'; ?>">
             <img src="img/ft 3.png" width="70px">
             <p><b>MATERIAIS <br> UTILIZADOS</b></p>
           </div>
         </a>
 
         <a href="termos.html">
-          <div id="op6" class="<?php
-          if ($v14 == 'v') {
-            echo ("opv");
-          } else {
-            echo ("op2");
-          }
-          ?>">
+          <div id="op6" class="<?php echo (isset($_SESSION['ocorrencia_cadastrada_termos'])) ? 'opv' : 'op1'; ?>">
             <img src="img/recusaa.png" width="70px">
             <p><b>TERMO DE <br> RECUSA</b></p>
           </div>

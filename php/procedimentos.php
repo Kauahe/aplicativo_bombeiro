@@ -117,7 +117,7 @@ session_start();
      if ($stmt->execute()) {
         // Defina a resposta como sucesso
         echo '<script>alert("Cadastro realizado com sucesso!");</script>';
-        $_SESSION["v9"] = "v";
+        $_SESSION["ocorrencia_cadastrada_procedimentos"] = true;
         
         // Redirecione para a página inicial
         header("Location: ../pag_inicial.php");

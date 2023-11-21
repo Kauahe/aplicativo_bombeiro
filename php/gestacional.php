@@ -1,7 +1,7 @@
 <?php
 include("conecta.php");
 session_start();
-$_SESSION["v11"]= "v";
+
    $num_ocorrencia=  $_SESSION["nrOcorrencia"];
    $opcao1 = $_POST["opcao1"];
    $opcao2=isset($_POST["opcao2"])  ? "Sim" : "";
@@ -59,9 +59,9 @@ $_SESSION["v11"]= "v";
     
     
     if ($stmt->execute()) {
-        // Defina a resposta como sucesso
+        $_SESSION["ocorrencia_cadastrada_gestacional"] = true;
         echo '<script>alert("Cadastro realizado com sucesso!"); window.location.href="../pag_inicial.php";</script>';
-        $_SESSION["v11"]= "v";
+        
     } else {
         // Defina a resposta como erro e exiba informações de erro
         echo '<script>alert("Erro ao cadastrar: ' . $stmt->errorInfo()[2] . '");</script>';

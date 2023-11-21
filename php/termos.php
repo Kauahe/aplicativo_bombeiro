@@ -19,9 +19,9 @@ $_SESSION["v14"]= "v";
     $stmt->bindParam(':op4', $opcao4);
   
     if ($stmt->execute()) {
-        // Defina a resposta como sucesso
+        $_SESSION["ocorrencia_cadastrada_termos"] = true;
         echo '<script>alert("Cadastro realizado com sucesso!"); window.location.href="../pag_inicial.php";</script>';
-        $_SESSION["v14"]= "v";
+       
     } else {
         // Defina a resposta como erro e exiba informações de erro
         echo '<script>alert("Erro ao cadastrar: ' . $stmt->errorInfo()[2] . '");</script>';

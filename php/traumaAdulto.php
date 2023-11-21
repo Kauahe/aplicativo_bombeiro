@@ -54,7 +54,7 @@ $executado = $consulta->execute();
 
 // Verifica se a consulta foi executada com sucesso
 if ($executado) {
-    $_SESSION["v8"]= "v";
+    $_SESSION["ocorrencia_cadastrada_trauma"] = true;
     header("Location:../pag_inicial.php"); // Redireciona para a página inicial após o sucesso
 } else {
     echo "Erro ao inserir registro.";

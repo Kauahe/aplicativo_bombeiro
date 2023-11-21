@@ -39,9 +39,9 @@ $_SESSION["v12"]= "v";
     $stmt->bindParam(':op14', $opcao14);
     
     if ($stmt->execute()) {
-        // Defina a resposta como sucesso
+        $_SESSION["ocorrencia_cadastrada_cinematica"] = true;
         echo '<script>alert("Cadastro realizado com sucesso!"); window.location.href="../pag_inicial.php";</script>';
-        $_SESSION["v12"]= "v";
+        
     } else {
         // Defina a resposta como erro e exiba informações de erro
         echo '<script>alert("Erro ao cadastrar: ' . $stmt->errorInfo()[2] . '");</script>';

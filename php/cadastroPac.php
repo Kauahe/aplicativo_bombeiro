@@ -41,7 +41,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $response["success"] = true;
         $response["message"] = "Cadastro realizado com sucesso!";
         $_SESSION["nrOcorrencia"] = $pdo->lastInsertId();
-        $_SESSION["v1"]= "v";
+        $_SESSION["ocorrencia_cadastrada_cadastro"] = true;
     } else {
         // Defina a resposta como erro e exiba informações de erro
         $response["success"] = false;
