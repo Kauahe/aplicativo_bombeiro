@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,124 +9,178 @@
     <title>login</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
 </head>
+
 <body>
-    
+
     <header class="tudo">
-      
+
         <div class="imagem">
-            <img src="img/logosembrilho.png" width="50px" height="49px"></div>
-            <div class="row">
+            <img src="img/logosembrilho.png" width="50px" height="49px">
+        </div>
+        <div class="row">
             <h1>SOS BOMBEIROS</h1>
             <h2>NÚCLEO DE OPERAÇÕES AÉREAS E RESGATE</h2>
-    </div>
+        </div>
     </header>
-   <div class="tit"><b>PROCEDIMENTOS</b></div> 
-   <div class="subtit"><b>EFETUADOS</b></div> 
+    <div class="tit"><b>PROCEDIMENTOS</b></div>
+    <div class="subtit"><b>EFETUADOS</b></div>
+<form action="php/procedimentos.php" method="post">
     <div class="fild">
-        <input class="caixinha" type="checkbox"  name="opcao8" value="opcao8"> <div class="escrita">Aspiração </div> 
+        <input class="caixinha" type="checkbox" name="opcao1" value="opcao1">
+        <div class="escrita">Aspiração</div>
         <br>
-        <input class="caixinha" type="checkbox"  name="opcao9" value="opcao9"> <div class="escrita"> Avaliação Inicial</div>    
+        <input class="caixinha" type="checkbox" name="opcao2" value="opcao2">
+        <div class="escrita">Avaliação Inicial</div>
         <br>
-        <input class="caixinha" type="checkbox"  name="opcao10" value="opcao10"> <div class="escrita">Avaliação dirigida </div> 
+        <input class="caixinha" type="checkbox" name="opcao3" value="opcao3">
+        <div class="escrita">Avaliação dirigida</div>
         <br>
-        <input class="caixinha" type="checkbox"  name="opcao11" value="opcao11"> <div class="escrita">Avaliação continuada </div> 
+        <input class="caixinha" type="checkbox" name="opcao4" value="opcao4">
+        <div class="escrita">Avaliação continuada</div>
         <br>
-        <input class="caixinha"   type="checkbox"     name="opcao12" value="opcao12">  <div class="escrita">Chave de Rautek</div> 
+        <input class="caixinha" type="checkbox" name="opcao5" value="opcao5">
+        <div class="escrita">Chave de Rautek</div>
         <br>
-        <input class="caixinha"   type="checkbox"     name="opcao13" value="opcao13"> <div class="escrita">Cânula de guedel </div> 
+        <input class="caixinha" type="checkbox" name="opcao6" value="opcao6">
+        <div class="escrita">Cânula de guedel</div>
         <br>
-        <input class="caixinha" type="checkbox"  name="opcao14" value="opcao14"> <div class="escrita">Desobstrução de V.A </div> 
+        <input class="caixinha" type="checkbox" name="opcao7" value="opcao7">
+        <div class="escrita">Desobstrução de V.A</div>
         <br>
-        <input class="caixinha" type="checkbox"  name="opcao15" value="opcao15"> <div class="escrita">Emprego do D.E.A </div> 
+        <input class="caixinha" type="checkbox" name="opcao8" value="opcao8">
+        <div class="escrita">Emprego do D.E.A</div>
         <br>
-        <input class="caixinha" type="checkbox"  name="opcao16" value="opcao16"> <div class="escrita">Limpeza de ferimento </div> 
-        <br> 
-        <input class="caixinha" type="checkbox"  name="opcao17" value="opcao17"> <div class="escrita">Curativos</div> 
-        <br> 
-        <input class="caixinha" type="checkbox"  name="opcao17" value="opcao17"> <div class="escrita">Compressivo</div> 
-        <br> 
-        <input class="caixinha" type="checkbox"  name="opcao17" value="opcao17"> <div class="escrita">Encravamento</div> 
-        <br> 
-        <input class="caixinha" type="checkbox"  name="opcao17" value="opcao17"> <div class="escrita">Ocular </div> 
-        <br> 
-        <input class="caixinha" type="checkbox"  name="opcao17" value="opcao17"> <div class="escrita">Queimadura </div> 
-        <br> 
-        <input class="caixinha" type="checkbox"  name="opcao17" value="opcao17"> <div class="escrita">Simples </div> 
-        <br> 
-        <input class="caixinha" type="checkbox"  name="opcao17" value="opcao17"> <div class="escrita">3 pontas </div> 
-        <br> 
-        <input class="caixinha" type="checkbox"  name="opcao17" value="opcao17"> <div class="escrita"> Imobilizações </div> 
-        <br> 
-        <input class="caixinha" type="checkbox"  name="opcao17" value="opcao17"> <div class="escrita">Membro inferior (D) </div> 
-        <br> 
-        <input class="caixinha" type="checkbox"  name="opcao17" value="opcao17"> <div class="escrita">Membro inferior (E) </div> 
-        <br> 
-        <input class="caixinha" type="checkbox"  name="opcao17" value="opcao17"> <div class="escrita">Membro superior (D) </div> 
-        <br> 
-        <input class="caixinha" type="checkbox"  name="opcao17" value="opcao17"> <div class="escrita">Membro superior (E) </div> 
-        <br> 
-        <input class="caixinha" type="checkbox"  name="opcao17" value="opcao17"> <div class="escrita">Quadril </div> 
-        <br> 
-        <input class="caixinha" type="checkbox"  name="opcao17" value="opcao17"> <div class="escrita">Cervical </div> 
-        <br> 
-        <input class="caixinha" type="checkbox"  name="opcao17" value="opcao17"> <div class="escrita">Maca sobre rodas </div> 
-        <br> 
-        <input class="caixinha" type="checkbox"  name="opcao17" value="opcao17"> <div class="escrita">Maca rígida</div> 
-        <br> 
-        <input class="caixinha" type="checkbox"  name="opcao17" value="opcao17"> <div class="escrita">Retirado capacete </div> 
-        <br> 
-        <input class="caixinha" type="checkbox"  name="opcao17" value="opcao17"> <div class="escrita">Rolamento 90° </div> 
-        <br> 
-        <input class="caixinha" type="checkbox"  name="opcao17" value="opcao17"> <div class="escrita">Rolamento 180° </div> 
-        <br> 
-        <input class="caixinha" type="checkbox"  name="opcao17" value="opcao17"> <div class="escrita">Tomada decisão </div> 
-        <br> 
-        <input class="caixinha" type="checkbox"  name="opcao17" value="opcao17"> <div class="escrita">Tratado choque </div> 
-        <br> 
-        <input class="caixinha" type="checkbox"  name="opcao17" value="opcao17"> <div class="escrita">Uso de cânula </div> 
-        <br> 
-        <input class="caixinha" type="checkbox"  name="opcao17" value="opcao17"> <div class="escrita">Uso colar </div> 
-        <br> 
-        <input class="caixa2" type="radio"  name="opcao17" value="opcao17"> <div class="subescrita">P</div> 
-        <br> 
-        <input class="caixa2" type="radio"  name="opcao17" value="opcao17"> <div class="subescrita">M </div> 
-        <br> 
-        <input class="caixa2" type="radio"  name="opcao17" value="opcao17"> <div class="subescrita">G </div> 
-        <br> 
-        <input class="caixinha" type="checkbox"  name="opcao17" value="opcao17"> <div class="escrita">Uso KED </div> 
-        <br> 
-        <input class="caixinha" type="checkbox"  name="opcao17" value="opcao17"> <div class="escrita">Uso TTF </div> 
-        <br> 
-        <input class="caixinha" type="checkbox"  name="opcao17" value="opcao17"> <div class="escrita">Ventilação suporte </div> 
-        <br> 
-        <input class="caixinha" type="checkbox"  name="opcao17" value="opcao17"> <div class="escrita">Oxigenioterapia LPM </div> 
-        <br> 
-        <input class="caixinha" type="checkbox"  name="opcao17" value="opcao17"> <div class="escrita">Reanimador </div> 
-        <br> 
-        <input class="caixinha" type="checkbox"  name="opcao17" value="opcao17"> <div class="escrita">Meios auxiliares </div> 
-        <br> 
-        <input class="caixinha" type="checkbox"  name="opcao17" value="opcao17"> <div class="escrita">Celesc</div> 
-        <br> 
-        <input class="caixinha" type="checkbox"  name="opcao17" value="opcao17"> <div class="escrita">Def. Civil </div> 
-        <br> 
-        <input class="caixinha" type="checkbox"  name="opcao17" value="opcao17"> <div class="escrita">Samu </div> 
-        <br> 
-        <input class="caixa2" type="radio"  name="opcao17" value="opcao17"> <div class="subescrita">USA </div> 
-        <br> 
-        <input class="caixa2" type="radio"  name="opcao17" value="opcao17"> <div class="subescrita">USB </div> 
-        <br> 
-        <input class="caixinha" type="checkbox"  name="opcao17" value="opcao17"> <div class="escrita">CIT</div> 
-        <br> 
-        <input class="caixinha" type="checkbox"  name="opcao17" value="opcao17"> <div class="escrita">Polícia </div> 
-        <br> 
-        <input class="caixa2" type="radio"  name="opcao17" value="opcao17"> <div class="subescrita">Civil </div> 
-        <br> 
-        <input class="caixa2" type="radio"  name="opcao17" value="opcao17"> <div class="subescrita">Militar </div> 
-        <br> 
-        <input class="caixa2" type="radio"  name="opcao17" value="opcao17"> <div class="subescrita">PRE </div> 
-        <br> 
-        <input class="caixa2" type="radio"  name="opcao17" value="opcao17"> <div class="subescrita">PRF </div> 
-        <br> 
+        <input class="caixinha" type="checkbox" name="opcao9" value="opcao9">
+        <div class="escrita">Limpeza de ferimento</div>
+        <br>
+        <input class="caixinha" type="checkbox" name="opcao10" value="opcao10">
+        <div class="escrita">Curativos</div>
+        <br>
+        <input class="caixinha" type="checkbox" name="opcao11" value="opcao11">
+        <div class="escrita">Compressivo</div>
+        <br>
+        <input class="caixinha" type="checkbox" name="opcao12" value="opcao12">
+        <div class="escrita">Encravamento</div>
+        <br>
+        <input class="caixinha" type="checkbox" name="opcao13" value="opcao13">
+        <div class="escrita">Ocular</div>
+        <br>
+        <input class="caixinha" type="checkbox" name="opcao14" value="opcao14">
+        <div class="escrita">Queimadura</div>
+        <br>
+        <input class="caixinha" type="checkbox" name="opcao15" value="opcao15">
+        <div class="escrita">Simples</div>
+        <br>
+        <input class="caixinha" type="checkbox" name="opcao16" value="opcao16">
+        <div class="escrita">3 pontas</div>
+        <br>
+        <input class="caixinha" type="checkbox" name="opcao17" value="opcao17">
+        <div class="escrita">Imobilizações</div>
+        <br>
+        <input class="caixinha" type="checkbox" name="opcao18" value="opcao18">
+        <div class="escrita">Membro inferior (D)</div>
+        <br>
+        <input class="caixinha" type="checkbox" name="opcao19" value="opcao19">
+        <div class="escrita">Membro inferior (E)</div>
+        <br>
+        <input class="caixinha" type="checkbox" name="opcao20" value="opcao20">
+        <div class="escrita">Membro superior (D)</div>
+        <br>
+        <input class="caixinha" type="checkbox" name="opcao21" value="opcao21">
+        <div class="escrita">Membro superior (E)</div>
+        <br>
+        <input class="caixinha" type="checkbox" name="opcao22" value="opcao22">
+        <div class="escrita">Quadril</div>
+        <br>
+        <input class="caixinha" type="checkbox" name="opcao23" value="opcao23">
+        <div class="escrita">Cervical</div>
+        <br>
+        <input class="caixinha" type="checkbox" name="opcao24" value="opcao24">
+        <div class="escrita">Maca sobre rodas</div>
+        <br>
+        <input class="caixinha" type="checkbox" name="opcao25" value="opcao25">
+        <div class="escrita">Maca rígida</div>
+        <br>
+        <input class="caixinha" type="checkbox" name="opcao26" value="opcao26">
+        <div class="escrita">Retirado capacete</div>
+        <br>
+        <input class="caixinha" type="checkbox" name="opcao27" value="opcao27">
+        <div class="escrita">Rolamento 90°</div>
+        <br>
+        <input class="caixinha" type="checkbox" name="opcao28" value="opcao28">
+        <div class="escrita">Rolamento 180°</div>
+        <br>
+        <input class="caixinha" type="checkbox" name="opcao29" value="opcao29">
+        <div class="escrita">Tomada decisão</div>
+        <br>
+        <input class="caixinha" type="checkbox" name="opcao30" value="opcao30">
+        <div class="escrita">Tratado choque</div>
+        <br>
+        <input class="caixinha" type="checkbox" name="opcao31" value="opcao31">
+        <div class="escrita">Uso de cânula</div>
+        <br>
+        <input class="caixinha" type="checkbox" name="opcao32" value="opcao32">
+        <div class="escrita">Uso colar</div>
+        <br>
+        <input class="caixa2" type="radio" name="opcao33" value="opcao33">
+        <div class="subescrita">P</div>
+        <br>
+        <input class="caixa2" type="radio" name="opcao34" value="opcao34">
+        <div class="subescrita">M </div>
+            <br>
+            <input class="caixa2" type="radio" name="opcao35" value="opcao35">
+    <div class="subescrita">G </div>
+    <br>
+    <input class="caixinha" type="checkbox" name="opcao36" value="opcao36">
+    <div class="escrita">Uso KED </div>
+    <br>
+    <input class="caixinha" type="checkbox" name="opcao37" value="opcao37">
+    <div class="escrita">Uso TTF </div>
+    <br>
+    <input class="caixinha" type="checkbox" name="opcao38" value="opcao38">
+    <div class="escrita">Ventilação suporte </div>
+    <br>
+    <input class="caixinha" type="checkbox" name="opcao39" value="opcao39">
+    <div class="escrita">Oxigenioterapia LPM </div>
+    <br>
+    <input class="caixinha" type="checkbox" name="opcao40" value="opcao40">
+    <div class="escrita">Reanimador </div>
+    <br>
+    <input class="caixinha" type="checkbox" name="opcao41" value="opcao41">
+    <div class="escrita">Meios auxiliares </div>
+    <br>
+    <input class="caixinha" type="checkbox" name="opcao42" value="opcao42">
+    <div class="escrita">Celesc</div>
+    <br>
+    <input class="caixinha" type="checkbox" name="opcao43" value="opcao43">
+    <div class="escrita">Def. Civil </div>
+    <br>
+    <input class="caixinha" type="checkbox" name="opcao44" value="opcao44">
+    <div class="escrita">Samu </div>
+    <br>
+    <input class="caixa2" type="radio" name="opcao45" value="opcao45">
+    <div class="subescrita">USA </div>
+    <br>
+    <input class="caixa2" type="radio" name="opcao46" value="opcao46">
+    <div class="subescrita">USB </div>
+    <br>
+    <input class="caixinha" type="checkbox" name="opcao47" value="opcao47">
+    <div class="escrita">CIT</div>
+    <br>
+    <input class="caixinha" type="checkbox" name="opcao48" value="opcao48">
+    <div class="escrita">Polícia </div>
+    <br>
+    <input class="caixa2" type="radio" name="opcao49" value="opcao49">
+    <div class="subescrita">Civil </div>
+    <br>
+    <input class="caixa2" type="radio" name="opcao50" value="opcao50">
+    <div class="subescrita">Militar </div>
+    <br>
+    <input class="caixa2" type="radio" name="opcao51" value="opcao51">
+    <div class="subescrita">PRE </div>
+    <br>
+        </div>
     </div>
     <input class="enviar" type="submit" value="Cadastrar"><br>
+</form>
 </html>
