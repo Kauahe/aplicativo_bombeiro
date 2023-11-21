@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 16-Nov-2023 às 12:59
+-- Tempo de geração: 19/11/2023 às 23:47
 -- Versão do servidor: 10.4.28-MariaDB
--- versão do PHP: 8.2.4
+-- Versão do PHP: 8.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `anamnese`
+-- Estrutura para tabela `anamnese`
 --
 
 CREATE TABLE `anamnese` (
@@ -49,7 +49,7 @@ CREATE TABLE `anamnese` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Extraindo dados da tabela `anamnese`
+-- Despejando dados para a tabela `anamnese`
 --
 
 INSERT INTO `anamnese` (`id`, `nrOcorrencia`, `opcao1`, `opcao2`, `opcao3`, `opcao4`, `opcao5`, `opcao6`, `opcao7`, `opcao8`, `opcao9`, `opcao10`, `opcao11`, `opcao12`, `opcao13`, `opcao14`, `opcao15`, `opcao16`) VALUES
@@ -63,7 +63,7 @@ INSERT INTO `anamnese` (`id`, `nrOcorrencia`, `opcao1`, `opcao2`, `opcao3`, `opc
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `cadastro`
+-- Estrutura para tabela `cadastro`
 --
 
 CREATE TABLE `cadastro` (
@@ -76,7 +76,7 @@ CREATE TABLE `cadastro` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Extraindo dados da tabela `cadastro`
+-- Despejando dados para a tabela `cadastro`
 --
 
 INSERT INTO `cadastro` (`id`, `nome`, `email`, `cpf`, `senha`, `imagem_blob`) VALUES
@@ -85,7 +85,7 @@ INSERT INTO `cadastro` (`id`, `nome`, `email`, `cpf`, `senha`, `imagem_blob`) VA
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `cadastropac`
+-- Estrutura para tabela `cadastropac`
 --
 
 CREATE TABLE `cadastropac` (
@@ -103,7 +103,7 @@ CREATE TABLE `cadastropac` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Extraindo dados da tabela `cadastropac`
+-- Despejando dados para a tabela `cadastropac`
 --
 
 INSERT INTO `cadastropac` (`num_ocorrencia`, `data_ocr`, `nome_hospital`, `nome_pac`, `idade_pac`, `telefone_pac`, `nome_acomp`, `idade_acomp`, `local_ocr`, `cpf`, `bombeiro`) VALUES
@@ -117,12 +117,15 @@ INSERT INTO `cadastropac` (`num_ocorrencia`, `data_ocr`, `nome_hospital`, `nome_
 (51, '0000-00-00', '4', '4', 4, '', '', 0, '', 0, 46),
 (52, '0000-00-00', 't', 't', 7, '', '', 0, '', 0, 46),
 (53, '0000-00-00', 'São jose', 'kakaaaaa', 3, '', '', 0, '', 0, 46),
-(54, '0000-00-00', '', 'Evelinnnn', 0, '', '', 0, '', 0, 46);
+(54, '0000-00-00', '', 'Evelinnnn', 0, '', '', 0, '', 0, 46),
+(55, '0000-00-00', '', '', 0, '', '', 0, '', 0, 46),
+(56, '0000-00-00', '', 'Evelin', 0, '', '', 0, '', 0, 46),
+(57, '0000-00-00', '', '', 0, '', '', 0, '', 0, 46);
 
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `formacond`
+-- Estrutura para tabela `formacond`
 --
 
 CREATE TABLE `formacond` (
@@ -147,7 +150,7 @@ CREATE TABLE `formacond` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Extraindo dados da tabela `formacond`
+-- Despejando dados para a tabela `formacond`
 --
 
 INSERT INTO `formacond` (`id`, `nrOcorrencia`, `opcao1`, `opcao2`, `opcao3`, `opcao4`, `opcao5`, `opcao6`, `opcao7`, `opcao8`, `opcao9`, `opcao10`, `opcao11`, `opcao12`, `opcao13`, `opcao14`, `opcao15`, `opcao16`) VALUES
@@ -159,7 +162,7 @@ INSERT INTO `formacond` (`id`, `nrOcorrencia`, `opcao1`, `opcao2`, `opcao3`, `op
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `gestacional`
+-- Estrutura para tabela `gestacional`
 --
 
 CREATE TABLE `gestacional` (
@@ -189,7 +192,7 @@ CREATE TABLE `gestacional` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Extraindo dados da tabela `gestacional`
+-- Despejando dados para a tabela `gestacional`
 --
 
 INSERT INTO `gestacional` (`id`, `nrOcorrencia`, `opcao1`, `opcao2`, `opcao3`, `opcao4`, `opcao5`, `opcao6`, `opcao7`, `opcao8`, `opcao9`, `opcao10`, `opcao11`, `opcao12`, `opcao13`, `opcao14`, `opcao15`, `opcao16`, `opcao17`, `opcao18`, `opcao19`, `opcao20`, `opcao21`) VALUES
@@ -200,7 +203,7 @@ INSERT INTO `gestacional` (`id`, `nrOcorrencia`, `opcao1`, `opcao2`, `opcao3`, `
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `maior5`
+-- Estrutura para tabela `maior5`
 --
 
 CREATE TABLE `maior5` (
@@ -227,7 +230,7 @@ CREATE TABLE `maior5` (
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `materiais1`
+-- Estrutura para tabela `materiais1`
 --
 
 CREATE TABLE `materiais1` (
@@ -254,7 +257,7 @@ CREATE TABLE `materiais1` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Extraindo dados da tabela `materiais1`
+-- Despejando dados para a tabela `materiais1`
 --
 
 INSERT INTO `materiais1` (`id`, `nrOcorrencia`, `opcao1`, `opcao2`, `opcao3`, `opcao4`, `qntd1`, `opcao5`, `qntd2`, `opcao6`, `qntd3`, `opcao7`, `opcao8`, `opcao9`, `opcao10`, `qntd4`, `opcao11`, `qntd5`, `opcao12`, `qntd6`) VALUES
@@ -267,7 +270,7 @@ INSERT INTO `materiais1` (`id`, `nrOcorrencia`, `opcao1`, `opcao2`, `opcao3`, `o
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `menor5`
+-- Estrutura para tabela `menor5`
 --
 
 CREATE TABLE `menor5` (
@@ -294,7 +297,7 @@ CREATE TABLE `menor5` (
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `problemas`
+-- Estrutura para tabela `problemas`
 --
 
 CREATE TABLE `problemas` (
@@ -317,7 +320,7 @@ CREATE TABLE `problemas` (
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `sinaisvitais`
+-- Estrutura para tabela `sinaisvitais`
 --
 
 CREATE TABLE `sinaisvitais` (
@@ -336,7 +339,7 @@ CREATE TABLE `sinaisvitais` (
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `sinais_sintomas`
+-- Estrutura para tabela `sinais_sintomas`
 --
 
 CREATE TABLE `sinais_sintomas` (
@@ -405,7 +408,31 @@ CREATE TABLE `sinais_sintomas` (
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `tipoocr`
+-- Estrutura para tabela `termos`
+--
+
+CREATE TABLE `termos` (
+  `id` int(11) NOT NULL,
+  `nrOcorrencia` int(11) NOT NULL,
+  `opcao1` varchar(45) NOT NULL,
+  `opcao2` varchar(45) NOT NULL,
+  `opcao3` varchar(45) NOT NULL,
+  `opcao4` varchar(45) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Despejando dados para a tabela `termos`
+--
+
+INSERT INTO `termos` (`id`, `nrOcorrencia`, `opcao1`, `opcao2`, `opcao3`, `opcao4`) VALUES
+(1, 56, 'wwwww', 'www', 'www', 'ww'),
+(2, 56, 'eeeeeeeeeee', 'eeeeeeeeeeee', 'eeeeeeeeee', 'eeeeeeeeee'),
+(3, 56, '', '', '', '');
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura para tabela `tipoocr`
 --
 
 CREATE TABLE `tipoocr` (
@@ -436,7 +463,7 @@ CREATE TABLE `tipoocr` (
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `traumaadulto`
+-- Estrutura para tabela `traumaadulto`
 --
 
 CREATE TABLE `traumaadulto` (
@@ -461,7 +488,7 @@ CREATE TABLE `traumaadulto` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Extraindo dados da tabela `traumaadulto`
+-- Despejando dados para a tabela `traumaadulto`
 --
 
 INSERT INTO `traumaadulto` (`id`, `nrOcorrencia`, `local1`, `local2`, `local3`, `local4`, `lado1`, `lado2`, `lado3`, `lado4`, `face1`, `face2`, `face3`, `face4`, `opcao1`, `opcao2`, `opcao3`, `opcao4`) VALUES
@@ -472,97 +499,104 @@ INSERT INTO `traumaadulto` (`id`, `nrOcorrencia`, `local1`, `local2`, `local3`, 
 --
 
 --
--- Índices para tabela `anamnese`
+-- Índices de tabela `anamnese`
 --
 ALTER TABLE `anamnese`
   ADD PRIMARY KEY (`id`),
   ADD KEY `nrOcorrencia` (`nrOcorrencia`);
 
 --
--- Índices para tabela `cadastro`
+-- Índices de tabela `cadastro`
 --
 ALTER TABLE `cadastro`
   ADD PRIMARY KEY (`id`);
 
 --
--- Índices para tabela `cadastropac`
+-- Índices de tabela `cadastropac`
 --
 ALTER TABLE `cadastropac`
   ADD PRIMARY KEY (`num_ocorrencia`),
   ADD KEY `bombeiro` (`bombeiro`);
 
 --
--- Índices para tabela `formacond`
+-- Índices de tabela `formacond`
 --
 ALTER TABLE `formacond`
   ADD PRIMARY KEY (`id`),
   ADD KEY `nrOcorrencia` (`nrOcorrencia`);
 
 --
--- Índices para tabela `gestacional`
+-- Índices de tabela `gestacional`
 --
 ALTER TABLE `gestacional`
   ADD PRIMARY KEY (`id`),
   ADD KEY `nrOcorrencia` (`nrOcorrencia`);
 
 --
--- Índices para tabela `maior5`
+-- Índices de tabela `maior5`
 --
 ALTER TABLE `maior5`
   ADD PRIMARY KEY (`id`),
   ADD KEY `nrOcorrencia` (`nrOcorrencia`);
 
 --
--- Índices para tabela `materiais1`
+-- Índices de tabela `materiais1`
 --
 ALTER TABLE `materiais1`
   ADD PRIMARY KEY (`id`),
   ADD KEY `nrOcorrencia` (`nrOcorrencia`);
 
 --
--- Índices para tabela `menor5`
+-- Índices de tabela `menor5`
 --
 ALTER TABLE `menor5`
   ADD PRIMARY KEY (`id`),
   ADD KEY `nrOcorrencia` (`nrOcorrencia`);
 
 --
--- Índices para tabela `problemas`
+-- Índices de tabela `problemas`
 --
 ALTER TABLE `problemas`
   ADD PRIMARY KEY (`id`),
   ADD KEY `nrOcorrencia` (`nrOcorrencia`);
 
 --
--- Índices para tabela `sinaisvitais`
+-- Índices de tabela `sinaisvitais`
 --
 ALTER TABLE `sinaisvitais`
   ADD PRIMARY KEY (`id`),
   ADD KEY `nrOcorrencia` (`nrOcorrencia`);
 
 --
--- Índices para tabela `sinais_sintomas`
+-- Índices de tabela `sinais_sintomas`
 --
 ALTER TABLE `sinais_sintomas`
   ADD PRIMARY KEY (`id`),
   ADD KEY `nrOcorrencia` (`nrOcorrencia`);
 
 --
--- Índices para tabela `tipoocr`
+-- Índices de tabela `termos`
+--
+ALTER TABLE `termos`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `nrOcorrencia` (`nrOcorrencia`);
+
+--
+-- Índices de tabela `tipoocr`
 --
 ALTER TABLE `tipoocr`
   ADD PRIMARY KEY (`id`),
   ADD KEY `nrOcorrencia` (`nrOcorrencia`);
 
 --
--- Índices para tabela `traumaadulto`
+-- Índices de tabela `traumaadulto`
 --
 ALTER TABLE `traumaadulto`
   ADD PRIMARY KEY (`id`),
   ADD KEY `nrOcorrencia` (`nrOcorrencia`);
 
 --
--- AUTO_INCREMENT de tabelas despejadas
+-- AUTO_INCREMENT para tabelas despejadas
 --
 
 --
@@ -581,7 +615,7 @@ ALTER TABLE `cadastro`
 -- AUTO_INCREMENT de tabela `cadastropac`
 --
 ALTER TABLE `cadastropac`
-  MODIFY `num_ocorrencia` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=55;
+  MODIFY `num_ocorrencia` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=58;
 
 --
 -- AUTO_INCREMENT de tabela `formacond`
@@ -632,6 +666,12 @@ ALTER TABLE `sinais_sintomas`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
+-- AUTO_INCREMENT de tabela `termos`
+--
+ALTER TABLE `termos`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
 -- AUTO_INCREMENT de tabela `tipoocr`
 --
 ALTER TABLE `tipoocr`
@@ -644,77 +684,83 @@ ALTER TABLE `traumaadulto`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
--- Restrições para despejos de tabelas
+-- Restrições para tabelas despejadas
 --
 
 --
--- Limitadores para a tabela `anamnese`
+-- Restrições para tabelas `anamnese`
 --
 ALTER TABLE `anamnese`
   ADD CONSTRAINT `anamnese_ibfk_1` FOREIGN KEY (`nrOcorrencia`) REFERENCES `cadastropac` (`num_ocorrencia`);
 
 --
--- Limitadores para a tabela `cadastropac`
+-- Restrições para tabelas `cadastropac`
 --
 ALTER TABLE `cadastropac`
   ADD CONSTRAINT `cadastropac_ibfk_1` FOREIGN KEY (`bombeiro`) REFERENCES `cadastro` (`id`);
 
 --
--- Limitadores para a tabela `formacond`
+-- Restrições para tabelas `formacond`
 --
 ALTER TABLE `formacond`
   ADD CONSTRAINT `formacond_ibfk_1` FOREIGN KEY (`nrOcorrencia`) REFERENCES `cadastropac` (`num_ocorrencia`);
 
 --
--- Limitadores para a tabela `gestacional`
+-- Restrições para tabelas `gestacional`
 --
 ALTER TABLE `gestacional`
   ADD CONSTRAINT `gestacional_ibfk_1` FOREIGN KEY (`nrOcorrencia`) REFERENCES `cadastropac` (`num_ocorrencia`);
 
 --
--- Limitadores para a tabela `maior5`
+-- Restrições para tabelas `maior5`
 --
 ALTER TABLE `maior5`
   ADD CONSTRAINT `maior5_ibfk_1` FOREIGN KEY (`nrOcorrencia`) REFERENCES `cadastropac` (`num_ocorrencia`);
 
 --
--- Limitadores para a tabela `materiais1`
+-- Restrições para tabelas `materiais1`
 --
 ALTER TABLE `materiais1`
   ADD CONSTRAINT `materiais1_ibfk_1` FOREIGN KEY (`nrOcorrencia`) REFERENCES `cadastropac` (`num_ocorrencia`);
 
 --
--- Limitadores para a tabela `menor5`
+-- Restrições para tabelas `menor5`
 --
 ALTER TABLE `menor5`
   ADD CONSTRAINT `menor5_ibfk_1` FOREIGN KEY (`nrOcorrencia`) REFERENCES `cadastropac` (`num_ocorrencia`);
 
 --
--- Limitadores para a tabela `problemas`
+-- Restrições para tabelas `problemas`
 --
 ALTER TABLE `problemas`
   ADD CONSTRAINT `problemas_ibfk_1` FOREIGN KEY (`nrOcorrencia`) REFERENCES `cadastropac` (`num_ocorrencia`);
 
 --
--- Limitadores para a tabela `sinaisvitais`
+-- Restrições para tabelas `sinaisvitais`
 --
 ALTER TABLE `sinaisvitais`
   ADD CONSTRAINT `sinaisvitais_ibfk_1` FOREIGN KEY (`nrOcorrencia`) REFERENCES `cadastropac` (`num_ocorrencia`);
 
 --
--- Limitadores para a tabela `sinais_sintomas`
+-- Restrições para tabelas `sinais_sintomas`
 --
 ALTER TABLE `sinais_sintomas`
   ADD CONSTRAINT `sinais_sintomas_ibfk_1` FOREIGN KEY (`nrOcorrencia`) REFERENCES `cadastropac` (`num_ocorrencia`);
 
 --
--- Limitadores para a tabela `tipoocr`
+-- Restrições para tabelas `termos`
+--
+ALTER TABLE `termos`
+  ADD CONSTRAINT `termos_ibfk_1` FOREIGN KEY (`nrOcorrencia`) REFERENCES `cadastropac` (`num_ocorrencia`);
+
+--
+-- Restrições para tabelas `tipoocr`
 --
 ALTER TABLE `tipoocr`
   ADD CONSTRAINT `tipoocr_ibfk_1` FOREIGN KEY (`nrOcorrencia`) REFERENCES `cadastropac` (`num_ocorrencia`);
 
 --
--- Limitadores para a tabela `traumaadulto`
+-- Restrições para tabelas `traumaadulto`
 --
 ALTER TABLE `traumaadulto`
   ADD CONSTRAINT `traumaadulto_ibfk_1` FOREIGN KEY (`nrOcorrencia`) REFERENCES `cadastropac` (`num_ocorrencia`);

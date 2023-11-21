@@ -4,25 +4,25 @@ session_start();
 $_SESSION["v3"]= "v";
    $num_ocorrencia=  $_SESSION["nrOcorrencia"];
    $opcao1 = $_POST["opcao1"];
-   $opcao2=isset($_POST["opcao2"])  ? "Sim" : "-";
-   $opcao3=isset($_POST["opcao3"])  ? "Não" : "-";
+   $opcao2=isset($_POST["opcao2"])  ? "Sim" : "";
+   $opcao3=isset($_POST["opcao3"])  ? "Não" : "";
    $opcao4 = $_POST["opcao4"];
-   $opcao5=isset($_POST["opcao5"])  ? "Sim" : "-";
-   $opcao6=isset($_POST["opcao6"])  ? "Não" : "-";
-   $opcao7=isset($_POST["opcao7"])  ? "Sim" : "-";
-   $opcao8=isset($_POST["opcao8"])  ? "Não" : "-";
+   $opcao5=isset($_POST["opcao5"])  ? "Sim" : "";
+   $opcao6=isset($_POST["opcao6"])  ? "Não" : "";
+   $opcao7=isset($_POST["opcao7"])  ? "Sim" : "";
+   $opcao8=isset($_POST["opcao8"])  ? "Não" : "";
    $opcao9 = $_POST["opcao9"];
    $opcao10 = $_POST["opcao10"];
    $opcao11 = $_POST["opcao11"];
    $opcao12 = $_POST["opcao12"];
-   $opcao13=isset($_POST["opcao13"])  ? "Sim" : "-";
-   $opcao14=isset($_POST["opcao14"])  ? "Não" : "-";
-   $opcao15=isset($_POST["opcao15"])  ? "Sim" : "-";
-   $opcao16=isset($_POST["opcao16"])  ? "Não" : "-";
-   $opcao17=isset($_POST["opcao17"])  ? "Sim" : "-";
-   $opcao18=isset($_POST["opcao18"])  ? "Não" : "-";
-   $opcao19=isset($_POST["opcao19"])  ? "Sim" : "-";
-   $opcao20=isset($_POST["opcao20"])  ? "Não" : "-";
+   $opcao13=isset($_POST["opcao13"])  ? "Sim" : "";
+   $opcao14=isset($_POST["opcao14"])  ? "Não" : "";
+   $opcao15=isset($_POST["opcao15"])  ? "Sim" : "";
+   $opcao16=isset($_POST["opcao16"])  ? "Não" : "";
+   $opcao17=isset($_POST["opcao17"])  ? "Sim" : "";
+   $opcao18=isset($_POST["opcao18"])  ? "Não" : "";
+   $opcao19=isset($_POST["opcao19"])  ? "Sim" : "";
+   $opcao20=isset($_POST["opcao20"])  ? "Não" : "";
    $opcao21 = $_POST["opcao21"];
    
   
@@ -55,6 +55,9 @@ $_SESSION["v3"]= "v";
     $stmt->bindParam(':op21', $opcao21);
     
   
+    
+    
+    
     $stmt->execute();
     
     header("Location:../pag_inicial.php");

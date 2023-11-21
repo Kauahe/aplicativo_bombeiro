@@ -1,7 +1,7 @@
 <?php
 include("conecta.php");
 session_start();
-$_SESSION["v8"]= "v";
+
 $num_ocorrencia=  $_SESSION["nrOcorrencia"];
 $local1 = $_POST['local1'];
 $local2 = $_POST['local2'];
@@ -54,7 +54,7 @@ $executado = $consulta->execute();
 
 // Verifica se a consulta foi executada com sucesso
 if ($executado) {
-   
+    $_SESSION["v8"]= "v";
     header("Location:../pag_inicial.php"); // Redireciona para a página inicial após o sucesso
 } else {
     echo "Erro ao inserir registro.";

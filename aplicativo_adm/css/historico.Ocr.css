@@ -191,9 +191,13 @@ footer {
     display: flex;
     margin-top: -30px;
 }
+.bosta{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
 .borda2 
 {
+text-align: justify;
     width: 700px;
     height: 156px;
     flex-shrink: 0;
