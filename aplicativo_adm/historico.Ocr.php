@@ -159,7 +159,14 @@ while( $linhas = $comando->fetch()){
  // Consulta para a tabela "sinais_vitais"
  $comando = $pdo->prepare("SELECT * FROM sinaisvitais WHERE nrOcorrencia='$numOcorrencia'");
  $resultado = $comando->execute();
-
+ $opj1 ="";
+ $opj2 ="";
+ $opj3 ="";
+ $opj4 ="";
+ $opj5 ="";
+ $opj6 ="";
+ $opj7 ="";
+ $opj8 ="";
  while ($linhas = $comando->fetch()) {
     $opj1=$linhas["opcao1"]; 
     $opj2=$linhas["opcao2"] ; 
@@ -185,6 +192,26 @@ while( $linhas = $comando->fetch()){
  $resultado = $comando->execute();
 
  while ($linhas = $comando->fetch()) {
+    $local1 = $linhas['local1'];
+    $local2 = $linhas['local2'];
+    $local3 = $linhas['local3'];
+    $local4 = $linhas['local4'];
+
+    $lado1 = $linhas['lado1'];
+    $lado2 = $linhas['lado2'];
+    $lado3 = $linhas['lado3'];
+    $lado4 = $linhas['lado4'];
+
+    $face1 = $linhas['face1'];
+    $face2 = $linhas['face2'];
+    $face3 = $linhas['face3'];
+    $face4 = $linhas['face4'];
+
+    $opi1 = $linhas['opcao1'];
+    $opi2 = $linhas['opcao2'];
+    $opi3 = $linhas['opcao3'];
+    $opi4 = $linhas['opcao4'];
+
      // ... (seu código para exibir dados da tabela "localizacao_traumas")
  }
  $comando = $pdo->prepare("SELECT * FROM anamnese WHERE nrOcorrencia='$numOcorrencia'");
@@ -261,7 +288,7 @@ while ($linhas = $comando->fetch()) {
 
             <BR><BR><div class="minitexto">IDADE DO PACIENTE:</div>
             <input type="number"   value="<?php if ($idade==""){}else echo $idade ?>" id="idade_pac" name="idade_pac" class="text" readonly>
-            <button class="alterar2"onclick="alterarInformacao('idade_pac')">⚙️</button><BR><BR>
+            <button class="alterar"onclick="alterarInformacao('idade_pac')">⚙️</button><BR><BR>
         </div>
             <div class="div2"><BR>
                 <div class="minitexto">RG/CPF:</div>
@@ -294,7 +321,7 @@ while ($linhas = $comando->fetch()) {
                             $opcao = "opcao$i";
                             
                             if (!empty($$opcao)) {
-                                echo $$opcao. "<br>";
+                                echo "- ". $$opcao. "<br><hr class='linha-separadora'>";
                             }
                         } ?>
                                                 
@@ -303,11 +330,11 @@ while ($linhas = $comando->fetch()) {
                 <div class="collum">
                     <div class="preto2">INFORMAÇÕES SOBRE TIPO DE OCORRÊNCIA</div>
                     <div class="borda2">
-                    <?php for ($i = 1; $i <= 57; $i++) {
+                    <?php for ($i = 1; $i <= 20; $i++) {
                             $opk = "opk$i";
                             
                             if (!empty($$opk)) {
-                                echo $$opk. "<br>";
+                                echo "- ".$$opk. "<br><hr class='linha-separadora'>";
                             }
                         } ?>
                     </div>
@@ -322,7 +349,7 @@ while ($linhas = $comando->fetch()) {
                             $opm = "opm$i";
                             
                             if (!empty($$opm)) {
-                                echo $$opm. "<br>";
+                                echo "- ".$$opm. "<br><hr class='linha-separadora'>";
                             }
                         } ?>
                     </div>
@@ -335,7 +362,7 @@ while ($linhas = $comando->fetch()) {
                             $opl = "opl$i";
                             
                             if (!empty($$opl)) {
-                                echo $$opl. "<br>";
+                                echo "- ". $$opl. "<br><hr class='linha-separadora'>";
                             }
                         } ?>
                         
@@ -347,18 +374,24 @@ while ($linhas = $comando->fetch()) {
                     <div class="preto2">INFORMAÇÕES SOBRE SINAIS VITAIS</div>
                     <div class="borda2">
                     PRESSÃO ARTERIAL:&nbsp;
-                   <?php if($opj1 == ""){}else echo $opj1 ?>X<?php if($opj2 == ""){}else echo $opj2 ?>&nbsp;MMHG<br>
+                   <?php if($opj1 == ""){}else echo($opj1); ?>X<?php if($opj2 == ""){}else echo($opj2); ?>&nbsp;MMHG<br>
+                   <hr class="linha-separadora">
                    PULSO:&nbsp;
-                   <?php if($opj3 == ""){}else echo $opj3 ?>-B.C.P.M<br>
+                   <?php if($opj3 == ""){}else echo($opj3); ?>-B.C.P.M<br>
+                   <hr class="linha-separadora">
                    RESPIRAÇÃO:&nbsp;
-                   <?php if($opj4 == ""){}else echo $opj4 ?>-M.R.M<br>
+                   <?php if($opj4 == ""){}else echo($opj4); ?>-M.R.M<br>
+                   <hr class="linha-separadora">
                    SATURAÇÃO:&nbsp;
-                   <?php if($opj5 == ""){}else echo $opj5 ?>%<br>
+                   <?php if($opj5 == ""){}else echo($opj5); ?>%<br>
+                   <hr class="linha-separadora">
                    TEMPERATURA:&nbsp;
-                   <?php if($opj6== ""){}else echo $opj6 ?>°C<br>
+                   <?php if($opj6== ""){}else echo($opj6); ?>°C<br>
+                   <hr class="linha-separadora">
                    PERFUSÃO:&nbsp;
-                   <?php if($opj7== ""){}else echo $opj7 ?>
-                   <?php if($opj8== ""){}else echo $opj8 ?>
+                   <?php if($opj7== ""){}else echo($opj7); ?>
+                   <?php if($opj8== ""){}else echo($opj8); ?>
+                   <hr class="linha-separadora">
 
                     </div>
                 </div>
@@ -369,7 +402,7 @@ while ($linhas = $comando->fetch()) {
                             $opf = "opf$i";
                             
                             if (!empty($$opf)) {
-                                echo $$opf. "<br>";
+                                echo "- ".$$opf. "<br><hr class='linha-separadora'>";
                             }
                         } ?>
 
@@ -383,7 +416,56 @@ while ($linhas = $comando->fetch()) {
                 </div>
                 <div class="collum">
                     <div class="preto2">INFORMAÇÕES SOBRE LOCALIZAÇÃO DOS TRAUMAS </div>
-                    <div class="borda3"></div>
+                    <div class="borda3">
+                        <div class="separador">
+                            <h3>LOCAL<h3>
+                            <hr class="linha-separadora">
+                    <?php for ($i = 1; $i <= 4; $i++) {
+                            $local = "local$i";
+                            
+                            if (!empty($$local)) {
+                                echo $$local. "<br><hr class='linha-separadora'>";
+                            }
+                        } ?>
+                        </div>
+                        <hr class="linha-separadora">
+                        <div class="separador">
+                        <h3>Lado<h3>
+                        <hr class="linha-separadora">
+                        <?php for ($i = 1; $i <= 4; $i++) {
+                            $lado = "lado$i";
+                            
+                            if (!empty($$lado)) {
+                                echo $$lado. "<br><hr class='linha-separadora'>";
+                            }
+                        } ?> 
+                         </div>
+                         <hr class="linha-separadora">
+                        <div class="separador">
+                        <h3>FACE<h3>
+                        <hr class="linha-separadora">
+                        <?php for ($i = 1; $i <= 4; $i++) {
+                            $face = "face$i";
+                            
+                            if (!empty($$face)) {
+                                echo $$face. "<br><hr class='linha-separadora'>";
+                            }
+                        } ?>
+                         </div>
+                         <hr class="linha-separadora">
+                        <div class="separador">
+                        <h3>TIPO DE TRAUMA<h3>
+                        <hr class="linha-separadora">
+                        <?php for ($i = 1; $i <= 4; $i++) {
+                            $opi = "opi$i";
+                            
+                            if (!empty($$opi)) {
+                                echo $$opi. "<br><hr class='linha-separadora'>";
+                            }
+                        } ?> </div>
+                        <hr class="linha-separadora">
+
+                    </div>
                 </div>
             </div>
 </body>

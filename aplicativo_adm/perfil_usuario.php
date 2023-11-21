@@ -57,7 +57,7 @@ $pdo = null; // Feche a conexão PDO
             <img src="data:image/jpeg;base64,<?php echo base64_encode($imagem_blob); ?>"   class="foto_perfil" width="100%" height="100%" alt="Foto do usuário">
         </div>
         <div class="alterar">
-            <div class="alt"><b>ALTERAR</b></div>
+            <div class="alt" onclic><b>ALTERAR</b></div>
         </div>
     </div>
 
