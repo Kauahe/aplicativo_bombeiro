@@ -262,21 +262,6 @@ h2 {
     margin-bottom: 30px;
 }
 
-.enviar0
-{
-    font-weight: 400;
-    text-transform: uppercase;
-    background-color: #1F3173;
-    color: #d9d9d9;
-    font-family: "Audiowide", sans-serif;
-    width: 40%;
-    height: 50px;
-    border-radius: 10px;
-    font-size: 15px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-left: 10PX;
-}
 
 .enviar
 {
@@ -291,7 +276,7 @@ h2 {
     font-size: 15px;
     padding-top: 10px;
     padding-bottom: 10px;
-    margin-left: 35PX;
+    margin-left: 20PX;
 }
 
 .bts{
