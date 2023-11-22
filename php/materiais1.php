@@ -49,7 +49,7 @@ $_SESSION["v13"]= "v";
     if ($stmt->execute()) {
         $_SESSION["ocorrencia_cadastrada_materiais"] = true;
         // Defina a resposta como sucesso
-        echo '<script>alert("Cadastro realizado com sucesso!"); window.location.href="../materiais2.html";</script>';
+        echo '<script>alert("Cadastro realizado com sucesso!"); window.location.href="../pag_inicial.php";</script>';
         
     } else {
         // Defina a resposta como erro e exiba informações de erro
