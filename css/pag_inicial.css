@@ -380,13 +380,14 @@ a {
 {
     width: 60%;
     height: 5vh;
-    background-color: #97f3ace4;
+    background-color: #ffffffe4;
     border-radius: 20px;
     border-style: solid;
-    border-color: rgb(21, 71, 64);
+    border-color: rgb(1, 51, 84);
     font-family: "Audiowide", sans-serif;
     cursor: pointer;
     position: relative;
+    color: rgb(0, 0, 0);
 }
 .btt
 {

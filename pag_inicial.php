@@ -150,12 +150,12 @@ session_start();
       </div>
 
   </div>
-  <<div class="btt">
+  <div class="btt">
     <button id="comprar" onclick="Comprar()" class="confirmaPAG">
         <b>
-            <span id="confirm">CONFIRMAR</span>
+            <span id="confirm">FINALIZAR</span>
         </b>
-        <img class="img_ok" id="img_ok" src="img/correto.pgn">
+        <img class="img_ok" id="img_ok" src="img/correto.png">
     </button>
 </div>
 </body>
