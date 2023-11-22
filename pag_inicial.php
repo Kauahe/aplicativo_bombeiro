@@ -161,12 +161,18 @@ session_start();
 </body>
 </html>
 <script>
-    let comprar = document.getElementById('comprar'); // Define the variable 'comprar'
+    let comprar = document.getElementById('comprar');
 
     function Comprar() {
         $("#comprar").animate({ height: "20px" }, 1000);
         $("#confirm").animate({ opacity: "0" }, 500);
-        $("#comprar").animate({ width: "280px", borderRadius: "50px" }, 1000, Imagem);
+        $("#comprar").animate({ width: "280px", borderRadius: "50px" }, 1000, function() {
+            Imagem();
+            // Adiciona um atraso de 500 milissegundos (0.5 segundos) antes de redirecionar
+            setTimeout(function() {
+                window.location.href = "php/finalizar_sessao.php";
+            }, 600);
+        });
         $("#comprar").animate({ height: "60px", width: "60px", borderRadius: "30px" }, 700);
         comprar.style.backgroundSize = "100%";
         comprar.style.borderColor = "white";
