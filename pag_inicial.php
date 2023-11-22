@@ -12,6 +12,7 @@ session_start();
   <link rel="stylesheet" href="css/pag_inicial.css">
   <title>INÍCIO</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+  <script src="jquery.js"></script>
 </head>
 
 <body>
@@ -30,8 +31,8 @@ session_start();
   </header>
   <br><br>
 
-  <div class="tit"> MENU </div>
-  <div class="subtit"><b>escolha como deseja começar:</b> </div><br>
+  <div class="tit"> PÁGINA INICIAL </div>
+  <div class="subtit"><b>REGISTRAR OCORRÊNCIA</b> </div><br>
 
   <div class="fundo">
 
@@ -149,7 +150,33 @@ session_start();
       </div>
 
   </div>
-
+  <<div class="btt">
+    <button id="comprar" onclick="Comprar()" class="confirmaPAG">
+        <b>
+            <span id="confirm">CONFIRMAR</span>
+        </b>
+        <img class="img_ok" id="img_ok" src="img/correto.pgn">
+    </button>
+</div>
 </body>
-
 </html>
+<script>
+    let comprar = document.getElementById('comprar'); // Define the variable 'comprar'
+
+    function Comprar() {
+        $("#comprar").animate({ height: "20px" }, 1000);
+        $("#confirm").animate({ opacity: "0" }, 500);
+        $("#comprar").animate({ width: "280px", borderRadius: "50px" }, 1000, Imagem);
+        $("#comprar").animate({ height: "60px", width: "60px", borderRadius: "30px" }, 700);
+        comprar.style.backgroundSize = "100%";
+        comprar.style.borderColor = "white";
+    }
+
+    function Imagem() {
+        $("#img_ok").animate({ opacity: "1" }, 1000, Sair);
+    }
+
+    function Sair() {
+        window.open("index.html", "_self");
+    }
+</script>
