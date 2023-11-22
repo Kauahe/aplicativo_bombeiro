@@ -56,7 +56,6 @@
     
     <div class="bts">
       
-            <button class="enviar0"  function="voltar()"> VOLTAR</button>
             <input class="enviar" type="submit" value="Cadastrar">
         </div>
     <!-- <input id="cpf" name="cpf" type="hidden" value="<?php //echo("$cpf"); ?>"> -->
