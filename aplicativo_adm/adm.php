@@ -34,11 +34,6 @@
                
             </div>
             <div class="marge">
-            <select class="select" name="listar" name="ordenacao" id="ordenacao">
-            <option>Selecionar por...</option>
-            <option value="opcao1">ID</option>
-            <option value="opcao2">Nome</option>
-            <option value="opcao3">Data</option><select> <!--adicione a função de listar por ordem alfabetica ou id aqui-->
          </div>
         </div>
         <div class="linha"></div>

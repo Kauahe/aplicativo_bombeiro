@@ -395,6 +395,10 @@ $ope1 =$linhas["opcao1"];
 <header>
         <div class="imagem">
             <img src="../img/logosembrilho.png" width="60px" height="60px">
+            <div class="bombeiriii">
+                <div class="h1">SOS BOMBEIROS</div>
+                <div class="h2">NÚCLEO DE OPERAÇÕES AÉREAS E RESGATE</div>
+            </div>
         </div>
        <div class="titulo"></div>
         <a href="adm.php">
@@ -740,7 +744,7 @@ $ope1 =$linhas["opcao1"];
                </div>
                 </div>
                 <div class="collum">
-                    <div class="preto2">INFORMAÇÕES SOBRE GESTÇÃO </div>
+                    <div class="preto2">INFORMAÇÕES SOBRE GESTACIONAL </div>
                     <div class="borda2">
 
                     <div class="separador">
@@ -884,9 +888,15 @@ $ope1 =$linhas["opcao1"];
                         } ?>
                     </div>
                 </div>
-            </div>
+            </div><BR><BR><BR><BR><BR><BR><BR><BR>
+            <BR><BR><BR><BR><BR><BR><BR><BR>
+<BR><BR><BR><BR><BR><BR><BR>
+            <div class="titulo"></div>
+        <a href="adm.php">
+            <div class="opcao1"> <b>VOLTAR</b></div>
+        </a>
 </body>
-
+</html>
 <script>
         function alterarInformacao(campo) {
             var novoValor = prompt("Informe o novo valor para " + campo + ":");

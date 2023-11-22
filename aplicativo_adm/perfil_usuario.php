@@ -51,7 +51,7 @@ $pdo = null; // Feche a conexão PDO
         </div>
     </header>
 
-    <div class="titulo"><b> PERFIL</b> </div>
+    <div class="titulo"><b> PERFIL DO BOMBEIRO: 👨🏻‍🚒 </b> </div>
     <div class="caixa">
         <div class="foto">
             <img src="data:image/jpeg;base64,<?php echo base64_encode($imagem_blob); ?>"   class="foto_perfil" width="100%" height="100%" alt="Foto do usuário">

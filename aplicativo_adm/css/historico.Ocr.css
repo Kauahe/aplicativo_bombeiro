@@ -21,13 +21,36 @@ footer {
     position: fixed;
     z-index: 30;
 }
-
+.bombeiriii{
+    width: 130%;
+    height: 40px;
+    background-color: #ffffff00;
+    margin-left: 65px;
+    margin-top: -50px;
+}
 .imagem {
     position: absolute;
     left: 12px;
     top: 7px
 }
 
+.h1 {
+   
+    color: white;
+    font-family: "Audiowide", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.h2 {
+    color: #FFF;
+    text-align: center;
+    font-family: Genos;
+    font-size: 10px;
+    font-style: italic;
+    font-weight: 200;
+    margin-left: -135px;    
+}
 
 .titulo {
     font-family: "Audiowide", sans-serif;
@@ -38,36 +61,30 @@ footer {
     margin-left: -1050px;
 }
 
-.opcao1 {
-    margin-top: 30px;
-    margin-left: 1400px;
-    border-radius: 10px;
-    display: flex;
-    width: 100px;
-    height: 25px;
-    flex-direction: column;
-    justify-content: center;
-    flex-shrink: 0;
-    color: #f3f3f3;
-    text-align: center;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-size: 10px;
-    font-style: normal;
-    line-height: normal;
-    text-transform: uppercase;
-    font-family: "Audiowide", sans-serif;
-    border-radius: 50px;
-    border: 1px solid #FFF;
-    background: #000;
-}
-
-.opcao1:hover {
+.opcao1:hover 
+{
     background: #102986;
     color: #FFF;
     border-radius: 50px;
     box-shadow: 4px 4px 4px 0px rgba(92, 92, 92, 0.25), 0px 4px 4px 0px rgba(92, 92, 92, 0.25), 0px 4px 4px 0px rgba(92, 92, 92, 0.25);
-    width: 100px;
     cursor: pointer;
+}
+.opcao1
+{
+    width: 150PX;
+    height: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    background: #102986;
+    color: #d9d9d9;
+    font-family: "Audiowide", sans-serif;
+    border-radius: 10px;
+    font-size: 20px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    text-align: center;
+    margin-bottom: 30PX;
+
 }
 
 .preto {
@@ -208,12 +225,14 @@ text-align: justify;
     border: 3px solid #000;
     background: #D9D9D9;
     overflow-y: scroll;
+    font-family: Candara;
 }
 .separador{
-    height: 100%;
+    height: 40%;
     width: 100%;
     display: flex;
     flex-direction: column;
+    font-family: Candara;
 }
 
 .borda3
@@ -225,6 +244,7 @@ text-align: justify;
     background: #D9D9D9;
     display: flex;
     flex-direction: row;
+    font-family: Candara;
    
 }
 .text

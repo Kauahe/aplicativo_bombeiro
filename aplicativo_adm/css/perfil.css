@@ -192,20 +192,21 @@ H3 {
     height: 50px;
     margin-top: 25px;
     color: black;
-    font-size: 40px;
+    font-size: 25px;
     font-family: "Audiowide", sans-serif;
     justify-content: center;
     justify-items: center;
     align-items: center;
     align-content: center;
     display: flex;
+    margin-left: -600px;
 
 }
 
 .caixa {
     width: 444px;
     height: 563px;
-    margin-top: 25px;
+    margin-top: 15px;
     margin-left: 60px;
     flex-shrink: 0;
     border-radius: 66px;
@@ -268,8 +269,8 @@ H3 {
 
 .info {
     width: 50%;
-    height: 563px;
-    margin-top: -563px;
+    height: 463px;
+    margin-top: -490px;
     margin-left: 650px;
     flex-shrink: 0;
     flex-direction: column;
