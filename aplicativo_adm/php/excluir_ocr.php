@@ -6,7 +6,7 @@ if (isset($_POST['num_ocorrencia'])) {
     $num_ocorrencia = $_POST['num_ocorrencia'];
 
     // Evite injeção de SQL usando declarações preparadas
-    $sql = "DELETE FROM cadastro_pac WHERE num_ocorrencia = :num_ocorrencia";
+    $sql = "DELETE FROM cadastropac WHERE num_ocorrencia = :num_ocorrencia";
     $stmt = $pdo->prepare($sql);
     $stmt->bindParam(':num_ocorrencia', $num_ocorrencia, PDO::PARAM_INT);
 

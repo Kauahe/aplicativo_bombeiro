@@ -139,7 +139,7 @@ H3 {
     color: #FFF;
     border-radius: 50px;
     box-shadow: 4px 4px 4px 0px rgba(92, 92, 92, 0.25), 0px 4px 4px 0px rgba(92, 92, 92, 0.25), 0px 4px 4px 0px rgba(92, 92, 92, 0.25);
-    width: 250px;
+   
     cursor: pointer;
 }
 .opcao3:hover 

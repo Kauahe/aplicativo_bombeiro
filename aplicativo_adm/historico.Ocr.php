@@ -184,6 +184,23 @@ while( $linhas = $comando->fetch()){
  $resultado = $comando->execute();
 
  while ($linhas = $comando->fetch()) {
+        $opg1 =$linhas["opcao1"]; 
+        $opg2= $linhas["opcao2"] ; 
+        $opg3 =$linhas["opcao3"]  ;
+        $opg4 =$linhas["opcao4"] ;
+        $opg5 =$linhas["opcao5"] ;
+        $opg6 =$linhas["opcao6"] ;
+        $opg7 =$linhas["opcao7"]  ;
+        $opg8 =$linhas["opcao8"];
+        $opg9 =$linhas["opcao9"];
+        $opg10 =$linhas["opcao10"];
+        $opg11 =$linhas["opcao11"];
+        $opg12 =$linhas["opcao12"];
+        $opg13 =$linhas["opcao13"];
+        $opg14 =$linhas["opcao14"];
+        $opg15 =$linhas["opcao15"];
+        $opg16 =$linhas["opcao16"];
+    
      // ... (seu código para exibir dados da tabela "forma_conducao")
  }
 
@@ -214,11 +231,52 @@ while( $linhas = $comando->fetch()){
 
      // ... (seu código para exibir dados da tabela "localizacao_traumas")
  }
- $comando = $pdo->prepare("SELECT * FROM anamnese WHERE nrOcorrencia='$numOcorrencia'");
+ $comando = $pdo->prepare("SELECT * FROM gestacional WHERE nrOcorrencia='$numOcorrencia'");
  $resultado = $comando->execute();
 
  while ($linhas = $comando->fetch()) {
+    $opr1 =$linhas["opcao1"]; 
+    $opr2 =$linhas["opcao2"]; 
+    $opr3 =$linhas["opcao3"]; 
+    $opr4 =$linhas["opcao4"]; 
+    $opr5 =$linhas["opcao5"]; 
+    $opr6 =$linhas["opcao6"]; 
+    $opr7 =$linhas["opcao7"]; 
+    $opr8 =$linhas["opcao8"]; 
+    $opr9 =$linhas["opcao9"]; 
+    $opr10 =$linhas["opcao10"];
+    $opr11 =$linhas["opcao11"];
+    $opr12 =$linhas["opcao12"];
+    $opr13 =$linhas["opcao13"];
+    $opr14 =$linhas["opcao14"];
+    $opr15 =$linhas["opcao15"];
+    $opr16 =$linhas["opcao16"];
+    $opr17 =$linhas["opcao17"];
+    $opr18 =$linhas["opcao18"];
+    $opr19 =$linhas["opcao19"];
+    $opr20 =$linhas["opcao20"];
+    $opr21 =$linhas["opcao21"];
      // ... (seu código para exibir dados da tabela "localizacao_traumas")
+ }
+ $comando = $pdo->prepare("SELECT * FROM avacinema WHERE nrOcorrencia='$numOcorrencia'");
+ $resultado = $comando->execute();
+
+ while ($linhas = $comando->fetch()) {
+        $opt1 =$linhas["opcao1"]; 
+        $opt2= $linhas["opcao2"]; 
+        $opt3 =$linhas["opcao3"];
+        $opt4 =$linhas["opcao4"];
+        $opt5 =$linhas["opcao5"];
+        $opt6 =$linhas["opcao6"];
+        $opt7 =$linhas["opcao7"];
+        $opt8 =$linhas["opcao8"];
+        $opt9 =$linhas["opcao9"];
+        $opt10 =$linhas["opcao10"];
+        $opt11 =$linhas["opcao11"];
+        $opt12 =$linhas["opcao12"];
+        $opt13 =$linhas["opcao13"];
+        $opt14 =$linhas["opcao14"];
+       
  }
 
 $comando = $pdo->prepare("SELECT * FROM tipoocr WHERE nrOcorrencia='$numOcorrencia'");
@@ -249,8 +307,72 @@ while ($linhas = $comando->fetch()) {
 
 
 }
-}
+$comando = $pdo->prepare("SELECT * FROM termos WHERE nrOcorrencia='$numOcorrencia'");
+$resultado = $comando->execute();
 
+while ($linhas = $comando->fetch()) {
+    $oph1=$linhas["opcao1"]; 
+    $oph2=$linhas["opcao2"] ; 
+    $oph3 =$linhas["opcao3"]  ;
+    $oph4 =$linhas["opcao4"] ;
+}
+$comando = $pdo->prepare("SELECT * FROM procedimentos WHERE nrOcorrencia='$numOcorrencia'");
+$resultado = $comando->execute();
+
+while ($linhas = $comando->fetch()) {
+$ope1 =$linhas["opcao1"]; 
+ $ope2 =$linhas["opcao2"]; 
+ $ope3 =$linhas["opcao3"]; 
+ $ope4 =$linhas["opcao4"]; 
+ $ope5 =$linhas["opcao5"]; 
+ $ope6 =$linhas["opcao6"]; 
+ $ope7 =$linhas["opcao7"]; 
+ $ope8 =$linhas["opcao8"]; 
+ $ope9 =$linhas["opcao9"]; 
+ $ope10 =$linhas["opcao10"];
+ $ope11 =$linhas["opcao11"];
+ $ope12 =$linhas["opcao12"];
+ $ope13 =$linhas["opcao13"];
+ $ope14 =$linhas["opcao14"];
+ $ope15 =$linhas["opcao15"];
+ $ope16 =$linhas["opcao16"];
+ $ope17 =$linhas["opcao17"];
+ $ope18 =$linhas["opcao18"];
+ $ope19 =$linhas["opcao19"];
+ $ope20 =$linhas["opcao20"];
+ $ope21 =$linhas["opcao21"];
+ $ope22 =$linhas["opcao22"];
+ $ope23 =$linhas["opcao23"];
+ $ope24 =$linhas["opcao24"];
+ $ope25 =$linhas["opcao25"];
+ $ope26 =$linhas["opcao26"];
+ $ope27 =$linhas["opcao27"];
+ $ope28 =$linhas["opcao28"];
+ $ope29 =$linhas["opcao29"];
+ $ope30 =$linhas["opcao30"];
+ $ope31 =$linhas["opcao31"];
+ $ope32 =$linhas["opcao32"];
+ $ope33 =$linhas["opcao33"];
+ $ope34 =$linhas["opcao34"];
+ $ope35 =$linhas["opcao35"];
+ $ope36 =$linhas["opcao36"];
+ $ope37 =$linhas["opcao37"];
+ $ope38 =$linhas["opcao38"];
+ $ope39 =$linhas["opcao39"];
+ $ope40 =$linhas["opcao40"];
+ $ope41 =$linhas["opcao41"];
+ $ope42 =$linhas["opcao42"];
+ $ope43 =$linhas["opcao43"];
+ $ope44 =$linhas["opcao44"];
+ $ope45 =$linhas["opcao45"];
+ $ope46 =$linhas["opcao46"];
+ $ope47 =$linhas["opcao47"];
+ $ope48 =$linhas["opcao48"];
+ $ope49 =$linhas["opcao49"];
+ $ope50 =$linhas["opcao50"];
+ $ope51 =$linhas["opcao51"];
+}
+}
 ?>
 
 <!DOCTYPE html>
@@ -345,26 +467,41 @@ while ($linhas = $comando->fetch()) {
                     <div class="preto2">INFORMAÇÕES SOBRE GLASGOW MENOR DE 5 ANOS</div>
                     <div class="borda2">
                
-                    <?php for ($i = 1; $i <= 16; $i++) {
-                            $opm = "opm$i";
-                            
-                            if (!empty($$opm)) {
-                                echo "- ".$$opm. "<br><hr class='linha-separadora'>";
+                    <?php  
+                    $nenhumConteudoEncontrado = true;
+
+                            for ($i = 1; $i <= 16; $i++) {
+                                $opm = "opm$i";
+                                
+                                if (!empty($$opm)) {
+                                    echo "- " . $$opm . "<br><hr class='linha-separadora'>";
+                                    $nenhumConteudoEncontrado = false;
+                                }
                             }
-                        } ?>
+
+                            if ($nenhumConteudoEncontrado) {
+                                echo "<div class='centro'><h2>Nenhum conteúdo encontrado.</h2></div>";
+                            } ?>
                     </div>
                 </div>
                 <div class="collum">
                     <div class="preto2">INFORMAÇÕES SOBRE GLASGOW MAIOR DE 5 ANOS</div>
                     <div class="borda2">
                         
-                    <?php for ($i = 1; $i <= 16; $i++) {
-                            $opl = "opl$i";
-                            
-                            if (!empty($$opl)) {
-                                echo "- ". $$opl. "<br><hr class='linha-separadora'>";
+                    <?php $nenhumConteudoEncontrado = true;
+
+                            for ($i = 1; $i <= 16; $i++) {
+                                $opl = "opl$i";
+                                
+                                if (!empty($$opl)) {
+                                    echo "- " . $$opl . "<br><hr class='linha-separadora'>";
+                                    $nenhumConteudoEncontrado = false;
+                                }
                             }
-                        } ?>
+
+                            if ($nenhumConteudoEncontrado) {
+                                echo "<div class='centro'><h2>Nenhum conteúdo encontrado.</h2></div>";
+                            }?>
                         
                     </div>
                 </div>
@@ -412,13 +549,59 @@ while ($linhas = $comando->fetch()) {
             <div class="row">
                 <div class="collum">
                     <div class="preto2">INFORMAÇÕES SOBRE FORMA DE CONDUÇÃO</div>
-                    <div class="borda2"></div>
+                    <div class="borda2">
+                    <div class="separador">
+                        <h3>FORMA QUE FOI CONDUZIDA</h3>
+                        <hr class="linha-separadora">
+                        <?php for ($i = 1; $i <= 3; $i++) {
+                            $opg= "opg$i";
+                            
+                            if (!empty($$opg)) {
+                                echo $$opg. "<br><hr class='linha-separadora'>";
+                            }
+                        } ?>
+                         </div>
+                         <div class="separador">
+                        <h3>decisão de transporte</h3>
+                        <hr class="linha-separadora">
+                        <?php for ($i = 4; $i <= 7; $i++) {
+                            $opg= "opg$i";
+                            
+                            if (!empty($$opg)) {
+                                echo $$opg. "<br><hr class='linha-separadora'>";
+                            }
+                        } ?>
+                         </div>
+                         <div class="separador">
+                        <h3>informação da vitima</h3>
+                        <hr class="linha-separadora">
+                        <?php for ($i = 8; $i <= 10; $i++) {
+                            $opg= "opg$i";
+                            
+                            if (!empty($$opg)) {
+                                echo $$opg. "<br><hr class='linha-separadora'>";
+                            }
+                        } ?>
+                         </div>
+                         <div class="separador">
+                        <h3>Equipe de atendimento</h3>
+                        <hr class="linha-separadora">
+                        <?php for ($i = 11; $i <= 16; $i++) {
+                            $opg= "opg$i";
+                            
+                            if (!empty($$opg)) {
+                                echo $$opg. "<br><hr class='linha-separadora'>";
+                            }
+                        } ?>
+                         </div>
+                       
+                    </div>
                 </div>
                 <div class="collum">
                     <div class="preto2">INFORMAÇÕES SOBRE LOCALIZAÇÃO DOS TRAUMAS </div>
                     <div class="borda3">
                         <div class="separador">
-                            <h3>LOCAL<h3>
+                            <h3>LOCAL</h3>
                             <hr class="linha-separadora">
                     <?php for ($i = 1; $i <= 4; $i++) {
                             $local = "local$i";
@@ -430,7 +613,7 @@ while ($linhas = $comando->fetch()) {
                         </div>
                         <hr class="linha-separadora">
                         <div class="separador">
-                        <h3>Lado<h3>
+                        <h3>Lado</h3>
                         <hr class="linha-separadora">
                         <?php for ($i = 1; $i <= 4; $i++) {
                             $lado = "lado$i";
@@ -442,7 +625,7 @@ while ($linhas = $comando->fetch()) {
                          </div>
                          <hr class="linha-separadora">
                         <div class="separador">
-                        <h3>FACE<h3>
+                        <h3>FACE</h3>
                         <hr class="linha-separadora">
                         <?php for ($i = 1; $i <= 4; $i++) {
                             $face = "face$i";
@@ -454,7 +637,7 @@ while ($linhas = $comando->fetch()) {
                          </div>
                          <hr class="linha-separadora">
                         <div class="separador">
-                        <h3>TIPO DE TRAUMA<h3>
+                        <h3>TIPO DE TRAUMA</h3>
                         <hr class="linha-separadora">
                         <?php for ($i = 1; $i <= 4; $i++) {
                             $opi = "opi$i";
@@ -465,6 +648,240 @@ while ($linhas = $comando->fetch()) {
                         } ?> </div>
                         <hr class="linha-separadora">
 
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="collum">
+                    <div class="preto2">INFORMAÇÕES SOBRE AVALIAÇÃO CINEMATICA</div>
+                  
+                  
+                    <div class="borda2">  
+                    <div class="separador">
+                        
+                        <h3>disturbio de comportamento?<h3>
+                        <hr class="linha-separadora">
+                        <?php for ($i = 1; $i <= 2; $i++) {
+                            $opt= "opt$i";
+                            
+                            if (!empty($$opt)) {
+                                echo $$opt. "<br><hr class='linha-separadora'>";
+                            }
+                        } ?>
+                         </div>
+                         <div class="separador">
+                        <h3>encontrado de capacete?<h3>
+                        <hr class="linha-separadora">
+                        <?php for ($i = 3; $i <= 4; $i++) {
+                            $opt= "opt$i";
+                            
+                            if (!empty($$opt)) {
+                                echo $$opt. "<br><hr class='linha-separadora'>";
+                            }
+                        } ?>
+                         </div>
+                         <div class="separador">
+                        <h3>encontrado de cinto?<h3>
+                        <hr class="linha-separadora">
+                        <?php for ($i = 5; $i <= 6; $i++) {
+                            $opt= "opt$i";
+                            
+                            if (!empty($$opt)) {
+                                echo $$opt. "<br><hr class='linha-separadora'>";
+                            }
+                        } ?>
+                         </div>
+                         <div class="separador">
+                        <h3>para-brisas-avariado?<h3>
+                        <hr class="linha-separadora">
+                        <?php for ($i = 7; $i <= 8; $i++) {
+                            $opt= "opt$i";
+                            
+                            if (!empty($$opt)) {
+                                echo $$opt. "<br><hr class='linha-separadora'>";
+                            }
+                        } ?>
+                         </div>
+                         <div class="separador">
+                        <h3>caminhando na cena<h3>
+                        <hr class="linha-separadora">
+                        <?php for ($i = 9; $i <= 10; $i++) {
+                            $opt= "opt$i";
+                            
+                            if (!empty($$opt)) {
+                                echo $$opt. "<br><hr class='linha-separadora'>";
+                            }
+                        } ?>
+                         </div>
+                         <div class="separador">
+                        <h3>painel avariado<h3>
+                        <hr class="linha-separadora">
+                        <?php for ($i = 11; $i <= 12; $i++) {
+                            $opt= "opt$i";
+                            
+                            if (!empty($$opt)) {
+                                echo $$opt. "<br><hr class='linha-separadora'>";
+                            }
+                        } ?>
+                         </div>
+                         <div class="separador">
+                        <h3>volante torcido<h3>
+                        <hr class="linha-separadora">
+                        <?php for ($i = 13; $i <= 14; $i++) {
+                            $opt= "opt$i";
+                            
+                            if (!empty($$opt)) {
+                                echo $$opt. "<br><hr class='linha-separadora'>";
+                            }
+                        } ?>
+                         </div>
+                  
+                                                
+               </div>
+                </div>
+                <div class="collum">
+                    <div class="preto2">INFORMAÇÕES SOBRE GESTÇÃO </div>
+                    <div class="borda2">
+
+                    <div class="separador">
+                        <h3>periodo gestacional<h3>
+                        <hr class="linha-separadora">
+                        <?php for ($i = 1; $i <= 1; $i++) {
+                            $opr= "opr$i";
+                            
+                            if (!empty($$opr)) {
+                                echo $$opr. "<br><hr class='linha-separadora'>";
+                            }
+                        } ?>
+                         </div>
+                         <div class="separador">
+                        <h3>fez pré natal?<h3>
+                        <hr class="linha-separadora">
+                        <?php for ($i = 2; $i <= 4; $i++) {
+                            $opr= "opr$i";
+                            
+                            if (!empty($$opr)) {
+                                echo $$opr. "<br><hr class='linha-separadora'>";
+                            }
+                        } ?>
+                         </div>
+                         <div class="separador">
+                        <h3>possibilidade de complicações<h3>
+                        <hr class="linha-separadora">
+                        <?php for ($i = 5; $i <= 6; $i++) {
+                            $opr= "opr$i";
+                            
+                            if (!empty($$opr)) {
+                                echo $$opr. "<br><hr class='linha-separadora'>";
+                            }
+                        } ?>
+                         </div>
+                         <div class="separador">
+                        <h3>é o primeiro filho?<h3>
+                        <hr class="linha-separadora">
+                        <?php for ($i = 7; $i <= 9; $i++) {
+                            $opr= "opr$i";
+                            
+                            if (!empty($$opr)) {
+                                echo $$opr. "<br><hr class='linha-separadora'>";
+                            }
+                        } ?>
+                         </div>
+                         <div class="separador">
+                        <h3>inicio das contrações?<h3>
+                        <hr class="linha-separadora">
+                        <?php for ($i = 10; $i <= 10; $i++) {
+                            $opr= "opr$i";
+                            
+                            if (!empty($$opr)) {
+                                echo $$opr. "<br><hr class='linha-separadora'>";
+                            }
+                        } ?>
+                        <div class="separador">
+                        <h3>ingeriu alimentos ou liquido?<h3>
+                        <hr class="linha-separadora">
+                        <?php for ($i = 11; $i <= 12; $i++) {
+                            $opr= "opr$i";
+                            
+                            if (!empty($$opr)) {
+                                echo $$opr. "<br><hr class='linha-separadora'>";
+                            }
+                        } ?>
+                         </div>
+                         <div class="separador">
+                        <h3>ipressão na região do quadril ou vontade de evacuar?<h3>
+                        <hr class="linha-separadora">
+                        <?php for ($i = 13; $i <= 14; $i++) {
+                            $opr= "opr$i";
+                            
+                            if (!empty($$opr)) {
+                                echo $$opr. "<br><hr class='linha-separadora'>";
+                            }
+                        } ?>
+                         </div>
+                         <div class="separador">
+                        <h3>já houve ruptura na bolsa?<h3>
+                        <hr class="linha-separadora">
+                        <?php for ($i = 15; $i <= 16; $i++) {
+                            $opr= "opr$i";
+                            
+                            if (!empty($$opr)) {
+                                echo $$opr. "<br><hr class='linha-separadora'>";
+                            }
+                        } ?>
+                         </div>
+                         <div class="separador">
+                        <h3>inspeção visual?<h3>
+                        <hr class="linha-separadora">
+                        <?php for ($i = 17; $i <= 18; $i++) {
+                            $opr= "opr$i";
+                            
+                            if (!empty($$opr)) {
+                                echo $$opr. "<br><hr class='linha-separadora'>";
+                            }
+                        } ?>
+                         </div>
+                         <div class="separador">
+                        <h3>parto realizado?<h3>
+                        <hr class="linha-separadora">
+                        <?php for ($i = 19; $i <= 21; $i++) {
+                            $opr= "opr$i";
+                            
+                            if (!empty($$opr)) {
+                                echo $$opr. "<br><hr class='linha-separadora'>";
+                            }
+                        } ?>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            <div class="row">
+                <div class="collum">
+                    <div class="preto2">INFORMAÇÕES TERMOS</div>
+                  
+                    <div class="borda2">  
+                    <?php for ($i = 1; $i <= 4; $i++) {
+                            $oph = "oph$i";
+                            
+                            if (!empty($$oph)) {
+                                echo "- ". $$oph. "<br><hr class='linha-separadora'>";
+                            }
+                        } ?>
+                                                
+               </div>
+                </div>
+                <div class="collum">
+                    <div class="preto2">PROCEDIMENTOS</div>
+                    <div class="borda2">
+                    <?php for ($i = 1; $i <= 51; $i++) {
+                            $ope = "ope$i";
+                            
+                            if (!empty($$ope)) {
+                                echo "- ". $$ope. "<br><hr class='linha-separadora'>";
+                            }
+                        } ?>
                     </div>
                 </div>
             </div>

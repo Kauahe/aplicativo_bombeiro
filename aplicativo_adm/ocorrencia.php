@@ -45,34 +45,61 @@
         </div>
     </div>
     <script>
-        $(document).ready(function () {
-            // Função para listar ocorrências com AJAX
-            function listarOcorrenciasAJAX(orderBy) {
-                $.ajax({
-                    url: 'php/listar_ocorrencias_ajax.php',
-                    method: 'GET',
-                    data: { orderBy: orderBy },
-                    success: function (data) {
-                        $('#ocorrenciasContainer').html(data);
-                    }
-                });
+$(document).ready(function () {
+    // Função para listar ocorrências com AJAX
+    function listarOcorrenciasAJAX(orderBy) {
+        $.ajax({
+            url: 'php/listar_ocorrencias_ajax.php',
+            method: 'GET',
+            data: { orderBy: orderBy },
+            success: function (data) {
+                $('#ocorrenciasContainer').html(data);
             }
-
-            // Ao alterar a opção no select, chama a função AJAX
-            $('#selectList').on('change', function () {
-                var orderBy = $(this).val();
-                listarOcorrenciasAJAX(orderBy);
-            });
-
-            // Chamada inicial para listar ocorrências com a ordenação padrão
-            listarOcorrenciasAJAX($('#selectList').val());
         });
+    }
 
-        // Adicione o restante do seu código jQuery aqui, incluindo a exclusão de ocorrências.
-        function redirectToProfile(element) {
+    // Função para excluir ocorrência com AJAX
+    function excluirOcorrencia(element) {
+        var numOcorrencia = $(element).data('numocorrencia');
+        if (confirm('Deseja realmente excluir esta ocorrência?')) {
+            $.ajax({
+                url: 'php/excluir_ocr.php',
+                method: 'POST',
+                data: { num_ocorrencia: numOcorrencia },
+                success: function (data) {
+                    // Recarrega as ocorrências após a exclusão
+                    listarOcorrenciasAJAX($('#selectList').val());
+                    alert(data); // Exibe a mensagem de retorno
+                }
+            });
+        }
+    }
+
+    // Ao alterar a opção no select, chama a função AJAX
+    $('#selectList').on('change', function () {
+        var orderBy = $(this).val();
+        listarOcorrenciasAJAX(orderBy);
+    });
+
+    // Adiciona um listener para o clique no botão de exclusão
+    $('#ocorrenciasContainer').on('click', '.excluir, .info-usuario', function () {
+        if ($(this).hasClass('excluir')) {
+            excluirOcorrencia(this);
+        } else {
+            redirectToProfile(this);
+        }
+    });
+
+    // Chamada inicial para listar ocorrências com a ordenação padrão
+    listarOcorrenciasAJAX($('#selectList').val());
+
+    // Adicione o restante do seu código jQuery aqui, incluindo a exclusão de ocorrências.
+    function redirectToProfile(element) {
         var numOcorrencia = element.getAttribute('data-id');
         window.location.href = 'historico.Ocr.php?num_ocorrencia=' + numOcorrencia;
     }
-    </script>
+});
+</script>
+    
 </body>
 </html>

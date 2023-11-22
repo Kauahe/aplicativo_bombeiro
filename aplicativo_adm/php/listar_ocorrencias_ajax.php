@@ -29,7 +29,7 @@ function listarOcorrencias($pdo, $orderBy) {
             echo "<div class='info-nome'> " . $row["nome_pac"] . "</div>";
             echo "<div class='info-email'> " . $row["data_ocr"] . "</div>";
             echo "</div>";
-            echo "<div class='excluir' data-userid='" . $row["num_ocorrencia"] . "'>Excluir</div>";
+            echo "<div class='excluir' data-numocorrencia='" . $row["num_ocorrencia"] . "'>Excluir</div>";
             echo "</div>";
         }
     } else {

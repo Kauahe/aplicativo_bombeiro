@@ -57,7 +57,7 @@ $pdo = null; // Feche a conexão PDO
             <img src="data:image/jpeg;base64,<?php echo base64_encode($imagem_blob); ?>"   class="foto_perfil" width="100%" height="100%" alt="Foto do usuário">
         </div>
         <div class="alterar">
-            <div class="alt" onclic><b>ALTERAR</b></div>
+            <div class="alt"  id="alterar" onclick="alterar();"><b>ALTERAR</b></div>
         </div>
     </div>
 
@@ -81,5 +81,50 @@ $pdo = null; // Feche a conexão PDO
         </div>
     </div>
 </body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        function alterarImagem() {
+            // Aqui você pode abrir um modal ou criar um formulário para o usuário selecionar uma nova imagem
+            // Em seguida, envie a imagem para o servidor usando AJAX
 
+            // Exemplo: código para abrir uma janela de seleção de arquivo
+            var input = document.createElement('input');
+            input.type = 'file';
+
+            input.onchange = function () {
+                var file = input.files[0];
+
+                if (file) {
+                    var formData = new FormData();
+                    formData.append('id', <?php echo $userId; ?>);
+                    formData.append('imagem', file);
+
+                    $.ajax({
+                        url: 'php/alterar_imagem.php', // Substitua pelo caminho correto do seu script PHP
+                        type: 'POST',
+                        data: formData,
+                        contentType: false,
+                        processData: false,
+                        success: function (response) {
+                            // Atualiza a imagem na página após o sucesso
+                            $('.foto_perfil').attr('src', 'data:image/jpeg;base64,' + response);
+                            alert('Imagem alterada com sucesso!');
+                        },
+                        error: function () {
+                            alert('Erro ao enviar a imagem.');
+                        }
+                    });
+                }
+            };
+
+            input.click();
+        }
+
+        // Adicione um listener para o clique no botão de alterar
+        $('#alterar').on('click', function () {
+            alterarImagem();
+        });
+    });
+</script>
 </html>

@@ -245,3 +245,12 @@ text-align: justify;
  margin-top: 5px;
 padding-left: 5px;
 }
+.centro{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+}
