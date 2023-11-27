@@ -36,6 +36,8 @@ $pdo = null; // Feche a conexão PDO
 </head>
 
 <body>
+<div class="fundo-borrado"></div>
+
     <header>
         <div class="espaco">
             <div class="imagem">
@@ -63,19 +65,19 @@ $pdo = null; // Feche a conexão PDO
 
     <div class="info">
         <div class="nome">
-            <div class="tx1"><b>NOME:<br><?php echo $nome; ?></b></div>
+            <div class="tx1"><b>NOME:</b><br><h4><?php echo $nome; ?> </h4><button class="alterar1"onclick="alterarInformacao('nome')">⚙️</button></div>
             <div class="linha1"></div>
             <div class="valor"></div>
         </div>
 
         <div class="email">
-            <div class="tx1"><b>EMAIL:<br><?php echo $email; ?></b></div>
-            <div class="linha2"></div>
+            <div class="tx1"><b>CPF:</b><br><h4><?php echo $cpf; ?> </h4><button class="alterar1"onclick="alterarInformacao('cpf')">⚙️</button></div>
+            <div class="linha2  "></div>
             <div class="valor"></div>
         </div>
 
         <div class="telefone">
-            <div class="tx1"><b>CPF:<br> <?php echo $cpf; ?></b></div>
+            <div class="tx1"><b>EMAIL:</b><br><h4><?php echo $email; ?> </h4><button class="alterar1"onclick="alterarInformacao('email')">⚙️</button></div>
             <div class="linha1"></div>
             <div class="valor"></div>
         </div>
@@ -126,5 +128,55 @@ $pdo = null; // Feche a conexão PDO
             alterarImagem();
         });
     });
+
+        function alterarInformacao(campo) {
+            var novoValor = prompt("Informe o novo valor para " + campo + ":");
+            if (novoValor !== null) {
+                // Aqui você pode enviar a requisição AJAX para atualizar o valor no banco de dados
+                // Exemplo utilizando jQuery:
+                $.ajax({
+                    type: 'POST',
+                    url: 'php/atualizar_valor_perfil.php', // Substitua pelo nome do seu arquivo PHP que atualiza os dados no banco
+                    data: {
+                        campo: campo,
+                        novoValor: novoValor,
+                        id: '<?php echo $userId; ?>'
+                    },
+                    success: function (response) {
+                        // Aqui você pode tratar a resposta da requisição, se necessário
+                        console.log(response);
+                        // Recarregue a página ou atualize apenas os elementos que foram alterados
+                        location.reload();
+                    },
+                    error: function (error) {
+                        console.error(error);
+                    }
+                });
+            }
+        }
+   
+       
+    $(document).ready(function () {
+        // Função para adicionar ou remover a classe de zoom e exibir/ocultar a div de fundo
+        function toggleZoom() {
+            $('.foto_perfil').toggleClass('zoomed-in');
+            $('.fundo-borrado').toggle();
+        }
+
+        // Adiciona um listener para o clique na imagem
+        $('.foto_perfil').on('click', function () {
+            toggleZoom();
+        });
+
+        function alterarImagem() {
+            // ... (seu código existente)
+        }
+
+        // Adicione um listener para o clique no botão de alterar
+        $('#alterar').on('click', function () {
+            alterarImagem();
+        });
+    });
+
 </script>
 </html>

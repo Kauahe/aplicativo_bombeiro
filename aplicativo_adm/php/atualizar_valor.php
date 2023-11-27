@@ -9,7 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $numOcorrencia = $_POST['numOcorrencia'];
 
         // Faça a conexão com o banco de dados (substitua pelos seus dados de conexão)
-        include('../php/conecta.php');
+        include('../../php/conecta.php');
 
         // Use prepared statements para evitar SQL injection
         $comando = $pdo->prepare("UPDATE cadastropac SET $campo = :novoValor WHERE num_ocorrencia = :numOcorrencia");

@@ -905,7 +905,7 @@ $ope1 =$linhas["opcao1"];
                 // Exemplo utilizando jQuery:
                 $.ajax({
                     type: 'POST',
-                    url: 'atualizar_valor.php', // Substitua pelo nome do seu arquivo PHP que atualiza os dados no banco
+                    url: 'php/atualizar_valor.php', // Substitua pelo nome do seu arquivo PHP que atualiza os dados no banco
                     data: {
                         campo: campo,
                         novoValor: novoValor,
