@@ -142,7 +142,29 @@ H4 {
     border: 1px solid #FFF;
     background: #000;
 }
+/* Adicionei um estilo para o botão de voltar */
+.btn-voltar {
+    
+   
+    background: transparent;
+    border: none;
+    color: #000000;
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-family: "Audiowide", sans-serif;
+}
 
+.btn-voltar i {
+    margin-right: 5px;
+}
+.voltar{
+    width: 100%;
+    height: 80px;
+display: flex; 
+margin-left: 60px;
+}
 .titulo {
     width: 100%;
     height: 50px;
@@ -163,7 +185,7 @@ H4 {
 
 .caixa {
     width: 1166px;
-    height: 500px;
+    height: 550px;
     flex-shrink: 0;
     border-radius: 34px;
     background: #FFF;
@@ -317,7 +339,7 @@ H4 {
     margin-bottom: 10px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     border-radius: 10px;
     box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     font-size: 20px;
@@ -327,6 +349,7 @@ H4 {
 
 .barra:hover {
     background-color: #c2c2c2;
+    cursor: pointer;
 }
 
 .detalhes-usuario {
@@ -366,7 +389,7 @@ H4 {
     width: 100px;
     height: 28px;
     border-radius: 30px;
-    background: #102986;
+    background: #861010;
     color: #FFF;
     text-align: center;
     margin-top: 20px;
@@ -374,16 +397,14 @@ H4 {
     font-size: 15px;
     font-style: normal;
     font-weight: 800;
-    line-height: 28px;
-    /* Centraliza verticalmente o texto */
+    line-height: 28px; /* Centraliza verticalmente o texto */
     text-transform: uppercase;
     box-shadow: 4px 4px 4px 0px rgba(255, 255, 255, 0.25), 0px 4px 4px 0px rgba(255, 255, 255, 0.25), 0px 4px 4px 0px rgba(255, 255, 255, 0.25);
     transition: 0.5;
 }
-
-.excluir:hover {
+.excluir:hover{
     cursor: pointer;
-    background-color: #091a58;
+    background-color: #58090e;
 }
 
 .botoes-usuario {

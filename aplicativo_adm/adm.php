@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/adm.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
 </head>
 <body>
     <header>
@@ -24,6 +26,9 @@
             <a href="ocorrencia.php"><div class="opcao3"><b>REGISTRO DE OCORRÊNCIAS</b></div></a>
         </div>
     </header>
+    <div class="voltar"><button class="btn-voltar" onclick="window.location.href = '../index.html'">
+        <i class="fas fa-chevron-left"></i>LOGOUT
+    </button></div>
     <div class="titulo"><b>BOMBEIROS CADASTROS:</b></div>
     <div class="caixa">
         <div class="cdt">

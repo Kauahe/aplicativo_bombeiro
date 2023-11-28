@@ -25,45 +25,65 @@
             <a href="cadastro.html"><div class="opcao2"><b>CADASTRO DE BOMBEIROS</b></div></a>
             <a href="ocorrencia.php"><div class="opcao3"><b>REGISTRO DE OCORRÊNCIAS</b></div></a>
     </header>
+      <form id="cadastroForm" class="total" action="php/cadastro.php" method="post" onsubmit="juntarCodigos()" enctype="multipart/form-data">
         <div class="separador">
+         <div class="colluns"> 
         <div class="bomb">
             <img class="imgbomb" src="../img/bombeiroadm 1.png" >
         </div>
+        <div class="imagem-container">
+        <label for="imagem" class="label-imagem">ADICIONAR FOTO</label>
+        <span class="nome-arquivo"></span>
+        <input type="file" id="imagem" name="imagem" accept="image/*" class="input_imagem" required>
+    </div>
+    </div>  
+        
         <div class="row2">
-        <form id="cadastroForm" class="total" action="php/cadastro.php" method="post" onsubmit="juntarCodigos()" enctype="multipart/form-data">
+      
        
-        <div class="box1">
+        <div class="box2">
             <label for="nome" class="nome"><b>NOME:</b></label><BR>
-            <input type="text" id="nome" name="nome" class="inp" required><br><br>
+            <input type="text" id="nome" name="nome" class="inp" required><br>
         </div>
         <div class="box2">
             <label for="cpf" class="nome"><b>CPF:</b></label><br>
-                <input type="tel" id="cpf" name="cpf" class="inp" required><br><br>
+                <input type="tel" id="cpf" name="cpf" class="inp" required><br>
+        </div>
+        <div class="box2">
+            <label for="email" class="nome"><b>EMAIL:</b></label><br>
+                <input type="tel" id="cpf" name="email" class="inp" required><br>
+        </div>
+        <div class="box4">
+            <label for="nome" class="nome"><b>ADM?</b></label>
+            <div class="box4-row">
+                <td>SIM</td>
+                <input type="radio" id="adm_1" name="adm" class="cod"   value="1">&nbsp;&nbsp;
+                <td>NÂO</td>
+                <input type="radio" id="adm_0" name="adm" class="cod"  value="0">
+            </div>
         </div>
         
         <div class="box3">
             <div class="centralizar">
-                <div class="nome">CÓDIGO</div><br>
+                <div class="nome">CÓDIGO</div>
                 <div class="codigos">
                     <input class="cod" type="password" id="codigo" name="codigo" maxlength="1" required oninput="moveToNextInput(this, 'codigo2')" >
                     <input class="cod" type="password" id="codigo2" name="codigo2" maxlength="1" required oninput="moveToNextInput(this, 'codigo3')" onkeydown="handleBackspace(this, 'codigo')">
                     <input class="cod" type="password" id="codigo3" name="codigo3" maxlength="1" required oninput="moveToNextInput(this, 'codigo4')" onkeydown="handleBackspace(this, 'codigo2')">
                     <input class="cod" type="password" id="codigo4" name="codigo4" maxlength="1" required onkeydown="handleBackspace(this, 'codigo3')">
                 </div>
+                </div>
+                </div>
                 <input type="hidden" id="senha" name="senha">
-            </div><br><br>
+          
             <div class="alinhamento_do_botao">
                 <input class="enviar" type="submit"  value="Cadastrar">
             </div>
-        </div>
-                <label for="imagem" class="label-imagem">ADICIONAR FOTO</label>
-                <span class="nome-arquivo"></span>
-                <input type="file" id="imagem" name="imagem" accept="image/*" class="input_imagem" required>
+       
+            </div> 
             </form>
         
             <!--<div style="color: rgb(53, 121, 33); font-size: 15px;" id="mensagem" ></div>-->
-        </div>
-    </div>
       
    
 </body>
@@ -82,46 +102,9 @@
         // senha ao campo de senha
         document.getElementById("senha").value = senha;
     }
-</script>
-<script>
-//$(document).ready(function() {
-//    $("#cadastroForm").submit(function(e) {
-//        e.preventDefault(); 
-//
-//        //enviar os dados do formulário
-//        var formData = new FormData(this); 
-//
-//        $.ajax({
-//            type: "post",
-//            url: "php/cadastro.php",
-//            data: formData, 
-//            contentType: false, 
-//            processData: false, 
-//            dataType: 'json',
-//            success: function(response) {
-//               
-//                if (response.success === true) {
-//                    $("#mensagem").html("Cadastro realizado com sucesso!");
-//                    setTimeout(function() {
-//                        window.location.href = "adm.php";
-//                    }, 2000); 
-//                } else {
-//                    console.log(xhr.responseText); // Adicione isso para depuração
-//                    $("#mensagem").html("Erro: " + response.message);
-//                }
-//            },
-//            error: function(xhr, status, error) {
-//                
-//                $("#mensagem").html("Erro ao cadastrar: " + error);
-//            }
-//        });
-//    });
-//})
 
 
-</script>
 
-<script>
     function moveToNextInput(currentInput, nextInputName) {
         const maxLength = parseInt(currentInput.getAttribute('maxlength'));
         if (currentInput.value.length === maxLength) {

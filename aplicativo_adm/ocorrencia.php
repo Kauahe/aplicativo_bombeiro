@@ -60,7 +60,7 @@ $(document).ready(function () {
 
     // Função para excluir ocorrência com AJAX
     function excluirOcorrencia(element) {
-        var numOcorrencia = $(element).data('numocorrencia');
+        var numOcorrencia = $(element).data('num_ocorrencia');
         if (confirm('Deseja realmente excluir esta ocorrência?')) {
             $.ajax({
                 url: 'php/excluir_ocr.php',

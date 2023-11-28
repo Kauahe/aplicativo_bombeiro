@@ -10,6 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
     $email = $_POST["email"];
     $cpf = $_POST["cpf"];
     $senha = $_POST["senha"]; // O campo "senha" agora contém a senha combinada
+    $adm = isset($_POST["adm"]) ? $_POST["adm"] : 0; // Se o campo "adm" não estiver definido, assume o valor 0
 
     // Processar o upload da imagem
     if (isset($_FILES["imagem"])) {
@@ -18,8 +19,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
             $imagemData = file_get_contents($imagemTmpName); // Lê os dados da imagem como um BLOB
 
             // Inserir os dados no banco de dados, incluindo os dados da imagem
-            $sql = "INSERT INTO cadastro (Nome, email, CPF, senha, imagem_blob) VALUES (:nome, :email, :cpf, :senha, :imagem)";
+            $sql = "INSERT INTO cadastro (nome, email, cpf, senha, imagem_blob, adm) VALUES (:nome, :email, :cpf, :senha, :imagem, :adm)";
             $stmt = $pdo->prepare($sql);
+        
 
             // Vincular os valores às variáveis na consulta
             $stmt->bindParam(":nome", $nome);
@@ -27,6 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
             $stmt->bindParam(":cpf", $cpf);
             $stmt->bindParam(":senha", $senha);
             $stmt->bindParam(":imagem", $imagemData, PDO::PARAM_LOB); // Use PDO::PARAM_LOB para dados BLOB
+            $stmt->bindParam(":adm", $adm);
 
             if ($stmt->execute()) {
                 // Defina a resposta como sucesso
